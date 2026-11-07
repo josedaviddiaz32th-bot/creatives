@@ -41,7 +41,8 @@ engineering. Stages 2, 3, 4, 6 and 8 must read it, and it overrides defaults.
   cost of every job from the tool result (or the balance/transactions delta).
 - **Claims come only from `docs/lessons-learned.md` sections 1–2** (the Avatars
   doc gives angles and words, not claims). Never invent results, reviews,
-  testimonials, before/after numbers, medical claims or endorsements.
+  testimonials, numbers, medical claims or endorsements. Before/afters are
+  allowed (see `docs/lessons-learned.md` section 0).
 - **Never retry a generation blindly.** A timeout is not a failure; poll the job
   first. Retry a clip once at most, and only for a named defect.
 - **Video model is Kling 3.0** (`generation.video_model`), because it fits the
