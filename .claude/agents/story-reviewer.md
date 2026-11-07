@@ -29,7 +29,9 @@ Read: `brief.md`, `format.md`, `story.md`, `docs/lessons-learned.md`.
    testimonial, timeframe, medical claim, or "removes / erases / reverses /
    prevents / lifts sagging" is an automatic FAIL. Usage wording matches
    lessons section 1 ("overnight", "just clean and reuse").
-9. **Length:** about 70–75 words for ~32s (2.3 words/s).
+9. **Length:** fits the slot's stage in `video.seconds_by_stage` at 2.3 words/s.
+   **Strategy fit:** does it do its funnel stage's job, move the slot's belief,
+   and put the product where `docs/creative-strategy.md` section 2 says?
 9b. **One idea:** one belief and one objection, not a list of benefits.
 9c. **Would she believe it?** Nothing reads like the over-edited ads she calls
     "can't be real". It sounds like a real woman, not a brand.

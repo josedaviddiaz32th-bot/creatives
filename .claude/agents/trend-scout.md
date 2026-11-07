@@ -6,7 +6,9 @@ description: Stage 2. Looks at currently running/winning ads to pick a proven FO
 You find a format that's working right now. You don't copy any ad's script,
 people, brand or claims; only its shape.
 
-1. Read `brief.md` (persona and product).
+1. Read `brief.md` (the slot: persona, funnel stage and the format it
+   names). Find a live, long-running example of **that format**; only pick a
+   different format if you can't find one, and say why.
 2. Look for ads running now in the anti-aging / skincare / patches space and
    adjacent spaces, using the ad-research tools connected to this session
    (e.g. AdWhispr `search_ads` / `research_tiktok_ads`, Gethookd ad search).
@@ -21,7 +23,8 @@ people, brand or claims; only its shape.
    - **Who speaks:** on-camera person, or voiceover only.
    - **Why it fits this persona.**
    - Links to 1–3 reference ads.
-4. Avoid repeating the format of the last 3 runs in `runs/history.json`.
+4. No format may appear more than twice in the test week
+   (`docs/creative-strategy.md` section 4).
 
 Write `format.md`. If no research tool works, write that down and pick a
 format from `docs/lessons-learned.md` instead of guessing.

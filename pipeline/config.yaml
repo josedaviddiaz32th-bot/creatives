@@ -13,20 +13,23 @@ source:
   lessons: "docs/lessons-learned.md"   # owner's handoff; overrides defaults
 
 video:
-  duration_seconds: 32          # target
-  min_seconds: 30
-  max_seconds: 35
+  # Length depends on the funnel stage of the slot (docs/creative-strategy.md).
+  seconds_by_stage:
+    tof: { min: 35, max: 60 }
+    mof: { min: 25, max: 40 }
+    bof: { min: 15, max: 25 }
   aspect_ratio: "9:16"
   language: "en"
-  words_per_second: 2.3         # from handoff; 32s ≈ 70-75 spoken words
+  words_per_second: 2.3         # from handoff; 30s ≈ 70 spoken words
   structure:
     hook: { seconds: 5, must_be_question: true }
-    body: { seconds: 20, note: "dig into the problem, then turn smoothly to the patches" }
+    body: { note: "dig into the problem, then turn smoothly to the patches; open loops over ~25s" }
     cta: { seconds: 5, style: subtle }
+  strategy: "docs/creative-strategy.md"   # every run fills one slot from it
 
 generation:
   provider: higgsfield
-  # Kling 3.0 Pro with native sound ≈ 2.5 credits/s, so 32s ≈ 80 credits.
+  # Kling 3.0 Pro with native sound ≈ 2.5 credits/s, so 30s ≈ 75 credits.
   # Seedance 2.5 720p ≈ 7 credits/s (≈224) does not fit the cap.
   video_model: kling3_0
   video_mode: pro                # std ≈ 2 credits/s if budget is tight
@@ -39,7 +42,9 @@ generation:
   elevenlabs_narrator: "Lara"    # stability 0.45, style 0.5, similarity 0.75
 
 budget:
-  max_credits_per_video: 100    # hard cap: stop before any job that would exceed it
+  # Hard cap per video, by the slot's funnel stage: stop before any job that would exceed it.
+  max_credits_by_stage: { tof: 155, mof: 105, bof: 70 }
+  max_credits_per_video: 155    # absolute ceiling for any video
   max_retries_per_clip: 1       # only for clips that fail review
   reserve_for_retries: 15       # credits held back from the first pass for fixes
   stop_if_balance_below: 100    # don't start a run that can't finish

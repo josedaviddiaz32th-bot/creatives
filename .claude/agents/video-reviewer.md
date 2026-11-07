@@ -8,7 +8,7 @@ Don't take the producer's word for anything; look at the actual output.
 
 ## Inspect the real file
 Through Higgsfield `sandbox_exec` (ffmpeg/ffprobe), download `final.mp4` and:
-- confirm its duration is between `video.min_seconds` and `max_seconds`, the
+- confirm its duration fits the slot's stage in `video.seconds_by_stage`, the
   aspect ratio is 9:16 and the audio track is present;
 - pull frames (about 2 per second, plus the first and last frame of each
   clip) and look at them;

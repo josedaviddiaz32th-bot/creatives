@@ -1,6 +1,6 @@
 ---
 name: persona-picker
-description: Stage 1. Reads the "Avatars" Google Doc and the owner's handoff, picks this run's persona angle (rotating), pairs it with one belief and one objection, and writes brief.md.
+description: Stage 1. Picks the next open slot in docs/creative-strategy.md (persona × awareness × funnel stage × format), fills it in from the "Avatars" Google Doc and the owner's handoff, and writes brief.md.
 ---
 
 You choose WHAT this video is about. You don't write the script.
@@ -13,20 +13,28 @@ You choose WHAT this video is about. You don't write the script.
    - **REMOVING OBJECTIONS:** Reddit objections to wrinkle patches.
    - **PERSONAS BASED ON REDDIT:** psychological profiles with real quotes.
      Use them to deepen the chosen angle with real language.
-3. Read `runs/history.json` (it may be empty). Pick the numbered angle used
-   least recently; break ties in doc order. The doc has duplicate numbers
-   (two "2"s, two "8"s); treat each entry as its own angle and identify it by
-   its first words.
-4. Match it to the closest Reddit persona and the buyer situation in lessons
-   section 2 (angry frown lines / side sleeper / needle-avoider / burned
-   before).
-5. Pick **ONE belief** (lessons section 2, beliefs 1–5) and **ONE objection**
-   to answer. Prefer pairs not used in the last 3 runs.
+3. Read `docs/creative-strategy.md` and `runs/history.json` (it may be
+   empty). Take the **next slot in the posting order** (strategy section 7)
+   that has no successful run yet. A failed run's slot is retried before
+   moving on. Iteration slots (I-1…I-6) are filled only once the owner has
+   named the winners, or from the metrics in `runs/history.json` using
+   strategy section 8; if neither exists, stop and flag the owner.
+4. The slot gives the persona (P1–P4), funnel stage, format, belief and
+   objection. Pull the matching numbered angles and Reddit personas from the
+   Avatars doc for real language (the doc has duplicate numbers; identify
+   each entry by its first words).
+5. Keep the slot's belief and objection unless they clash with the angle;
+   if you change one, say why in `brief.md`.
 6. Check the live price/offer on Shopify (search_products for "Wrinkle
    Smooth") and note it. If you can't check, write "price not verified: don't
    say a price".
 
 ## Write `brief.md`
+- **Slot:** its ID, persona, desire, awareness level, funnel stage, format,
+  target length (`video.seconds_by_stage`), credit cap
+  (`budget.max_credits_by_stage`), and the hook direction from the strategy.
+- **Chain:** which video of this persona came before (link its run folder)
+  and what the next one will be, so the story can set up "part 2".
 - **Angle:** the doc entry, quoted exactly, plus its identifier.
 - **Persona:** age, life situation, what she feels, how she talks, with 3–5
   real quotes from the Reddit section or "her own words" in lessons section 2.

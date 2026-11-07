@@ -11,7 +11,13 @@ Read first: `brief.md`, `format.md` (from trend-scout, if present),
 `pipeline/config.yaml`, and `docs/lessons-learned.md` (the owner's lessons;
 they override anything here).
 
-## Structure (about 30–35s total)
+## Structure (length from the slot's stage in `video.seconds_by_stage`)
+
+The funnel stage in `brief.md` sets the job, the belief and when the
+product appears (`docs/creative-strategy.md` section 2). TOF: no product
+mention in the first half. MOF: the product is the subject. BOF: product and
+offer from the first second. Over ~25s, add an open loop after the first
+body beat ("but that wasn't the weird part").
 
 **Hook (0–5s): a question that hits this persona.**
 - It's a question the persona would actually ask themselves, about THEIR
@@ -42,7 +48,7 @@ they override anything here).
   doc gives a real offer.
 
 ## Rules
-- About 2.3 spoken words per second (handoff spec), so 32s is roughly 70–75
+- About 2.3 spoken words per second (handoff spec), so 30s is roughly 70
   words. Write down the count. Never plan a sped-up voice.
 - One idea per video: one tension, one promise, ONE belief (from `brief.md`)
   and ONE objection answered. Specifics beat adjectives (5 pieces, overnight,
