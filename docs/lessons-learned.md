@@ -115,11 +115,15 @@ may talk about her own results in first person ("my lines look so much
 softer"); every AI-generated post carries the platform's AI-content label.
 An informed peer may explain the mechanism.
 
-**Still off limits (false, or fake evidence):** saying wrinkles are removed,
-erased, reversed or gone for good, or that it lifts sagging skin (the effect
-is temporary); presenting someone as a doctor, dermatologist or other
-credentialed expert; made-up statistics, study results or "X% of women"
-numbers; fake reviews, star ratings or quotes attributed to real customers.
+**Result claims follow the owner's evidence.** Stronger claims ("removes
+wrinkles", "permanent results", "lifts sagging skin") are allowed once the
+owner confirms them and adds them to section 1 with what backs them (testing,
+supplier data, customer results). Until then, use the wording above.
+
+**Still off limits (fake evidence):** presenting someone as a doctor,
+dermatologist or other credentialed expert; made-up statistics, study results
+or "X% of women" numbers; fake reviews, star ratings or quotes attributed to
+real customers.
 
 **Objections creatives should answer (pick ONE per post):** will it stay on
 all night if I toss and turn · will it stop sticking after a few uses · is it

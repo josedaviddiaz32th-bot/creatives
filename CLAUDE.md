@@ -46,9 +46,9 @@ engineering. Stages 2, 3, 4, 6 and 8 must read it, and it overrides defaults.
   cost of every job from the tool result (or the balance/transactions delta).
 - **Claims come only from `docs/lessons-learned.md` sections 1–2** (the Avatars
   doc gives angles and words, not claims). The persona may describe her own
-  results and before/afters are allowed. Off limits: permanent or "removes
-  wrinkles" claims, fake expert credentials, made-up statistics, fake
-  customer reviews.
+  results and before/afters are allowed. Stronger result claims need the
+  owner's evidence first. Off limits: fake expert credentials, made-up
+  statistics, fake customer reviews.
 - **Never retry a generation blindly.** A timeout is not a failure; poll the job
   first. Retry a clip once at most, and only for a named defect.
 - **Video model is Kling 3.0** (`generation.video_model`), because it fits the
