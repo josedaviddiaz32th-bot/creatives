@@ -20,8 +20,8 @@ section 2 here sets what we may claim about the product.**
   patches. No "struggling with wrinkles and tried everything? Well, I have these
   patches for you." The patches arrive as part of the story.
 - **CTA: subtle.** "Check the bio" / "try it". "Buy" is OK only if it's said subtly.
-- **Length depends on the funnel stage** (Nov 7, 2026): TOF 35–60s, MOF
-  25–40s, BOF 15–25s (`pipeline/config.yaml`). Generated on Higgsfield.
+- **Length depends on the funnel stage** (Nov 7, 2026): TOF 30–50s, MOF
+  25–45s, BOF 15–25s (`pipeline/config.yaml`). Generated on Higgsfield.
 - **Every video fills one slot of `docs/creative-strategy.md`** (persona ×
   awareness × funnel stage × format). High format variety; a new hook on the
   same video is a hook test, not a new concept.

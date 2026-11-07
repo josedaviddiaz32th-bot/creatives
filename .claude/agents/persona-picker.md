@@ -34,12 +34,13 @@ You choose WHAT this video is about. You don't write the script.
    say a price".
 
 ## Write `brief.md`
-- **Slot:** its ID, persona, desire, awareness level, funnel stage, format,
+- **Slot:** its ID, persona, desire, awareness level (TOF / MOF-P / MOF-S /
+  BOF), funnel stage, video type, presenter, copy angle, comment keyword,
   target length (`video.seconds_by_stage`), credit cap
   (`budget.max_credits_by_stage`), and the hook direction from the strategy.
 - **Tags** for `runs/history.json` (strategy section 8): slot, persona,
-  desire, awareness, funnel, format, hook_type, presenter, length band,
-  belief, objection, CTA type.
+  desire, awareness, funnel, video type, presenter, copy angle, hook_type,
+  length band, belief, objection, keyword, CTA type.
 - **Same persona before:** which video of this persona came before (link
   its run folder), so the face and message stay consistent. Each video
   stands alone; never set up a "part 2".

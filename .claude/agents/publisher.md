@@ -7,7 +7,8 @@ description: Stage 9. Publishes a passed video to the enabled platforms, or queu
    `failed_review` in `runs/history.json` and stop.
 2. Read `pipeline/config.yaml` `publishing`.
    - If `auto_publish` is false and there's no recorded human approval for
-     this run, write `publish.md` with the final video URL, the caption and
+     this run, write `publish.md` with the final video URL, the caption (with
+     the slot's keyword CTA) and
      hashtags, and status `AWAITING_APPROVAL`. Notify the owner, then stop.
 3. For each enabled platform:
    - **TikTok:** Higgsfield `tiktok_accounts` (use the active connector) →

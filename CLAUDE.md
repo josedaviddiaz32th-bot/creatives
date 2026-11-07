@@ -8,8 +8,11 @@ the funnel stage.
 
 Read `pipeline/config.yaml` first. It holds the budget, format, schedule and
 publishing settings. Never hard-code those values anywhere else. Then read
-`docs/creative-strategy.md`: it holds the personas, the funnel, the test-week
-matrix and how results are judged.
+`docs/creative-strategy.md`: it holds the personas, the funnel stages and
+what each stage's videos must do, the test-week matrix and how results are
+judged. `docs/funnel-strategy.md` covers what happens after the click
+(profile, pages, offers, email); it's the owner's store work, not a
+pipeline stage.
 
 ## The run, in order
 

@@ -17,7 +17,11 @@ For every post in `runs/history.json` that is at least
 - **TikTok:** any connected tool that returns post stats (views, 2s and 6s
   views, avg watch time, completion, shares, saves, profile visits).
 - **Fallback:** numbers the owner pasted into `runs/metrics-inbox.md`.
-- **Store:** Shopify sessions and orders per day (and per UTM if present).
+- **Keyword comments and DMs:** count comments containing the video's
+  keyword (from its `runs/history.json` tags) and DMs it started.
+- **Store:** Shopify sessions, orders and email sign-ups per day, and per
+  UTM campaign (= keyword) where present. Revenue per visitor = revenue ÷
+  sessions.
 Write the numbers into that post's entry in `runs/history.json` under
 `metrics.<platform>`, with the date read. Never invent or estimate a
 number; if a source is unavailable, write that down and move on.
@@ -26,8 +30,9 @@ number; if a source is unavailable, write that down and move on.
 - Hook rate = 3s views ÷ views (Meta) or 2s views ÷ views (TikTok).
 - Compare each video with the **median of its own funnel stage** on that
   stage's primary metric (`docs/creative-strategy.md` section 2):
-  TOF = hook rate and avg watch %; MOF = completion, saves, profile visits;
-  BOF = link clicks and store sessions.
+  TOF = hook rate and avg watch %; MOF = completion, saves, profile visits,
+  keyword comments; BOF = keyword comments, link clicks, store sessions,
+  revenue per visitor.
 - **WIN** ≥ `learning.win_vs_stage_median` × median; **LOSS** ≤
   `learning.loss_vs_stage_median` × median; else **NEUTRAL**. Below
   `learning.min_views_to_judge` views, the video is **TOO_EARLY**: don't judge it.

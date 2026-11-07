@@ -17,7 +17,8 @@ they override anything here).
 The funnel stage in `brief.md` sets the job, the belief and when the
 product appears (`docs/creative-strategy.md` section 2). TOF (unaware): the
 video is about the problem itself; the product is at most the answer at the
-end. MOF: the product is the subject. BOF: product and
+end. MOF-P (problem-aware): the patch arrives as the
+answer mid-video. MOF-S (solution-aware): the product is the subject. BOF: product and
 offer from the first second. **One video starts an idea and ends it:** no
 "part 2", no cliffhanger into another video. Over ~25s, add an open loop
 (closed inside the same video) after the first
@@ -45,11 +46,13 @@ body beat ("but that wasn't the weird part").
 - How they work and how to use them, in plain words, tied back to the
   hook's problem.
 
-**CTA (last ~3–5s): subtle.**
-- Like "link's in my bio if you want to try them", "I'll leave them in my
-  bio", "honestly just try it for a week". A softer "buy" is fine; pushy
-  sales language isn't. No "BUY NOW!!!", no urgency or scarcity unless the
-  doc gives a real offer.
+**CTA (last ~3–5s): subtle, by stage** (`docs/creative-strategy.md`
+sections 2 and 6).
+- Use the slot's **comment keyword** from `brief.md`, said naturally:
+  "comment PILLOW and I'll send you what I use". TOF keeps it soft (or
+  skips it); MOF can add "link's in my bio"; BOF adds the offer subtly.
+- A softer "buy" is fine; pushy sales language isn't. Urgency only from a
+  real deadline in `brief.md`; never a fake timer or fake low stock.
 
 ## Rules
 - About 2.3 spoken words per second (handoff spec), so 30s is roughly 70
@@ -84,4 +87,4 @@ body beat ("but that wasn't the weird part").
 6. Word count and estimated seconds.
 6b. **Hypothesis:** what this video tests (the one variable) and the metric
    that decides it (lessons section 3 brief template).
-7. Caption (1–2 lines) and 3–5 hashtags.
+7. Caption (1–2 lines, including the keyword CTA) and 3–5 hashtags.
