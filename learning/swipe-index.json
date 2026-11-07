@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "id": "2026-11-07-arrae-not-everyone-needs-glp1",
+    "file": "learning/swipe-file/2026-11-07-arrae-not-everyone-needs-glp1.md",
+    "advertiser": "Arrae",
+    "category": "supplements / wellness",
+    "format": "peer creator talking-head confession",
+    "funnel": "tof",
+    "presenter": "peer",
+    "hook_type": "contrarian permission",
+    "mechanism": "Contrarian permission from a peer: you don't need the big, feared intervention, sometimes you just need a gentler thing; product arrives late as her own pick.",
+    "winning_signal": "active 72 days (AdWhispr longevity, 2026-11-07); brand runs 100 active ads with many variants",
+    "used_in": [
+      "runs/2026-11-07-1402-1t-p1-is-that-me"
+    ],
+    "outcome": "untested"
+  }
+]
