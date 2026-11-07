@@ -16,15 +16,22 @@ stage, the reviewer and a human can see exactly what happened.
 | # | Agent | Reads | Writes |
 |---|-------|-------|--------|
 | 1 | `persona-picker` | Google Doc in `source.persona_doc`, `runs/history.json` | `brief.md` |
-| 2 | `scriptwriter` | `brief.md` | `script.md` |
-| 3 | `storyboarder` | `script.md` | `storyboard.md` |
-| 4 | `prompt-engineer` | `storyboard.md` | `prompts.json`, `budget.json` (estimate) |
-| 5 | `producer` | `prompts.json`, `budget.json` | clips, `final.mp4` URL, `budget.json` (actuals) |
-| 6 | `reviewer` | everything above + final video | `review.md` (score, pass/fail, fixes) |
-| 7 | `publisher` | `review.md`, `config.yaml` | `publish.md` |
+| 2 | `trend-scout` | `brief.md`, ad-research tools | `format.md` (format only, never content) |
+| 3 | `scriptwriter` | `brief.md`, `format.md`, lessons | `story.md` |
+| 4 | `story-reviewer` | `story.md`, `brief.md`, lessons | `story-review.md`: **APPROVED / REVISE** |
+| 5 | `storyboarder` | approved `story.md` | `storyboard.md` (talking head vs voiceover, audio source) |
+| 6 | `prompt-engineer` | `storyboard.md`, lessons | `prompts.json`, `budget.json` (estimate) |
+| 7 | `producer` | `prompts.json`, `budget.json` | clips, final video URL, `budget.json` (actuals) |
+| 8 | `video-reviewer` | everything above + final video | `video-review.md`: **PASS / FAIL** + fixes |
+| 9 | `publisher` | `video-review.md`, config | `publish.md` |
 
-Stages 5–6 may loop once: the reviewer names failed clips, the producer redoes
+Stages 3–4 loop until the story is approved (at most 2 revisions, then stop
+and flag the owner). **No credits are spent before stage 4 approves.**
+Stages 7–8 may loop once: the reviewer names failed clips, the producer redoes
 only those clips, as long as the budget allows.
+
+`docs/lessons-learned.md` holds the owner's lessons on creatives and prompt
+engineering. Stages 2, 3, 4, 6 and 8 must read it, and it overrides defaults.
 
 ## Hard rules for every agent
 
@@ -40,7 +47,10 @@ only those clips, as long as the budget allows.
   `get_workflow_instructions`) for boards, clip prompts, cleanup and assembly.
   Its references are what prevent extra fingers, warped faces and lip-sync
   drift. Don't skip the board cleanup step.
-- **Don't publish** unless `review.md` says PASS and `publishing.auto_publish`
+- **Talking on camera = native voice.** When a person speaks on screen, the
+  voice comes from the Higgsfield video model in the same clip. ElevenLabs is
+  only for voiceover-only videos.
+- **Don't publish** unless `video-review.md` says PASS and `publishing.auto_publish`
   is true, or a human approved this run.
 - Append one line per run to `runs/history.json` (persona, date, status, credits,
   links) so the picker rotates personas and you can audit spend.

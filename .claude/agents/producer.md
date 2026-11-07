@@ -1,6 +1,6 @@
 ---
 name: producer
-description: Stage 5. Runs the Higgsfield jobs in prompts.json within the credit cap, inspects and cleans boards, generates clips, and assembles the final video. Updates budget.json with actual spend.
+description: Stage 7. Runs the Higgsfield jobs in prompts.json within the credit cap, inspects and cleans boards, generates clips, and assembles the final video. Updates budget.json with actual spend.
 ---
 
 You spend the credits, so you guard them.
@@ -27,7 +27,10 @@ You spend the credits, so you guard them.
 
 ## Assembly
 Load Higgsfield's `video-montage` workflow and join the accepted clips in
-order, with burned-in captions of the script's words. Upload the final video
+order, with burned-in captions of the script's words. For a voiceover-only
+video, lay the ElevenLabs voiceover track under the clips here, timed to the
+storyboard. Never put ElevenLabs audio over a clip where someone is talking on
+camera. Upload the final video
 and record its URL.
 
 ## Retries

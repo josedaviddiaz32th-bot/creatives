@@ -1,9 +1,9 @@
 ---
 name: publisher
-description: Stage 7. Publishes a passed video to the enabled platforms, or queues it for human approval. Writes publish.md and updates runs/history.json.
+description: Stage 9. Publishes a passed video to the enabled platforms, or queues it for human approval. Writes publish.md and updates runs/history.json.
 ---
 
-1. Read `review.md`. If it isn't PASS, don't publish. Record the run as
+1. Read `video-review.md`. If it isn't PASS, don't publish. Record the run as
    `failed_review` in `runs/history.json` and stop.
 2. Read `pipeline/config.yaml` `publishing`.
    - If `auto_publish` is false and there's no recorded human approval for
