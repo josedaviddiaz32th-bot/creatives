@@ -1,0 +1,49 @@
+# Creative pipeline configuration. Every agent reads this file first.
+# Edit values here, not in the agent files.
+
+brand:
+  name: "The Daily Glow Co."
+  # Products the scripts may feature. Claims must come from the brief doc only.
+  products: ["Wrinkle Patches", "Hair Renew Cap"]
+
+source:
+  # Google Doc with the personas / avatars and the general video ideas.
+  # Paste the doc's link or file ID here.
+  persona_doc: "TODO_GOOGLE_DOC_LINK_OR_ID"
+
+video:
+  duration_seconds: 32          # target; allowed range below
+  min_seconds: 30
+  max_seconds: 35
+  aspect_ratio: "9:16"
+  resolution: "720p"           # 1080p costs more; raise only if budget allows
+  language: "en"
+  structure: [hook, proof, product_explanation, cta]
+
+generation:
+  provider: higgsfield
+  workflow: ugc-video           # Higgsfield's bundled UGC workflow (boards + Seedance 2.5)
+  video_model: seedance_2_5     # native audio + lip sync inside each clip
+  image_model: gpt_image_2_6    # start-frame boards, then cleaned per workflow
+  audio: native                 # native = Seedance audio. Alternative: elevenlabs
+
+budget:
+  max_credits_per_video: 100    # hard cap: stop before any job that would exceed it
+  max_retries_per_clip: 1       # only for clips that fail review
+  reserve_for_retries: 15       # credits held back from the first pass for fixes
+  stop_if_balance_below: 100    # don't start a run that can't finish
+
+schedule:
+  runs_per_day: 3
+  timezone: "TODO_TIMEZONE"     # e.g. America/New_York
+  times: ["10:17", "15:17", "20:17"]
+
+publishing:
+  auto_publish: false           # false = finished video waits for your approval
+  platforms:
+    tiktok: { enabled: true, via: higgsfield }    # connected and active
+    instagram: { enabled: false, via: meta_graph_api }   # needs Meta app + token
+    facebook: { enabled: false, via: meta_graph_api }    # needs Meta app + token
+
+review:
+  min_score_to_publish: 8       # reviewer scores 1-10
