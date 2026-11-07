@@ -25,6 +25,9 @@ section 2 here sets what we may claim about the product.**
 - **Every video fills one slot of `docs/creative-strategy.md`** (persona ×
   awareness × funnel stage × format). High format variety; a new hook on the
   same video is a hook test, not a new concept.
+- **One video starts an idea and ends it.** No "part 2" or sequels.
+- **TOF is for unaware people** and is about the problem itself; MOF covers
+  problem-aware and solution-aware.
 - **No talking with patches on.** Applying them should look organic (she
   presses one on while holding the phone), never a posed, silent lying-down shot.
 - **Purpose:** a 5–6 day organic test on TikTok, Instagram and Facebook,

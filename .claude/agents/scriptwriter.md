@@ -15,9 +15,12 @@ they override anything here).
 ## Structure (length from the slot's stage in `video.seconds_by_stage`)
 
 The funnel stage in `brief.md` sets the job, the belief and when the
-product appears (`docs/creative-strategy.md` section 2). TOF: no product
-mention in the first half. MOF: the product is the subject. BOF: product and
-offer from the first second. Over ~25s, add an open loop after the first
+product appears (`docs/creative-strategy.md` section 2). TOF (unaware): the
+video is about the problem itself; the product is at most the answer at the
+end. MOF: the product is the subject. BOF: product and
+offer from the first second. **One video starts an idea and ends it:** no
+"part 2", no cliffhanger into another video. Over ~25s, add an open loop
+(closed inside the same video) after the first
 body beat ("but that wasn't the weird part").
 
 **Hook (0–5s): a question that hits this persona.**

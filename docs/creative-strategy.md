@@ -40,21 +40,25 @@ not a new concept.
 
 | Funnel | Awareness | Her state | Video job | Belief (lessons §2) | Product appears | Length | Primary metric |
 |--------|-----------|-----------|-----------|---------------------|-----------------|--------|----------------|
-| **TOF** | Unaware, problem-aware | Noticed the lines, doesn't know what to do, or hasn't named it yet | Name her exact moment so she thinks "that's me". Story, open loops. | Optional opener ("some lines are pressed in overnight") or belief 1 at the end | Second half only. It can sit in frame (nightstand) without comment. | 35–60s | Hook rate, avg watch %, shares, follows |
-| **MOF** | Solution-aware | Knows creams, Botox, tape and patches exist; doubts patches | Make patches the *right kind* of fix: mechanism, demo, before/after, why others failed | 1 (mechanism) or 2 (others fell off) or 3 (gentle) | Early; it's the subject | 25–40s | Hold rate / completion, saves, profile visits, comments |
+| **TOF** | Unaware | Doesn't know she has the problem, or what's causing it | **About the problem itself:** reveal it, name its cause, make her feel it. | Optional opener ("some lines are pressed in overnight") | At most as the answer in the last seconds; the video is about the problem. | 35–60s | Hook rate, avg watch %, shares, follows |
+| **MOF** | Problem-aware, solution-aware | Knows the problem; knows creams, Botox, tape and patches exist; doubts patches | Make patches the *right kind* of fix: mechanism, demo, before/after, why others failed | 1 (mechanism) or 2 (others fell off) or 3 (gentle) | Early; it's the subject | 25–40s | Hold rate / completion, saves, profile visits, comments |
 | **BOF** | Product-aware, most aware | Knows our patches, hasn't bought | Answer ONE objection and give the offer | 4 (value) or 5 (guarantee, **blocked until the refund page is fixed**, lessons §12) | First second | 15–25s | Bio-link clicks, Shopify sessions, orders |
 
-### How one persona moves down the funnel (organic version)
+### Every video stands alone (owner, Nov 7, 2026)
 
-Paid ads move people with retargeting. Organic can't, so the chain is held
-together by:
+**One video starts an idea and ends it.** No "part 2", no "follow for the
+rest", no cliffhanger into another video. A viewer who sees only this one
+video gets the whole idea. Open loops are fine only if they close inside
+the same video.
+
+The funnel stages connect through what the viewer sees over time, not
+through sequels:
 
 1. **The same face per persona.** P1 is always the same character in all
    three of her videos (Higgsfield Element/reference), so a viewer who saw
    her TOF video recognises her in the MOF one.
-2. **"Part 2" continuity.** TOF ends on an open loop ("what finally worked
-   is in part 2"); MOF opens as the follow-up; BOF is the "you asked, here's
-   the link" video.
+2. **Consistent message.** The problem a TOF video names is the one the
+   MOF video solves and the BOF video sells.
 3. **Posting order.** A persona's TOF goes out before her MOF, and MOF before
    BOF (section 7).
 4. **The profile.** Pin each persona's TOF video once posted; the bio link
@@ -85,7 +89,7 @@ week. Hooks below are starting points; the scriptwriter drafts 5+.
 
 | Slot | Persona | Stage | Format | Belief / objection | Hook direction |
 |------|---------|-------|--------|--------------------|----------------|
-| **1-T** | P1 | TOF | Night-to-morning bedside confession (talking head, selfie) | Belief 1, at the end | "Ever open your front camera and think… wait, is that me?" **(story already approved, run 2026-11-07-1740)** |
+| **1-T** | P1 | TOF | Talking-head confession about the problem (selfie) | Optional opener (pressed in overnight) | Unaware: reveal a cause she doesn't know, e.g. "Why do your forehead lines look deepest right after you wake up?" |
 | **1-M** | P1 | MOF | Night routine / GRWM: her existing steps, then the patches as the one added step; subtle morning before/after | Belief 1 · "I already have a routine" | "Retinol, moisturizer… why do my forehead lines still win?" |
 | **1-B** | P1 | BOF | Price math: Botox visit vs one reusable kit, near-static offer card | Belief 4 · "why not just get Botox" | "$435 every 3 months, or…?" (re-check live prices) |
 | **2-T** | P2 | TOF | Educational / myth: "some lines are pressed in overnight", POV of a pillow crease | Optional opener | "Why are my wrinkles only on one side?" |
@@ -120,14 +124,15 @@ green-screen reaction (Reddit post, review, article) · POV / skit · unboxing
   the first 2s (lessons §3).
 - **Open loops** in anything over ~25s: after the first body beat, a line
   like "but that wasn't the weird part" keeps her watching (creator video 6).
-- **Product timing follows the stage** (section 2 table). TOF never mentions
-  the product in the first half.
+  Every loop closes inside the same video.
+- **Product timing follows the stage** (section 2 table). TOF is about the
+  problem; the product, if it appears, is only the answer at the end.
 - **Peer or authority, both allowed.** A peer who looks like the persona,
   or an expert-style presenter who teaches (creator video 5). Test both. The
   only limit: no stated credential she doesn't have ("I'm a dermatologist").
 - **One belief, one objection, one CTA** per video.
-- **CTA by stage:** TOF "part 2 tomorrow" / follow; MOF "they're in my bio";
-  BOF the offer, subtly.
+- **CTA by stage:** TOF soft ("link's in my bio" or none); MOF "they're in
+  my bio"; BOF the offer, subtly. Never "part 2".
 
 ## 7. Posting order for the week (3 per day, Eastern)
 

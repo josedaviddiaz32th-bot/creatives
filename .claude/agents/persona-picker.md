@@ -40,8 +40,9 @@ You choose WHAT this video is about. You don't write the script.
 - **Tags** for `runs/history.json` (strategy section 8): slot, persona,
   desire, awareness, funnel, format, hook_type, presenter, length band,
   belief, objection, CTA type.
-- **Chain:** which video of this persona came before (link its run folder)
-  and what the next one will be, so the story can set up "part 2".
+- **Same persona before:** which video of this persona came before (link
+  its run folder), so the face and message stay consistent. Each video
+  stands alone; never set up a "part 2".
 - **Angle:** the doc entry, quoted exactly, plus its identifier.
 - **Persona:** age, life situation, what she feels, how she talks, with 3–5
   real quotes from the Reddit section or "her own words" in lessons section 2.
