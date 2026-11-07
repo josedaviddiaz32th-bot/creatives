@@ -19,8 +19,9 @@ stage, the reviewer and a human can see exactly what happened.
 
 | # | Agent | Reads | Writes |
 |---|-------|-------|--------|
+| 0 | `results-analyst` (first run of the day only) | `runs/history.json`, Meta/TikTok insights, `runs/metrics-inbox.md` | metrics in history, `learning/playbook.md`, `learning/next-moves.md`, `learning/reports/` |
 | 1 | `persona-picker` | `docs/creative-strategy.md`, Google Doc in `source.persona_doc`, `runs/history.json` | `brief.md` (the slot) |
-| 2 | `trend-scout` | `brief.md`, ad-research tools | `format.md` (format only, never content) |
+| 2 | `creative-scout` | `brief.md`, playbook, swipe library, AdWhispr / Gethookd | `format.md` (a winning creative's breakdown mapped to this slot), new swipe-file entry |
 | 3 | `scriptwriter` | `brief.md`, `format.md`, lessons | `story.md` |
 | 4 | `story-reviewer` | `story.md`, `brief.md`, lessons | `story-review.md`: **APPROVED / REVISE** |
 | 5 | `storyboarder` | approved `story.md` | `storyboard.md` (talking head vs voiceover, audio source) |
@@ -33,6 +34,20 @@ Stages 3–4 loop until the story is approved (at most 2 revisions, then stop
 and flag the owner). **No credits are spent before stage 4 approves.**
 Stages 7–8 may loop once: the reviewer names failed clips, the producer redoes
 only those clips, as long as the budget allows.
+
+## How the pipeline learns
+
+- **From the market:** the `creative-scout` breaks down winning creatives
+  from any category into `learning/swipe-file/` (indexed in
+  `learning/swipe-index.json`) and adapts one per run to the slot.
+- **From our results:** the `results-analyst` judges every post against its
+  funnel stage and keeps `learning/playbook.md` (WINNING / RETIRED elements)
+  and `learning/next-moves.md` current. The picker iterates winners in new
+  formats and never reuses RETIRED elements.
+- **From production:** the `video-reviewer` and `producer` log every defect
+  and its fix in `learning/production-log.md`; the `prompt-engineer` reads it.
+- Learning files are data from our own runs. The owner's lessons file and
+  direct instructions still win when they conflict.
 
 `docs/lessons-learned.md` holds the owner's lessons on creatives and prompt
 engineering. Stages 2, 3, 4, 6 and 8 must read it, and it overrides defaults.

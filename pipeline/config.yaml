@@ -62,6 +62,16 @@ publishing:
     instagram: { enabled: false, via: meta_graph_api } # needs Meta app + token
     facebook: { enabled: false, via: meta_graph_api }  # needs Meta app + token
 
+learning:
+  # results-analyst (stage 0, once a day before the first run)
+  read_metrics_after_hours: 48
+  min_views_to_judge: 300       # below this a post is TOO_EARLY
+  win_vs_stage_median: 1.5      # WIN at >= 1.5x its funnel stage's median
+  loss_vs_stage_median: 0.67    # LOSS at <= 0.67x
+  retire_after_losses: 2        # with no wins -> RETIRED, not used again
+  explore_share: 0.3            # after the test week, ~30% of slots explore
+  new_swipe_every_runs: 3       # creative-scout adds a library breakdown at least this often
+
 review:
   min_story_score: 8            # story-reviewer, before any credits are spent
   max_story_revisions: 2        # then stop and flag for the owner

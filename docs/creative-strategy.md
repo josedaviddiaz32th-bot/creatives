@@ -75,8 +75,8 @@ personas with one video each.
 
 **Held back for week 2:** angle 2 / 8 (acceptance, "you're beautiful as you
 are, and if you still want to…") as a format/tone test on a winning persona;
-angle 8 (weight loss, saggy skin) is skipped because "lifts sagging skin" is
-a banned claim and the product isn't for it.
+angle 8 (weight loss, saggy skin) is a week-2 candidate now that "lifts
+sagging skin" is approved.
 
 ## 4. Test-week matrix (12 concept slots + iterations)
 
@@ -101,7 +101,8 @@ week. Hooks below are starting points; the scriptwriter drafts 5+.
 
 ## 5. Format catalog
 
-Use these, adapted from long-running ads the trend-scout finds. Copy the
+Use these, adapted from winning ads the creative-scout breaks down (any
+category; see `learning/swipe-file/`). Copy the
 shape, never the words, face or brand.
 
 Talking-head confession · authority / expert explainer · night-to-morning · GRWM / night routine · demo /
@@ -143,6 +144,10 @@ Each persona's videos go out TOF → MOF → BOF, at least a day apart where
 possible. If a run fails, the next run takes the same slot; the order holds.
 
 ## 8. Reading results and iterating
+
+The `results-analyst` does this every morning and keeps
+`learning/playbook.md` and `learning/next-moves.md` current; this section
+is the method it follows.
 
 **Tag every video** in `runs/history.json` (one line per run):
 `slot, persona, desire, awareness, funnel, format, hook_type, belief,
@@ -191,5 +196,5 @@ Per-video caps by stage live in `pipeline/config.yaml`.
 - Instagram and Facebook posting and stats need the Meta Business app and
   token; until then the test runs on TikTok only.
 - Whether AdWhispr should track wrinkle-patch competitors (Frownies, SiO,
-  Peace Out) so the trend-scout gets category formats.
+  Peace Out) so the creative-scout also gets in-category formats.
 - Guarantee-led BOF videos wait until the refund page is fixed (lessons §12).

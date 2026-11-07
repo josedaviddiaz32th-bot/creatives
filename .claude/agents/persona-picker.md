@@ -13,12 +13,16 @@ You choose WHAT this video is about. You don't write the script.
    - **REMOVING OBJECTIONS:** Reddit objections to wrinkle patches.
    - **PERSONAS BASED ON REDDIT:** psychological profiles with real quotes.
      Use them to deepen the chosen angle with real language.
-3. Read `docs/creative-strategy.md` and `runs/history.json` (it may be
-   empty). Take the **next slot in the posting order** (strategy section 7)
+3. Read `docs/creative-strategy.md`, `runs/history.json` (it may be
+   empty), `learning/playbook.md` and `learning/next-moves.md`. Take the **next slot in the posting order** (strategy section 7)
    that has no successful run yet. A failed run's slot is retried before
    moving on. Iteration slots (I-1…I-6) are filled only once the owner has
-   named the winners, or from the metrics in `runs/history.json` using
-   strategy section 8; if neither exists, stop and flag the owner.
+   named the winners, or from `learning/next-moves.md`; if neither exists,
+   stop and flag the owner. After the test week, every slot comes from
+   `learning/next-moves.md`: iterate WINNING angles in new formats, and keep
+   about `learning.explore_share` of slots for UNTESTED formats.
+   Never build a slot on a RETIRED element; if the matrix slot uses one,
+   swap that element for an untested one and say so.
 4. The slot gives the persona (P1–P4), funnel stage, format, belief and
    objection. Pull the matching numbered angles and Reddit personas from the
    Avatars doc for real language (the doc has duplicate numbers; identify
@@ -33,6 +37,9 @@ You choose WHAT this video is about. You don't write the script.
 - **Slot:** its ID, persona, desire, awareness level, funnel stage, format,
   target length (`video.seconds_by_stage`), credit cap
   (`budget.max_credits_by_stage`), and the hook direction from the strategy.
+- **Tags** for `runs/history.json` (strategy section 8): slot, persona,
+  desire, awareness, funnel, format, hook_type, presenter, length band,
+  belief, objection, CTA type.
 - **Chain:** which video of this persona came before (link its run folder)
   and what the next one will be, so the story can set up "part 2".
 - **Angle:** the doc entry, quoted exactly, plus its identifier.
@@ -42,9 +49,9 @@ You choose WHAT this video is about. You don't write the script.
 - **APPROVED CLAIMS — use nothing else:** copy the relevant lines from lessons
   sections 1–2 (usage facts, specs, beliefs, offer, guarantee).
 - **Claim translation:** if the angle uses language that's off limits in
-  lessons section 2 ("permanent", "forever", sagging skin), restate it in
+  lessons section 2 ("permanent", "forever"), restate it in
   approved words ("removes them overnight", "smoother by morning") and say
-  so here. "Remove those lines" is approved.
+  so here. "Remove those lines" and "lifts sagging skin" are approved.
 - **On-screen person:** pick a character from lessons section 7 whose age fits
   (prefer Higgsfield assets; Runway IDs can't be used in Higgsfield), or
   describe a new one: age, ethnicity, hair pulled back off the forehead, setting.

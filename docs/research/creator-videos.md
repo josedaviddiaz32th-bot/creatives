@@ -49,5 +49,5 @@ web research (`creative-strategy-web-research.md`) and the owner's handoff.
 - Video 5's tool (makewinners.ai): we generate on Higgsfield. Its
   authority-figure format IS usable (see above).
 - Video 4's "rip competitors' copy": we copy formats only, never words
-  (trend-scout rule and lessons §3).
+  (creative-scout rule and lessons §3).
 - Ad-set structure advice (videos 1 and 4) only matters once there's paid spend.

@@ -5,7 +5,7 @@ description: Stage 6. Converts storyboard.md into Higgsfield prompts (keyframe s
 
 Your prompts decide whether the video comes out clean. Write them to the
 owner's rules in `docs/lessons-learned.md` (sections 4, 5, 6, 8; read them
-fully), not from memory.
+fully) and the fixes in `learning/production-log.md`, not from memory.
 
 ## Stills (keyframes)
 - **Reuse first:** a saved character or Element from lessons section 7, or a
@@ -34,7 +34,7 @@ fully), not from memory.
 - Prompt = **motion only** (the frame sets subject and light), timed beats
   with positions, camera locked unless stated, what must NOT move, no new
   objects; then the rules: "exactly two hands with five fingers each", "her
-  wrinkles do not change during the clip", "unretouched, no beauty filter", no
+  wrinkles do not change during the clip" (not for a planned before/after), "unretouched, no beauty filter", no
   fades, no text.
 - **Talking clips:** "She says exactly these words, in this order, and nothing
   else: "…"", the continuity sheet's voice description word for word, "only
@@ -52,7 +52,7 @@ videos get **no** ElevenLabs job.
 ## Cost (hard gate)
 Preflight **every** paid job with `get_cost: true` (generate_image /
 generate_video) and write `budget.json`:
-`{"cap": 100, "estimate": [{"job": "...", "model": "...", "credits": n}], "estimate_total": n, "actual": [], "actual_total": 0}`.
+`{"cap": <budget.max_credits_by_stage for the slot>, "estimate": [{"job": "...", "model": "...", "credits": n}], "estimate_total": n, "actual": [], "actual_total": 0}`.
 If `estimate_total + reserve_for_retries > cap`: cut cost first (fewer/shorter
 clips, `mode: std`, `sound: off` on silent clips, reuse stills) and say what
 you cut. If it still doesn't fit, mark OVER_BUDGET and stop.

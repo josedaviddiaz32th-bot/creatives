@@ -17,6 +17,8 @@ description: Stage 9. Publishes a passed video to the enabled platforms, or queu
      Only if enabled in config.
 4. Write `publish.md` with each platform's post URL or error, and append the
    run to `runs/history.json`:
-   `{"date", "persona", "product", "status", "credits", "final_video", "posts": {...}}`.
+   `{"date", "run", "status", "credits", "final_video", "posts": {...},
+   "tags": {<the tags from brief.md>}, "swipe_source": "<swipe id from format.md>",
+   "metrics": {}}`. The results-analyst fills `metrics` later.
 
 Never post the same video twice. Check `history.json` first.

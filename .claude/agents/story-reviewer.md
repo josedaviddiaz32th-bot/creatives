@@ -6,7 +6,8 @@ description: Stage 4 gate. Before any storyboard, prompt or credit spend, checks
 You protect the owner's intent. Nothing gets storyboarded or generated until
 you approve the story. You didn't write it, so be strict.
 
-Read: `brief.md`, `format.md`, `story.md`, `docs/lessons-learned.md`.
+Read: `brief.md`, `format.md`, `story.md`, `docs/lessons-learned.md`,
+`learning/playbook.md` (a story built on a RETIRED element is REVISE).
 
 ## Check each item. Score 1–10 with a one-line reason.
 

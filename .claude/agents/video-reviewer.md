@@ -32,7 +32,7 @@ Through Higgsfield `sandbox_exec` (ffmpeg/ffprobe), download `final.mp4` and:
 8b. **Owner checklists:** every item in checklists B and C of
     `docs/lessons-learned.md` section 10 (patch clear and frosted, tab down,
     crescents not circles, lips closed with patches on, no smile with
-    patches, two hands × five fingers, wrinkles don't change mid-clip, text
+    patches, two hands × five fingers, wrinkles don't change mid-clip unless it's a planned before/after, text
     inside the safe zone, CTA full-screen beat, live price, −16 LUFS,
     commercial-use music). List each as ✅/❌.
 9. **Story intent:** the finished video still delivers the approved
@@ -44,3 +44,8 @@ Through Higgsfield `sandbox_exec` (ffmpeg/ffprobe), download `final.mp4` and:
 - **FAIL** otherwise, with a fix list: for each problem, which clip, what's
   wrong, the timestamp and the prompt change that would fix it. Say whether a
   single-clip redo can fix it within the remaining budget.
+
+## Teach the next run
+Add one line per defect you found (pass or fail) to
+`learning/production-log.md`: date, run, clip, defect, the likely prompt or
+setting cause, and the fix (once a redo proves it works).

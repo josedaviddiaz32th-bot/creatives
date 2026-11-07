@@ -120,9 +120,11 @@ remove wrinkles, just not permanently. Say it freely ("wakes up with the
 wrinkles gone", "removes my forehead lines overnight"), but never
 "permanent", "forever" or "for good".
 
-**Other result claims follow the owner's evidence.** Claims like "lifts
-sagging skin" or lasting results are allowed once the owner confirms them
-here. Until then, use the wording above.
+**"Lifts sagging skin" is approved too** (owner, Nov 7, 2026).
+
+**Other result claims follow the owner's evidence.** Anything stronger
+(lasting results, specific timeframes) is allowed once the owner confirms it
+here.
 
 **Authority figures are allowed** (owner, Nov 7, 2026): expert-style
 presenters, educators, a confident "skincare nerd", the long-form authority

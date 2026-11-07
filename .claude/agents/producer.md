@@ -27,7 +27,8 @@ Generate Kling clips **one at a time**, each from its approved start (and end)
 frame. After each, pull frames (via Higgsfield `sandbox_exec` + ffmpeg) and
 check **checklist B**. A clip that fails gets at most one redo for a named
 defect, with the prompt fix from lessons section 8. Otherwise simplify or cut
-around it (e.g. trim the glitch on frame boundaries).
+around it (e.g. trim the glitch on frame boundaries). Log every failed or
+wasted job in `learning/production-log.md` (defect, cause, fix, credits lost).
 
 ## Assembly (code, no credits)
 Load Higgsfield's `video-montage` workflow (or ffmpeg in `sandbox_exec`):
