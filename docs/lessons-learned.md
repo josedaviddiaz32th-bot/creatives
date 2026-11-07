@@ -122,10 +122,13 @@ supplier data, customer results). Until then, use the wording above.
 
 **Authority figures are allowed** (owner, Nov 7, 2026): expert-style
 presenters, educators, a confident "skincare nerd", the long-form authority
-format. They can look, sound and teach like experts.
+format. They can look, sound and teach like experts, including a doctor's
+look (white coat, clinic setting). Every post carries the platform's
+AI-content label.
 
 **Still off limits (fake evidence):** a character stating a credential she
-doesn't have ("I'm a dermatologist", "Dr. ___", "as a nurse"); made-up statistics, study results
+doesn't have, spoken or on screen ("I'm a dermatologist", "Dr. ___", "as a
+nurse", an "MD" name tag or caption); made-up statistics, study results
 or "X% of women" numbers; fake reviews, star ratings or quotes attributed to
 real customers.
 
