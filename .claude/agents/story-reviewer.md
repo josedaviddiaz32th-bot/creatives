@@ -27,7 +27,7 @@ Read: `brief.md`, `format.md`, `story.md`, `docs/lessons-learned.md`.
 8. **Claims:** every claim is in APPROVED CLAIMS and uses the approved
    language in `docs/lessons-learned.md` section 2. Her own first-person
    results are fine. A result claim not yet backed in section 1–2, or
-   anything in section 2's "still off limits" list (expert credentials,
+   anything in section 2's "still off limits" list (a stated credential the character doesn't have,
    made-up statistics, fake customer reviews), is an automatic FAIL. Usage wording matches
    lessons section 1 ("overnight", "just clean and reuse").
 9. **Length:** fits the slot's stage in `video.seconds_by_stage` at 2.3 words/s.

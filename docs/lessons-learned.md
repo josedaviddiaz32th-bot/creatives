@@ -120,8 +120,12 @@ wrinkles", "permanent results", "lifts sagging skin") are allowed once the
 owner confirms them and adds them to section 1 with what backs them (testing,
 supplier data, customer results). Until then, use the wording above.
 
-**Still off limits (fake evidence):** presenting someone as a doctor,
-dermatologist or other credentialed expert; made-up statistics, study results
+**Authority figures are allowed** (owner, Nov 7, 2026): expert-style
+presenters, educators, a confident "skincare nerd", the long-form authority
+format. They can look, sound and teach like experts.
+
+**Still off limits (fake evidence):** a character stating a credential she
+doesn't have ("I'm a dermatologist", "Dr. ___", "as a nurse"); made-up statistics, study results
 or "X% of women" numbers; fake reviews, star ratings or quotes attributed to
 real customers.
 

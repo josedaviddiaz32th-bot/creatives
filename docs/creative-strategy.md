@@ -94,7 +94,7 @@ week. Hooks below are starting points; the scriptwriter drafts 5+.
 | **3-T** | P3 | TOF | Green-screen reaction to a Reddit post (her own words from the Avatars doc) | none yet, problem only | "Women in your 20s, how did you react when you noticed your first lines?" |
 | **3-M** | P3 | MOF | Myth-busting: "patches don't work" → they failed because they fell off or weren't shaped for each area | Belief 2 | "Did you try patches and they did nothing?" |
 | **3-B** | P3 | BOF | Unboxing / first reaction, offer card at the end | Belief 4 · "why $45 when Amazon has $13 sets" | "Is a $45 wrinkle patch set actually worth it?" (re-check price) |
-| **4-T** | P4 | TOF | **Long-form story with open loops** (45–60s), the week's long-video test | Belief 1 at the end | "In your 40s and everyone keeps asking if you're tired?" |
+| **4-T** | P4 | TOF | **Long-form authority explainer with open loops** (45–60s): an expert-style presenter, problem → why other fixes failed → mechanism → product last (creator video 5). The week's long-video and authority test | Belief 1 at the end | "In your 40s and everyone keeps asking if you're tired?" |
 | **4-M** | P4 | MOF | Us vs them: patch vs paper tape vs night cream, side by side | Belief 2 or 3 · "is it safe under my eyes" | "Tape, creams or patches: which actually works on paper-thin under-eyes?" |
 | **4-B** | P4 | BOF | Objection answer, talking head 15–20s, then offer card | Belief 3 · "red marks / break-outs" | "Worried patches will irritate your under-eyes?" |
 | **I-1…I-6** | Winners | any | **Iterations** (section 8) | same as the winner | new format, same angle |
@@ -104,7 +104,7 @@ week. Hooks below are starting points; the scriptwriter drafts 5+.
 Use these, adapted from long-running ads the trend-scout finds. Copy the
 shape, never the words, face or brand.
 
-Talking-head confession · night-to-morning · GRWM / night routine · demo /
+Talking-head confession · authority / expert explainer · night-to-morning · GRWM / night routine · demo /
 how-to · before/after (allowed in any form, lessons §0) · us vs them /
 comparison · "things I wish I knew" listicle · myth-busting / educational ·
 green-screen reaction (Reddit post, review, article) · POV / skit · unboxing
@@ -121,8 +121,9 @@ green-screen reaction (Reddit post, review, article) · POV / skit · unboxing
   like "but that wasn't the weird part" keeps her watching (creator video 6).
 - **Product timing follows the stage** (section 2 table). TOF never mentions
   the product in the first half.
-- **Peer, not expert.** She looks like the persona. No invented doctors,
-  dermatologists or authority pages.
+- **Peer or authority, both allowed.** A peer who looks like the persona,
+  or an expert-style presenter who teaches (creator video 5). Test both. The
+  only limit: no stated credential she doesn't have ("I'm a dermatologist").
 - **One belief, one objection, one CTA** per video.
 - **CTA by stage:** TOF "part 2 tomorrow" / follow; MOF "they're in my bio";
   BOF the offer, subtly.
