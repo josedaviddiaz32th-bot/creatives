@@ -64,7 +64,7 @@ body beat ("but that wasn't the weird part").
   format is voiceover-only.
 - Every factual claim traces to APPROVED CLAIMS in `brief.md`; tag it like
   `[claim 2]`. She may describe her own results in first person. Result
-  claims stronger than lessons section 1–2 allow ("removes", "permanent",
+  claims stronger than lessons section 1–2 allow ("permanent", "forever",
   "lifts sagging") wait for the owner's evidence; authority-figure
   presenters are fine, but never a stated credential she doesn't have, made-up statistics or fake customer reviews (lessons section 2).
 - Prices only if `brief.md` verified them live today.

@@ -42,9 +42,9 @@ You choose WHAT this video is about. You don't write the script.
 - **APPROVED CLAIMS — use nothing else:** copy the relevant lines from lessons
   sections 1–2 (usage facts, specs, beliefs, offer, guarantee).
 - **Claim translation:** if the angle uses language that's off limits in
-  lessons section 2 ("remove those lines", sagging skin), restate it in true
-  words ("smoother by morning", "stops the creases you press in overnight")
-  and say so here.
+  lessons section 2 ("permanent", "forever", sagging skin), restate it in
+  approved words ("removes them overnight", "smoother by morning") and say
+  so here. "Remove those lines" is approved.
 - **On-screen person:** pick a character from lessons section 7 whose age fits
   (prefer Higgsfield assets; Runway IDs can't be used in Higgsfield), or
   describe a new one: age, ethnicity, hair pulled back off the forehead, setting.

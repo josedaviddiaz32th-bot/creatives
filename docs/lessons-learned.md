@@ -115,10 +115,14 @@ may talk about her own results in first person ("my lines look so much
 softer"); every AI-generated post carries the platform's AI-content label.
 An informed peer may explain the mechanism.
 
-**Result claims follow the owner's evidence.** Stronger claims ("removes
-wrinkles", "permanent results", "lifts sagging skin") are allowed once the
-owner confirms them and adds them to section 1 with what backs them (testing,
-supplier data, customer results). Until then, use the wording above.
+**"Removes wrinkles" is approved** (owner, Nov 7, 2026): the patches do
+remove wrinkles, just not permanently. Say it freely ("wakes up with the
+wrinkles gone", "removes my forehead lines overnight"), but never
+"permanent", "forever" or "for good".
+
+**Other result claims follow the owner's evidence.** Claims like "lifts
+sagging skin" or lasting results are allowed once the owner confirms them
+here. Until then, use the wording above.
 
 **Authority figures are allowed** (owner, Nov 7, 2026): expert-style
 presenters, educators, a confident "skincare nerd", the long-form authority
