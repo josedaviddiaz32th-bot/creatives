@@ -186,8 +186,6 @@ Per-video caps by stage live in `pipeline/config.yaml`.
 
 ## 10. What's not decided yet
 
-- Whether the AI persona may describe her own results ("my skin looks
-  smoother") or only how the patches work.
 - Raising the credit budget for the full week (section 9).
 - Instagram and Facebook posting and stats need the Meta Business app and
   token; until then the test runs on TikTok only.

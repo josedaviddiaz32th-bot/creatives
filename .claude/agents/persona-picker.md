@@ -41,10 +41,10 @@ You choose WHAT this video is about. You don't write the script.
 - **Belief to move** and **objection to answer.**
 - **APPROVED CLAIMS — use nothing else:** copy the relevant lines from lessons
   sections 1–2 (usage facts, specs, beliefs, offer, guarantee).
-- **Claim translation:** if the angle uses language we can't claim ("remove",
-  "stop this process", "prevent wrinkles", sagging skin), restate it in
-  approved language ("visibly smoother-looking by morning", "rested", "stops
-  the creases you press in overnight") and say so here.
+- **Claim translation:** if the angle uses language that's off limits in
+  lessons section 2 ("remove those lines", sagging skin), restate it in true
+  words ("smoother by morning", "stops the creases you press in overnight")
+  and say so here.
 - **On-screen person:** pick a character from lessons section 7 whose age fits
   (prefer Higgsfield assets; Runway IDs can't be used in Higgsfield), or
   describe a new one: age, ethnicity, hair pulled back off the forehead, setting.

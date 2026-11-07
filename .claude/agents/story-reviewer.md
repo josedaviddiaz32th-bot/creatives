@@ -25,9 +25,10 @@ Read: `brief.md`, `format.md`, `story.md`, `docs/lessons-learned.md`.
    viewer; how the patches help connects to the hook's problem.
 7. **Subtle CTA:** soft, natural, not pushy.
 8. **Claims:** every claim is in APPROVED CLAIMS and uses the approved
-   language in `docs/lessons-learned.md` section 2. Any invented result,
-   testimonial, timeframe, medical claim, or "removes / erases / reverses /
-   prevents / lifts sagging" is an automatic FAIL. Usage wording matches
+   language in `docs/lessons-learned.md` section 2. Her own first-person
+   results are fine. Anything in section 2's "still off limits" list
+   (removed / erased / reversed / permanent / lifts sagging, expert
+   credentials, made-up statistics, fake customer reviews) is an automatic FAIL. Usage wording matches
    lessons section 1 ("overnight", "just clean and reuse").
 9. **Length:** fits the slot's stage in `video.seconds_by_stage` at 2.3 words/s.
    **Strategy fit:** does it do its funnel stage's job, move the slot's belief,

@@ -63,10 +63,10 @@ body beat ("but that wasn't the weird part").
 - It's one person talking the way they talk, in first person, unless the
   format is voiceover-only.
 - Every factual claim traces to APPROVED CLAIMS in `brief.md`; tag it like
-  `[claim 2]`. No invented results, timeframes, testimonials or medical
-  claims. Never "removes", "erases", "reverses", "prevents wrinkles" or
-  "lifts sagging skin"; say "visibly smoother-looking by morning", "rested",
-  "still look like you".
+  `[claim 2]`. She may describe her own results in first person. Never say
+  wrinkles are removed, erased, reversed or gone for good, or that it lifts
+  sagging skin; no doctor/expert credentials, made-up statistics or fake
+  customer reviews (lessons section 2).
 - Prices only if `brief.md` verified them live today.
 - Patches-on moments are silent (lips closed, no smiling), so don't write a
   spoken line she'd have to say while wearing them.

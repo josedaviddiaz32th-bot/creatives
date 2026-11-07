@@ -107,13 +107,19 @@ first night" · "This ad… can't be real" (her verdict on over-edited before/af
 Optional opener for side-sleeper and chest: a lot of her lines are pressed in
 every night while she sleeps, so they're something she can stop.
 
-**APPROVED CLAIM LANGUAGE:** the beliefs above, the usage facts in section 1,
-the specs, the offer, and the guarantee. Results are "visibly smoother-looking"
-/ "by morning" / "rested". **Not allowed:** "removes", "erases", "reverses",
-"prevents wrinkles", "stops aging", "lifts sagging skin", permanent results,
-medical or dermatologist claims, invented testimonials or numbers. (Some angles in the Avatars doc use stronger words like "remove
-those smile lines" or "stop this process". Keep the angle, but say it in the
-approved language.)
+**What we can say (owner loosened this Nov 7, 2026):** any wording that is
+true of how the patches work and what they do, in the strongest natural
+words: "smoother skin by morning", "softens your lines", "stops the creases
+you press in every night", "wake up looking rested". The on-screen persona
+may talk about her own results in first person ("my lines look so much
+softer"); every AI-generated post carries the platform's AI-content label.
+An informed peer may explain the mechanism.
+
+**Still off limits (false, or fake evidence):** saying wrinkles are removed,
+erased, reversed or gone for good, or that it lifts sagging skin (the effect
+is temporary); presenting someone as a doctor, dermatologist or other
+credentialed expert; made-up statistics, study results or "X% of women"
+numbers; fake reviews, star ratings or quotes attributed to real customers.
 
 **Objections creatives should answer (pick ONE per post):** will it stay on
 all night if I toss and turn · will it stop sticking after a few uses · is it

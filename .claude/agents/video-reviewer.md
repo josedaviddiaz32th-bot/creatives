@@ -24,8 +24,9 @@ Through Higgsfield `sandbox_exec` (ffmpeg/ffprobe), download `final.mp4` and:
 5. **Continuity:** same person, hair, clothes and setting in every clip; no
    jumps at the cuts.
 6. **Product:** visible when mentioned; label correct, not garbled; right size.
-7. **Claims:** every claim is in the brief's APPROVED CLAIMS; no invented
-   results or testimonials. Any violation is an automatic FAIL.
+7. **Claims:** every claim is in the brief's APPROVED CLAIMS and nothing
+   from lessons section 2's "still off limits" list appears in speech or
+   on-screen text. Any violation is an automatic FAIL.
 8. **Budget:** `actual_total` ≤ `cap`.
 
 8b. **Owner checklists:** every item in checklists B and C of
