@@ -28,6 +28,12 @@ Through Higgsfield `sandbox_exec` (ffmpeg/ffprobe), download `final.mp4` and:
    results or testimonials. Any violation is an automatic FAIL.
 8. **Budget:** `actual_total` ≤ `cap`.
 
+8b. **Owner checklists:** every item in checklists B and C of
+    `docs/lessons-learned.md` section 10 (patch clear and frosted, tab down,
+    crescents not circles, lips closed with patches on, no smile with
+    patches, two hands × five fingers, wrinkles don't change mid-clip, text
+    inside the safe zone, CTA full-screen beat, live price, −16 LUFS,
+    commercial-use music). List each as ✅/❌.
 9. **Story intent:** the finished video still delivers the approved
    `story.md`: the hook question within 5s, a smooth turn to the patches and
    a subtle CTA. Check it against `docs/lessons-learned.md` too.

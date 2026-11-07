@@ -42,12 +42,28 @@ they override anything here).
   doc gives a real offer.
 
 ## Rules
-- About 2.5 spoken words per second, so 32s is roughly 75–85 words. Write
-  down the count.
+- About 2.3 spoken words per second (handoff spec), so 32s is roughly 70–75
+  words. Write down the count. Never plan a sped-up voice.
+- One idea per video: one tension, one promise, ONE belief (from `brief.md`)
+  and ONE objection answered. Specifics beat adjectives (5 pieces, overnight,
+  30-day guarantee). A metaphor can make the mechanism instant ("a retainer
+  for your skin").
+- Use the persona's real words from `brief.md`. Say "frown lines" or
+  "forehead lines", never "11s". Product name: "The Wrinkle Smooth Face Set".
+- Usage wording exactly as lessons section 1: "overnight", "just clean and
+  reuse", clean dry skin, nothing underneath.
+- Draft 5+ hook questions from the hook types in lessons section 3, keep the
+  best 3 (the main one + 2 alternatives).
 - It's one person talking the way they talk, in first person, unless the
   format is voiceover-only.
 - Every factual claim traces to APPROVED CLAIMS in `brief.md`; tag it like
-  `[claim 2]`. No invented results, timeframes, testimonials or medical claims.
+  `[claim 2]`. No invented results, timeframes, testimonials or medical
+  claims. Never "removes", "erases", "reverses", "prevents wrinkles" or
+  "lifts sagging skin"; say "visibly smoother-looking by morning", "rested",
+  "still look like you".
+- Prices only if `brief.md` verified them live today.
+- Patches-on moments are silent (lips closed, no smiling), so don't write a
+  spoken line she'd have to say while wearing them.
 
 ## Output: `story.md`
 1. **Concept** in one line, and why it fits this persona.
@@ -56,4 +72,6 @@ they override anything here).
 4. **Full script** with timestamps: hook / body-problem / body-turn / body-product / CTA.
 5. **The turn, explained:** one sentence on why the move to the patches feels natural.
 6. Word count and estimated seconds.
+6b. **Hypothesis:** what this video tests (the one variable) and the metric
+   that decides it (lessons section 3 brief template).
 7. Caption (1–2 lines) and 3–5 hashtags.

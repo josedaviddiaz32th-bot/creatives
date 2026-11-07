@@ -24,9 +24,15 @@ Read: `brief.md`, `format.md`, `story.md`, `docs/lessons-learned.md`.
 6. **Logic:** no holes, no contradictions, nothing that would confuse the
    viewer; how the patches help connects to the hook's problem.
 7. **Subtle CTA:** soft, natural, not pushy.
-8. **Claims:** every claim is in APPROVED CLAIMS. Any invented result,
-   testimonial, timeframe or medical claim is an automatic FAIL.
-9. **Length:** about 75–85 words for 30–35s.
+8. **Claims:** every claim is in APPROVED CLAIMS and uses the approved
+   language in `docs/lessons-learned.md` section 2. Any invented result,
+   testimonial, timeframe, medical claim, or "removes / erases / reverses /
+   prevents / lifts sagging" is an automatic FAIL. Usage wording matches
+   lessons section 1 ("overnight", "just clean and reuse").
+9. **Length:** about 70–75 words for ~32s (2.3 words/s).
+9b. **One idea:** one belief and one objection, not a list of benefits.
+9c. **Would she believe it?** Nothing reads like the over-edited ads she calls
+    "can't be real". It sounds like a real woman, not a brand.
 10. **Lessons learned:** it doesn't repeat any mistake listed in
     `docs/lessons-learned.md`.
 11. **Producible:** nothing that AI video does badly (complex hand actions,

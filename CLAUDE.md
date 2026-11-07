@@ -39,14 +39,22 @@ engineering. Stages 2, 3, 4, 6 and 8 must read it, and it overrides defaults.
   `budget.json`. If the job would push spend past `budget.max_credits_per_video`,
   don't submit it. Stop the run and write why in `budget.json`. Record the actual
   cost of every job from the tool result (or the balance/transactions delta).
-- **Claims come only from the brief doc.** Never invent results, reviews,
+- **Claims come only from `docs/lessons-learned.md` sections 1–2** (the Avatars
+  doc gives angles and words, not claims). Never invent results, reviews,
   testimonials, before/after numbers, medical claims or endorsements.
 - **Never retry a generation blindly.** A timeout is not a failure; poll the job
   first. Retry a clip once at most, and only for a named defect.
-- **Follow Higgsfield's `ugc-video` workflow** (load it with
-  `get_workflow_instructions`) for boards, clip prompts, cleanup and assembly.
-  Its references are what prevent extra fingers, warped faces and lip-sync
-  drift. Don't skip the board cleanup step.
+- **Video model is Kling 3.0** (`generation.video_model`), because it fits the
+  100-credit cap (~80 credits for 32s with sound). Seedance 2.5 doesn't fit.
+  Higgsfield's `ugc-video` workflow is still useful for board inspection,
+  cleanup and assembly (`video-montage`), but where it locks Seedance, use
+  config + `docs/lessons-learned.md` instead.
+- **Stills before video (gate A):** no video credits until every start/end
+  frame passes checklist A in `docs/lessons-learned.md` section 10. A failed
+  still is edited, never animated.
+- **Never let a model invent the patch:** every product shot uses the real
+  product reference or Element and pastes the PATCHES block verbatim.
+- **Preflight every paid job** with `get_cost: true` and record it.
 - **Talking on camera = native voice.** When a person speaks on screen, the
   voice comes from the Higgsfield video model in the same clip. ElevenLabs is
   only for voiceover-only videos.
