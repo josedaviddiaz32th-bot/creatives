@@ -12,7 +12,7 @@ Nothing has been judged yet. Everything starts UNTESTED.
 
 | Type | Element | Wins | Losses | Neutral | Status | Evidence (runs) |
 |------|---------|------|--------|---------|--------|-----------------|
-| persona | P1 · P2 · P3 · P4 | 0 | 0 | 0 | UNTESTED | |
+| persona | P1 · P2 · P3 · P4 · E1 · E2 | 0 | 0 | 0 | UNTESTED | |
 | funnel × format | (added as videos are judged) | | | | | |
 | hook type | | | | | | |
 | presenter | peer · authority look · voiceover | 0 | 0 | 0 | UNTESTED | |
