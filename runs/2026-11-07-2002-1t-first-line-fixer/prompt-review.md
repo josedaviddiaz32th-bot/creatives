@@ -273,3 +273,32 @@ Prompt-reviewer, round 3 (the last round: both `review.max_prompt_revisions` = 2
 5. **CLIP_B2 (Pass 2):** after gate A, check K5's actual hand and film position against the B2 lead action ("beside her right cheek toward the lens"), and check that K5's left hand still holds the phone low, before the video credits are spent.
 
 No new problem was found, so nothing was added to `learning/production-log.md`.
+
+---
+
+## Pass 2 (real stills) — Verdict: **FIX** (applied; text only, now ready)
+
+The prompt-reviewer looked at all 7 approved stills: K1 `91d6abc0`, K2 `91d09592`, K3 `f0d61ae3`, K4 `02a0082c`, K5 `4576bff3`, K6 `fe37523b` and K7 `d21e9014`, then re-read CLIP_A, B1 and B2 against them. No credits were spent, and nothing was generated, priced or uploaded. story.md is untouched. A backup of the earlier prompts.json is in the session scratchpad (`prompts.pre-pass2.json`).
+
+| Job | Start / end | Result | What was wrong vs the actual still | Change made |
+|---|---|---|---|---|
+| CLIP_A | K1 / K1 | **FIX → fixed** | (1) At t 0–0.7 the prompt said she "glances from the phone… up to the lens", but K1 already has her eyes on the lens, so Kling would have to invent a look-down first. (2) "Left hand / right hand" is ambiguous. In K1 the phone hand is on frame-left, which is anatomically her right hand, so Kling may read "left/right" the other way. (3) It named a "claw clip" that isn't visible, since her hair is slicked straight back, which invites Kling to add one. (4) It said "earrings" without saying which. | Wired the real IDs. Hair line now reads "pulled fully back off her forehead exactly as in the start frame". Earrings are now "small gold hoop earrings". Added: "Sides are as seen in the frame: her phone is in the hand on the frame-left side, held at chest height; her free hand rests on the duvet on the frame-right side, next to the nightstand." t 0–0.7 now reads "already looking into the lens, as in the start frame, and draws a small breath". The 13.5–14 s settle names both hands by frame side. |
+| CLIP_B1 | K1 / K1 | **FIX → fixed** | It had the same side and hair problems. The counting hand was never sent back to the duvet, so the end frame had to snap it back in 0.2 s. | Same shared fixes. 0–4.8 s: "lifting her free frame-right hand from the duvet… the phone hand stays still". 4.8–7.7 s: "the free hand lowers back to rest on the duvet on the frame-right side". The 12.8–13 s hold names both hands by frame side. |
+| CLIP_B2 | K1 / K5 | **FIX → fixed** | "Her free right hand… beside her right cheek" could be read anatomically. That would be the phone hand on frame-left reaching across her body and face to the tray on frame-right (production-log K1→B2 risk). In K5 the film is held by the frame-right hand beside her face at cheek-to-eye height, and the tray is bare. The prompt never said the tray ends empty. | Same shared fixes. The lead action now reads: free hand on the frame-right side "reaches straight to the teal tray on the nightstand beside it (never crossing her body or face)… holds it up still beside her face on the frame-right side, at cheek-to-eye height, pieces facing the lens, exactly as in the end frame; the teal tray is left bare and empty and stays where it is". The phone is "still at chest height in the frame-left hand". |
+
+**Unchanged and checked:** the spoken words are word for word story.md in all three clips ("photo" is lowercase on purpose). The voice description is identical in all three. Durations are 14/13/15, settings are kling3_0 pro, sound on, 9:16, and the cost is unchanged (105). The light is a warm lamp at frame-right in K1 and K5. Wardrobe is the sage T-shirt and oat duvet. K1's tray has 5 pieces (band plus 4 crescents) and K5's film has all 5, with the tray bare. Bare face in both, five fingers on visible hands.
+
+**Media wiring:** in the clip jobs, `$K1_NIGHT_ID` and `$K5_SHEET_HOLD` are replaced with the approved generation IDs: A start/end and B1 start/end are `91d6abc0-eb0a-4f1c-bce6-b2a663bbaf69`. B2 start is `91d6abc0-…` and B2 end is `4576bff3-729e-4096-afcc-a16ec4389720`. The still jobs are unchanged.
+
+**Cutaways and end card (storyboard.md updated, no prompt change):**
+- K2 still works for the hook and the FILTER | ME push-in. Her face is about ⅓ of the frame width, her frown, forehead lines and crinkles are visible, and the friends look distinct.
+- K3 still works for the sleeping push-in, with the full tray and lamp in the background.
+- K4 has no tray on the nightstand. That's harmless for a silent cutaway, and the storyboard now notes it.
+- K6 and K7: the storyboard rows were out of date ("K7 = edit of K6", "hand out of frame"). They now say:
+  - K7 is a relight of K1 and K6 is an edit of K7, both in the same morning light.
+  - K7 shows both hands at the bottom edge, plus the lamp edge at frame-right.
+  - K6's band is frosted (owner-accepted).
+  - The end card's "Same light." now holds by construction.
+- Assembly note: align the halves on eye line and crop so K7's bottom-edge hands and lamp edge don't pull focus at the seam.
+
+**Producer:** preflight each clip with the real IDs (`get_cost: true`). Then check B1 and B2 against checklist B, especially that no hand crosses the face in B2 and the tray ends bare.
