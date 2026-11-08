@@ -435,6 +435,18 @@ Skin underneath: dewy, slightly glossy, a few tiny trapped air dots, never red,
 never marked. Camera: front-camera selfie, slightly above eye level, 30–35 cm,
 gentle handheld sway.
 
+**Physics details to always include** (owner, Nov 8, 2026: "requires careful
+consideration and high physics details… otherwise it will look fake"):
+- slow, even pace, like peeling a soft screen protector;
+- a smooth, rounded fold about pencil-thick, never a sharp paper crease;
+- a clean release at the fold line with slight tackiness, and the skin never tugged, dimpled or stretched;
+- one bright highlight moving along the fold;
+- skin slightly magnified through the clear silicone;
+- the released sheet floppy, swaying and curling at the edges, never rigid.
+
+If the prompt also carries the PATCHES block, replace its "no folds or lifted edges"
+with "before she starts peeling…".
+
 **In prompts write** "folds back over itself", "pulled sideways close to the
 skin", "a fold line travels across". **Never write** "lifts away" or "peels off"
 on their own: models read them as lifting outward, which breaks the patch. Keep

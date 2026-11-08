@@ -1,0 +1,329 @@
+{
+  "run": "2026-11-08-1338-ref-real-or-sus-p4",
+  "revision": "1 (prompt-review pass 1 fixes applied word for word, 2026-11-08) + U2 physics (owner)",
+  "notes": [
+    "Order: CROP_3BCB -> S_B0 (gate A) -> S_U1_START -> S_U1_END -> S_U2_START -> S_U2_END (gate A each; prompt-review again on approved stills) -> U1_APPLY, U2_PEEL -> GEM_X0, GEM_E1, GEM_E45 in Gemini.",
+    "$<ID> = the generation/media ID of that still once approved at gate A.",
+    "One output per job (count 1). No retries without the owner; still fixes auto only within 3 credits and inside the 50 cap.",
+    "Elements only as <<<id>>> in prompt text, never in medias.",
+    "REFERENCE ROLES pasted verbatim, followed by a sentence saying only the cast photo is supplied and the Element is the product reference (no placement/sheet photo in this run).",
+    "PATCHES verbatim in every product-visible prompt, followed by the forehead-only line (production log 73). STYLE verbatim at the end of every still.",
+    "Patches on: lips closed, mouth corners level. Closed-lip satisfied look only once the band is off (S_U2_END, U2 4.2-6 s).",
+    "Gemini jobs: generator 'gemini', free within the owner's Plus daily limit, 0 Higgsfield credits; same voice sentence word for word; paste gemini-expert-ref.jpg, Portrait.",
+    "GEM_E23 was generated without prompt review; listed with its exact prompt for the reviewer.",
+    "Revision 1 (prompt-review pass 1): fixes 1-6 applied word for word: S_U1_START and S_U2_END thin flexible ~1 mm sheet; S_U2_END lines 'about two-thirds as visible, every line still traceable'; S_U1_END now an edit of $S_B0 with exactly ONE band and nothing in front of the lens; S_U2_START same-framing and one-head guards (+ fallback); GEM_X0 no 'huh', lips stay closed, no sounds; GEM_E1 'pointing out something just off-screen' + empty green beside him. Changed Higgsfield jobs re-preflighted (2.0 each, unchanged). GEM_E23 generation review PASS. Veo word rule (reviewer): words <= 2.3 x usable seconds."
+  ],
+  "asset_plan": [
+    [
+      "U1/U2 woman identity",
+      "3bcb3615 crop (Higgsfield media)",
+      "reuse; split image cropped, patches removed in S_B0"
+    ],
+    [
+      "Forehead band shape",
+      "Element 6375c707",
+      "reuse"
+    ],
+    [
+      "U1/U2 keyframes (5 stills)",
+      "new",
+      "no existing still of this woman at night/morning with the band; checked lessons §7, Elements, media list (24 newest)"
+    ],
+    [
+      "U1, U2 clips",
+      "new (Kling 3.0 pro, silent)",
+      "no reusable apply/peel clip of this cast"
+    ],
+    [
+      "Expert clips",
+      "Gemini (free quota)",
+      "reference image already exists; E23 already generated"
+    ],
+    [
+      "Box, flat lay",
+      "0f24791e, 564c68fa",
+      "reuse as code pop-ups"
+    ],
+    [
+      "Text, captions, end card, SFX, music",
+      "code",
+      "free"
+    ]
+  ],
+  "blocks_used_verbatim": [
+    "PATCHES",
+    "REFERENCE ROLES",
+    "STYLE"
+  ],
+  "voice_description": "in a warm, confident, conversational American male voice at a natural, slightly brisk pace, like a friendly expert explaining on TikTok",
+  "jobs": [
+    {
+      "id": "CROP_3BCB",
+      "status": "NEW (free: code crop + media upload)",
+      "tool": "code + media_upload/media_confirm",
+      "source": "Higgsfield media 3bcb3615-0104-4afa-8c65-290f5b9744a2 (2-panel split: syringe | woman)",
+      "local_file": "/private/tmp/claude-501/-Users-josediaz--claude-spares-spare-SRaU1E/2f87790f-784b-45bc-9668-95f59d8eab95/scratchpad/p4sb/3bcb-crop-right.png",
+      "crop": "ffmpeg crop=536:953:405:60 (woman panel only, 9:16)",
+      "credits": 0,
+      "note": "Never pass the split image whole (lessons §5.5). $CROP = the uploaded media ID.",
+      "generator": "higgsfield"
+    },
+    {
+      "id": "S_B0",
+      "status": "NEW (paid)",
+      "shots": "anchor (bare face, night); not shown on its own",
+      "tool": "generate_image",
+      "outputs": 1,
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "2k",
+        "count": 1,
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$CROP"
+          }
+        ],
+        "prompt": "THE CAST PHOTO (the supplied image) shows the only person in this image; keep her face, skin, age, freckles, eye colour, hair colour and stud earrings exactly as shown, and use it for her identity only: the room, pose, clothing, expression and light are new. In the cast photo she happens to wear clear pads on her face; in this new image her face is completely bare: no patch, pad, sheet, film, outline or edge anywhere on her skin, and the skin where the pads were looks exactly like the rest of her face, with the same tone, freckles and pores. She is a 46-year-old white American woman: light-brown hair, hazel-green eyes, light freckles across her nose and cheeks, fair natural skin with visible pores, and the same small stud earrings as in the cast photo. A NEW photo, late at night in her American bedroom: she lies half-reclined against two white pillows on a bed with a light-grey upholstered headboard, wearing a sage-green cotton tank top with no print or lettering. Her hair is pulled fully back off her forehead into a tortoiseshell claw clip; nothing falls on her forehead. The only light is a bedside lamp, low on the frame-left side, beside her, so its warm light grazes across her forehead from the side; the frame-right side of the room falls into soft shadow. With her brows relaxed and not raised, her forehead shows moderate horizontal lines, three soft lines clearly visible in the grazing light, and two faint vertical frown lines between her brows; natural and honest, not deep, not exaggerated. Her face is neutral and calm, looking straight into the lens, lips closed, the corners of her mouth level. Front-camera selfie framing from a phone propped on a stand at the bedside, slightly above her eye level, about 40 cm away: her head and the top of her shoulders fill the frame, her face about half the frame width. No hands in frame. Exactly one person and one head in the image. Photorealistic smartphone photo, unretouched, no beauty filter, visible pores and natural skin texture, sharp focus on her face. Her hair is pulled fully back off her forehead. The skin is dry and matte with no cream or lotion. No mirror in the shot. No text, captions, logos or watermark."
+      },
+      "gate_A_focus": "No ghost outline of the old pads (forehead, under-eyes, smile lines); lines readable at rest at phone size; neutral closed lips; hair off forehead.",
+      "preflight_credits": 2,
+      "generator": "higgsfield"
+    },
+    {
+      "id": "S_U1_START",
+      "status": "NEW (paid)",
+      "shots": "U1 start frame (0.0 s)",
+      "tool": "generate_image",
+      "outputs": 1,
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "2k",
+        "count": 1,
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$S_B0"
+          }
+        ],
+        "prompt": "Identify the reference photos by what they show, not by upload order. THE CAST PHOTO shows the only person in this image; keep her face, skin, age, hair and earrings exactly as shown. THE PLACEMENT PHOTO shows a different person wearing the patches; use it only for where each piece sits and never copy that person's face, hair or skin. THE SHEET PHOTO shows the five pieces on their backing sheet; use it for exact shape, size and transparency. Only THE CAST PHOTO is supplied here (no placement or sheet photo); the product reference is <<<6375c707-7ad9-4df9-b7e0-69750993e7aa>>>: use it only for the exact shape, size and transparency of the clear forehead piece. Keep everything as placed: her face, hair and claw clip, tank top, pillows, headboard, the lamp light from the frame-left side, the framing and her neutral closed-lip expression. CHANGES ONLY: she now holds the clear forehead piece <<<6375c707-7ad9-4df9-b7e0-69750993e7aa>>> up close to the lens, between the lens and her face, at the height of her eyes and forehead, using exactly two hands: the thumb and index finger of each hand lightly hold one rounded end of the band, her hands at the left and right edges of the frame. The band is a thin, flexible, see-through sheet about 1 mm thick that bows softly between her fingers, never a thick or stiff slab; it is slightly out of focus because it is close to the lens; its small rounded tab points down; its thin frosted edge catches the warm lamp light; her face stays visible through and behind the clear band. The forehead piece is held in her fingers, in front of the lens, not on her skin; her face is bare. Its shape and material: The patches are the exact clear silicone pieces shown in the product reference, and nothing else. They are thin, transparent and slightly frosted; her skin and lines stay visible through them; they are noticed only by a thin raised edge that catches the light and a soft satin sheen. They are never white, beige, pink, gold, opaque, gel pads, hydrogel, fabric, paper or tape. Forehead piece: a wide, gently curved band covering the middle two-thirds of the forehead, with a small rounded tab at the centre of its lower edge pointing down between the eyebrows; it does not reach the hairline. Under-eye pieces: one slim crescent per eye, just below the lower lashes, following the curve of the lower lid, the outer end reaching toward the outer eye corner; never covering the eye or lashes; never circles, rings or glasses shapes. Smile-line pieces: one slim crescent on each side, along the fold from beside the nostril to beside the mouth corner; the lips stay uncovered. Every patch lies completely flat, with no bubbles, folds or lifted edges. A piece the prompt does not mention is not on her face. Only the forehead piece exists in this image: there are no under-eye or smile-line pieces anywhere; the skin under her eyes and beside her mouth is bare. Exactly two hands with five fingers each; no third hand. Photorealistic smartphone photo, unretouched, no beauty filter, visible pores and natural skin texture, sharp focus on her face. Her hair is pulled fully back off her forehead. The skin is dry and matte with no cream or lotion. No mirror in the shot. No text, captions, logos or watermark."
+      },
+      "preflight_credits": 2,
+      "generator": "higgsfield"
+    },
+    {
+      "id": "S_U1_END",
+      "status": "NEW (paid)",
+      "shots": "U1 end frame (5.0 s); also the top-half B-roll under E2's words (chained from S_B0, not S_U1_START: framing matches since both build on S_B0)",
+      "tool": "generate_image",
+      "outputs": 1,
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "2k",
+        "count": 1,
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$S_B0"
+          }
+        ],
+        "prompt": "Identify the reference photos by what they show, not by upload order. THE CAST PHOTO shows the only person in this image; keep her face, skin, age, hair and earrings exactly as shown. THE PLACEMENT PHOTO shows a different person wearing the patches; use it only for where each piece sits and never copy that person's face, hair or skin. THE SHEET PHOTO shows the five pieces on their backing sheet; use it for exact shape, size and transparency. Only THE CAST PHOTO is supplied here; the product reference is <<<6375c707-7ad9-4df9-b7e0-69750993e7aa>>>: use it only for the exact shape, size and transparency of the forehead piece. Keep everything as placed: her face, hair and claw clip, tank top, pillows, headboard, the warm lamp light grazing from the frame-left side, and the framing and camera distance. CHANGES ONLY: exactly ONE clear forehead piece is in the image, and it is on her forehead; nothing is held in front of the lens and nothing is between the lens and her face. It lies completely flat, with its small rounded tab pointing DOWN between her eyebrows; it covers the middle two-thirds of her forehead and does not reach the hairline. Her hands are out of frame: no hands in the image. The patches are the exact clear silicone pieces shown in the product reference, and nothing else. They are thin, transparent and slightly frosted; her skin and lines stay visible through them; they are noticed only by a thin raised edge that catches the light and a soft satin sheen. They are never white, beige, pink, gold, opaque, gel pads, hydrogel, fabric, paper or tape. Forehead piece: a wide, gently curved band covering the middle two-thirds of the forehead, with a small rounded tab at the centre of its lower edge pointing down between the eyebrows; it does not reach the hairline. Under-eye pieces: one slim crescent per eye, just below the lower lashes, following the curve of the lower lid, the outer end reaching toward the outer eye corner; never covering the eye or lashes; never circles, rings or glasses shapes. Smile-line pieces: one slim crescent on each side, along the fold from beside the nostril to beside the mouth corner; the lips stay uncovered. Every patch lies completely flat, with no bubbles, folds or lifted edges. A piece the prompt does not mention is not on her face. Only the forehead piece exists in this image: there are no under-eye or smile-line pieces anywhere; the skin under her eyes and beside her mouth is bare. Her forehead lines stay faintly visible through the clear band. She looks into the lens with a neutral, calm face, lips closed, the corners of her mouth level; no smile. Photorealistic smartphone photo, unretouched, no beauty filter, visible pores and natural skin texture, sharp focus on her face. Her hair is pulled fully back off her forehead. The skin is dry and matte with no cream or lotion. No mirror in the shot. No text, captions, logos or watermark."
+      },
+      "preflight_credits": 2,
+      "generator": "higgsfield"
+    },
+    {
+      "id": "S_U2_START",
+      "status": "NEW (paid)",
+      "shots": "U2 start frame (5.0 s)",
+      "tool": "generate_image",
+      "outputs": 1,
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "2k",
+        "count": 1,
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$S_U1_END"
+          }
+        ],
+        "prompt": "Identify the reference photos by what they show, not by upload order. THE CAST PHOTO shows the only person in this image; keep her face, skin, age, hair and earrings exactly as shown. THE PLACEMENT PHOTO shows a different person wearing the patches; use it only for where each piece sits and never copy that person's face, hair or skin. THE SHEET PHOTO shows the five pieces on their backing sheet; use it for exact shape, size and transparency. Only THE CAST PHOTO is supplied here; the product reference is <<<6375c707-7ad9-4df9-b7e0-69750993e7aa>>>: use it only for the exact shape, size and transparency of the forehead piece. Keep her face, the forehead piece exactly as placed, her tank top, the bed, pillows and headboard, and the framing and camera distance. CHANGES ONLY: it is now the next morning. The lamp is off; the only light is soft daylight from a window on the frame-left side, falling across her face from the same side and at a similar angle as the lamp did, with similar gentle contrast and a neutral-warm colour: not bright, not blue, no glow. She now sits up against the headboard instead of reclining; the camera keeps the same height, distance and framing, her head and the top of her shoulders filling the frame as before. Exactly one person and one head in the image; nobody beside her; no second face, head or hair anywhere. Her hair is now in a low bun at the nape of her neck, still pulled fully back off her forehead. No hands in frame. The patches are the exact clear silicone pieces shown in the product reference, and nothing else. They are thin, transparent and slightly frosted; her skin and lines stay visible through them; they are noticed only by a thin raised edge that catches the light and a soft satin sheen. They are never white, beige, pink, gold, opaque, gel pads, hydrogel, fabric, paper or tape. Forehead piece: a wide, gently curved band covering the middle two-thirds of the forehead, with a small rounded tab at the centre of its lower edge pointing down between the eyebrows; it does not reach the hairline. Under-eye pieces: one slim crescent per eye, just below the lower lashes, following the curve of the lower lid, the outer end reaching toward the outer eye corner; never covering the eye or lashes; never circles, rings or glasses shapes. Smile-line pieces: one slim crescent on each side, along the fold from beside the nostril to beside the mouth corner; the lips stay uncovered. Every patch lies completely flat, with no bubbles, folds or lifted edges. A piece the prompt does not mention is not on her face. Only the forehead piece exists in this image: there are no under-eye or smile-line pieces anywhere; the skin under her eyes and beside her mouth is bare. Her forehead lines show faintly through the clear band exactly as before. She looks into the lens, a little sleepy, neutral face, lips closed, the corners of her mouth level; no smile. Photorealistic smartphone photo, unretouched, no beauty filter, visible pores and natural skin texture, sharp focus on her face. Her hair is pulled fully back off her forehead. The skin is dry and matte with no cream or lotion. No mirror in the shot. No text, captions, logos or watermark."
+      },
+      "preflight_credits": 2,
+      "generator": "higgsfield",
+      "fallback": "One still fix within the 3-credit allowance: if it comes back still lamp-lit (near copy), redo it reclined, keeping S_U1_END's pose and changing only the light and the hair."
+    },
+    {
+      "id": "S_U2_END",
+      "status": "NEW (paid)",
+      "shots": "U2 end frame (11.0 s) = THE PROOF; also top half 27.5-29.5 and E1 background loop",
+      "tool": "generate_image",
+      "outputs": 1,
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "2k",
+        "count": 1,
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$S_U2_START"
+          }
+        ],
+        "prompt": "Identify the reference photos by what they show, not by upload order. THE CAST PHOTO shows the only person in this image; keep her face, skin, age, hair and earrings exactly as shown. THE PLACEMENT PHOTO shows a different person wearing the patches; use it only for where each piece sits and never copy that person's face, hair or skin. THE SHEET PHOTO shows the five pieces on their backing sheet; use it for exact shape, size and transparency. Only THE CAST PHOTO is supplied here; the product reference is <<<6375c707-7ad9-4df9-b7e0-69750993e7aa>>>: use it only for the exact shape, size and transparency of the forehead piece. Keep her face, hair and low bun, tank top, bed, pillows, headboard, the framing and the soft daylight from the window on the frame-left side exactly as shown. CHANGES ONLY: the clear forehead piece is now off her face. It hangs from the thumb and index finger of her hand on the frame-right side, held at cheek height beside her face, as one thin, flexible, see-through sheet about 1 mm thick that droops softly between her fingers, transparent and slightly frosted, with its small rounded tab, the headboard showing through it, its thin edge catching the window light. Exactly ONE patch in the image, and it is in her fingers; nothing is on her skin. Only one hand is in frame, with exactly five fingers; no second hand appears. Her bare forehead: the horizontal lines are visibly softer and shallower than before, about two-thirds as visible, every line still traceable, and the frown lines between her brows are fainter; the same skin texture, freckles and pores as before; her skin is its normal even tone everywhere, the same natural matte finish as the rest of her face, with no marks, no outline where the band was and no redness. She looks into the lens with a small, calm, closed-lip satisfied look: lips closed, the corners of her mouth lifted only slightly. The patch in her fingers is shaped and made as follows (it is held, not worn): The patches are the exact clear silicone pieces shown in the product reference, and nothing else. They are thin, transparent and slightly frosted; her skin and lines stay visible through them; they are noticed only by a thin raised edge that catches the light and a soft satin sheen. They are never white, beige, pink, gold, opaque, gel pads, hydrogel, fabric, paper or tape. Forehead piece: a wide, gently curved band covering the middle two-thirds of the forehead, with a small rounded tab at the centre of its lower edge pointing down between the eyebrows; it does not reach the hairline. Under-eye pieces: one slim crescent per eye, just below the lower lashes, following the curve of the lower lid, the outer end reaching toward the outer eye corner; never covering the eye or lashes; never circles, rings or glasses shapes. Smile-line pieces: one slim crescent on each side, along the fold from beside the nostril to beside the mouth corner; the lips stay uncovered. Every patch lies completely flat, with no bubbles, folds or lifted edges. A piece the prompt does not mention is not on her face. Only the forehead piece exists in this image: there are no under-eye or smile-line pieces anywhere; the skin under her eyes and beside her mouth is bare. Photorealistic smartphone photo, unretouched, no beauty filter, visible pores and natural skin texture, sharp focus on her face. Her hair is pulled fully back off her forehead. The skin is dry and matte with no cream or lotion. No mirror in the shot. No text, captions, logos or watermark."
+      },
+      "preflight_credits": 2,
+      "generator": "higgsfield"
+    },
+    {
+      "id": "U1_APPLY",
+      "status": "NEW (paid)",
+      "shots": "U1, story 0.0-5.0",
+      "tool": "generate_video",
+      "outputs": 1,
+      "params": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "duration": 5,
+        "aspect_ratio": "9:16",
+        "count": 1,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "$S_U1_START"
+          },
+          {
+            "role": "end_image",
+            "value": "$S_U1_END"
+          }
+        ],
+        "prompt": "Motion only; the start and end frames set her, the clear forehead piece, the bedroom and the lamp light. The phone is propped on a stand: the camera is almost still with only a faint natural sway; no zoom, no cuts, the same framing from the first to the last frame. 0-1.2s: holding the clear forehead band by its two ends, she draws it away from the lens and down to chin height, so her bare forehead is clearly visible; her brows stay relaxed and do not rise, and her forehead lines show at rest in the lamp light. 1.2-2.5s: she brings the band up to her forehead and lays it on, its small rounded tab pointing down between her eyebrows. 2.5-4s: with both hands flat, she presses it from the centre outward, her palms sliding to her temples, so it lies completely flat. 4-5s: she lowers both hands out of the bottom of the frame and rests her head back against the pillow, looking into the lens. The patches are the exact clear silicone pieces shown in the product reference, and nothing else. They are thin, transparent and slightly frosted; her skin and lines stay visible through them; they are noticed only by a thin raised edge that catches the light and a soft satin sheen. They are never white, beige, pink, gold, opaque, gel pads, hydrogel, fabric, paper or tape. Forehead piece: a wide, gently curved band covering the middle two-thirds of the forehead, with a small rounded tab at the centre of its lower edge pointing down between the eyebrows; it does not reach the hairline. Under-eye pieces: one slim crescent per eye, just below the lower lashes, following the curve of the lower lid, the outer end reaching toward the outer eye corner; never covering the eye or lashes; never circles, rings or glasses shapes. Smile-line pieces: one slim crescent on each side, along the fold from beside the nostril to beside the mouth corner; the lips stay uncovered. Every patch lies completely flat, with no bubbles, folds or lifted edges. A piece the prompt does not mention is not on her face. Only the forehead piece exists in this clip: no under-eye or smile-line pieces appear. SHE DOES NOT TALK: her lips stay closed the whole time; the corners of her mouth stay level; no smile. Exactly two hands with five fingers each; her hands never pass through her face or the band. The band stays clear and in one piece; it never turns white, folds, splits or doubles. Her wrinkles do not change during the clip. The lamp, pillows and headboard do not move. Exactly one woman; no mirror, no reflection, no text, no captions, no fades, no cuts. Unretouched, no beauty filter, no glow; her skin texture, freckles and pores stay the same."
+      },
+      "preflight_credits": 8.75,
+      "generator": "higgsfield"
+    },
+    {
+      "id": "U2_PEEL",
+      "status": "NEW (paid)",
+      "shots": "U2, story 5.0-11.0 (reveal at ~9.0 s)",
+      "tool": "generate_video",
+      "outputs": 1,
+      "params": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "duration": 6,
+        "aspect_ratio": "9:16",
+        "count": 1,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "$S_U2_START"
+          },
+          {
+            "role": "end_image",
+            "value": "$S_U2_END"
+          }
+        ],
+        "prompt": "Motion only; the start and end frames set her, the clear forehead band, the bedroom and the window daylight. The phone is propped on a stand: the camera is almost still with only a faint natural sway; no zoom, no cuts, the same framing from the first to the last frame. 0-0.9s: her hand on the frame-right side comes up; her fingertips pinch the outer corner of the band at her temple on the frame-right side and lift only that corner a few millimetres. 0.9-2.7s: she pulls the free edge sideways across her forehead, close to the skin and flat against it; the peeled part folds back over itself onto the part still attached, and a straight fold line with a bright highlight travels across her forehead toward her temple on the frame-left side. PEEL PHYSICS: she moves slowly and steadily, like peeling a soft screen protector. The silicone is soft, flexible and a little tacky: the peeled part bends back in a smooth, rounded fold about as thick as a pencil (never a sharp paper crease), and the fold travels at an even speed. Right at the fold line the silicone lets go of the skin cleanly with a slight tackiness; the skin under it stays still and is never tugged, dimpled or stretched. Light catches the curved fold as one bright moving highlight, and the skin shows through the clear silicone slightly magnified. The doubled part looks slightly frosted; the attached part stays glossy and flat. The fingertips holding the free edge keep it close to the skin the whole time. 2.7-3.2s: the last edge lets go at the frame-left temple; the band hangs from her fingertips as one soft, curved, translucent sheet that sways slightly, with gently curling edges; it stays soft and floppy, never rigid like plastic or stiff like paper. 3.2-4.2s: she brings it to cheek height beside her face on the frame-right side; her eyes close briefly and her shoulders relax; her mouth stays shut, lips pressed softly together. 4.2-6s: she opens her eyes and looks into the lens with a small, calm, closed-lip satisfied look, holding the band still beside her cheek. Her bare forehead shows softer, shallower lines than before, still faintly there, with the same pores and freckles and her normal even skin tone: no marks, no outline, no redness. The band before and during the fold-back is shaped and made as follows: The patches are the exact clear silicone pieces shown in the product reference, and nothing else. They are thin, transparent and slightly frosted; her skin and lines stay visible through them; they are noticed only by a thin raised edge that catches the light and a soft satin sheen. They are never white, beige, pink, gold, opaque, gel pads, hydrogel, fabric, paper or tape. Forehead piece: a wide, gently curved band covering the middle two-thirds of the forehead, with a small rounded tab at the centre of its lower edge pointing down between the eyebrows; it does not reach the hairline. Under-eye pieces: one slim crescent per eye, just below the lower lashes, following the curve of the lower lid, the outer end reaching toward the outer eye corner; never covering the eye or lashes; never circles, rings or glasses shapes. Smile-line pieces: one slim crescent on each side, along the fold from beside the nostril to beside the mouth corner; the lips stay uncovered. Before she starts peeling, the band lies completely flat, with no bubbles or lifted edges; the only fold is the one her peel creates. A piece the prompt does not mention is not on her face. Only the forehead piece exists in this clip: no under-eye or smile-line pieces appear. Exactly ONE patch in the whole clip; it never splits, doubles, turns white or goes rigid. Only one hand is in frame, with exactly five fingers; no second hand appears; the hand never passes through her face. SHE DOES NOT TALK: her lips stay closed the whole time. The headboard, pillows and window light do not move or change. Exactly one woman; no mirror, no reflection, no text, no captions, no fades, no cuts. Unretouched, no beauty filter, no glow; her skin texture, freckles and pores stay the same."
+      },
+      "preflight_credits": 10.5,
+      "generator": "higgsfield",
+      "notes": "Main session, Nov 8: owner asked for 'high physics details' on the peel; added PEEL PHYSICS (rounded fold, even speed, clean release, no skin tug, moving highlight, floppy sheet) and fixed the PATCHES-block 'no folds' conflict. Re-check in pass 2."
+    },
+    {
+      "id": "GEM_E23",
+      "generator": "gemini",
+      "status": "generated; generation review PASS (prompt-review pass 1)",
+      "shots": "E2+E3 merged, story 14.0-23.0",
+      "tool": "Gemini web app (owner's Chrome), Create video, Portrait",
+      "reference_image": "/private/tmp/claude-501/-Users-josediaz--claude-spares-spare-SRaU1E/2f87790f-784b-45bc-9668-95f59d8eab95/scratchpad/gemini-p4/gemini-expert-ref.jpg",
+      "outputs": 1,
+      "credits": 0,
+      "gemini_generations": 1,
+      "prompt": "Use the attached photo as the exact first frame and the only person: keep his face, silver hair, grey beard, glasses, white clinic coat and the flat chroma-key green background exactly the same for the whole clip. Vertical selfie video, front camera at arm's length, slight natural handheld movement. He speaks straight to camera in a warm, confident, conversational American male voice at a natural, slightly brisk pace, like a friendly expert explaining on TikTok. He says exactly these words, in this order, and nothing else: \"They hold your skin flat all night, so it can't crease. No needles. They seal in moisture, so lines look smoother by morning.\" On \"hold your skin flat\" he lightly presses two flat fingertips to his own forehead, then lowers his hand. Natural blinking and small head movements, lips fully closing on m, b and p sounds. Only his voice and quiet room tone, no music. No text, no captions, no logos, no other people. The green background stays flat and evenly lit.",
+      "output": "/private/tmp/claude-501/-Users-josediaz--claude-spares-spare-SRaU1E/2f87790f-784b-45bc-9668-95f59d8eab95/scratchpad/gemini-p4/gemini-expert-E23-mechanism.mp4",
+      "output_specs": "720x1280, 10.03 s, native audio",
+      "whisper": "They hold your skin flat all night so it can't crease. No needles. They seal in moisture so lines look smoother by morning. (matches)",
+      "note": "Generated BEFORE prompt review (owner: never again). Needs the prompt-reviewer's after-the-fact check, then generation review: mouth crops on m/b/p, checklist B. 1 fps sheet: same face/coat/green throughout; whole hand (not two fingertips) to forehead at ~1-2 s; open-hand gesture ~3 s; no object held."
+    },
+    {
+      "id": "GEM_X0",
+      "generator": "gemini",
+      "status": "planned (after prompt-review PASS)",
+      "shots": "X0 corner reaction, used ~6 s, overlay 4.0-10.0 (eyebrow lift lands at 9.0 s)",
+      "tool": "Gemini web app (owner's Chrome), Create video, Portrait",
+      "reference_image": "/private/tmp/claude-501/-Users-josediaz--claude-spares-spare-SRaU1E/2f87790f-784b-45bc-9668-95f59d8eab95/scratchpad/gemini-p4/gemini-expert-ref.jpg",
+      "outputs": 1,
+      "credits": 0,
+      "gemini_generations": 1,
+      "prompt": "Use the attached photo as the exact first frame and the only person: keep his face, silver hair, grey beard, glasses, white clinic coat and the flat chroma-key green background exactly the same for the whole clip. Vertical selfie video, front camera at arm's length, slight natural handheld movement. He is silent: he does not say any words for the whole clip. He is watching a video on a phone held just below the camera: his eyes look slightly down, just below the lens, and stay on it. 0-5 s: he watches calmly with a neutral, slightly skeptical expression and a faint squint, natural blinking and small head movements, mouth closed. At about 5 s, as if he has just seen a surprising result, his eyebrows rise, his head draws back a little, with his lips staying closed; then a small closed-lip smile and one slow nod of approval. From 6.5 s to the end he keeps watching with that small impressed look, mouth closed. The reaction is genuine and understated, like a real person who is mildly impressed: no gasp, no wide-open mouth, no hand to his face, no exaggerated expression. His hands stay low and out of frame. His hands are empty: he never holds, shows or draws any object, box, product or patch. Only quiet room tone, no music, no words and no sounds from him. No text, no captions, no logos, no other people. The green background stays flat and evenly lit.",
+      "assembly": "Key green, crop head+shoulders, lower-left, face >=250 px wide, above bottom 35%; audio muted under the music."
+    },
+    {
+      "id": "GEM_E1",
+      "generator": "gemini",
+      "status": "planned (after prompt-review PASS)",
+      "shots": "E1 naming, story 11.0-14.0, full screen keyed over blurred U2 tail; real box pop-up in code",
+      "tool": "Gemini web app (owner's Chrome), Create video, Portrait",
+      "reference_image": "/private/tmp/claude-501/-Users-josediaz--claude-spares-spare-SRaU1E/2f87790f-784b-45bc-9668-95f59d8eab95/scratchpad/gemini-p4/gemini-expert-ref.jpg",
+      "outputs": 1,
+      "credits": 0,
+      "gemini_generations": 1,
+      "prompt": "Use the attached photo as the exact first frame and the only person: keep his face, silver hair, grey beard, glasses, white clinic coat and the flat chroma-key green background exactly the same for the whole clip. Vertical selfie video, front camera at arm's length, slight natural handheld movement. He speaks straight to camera in a warm, confident, conversational American male voice at a natural, slightly brisk pace, like a friendly expert explaining on TikTok. He starts speaking right away, in a pleased, matter-of-fact tone, as if naming something he has just recognised. He says exactly these words, in this order, and nothing else: \"It's the Wrinkle Smooth Face Set.\" While he says it, he raises one empty open hand to chest height and gestures toward the frame-right side, as if pointing out something just off-screen, then lowers the hand out of frame. After the line he stops talking, keeps a calm, pleasant closed-lip look at the camera and gives one small nod, with his mouth closed until the end of the clip. His hands are empty: he never holds, shows or draws any object, box, product or patch. The space beside him stays empty flat green: no object, box, product or screen appears anywhere in the frame. Natural blinking and small head movements, lips fully closing on m, b and p sounds. Only his voice and quiet room tone, no music. No text, no captions, no logos, no other people. The green background stays flat and evenly lit.",
+      "background_decision": "Green, not clinic: Veo opens on the green reference frame; changing the room mid-clip risks face/coat drift and an invented set. Assembly keys it over a blurred, 25%-darkened live loop of U2's last 2 s; box pop-up (face-set-box-v1.png / 0f24791e) mid-frame on the frame-right side from 11.4 s."
+    },
+    {
+      "id": "GEM_E45",
+      "generator": "gemini",
+      "status": "planned (after prompt-review PASS)",
+      "shots": "E4+E5 merged, story 23.0-29.5",
+      "tool": "Gemini web app (owner's Chrome), Create video, Portrait",
+      "reference_image": "/private/tmp/claude-501/-Users-josediaz--claude-spares-spare-SRaU1E/2f87790f-784b-45bc-9668-95f59d8eab95/scratchpad/gemini-p4/gemini-expert-ref.jpg",
+      "outputs": 1,
+      "credits": 0,
+      "gemini_generations": 1,
+      "prompt": "Use the attached photo as the exact first frame and the only person: keep his face, silver hair, grey beard, glasses, white clinic coat and the flat chroma-key green background exactly the same for the whole clip. Vertical selfie video, front camera at arm's length, slight natural handheld movement. He speaks straight to camera in a warm, confident, conversational American male voice at a natural, slightly brisk pace, like a friendly expert explaining on TikTok. He starts speaking right away. He says exactly these words, in this order, and nothing else: \"Tape and one-size patches can fall off. This kit is shaped for each area. My verdict? Real. Not sus.\" He says \"sus\" as the casual slang word, rhyming with \"bus\". After \"My verdict?\" he pauses for a short beat, then says \"Real. Not sus.\" calmly and warmly. After the last word he gives one small nod and a warm closed-lip smile, and keeps his mouth closed until the end of the clip. No hand gestures while he speaks; his hands stay low and out of frame. His hands are empty: he never holds, shows or draws any object, box, product or patch. Natural blinking and small head movements, lips fully closing on m, b and p sounds. Only his voice and quiet room tone, no music. No text, no captions, no logos, no other people. The green background stays flat and evenly lit.",
+      "note": "19 words (> talking_clip.max_words 15): owner-directed merge to save Gemini quota; Veo returns 8-10 s with native speech. Trim pauses; <=1.08x speed-up only if over 6.5 s. Prompt-review pass 1: ~8.3 s speech at 2.34 w/s, ~7.0-7.5 s after trims/speed-up vs a 6.5 s window; end card slides 0.5-1 s, total ~31 s (accepted). Generation review must compare E1/E45 voices against E23."
+    }
+  ],
+  "reuse": [
+    {
+      "asset": "Forehead-patch Element",
+      "id": "6375c707-7ad9-4df9-b7e0-69750993e7aa",
+      "use": "<<<id>>> in prompt text of every woman still; never in medias (production log 52)",
+      "credits": 0
+    },
+    {
+      "asset": "Face Set flat lay (brand studio)",
+      "id": "564c68fa-cbff-4997-8c84-feaa071f7d0b",
+      "use": "top-half pop-up 23.0-27.5 with code labels",
+      "credits": 0
+    },
+    {
+      "asset": "Face Set box",
+      "id": "0f24791e-57ce-49ab-afe4-85d5f8e0d243",
+      "local": "assets/packaging/face-set-box-v1.png",
+      "use": "E1 pop-up, mid-frame frame-right",
+      "credits": 0
+    },
+    {
+      "asset": "Cast (P4 woman)",
+      "id": "3bcb3615-0104-4afa-8c65-290f5b9744a2",
+      "use": "cropped to the woman panel, identity only",
+      "credits": 0
+    },
+    {
+      "asset": "Expert reference (Gemini)",
+      "local": "/private/tmp/claude-501/-Users-josediaz--claude-spares-spare-SRaU1E/2f87790f-784b-45bc-9668-95f59d8eab95/scratchpad/gemini-p4/gemini-expert-ref.jpg",
+      "use": "first frame of every GEM_* clip",
+      "credits": 0
+    }
+  ]
+}
