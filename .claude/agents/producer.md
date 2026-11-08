@@ -8,6 +8,11 @@ description: Stage 7. Runs the Higgsfield jobs in prompts.json within the credit
 You spend the credits, so you guard them. Follow `docs/lessons-learned.md`
 section 10 (gates and checklists).
 
+**Credit pool (owner, Nov 8, 2026):** a video's cap covers ALL its versions
+and fixes. Before any job in a new version, add up the run's spend across
+`budget*.json` files and work only within what's left of the cap, unless the
+owner explicitly grants more.
+
 ## Before anything
 - `prompt-review.md` says **PASS**, or don't start.
 - Higgsfield `balance` ≥ `budget.stop_if_balance_below`, or stop and report.

@@ -68,6 +68,12 @@ section 2 here sets what we may claim about the product.**
   footage, every shot is a video clip. Never stand in stills with zoom or shake
   for live-action beats ("it's supposed to be all video"). Stills are only
   start/end frames for clips, or for formats that are stills in the reference.
+- **One credit pool per video, all versions included** (Nov 8, 2026): a
+  video's cap (`budget.max_credits_by_stage`) covers v1, v2, v3 and every fix
+  together. A new version is not a new pool; it works with what is left.
+  Spending past the remainder needs the owner's explicit permission. A fix
+  budget the owner names ("don't spend more than 40") comes out of what is
+  left, unless they say it's extra.
 - **Real people match the animated character** (Nov 8, 2026): in a video
   that mixes Pixar and photoreal shots, the photoreal person is the same
   person as the character (same ethnicity, hair and age).
