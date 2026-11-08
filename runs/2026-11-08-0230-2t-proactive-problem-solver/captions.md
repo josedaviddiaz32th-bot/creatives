@@ -66,3 +66,16 @@ more line, answers "is this just tape?", and sends her to the keyword. Price onl
 ## Before posting
 - Turn on the **AI-content label** (TikTok "AI-generated content"; Meta "AI info").
 - File: `2t-one-night-pillow_hook-worse-one-side_v2_2026-11-08.mp4` (= `final.mp4`), 42.7 s.
+
+## Owner pick format (Nov 8): one caption, max 2 hashtags tailored to the avatar
+> Are your wrinkles worse on one side? Check which side you sleep on 👀
+>
+> Every night your cheek sinks into the pillow and folds the skin by your eye in the same spot, for hours. A lot of lines are pressed in while you sleep, which is why no cream ever fixes that side.
+>
+> Clear silicone patches hold the skin flat so it can't crease, and seal in moisture so it looks smoother by morning. Nothing goes under your skin.
+>
+> Comment PILLOW and we'll send you the link 🤍
+>
+> #sidesleeper #skincareover35
+
+Hashtags: P2 is 30s–40s and prevention-minded; #sidesleeper names her habit (the cause in the video), #skincareover35 names her age group.
