@@ -81,6 +81,16 @@ section 2 here sets what we may claim about the product.**
   from one clip reads as one night, even with different grades. Plan one
   short clip per night (different angle, pose or pyjamas), or don't promise
   "several". Never slow a clip down to fill time; it reads as a still.
+- **Gemini (Veo) for talking clips** (Nov 8, 2026): the owner finds Gemini's
+  video "10x better than Kling at lip sync". Use Gemini in the owner's Chrome
+  (Plus plan, daily video limit) for on-camera speech, with Higgsfield as the
+  fallback when Gemini runs out. It's "just another option to generate": the
+  same process applies. Prompts go in prompts.json and pass the
+  prompt-reviewer before submitting, every generation is checked (Whisper
+  words, mouth crops, checklist B), and everything is logged. Method that
+  works: make the character image in Gemini (Create image, 9:16), then paste
+  that same image into each Create video chat (Portrait) so the face stays
+  identical. Downloads land in ~/Downloads; move them into the scratchpad.
 - **Real people match the animated character** (Nov 8, 2026): in a video
   that mixes Pixar and photoreal shots, the photoreal person is the same
   person as the character (same ethnicity, hair and age).

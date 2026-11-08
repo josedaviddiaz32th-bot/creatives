@@ -79,5 +79,21 @@
       "runs/2026-11-08-0909-ref-problem-vs-solution"
     ],
     "outcome": "untested"
+  },
+  {
+    "id": "2026-11-08-real-or-sus-stitch",
+    "file": "learning/swipe-file/2026-11-08-real-or-sus-stitch.md",
+    "advertiser": "organic expert creator (real, named surgeon; never imitated), reacting to a customer's UGC",
+    "category": "skincare / wrinkle patches",
+    "format": "'REAL or SUS?' stitch / green-screen expert reaction: UGC apply + morning peel with expert in corner, full-screen product beat, green-screen mechanism, verdict card (30.6 s)",
+    "funnel": "mof",
+    "presenter": "authority look (reaction + talking) + silent peer UGC",
+    "hook_type": "skeptic question on screen ('REAL or SUS?') over a live product demo",
+    "mechanism": "Let the viewer's own skepticism be the hook, then settle it with a live before/after and a neutral expert's reaction, mechanism and verdict, so belief transfers without the brand selling.",
+    "winning_signal": "owner pick (Nov 8, 2026); recurring creator series format; no counts on file",
+    "used_in": [
+      "runs/2026-11-08-1338-ref-real-or-sus-p4"
+    ],
+    "outcome": "untested"
   }
 ]
