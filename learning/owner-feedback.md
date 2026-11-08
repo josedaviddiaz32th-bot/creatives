@@ -60,6 +60,7 @@ the owner says so.
   - unapproved claims.
 
 ### What the owner corrected (never repeat)
+- **Nothing may look like an injury** (Nov 8, 2026): sleep creases, redness or marks must never read as scratches, cuts or a rash. "We don't want nothing looking like injuries."
 - **Don't assert product facts they haven't confirmed** ("You don't know what's true or false about my product"). Result claims come from lessons §1–2 only.
 - **No "part 2" videos.** One video starts and ends an idea.
 - **TOF is mostly the problem,** for unaware or problem-aware viewers, and still shows the brand subtly.
@@ -98,3 +99,4 @@ the owner says so.
 | 2026-11-08 | 2-T | Why India? | "18-34 is fine… it might the time at which I posted, I posted at about 3 AM, although I have another animation video i posted a month ago at night, and it also went 60% to india" | Age is fine. Posting time is a likely cause (3 AM Eastern is 1:30 PM in India). The account already skews India from an earlier animated video. Test: post the next videos at 7–9 pm Eastern and compare the country split |
 | 2026-11-08 | — | Boosting to fix the country split | "we are not running ads yet" | No paid boosts or ads during the trial. Fix reach organically: post at 7–9 pm Eastern, use a US location, seed early engagement. Record the posting time with every metrics read |
 | 2026-11-08 | ref-problem-vs-solution | New reference: a 15 s trending "The Problem 😭 / Vs… / The Solution 😌❤️" UGC video (car + body pillow) | "take out the marketing philosophy and structure… same vibes, same story, for our product… keep it the same length… keep the same captions, everything… I want the same audio… if you cant get it yourself, just give me the video" | For trend remakes: match length, captions and cut rhythm exactly. Change the setting if needed. Deliver the video without audio, cut to the song; the owner adds the trending sound in the app |
+| 2026-11-08 | ref-problem-vs-solution | S1 pillow creases looked like red scratches | "Yes, redo it. We don't want nothing looking like injuries." | Skin marks must never read as injury. Prompt creases as soft pressed lines, never red streaks |
