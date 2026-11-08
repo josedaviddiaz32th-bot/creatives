@@ -54,6 +54,13 @@ Read: `brief.md`, `format.md`, `story.md`, `docs/lessons-learned.md`,
     several people talking, precise text on screen) is required for the
     story to work.
 
+## Owner checks (hard; any "no" is REVISE)
+- **Cold-viewer test:** read only the first 3–5 s of shots, as a stranger who
+  knows nothing about the product. Can you name the problem AND its cause?
+  If marks could be mistaken for scratches or anything else, REVISE.
+- **Reactions are subtle and real:** no screaming, wailing or overacted crying.
+- **Medium matches the reference:** live footage → every beat is a clip.
+
 ## Verdict in `story-review.md`
 - **APPROVED** if every score is ≥ 8 and claims are clean. For **TOF**, the
   three hook scores (1–3) must each reach `review.min_hook_score_tof`, and

@@ -52,6 +52,22 @@ section 2 here sets what we may claim about the product.**
   animated character) is prompted with the words "Pixar style" (3D-animated,
   soft rounded shapes, warm cinematic light). Realistic UGC shots stay
   photorealistic.
+- **Think like a marketer first** (Nov 8, 2026): before mapping a reference,
+  explain in plain words how it makes a COLD viewer understand the problem
+  in its first 3–5 s. Example: the car video shows her head banging the window
+  while she tries to sleep, so the problem is obvious without context. Our
+  version must make an unaware viewer connect cause and effect just as fast,
+  e.g. a night-after-night time-lapse of her face pressed into the pillow,
+  then bathroom lights on and she notices the lines. A close-up of marks
+  with no cause shown could read as scratches. Pass test: describe the
+  problem from the first 3 s alone, as a stranger would.
+- **Real reactions, never exaggerated** (Nov 8, 2026): frustration or
+  sadness is subtle and believable (a sigh, a frown, a long look). No
+  screaming, wailing or overacted crying: "It just doesn't click."
+- **Match the reference's medium** (Nov 8, 2026): if the reference is all live
+  footage, every shot is a video clip. Never stand in stills with zoom or shake
+  for live-action beats ("it's supposed to be all video"). Stills are only
+  start/end frames for clips, or for formats that are stills in the reference.
 - **Real people match the animated character** (Nov 8, 2026): in a video
   that mixes Pixar and photoreal shots, the photoreal person is the same
   person as the character (same ethnicity, hair and age).

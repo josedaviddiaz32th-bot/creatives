@@ -61,6 +61,13 @@ sections 2 and 6).
 - A softer "buy" is fine; pushy sales language isn't. Urgency only from a
   real deadline in `brief.md`; never a fake timer or fake low stock.
 
+## Owner rules (Nov 8, 2026)
+- **Unaware viewer:** the opening must show the problem's cause → effect, so
+  a stranger gets it in 3–5 s (e.g. nights of her face pressed in the
+  pillow, then lights on and she sees the lines).
+- **Reactions are subtle and believable.** Never exaggerated crying or
+  screaming.
+
 ## Rules
 - About `video.words_per_second` (3.0) spoken words per second, fast UGC
   delivery, so 30s is roughly 90 words. Write down the count. Never plan a sped-up voice.

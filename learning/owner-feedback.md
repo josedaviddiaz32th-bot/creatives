@@ -60,6 +60,16 @@ the owner says so.
   - unapproved claims.
 
 ### What the owner corrected (never repeat)
+- **Think like a human marketer** (Nov 8, 2026): break the reference down
+  first. How does it make the problem obvious to a cold viewer in 3–5 s? Do
+  the same for our avatar, showing cause → effect. Marks alone can read as
+  "cat scratches".
+- **No exaggerated reactions** (Nov 8, 2026): the overacted sad/screaming face "just doesn't click".
+- **Live-footage formats are all video** (Nov 8, 2026): no stills with zoom or shake.
+  "It's supposed to be all video, don't know what in your logic told you to
+  put 2-3 images in there and zoom into them."
+- **Reviewers must catch these** (Nov 8, 2026): the overacted face and the stills both passed
+  review. Reviewers now run a cold-viewer test, a reaction check and a medium check.
 - **Nothing may look like an injury** (Nov 8, 2026): sleep creases, redness or marks must never read as scratches, cuts or a rash. "We don't want nothing looking like injuries."
 - **Don't assert product facts they haven't confirmed** ("You don't know what's true or false about my product"). Result claims come from lessons §1–2 only.
 - **No "part 2" videos.** One video starts and ends an idea.
@@ -100,3 +110,5 @@ the owner says so.
 | 2026-11-08 | — | Boosting to fix the country split | "we are not running ads yet" | No paid boosts or ads during the trial. Fix reach organically: post at 7–9 pm Eastern, use a US location, seed early engagement. Record the posting time with every metrics read |
 | 2026-11-08 | ref-problem-vs-solution | New reference: a 15 s trending "The Problem 😭 / Vs… / The Solution 😌❤️" UGC video (car + body pillow) | "take out the marketing philosophy and structure… same vibes, same story, for our product… keep it the same length… keep the same captions, everything… I want the same audio… if you cant get it yourself, just give me the video" | For trend remakes: match length, captions and cut rhythm exactly. Change the setting if needed. Deliver the video without audio, cut to the song; the owner adds the trending sound in the app |
 | 2026-11-08 | ref-problem-vs-solution | S1 pillow creases looked like red scratches | "Yes, redo it. We don't want nothing looking like injuries." | Skin marks must never read as injury. Prompt creases as soft pressed lines, never red streaks |
+| 2026-11-08 | ref-problem-vs-solution v2 | Owner critique of the remake | Unaware viewers can't tell what the marks are; the overacted crying "doesn't click"; the shaky stills should be video; the solution is "alright, still could be better". "Fix this, don't spend more than 40 credits" | New rules (above). Reviewers get hard checks. Remake v3: a night time-lapse with her face in the pillow → lights on, she notices the lines → he gives her the patches → several nights in them → she wakes up smoother. All video, ≤40 credits |
+| 2026-11-08 | — | Owner idea for the same format, another avatar | Mid-30s woman who stopped taking selfies: POV of her zooming into her face on the phone, deleting the photo or turning to a mirror (e.g. in the car), frustrated → her boyfriend gifts her the patches | Logged in next-moves.md for the next remake |

@@ -22,6 +22,11 @@ Read `docs/lessons-learned.md` sections 3, 5, 6, 8 and 10 first.
   talking clip (J/L-cut), or by on-screen text. Plan this explicitly.
 Write the choice and the reason at the top.
 
+**Medium (owner, Nov 8, 2026):** match the reference. If it's live footage,
+every shot is a video clip. Never use stills with zoom or shake as stand-ins.
+If the budget can't cover all clips, cut or merge shots rather than turn
+them into stills.
+
 ## 2. Clip plan
 - **Talking clips: one sentence per clip, at most `video.talking_clip.max_words`
   (15) words, 4–6 s** (lip-sync research, Nov 7, 2026: Kling 3.0 misses

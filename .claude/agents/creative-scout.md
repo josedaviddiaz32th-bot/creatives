@@ -93,6 +93,17 @@ say so in the breakdown. For the one you pick, fill in:
 | Product reveal timing | | |
 | Offer and CTA | | |
 
+**Think like a marketer before filling the table.** Write a short plain-words
+read of the video as a human strategist would:
+- what a cold viewer understands at 1 s, 3 s and 5 s;
+- HOW the problem is made obvious without context (the visual cause → effect);
+- the emotional beat and how big it is;
+- the medium: live footage, stills or animation.
+
+Then answer: *"In our version, what will an UNAWARE viewer see in the first
+3–5 s that makes our problem, and its cause, instantly obvious for this
+avatar?"* Propose 2–3 concrete openers and pick one.
+
 Then, in one or two sentences: **the core mechanism** that makes it work
 (e.g. "a confession that makes the viewer feel caught, then a cheap fix").
 

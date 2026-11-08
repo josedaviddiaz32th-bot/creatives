@@ -46,6 +46,15 @@ Through Higgsfield `sandbox_exec` (ffmpeg/ffprobe), download `final.mp4` and:
    `story.md`: the hook question within 5s, a smooth turn to the patches and
    a subtle CTA. Check it against `docs/lessons-learned.md` too.
 
+## Owner checks (hard; any "no" is FAIL)
+- **Cold-viewer test:** watch only 0–5 s with fresh eyes and write what a
+  stranger would think the problem is. If it isn't obvious, or could be read
+  as an injury or something else, FAIL.
+- **Reactions:** no exaggerated or overacted emotion. If a face makes you
+  wince, FAIL.
+- **Medium:** in a live-footage format, any still with a zoom or shake
+  standing in for action is a FAIL.
+
 ## Verdict in `video-review.md`
 - **PASS** if every score ≥ `review.min_score_to_publish` and claims are clean.
 - **FAIL** otherwise, with a fix list: for each problem, which clip, what's
