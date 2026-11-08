@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "run": "runs/2026-11-07-2002-1t-first-line-fixer",
+    "slot": "1-T",
+    "persona": "P1 First-Line Fixer",
+    "desire": "being liked (photos)",
+    "awareness": "TOF-U",
+    "funnel": "TOF",
+    "video_type": "POV group-photo moment, then the explanation",
+    "presenter": "peer (AI, 27)",
+    "copy_angle": "personal narrative",
+    "hook_type": "identification question",
+    "belief": "a lot of lines get pressed in every night",
+    "objection": null,
+    "keyword": "PHOTO",
+    "seconds": "27 (v3.1) or 39 (v2)",
+    "credits": 130,
+    "posted": "2026-11-08, uploaded by the owner on TikTok (version not stated)",
+    "captions": "runs/2026-11-07-2002-1t-first-line-fixer/captions.md",
+    "links": {},
+    "metrics": {}
+  }
+]

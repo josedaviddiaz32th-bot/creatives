@@ -47,6 +47,13 @@ section 2 here sets what we may claim about the product.**
 - Owner approves the first rounds before anything posts.
 - **Before/afters are allowed** (Nov 7, 2026), including AI-generated ones,
   in any format.
+- **Animated shots say "Pixar style"** (Nov 8, 2026): any animated or
+  cartoon element (explainer cutaways, a skin cross-section, a mascot, an
+  animated character) is prompted with the words "Pixar style" (3D-animated,
+  soft rounded shapes, warm cinematic light). Realistic UGC shots stay
+  photorealistic.
+- **Length can be set by the owner per video** (Nov 8, 2026: "about 45
+  seconds" for the Resilia-reference run); it overrides the stage band.
 
 How to merge with the handoff's 5 beats (section 4): the beats still apply
 *inside* the owner's structure. Hook (question) → problem → patch as the answer
