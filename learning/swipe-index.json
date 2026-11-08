@@ -27,7 +27,24 @@
     "mechanism": "It's not your face, it's a hidden cause: a peer names a private insecurity, moves the blame to a cause the viewer didn't know, and demonstrates it on camera.",
     "winning_signal": "TikTok organic, read 2026-11-07: 322.7K plays on a 5.2K-follower account, 27.9K likes, 4.4K saves, 615 shares, 446 comments (~10.3% engagement)",
     "used_in": [
-      "runs/2026-11-07-1926-1t-p1-angry-in-photos"
+      "runs/2026-11-07-1926-1t-p1-angry-in-photos",
+      "runs/2026-11-07-2002-1t-first-line-fixer"
+    ],
+    "outcome": "untested"
+  },
+  {
+    "id": "2026-11-07-lizzyturner-filter-vs-reality-split",
+    "file": "learning/swipe-file/2026-11-07-lizzyturner-filter-vs-reality-split.md",
+    "advertiser": "Lizzy Turner (organic creator, @elizabethkayeturner)",
+    "category": "makeup / self-image (no brand)",
+    "format": "split-face comparison (filter half vs real half), time-lapse",
+    "funnel": "tof",
+    "presenter": "peer",
+    "hook_type": "visual paradox / filter vs reality split",
+    "mechanism": "Show the gap on one face at once: a split frame makes the viewer see the distance between her filtered and real self; honest reveal plus reassurance earns saves and shares.",
+    "winning_signal": "TikTok organic, read 2026-11-07: 18.5M plays on a 292.1K-follower account, 1.4M likes, 95.6K saves, 35.2K shares, 3.8K comments (~8.3% engagement)",
+    "used_in": [
+      "runs/2026-11-07-2002-1t-first-line-fixer"
     ],
     "outcome": "untested"
   }
