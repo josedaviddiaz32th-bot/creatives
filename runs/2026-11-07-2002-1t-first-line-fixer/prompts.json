@@ -1,0 +1,188 @@
+{
+  "run": "2026-11-07-2002-1t-first-line-fixer",
+  "notes": [
+    "Order: stills K1 -> K2..K6 (edits of K1) -> K7 (edit of K6 with K1 as line reference) -> gate A on all 7 -> prompt-review on stills -> clips A, B1, B2. No ElevenLabs job (talking head, native Kling voice).",
+    "$<ID> in medias = the job_id of that earlier still once generated and approved at gate A.",
+    "Product references are the verified single-subject Higgsfield Elements Forehead-patch 6375c707-7ad9-4df9-b7e0-69750993e7aa and Eye-patches 9d766c06-2818-43e8-8ec4-1aac02d63897 (the Face Set's crescent shape, 4 identical in the set). Face-Patch 252769ce is NOT used: its image is a 4-panel sheet (lessons 5.5: never pass a multi-panel reference). No Face Set box reference exists; the 5-piece-on-backing-film fallback is used.",
+    "Kling clips carry no Element placeholders: none shows a patch on her face; the lifted sheet in B2 is locked by end frame K5, which was built from the Elements.",
+    "All on-screen text, labels and brand names are added in code at assembly (storyboard.md)."
+  ],
+  "jobs": [
+    {
+      "id": "K1_NIGHT_ID",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "Identify the reference photos by what they show, not by upload order. THE CAST PHOTO shows the only person in this image; keep her face, skin, age, hair and earrings exactly as shown. THE PLACEMENT PHOTO shows a different person wearing the patches; use it only for where each piece sits and never copy that person's face, hair or skin. THE SHEET PHOTO shows the five pieces on their backing sheet; use it for exact shape, size and transparency. In this job there is no cast photo and no placement photo: the person is described in words below. In this job THE SHEET PHOTO is supplied as two single product photos: <<<6375c707-7ad9-4df9-b7e0-69750993e7aa>>> is the forehead band, drawn with its small rounded tab pointing DOWN, and <<<9d766c06-2818-43e8-8ec4-1aac02d63897>>> is a pair of the slim crescents; the Face Set has four of these crescents, all the same shape, plus the one forehead band. Where the pieces are in THIS image: none of them is on her face; her face is completely bare. The five pieces lie flat on their clear backing film exactly as described below, and the face-placement lines of the patch description apply only to the shape of each piece, not to this image. The patches are the exact clear silicone pieces shown in the product reference, and nothing else. They are thin, transparent and slightly frosted; her skin and lines stay visible through them; they are noticed only by a thin raised edge that catches the light and a soft satin sheen. They are never white, beige, pink, gold, opaque, gel pads, hydrogel, fabric, paper or tape. Forehead piece: a wide, gently curved band covering the middle two-thirds of the forehead, with a small rounded tab at the centre of its lower edge pointing down between the eyebrows; it does not reach the hairline. Under-eye pieces: one slim crescent per eye, just below the lower lashes, following the curve of the lower lid, the outer end reaching toward the outer eye corner; never covering the eye or lashes; never circles, rings or glasses shapes. Smile-line pieces: one slim crescent on each side, along the fold from beside the nostril to beside the mouth corner; the lips stay uncovered. Every patch lies completely flat, with no bubbles, folds or lifted edges. A piece the prompt does not mention is not on her face. Again, for this image: no piece is on her face; her forehead, under-eyes and smile lines are bare skin, and all five pieces are on the film on the tray. THE PERSON: a 27-year-old woman, light olive skin, dark brown hair pulled fully back off her forehead in a claw clip with nothing falling on the forehead, small gold huggie earrings, no heavy makeup, wearing an oversized soft sage-green cotton sleep T-shirt. Early lines that must be visible: fine crinkling at the outer eye corners, faint horizontal forehead lines, a light frown line between the brows. SHOT: vertical front-camera selfie framing from a phone propped at her eye level about 40 cm away, head and shoulders, she sits in bed against the headboard at night. Her left hand holds her own phone loosely at chest height; her eyes are just lifting from that phone to the lens. Her right hand rests on the duvet on the right side of the frame, the same side as the nightstand, so it can reach the tray without crossing her body or face. Exactly two hands with five fingers each. Lips closed, neutral, relaxed expression. SET: her bedroom at night, oat and cream bedding, a warm bedside lamp on the right side of the frame is the only light. Behind her on a wooden nightstand, on the right side of the frame, a small deep-teal tray holds the five clear pieces lying flat on their clear backing film: one forehead band with its tab pointing down and four slim crescents; the lamp light catches their thin raised edges so the clear silicone is visible against the teal. The pieces are small in the frame and are not near her face. Photorealistic smartphone photo, unretouched, no beauty filter, visible pores and natural skin texture, sharp focus on her face. Her hair is pulled fully back off her forehead. The skin is dry and matte with no cream or lotion. No mirror in the shot. No text, captions, logos or watermark."
+      }
+    },
+    {
+      "id": "K2_POV_GROUP",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "2k",
+        "prompt": "Identify the reference photos by what they show, not by upload order. THE CAST PHOTO shows the only person in this image; keep her face, skin, age, hair and earrings exactly as shown. THE PLACEMENT PHOTO shows a different person wearing the patches; use it only for where each piece sits and never copy that person's face, hair or skin. THE SHEET PHOTO shows the five pieces on their backing sheet; use it for exact shape, size and transparency. In this job only THE CAST PHOTO is supplied (the bedroom selfie of her); use it for her face, skin, lines, age, hair and earrings only, not for the setting, light or framing. She is the only person taken from THE CAST PHOTO. The four friends are different women with their own distinct faces, hair colours and skin tones; none of them resembles her. No patches and no product appear in this image. SHOT: point of view of a phone propped upright on a bar table, a group photo on self-timer at a friend's birthday on a bar rooftop at night: she and four friends (women in their late twenties) squeeze in shoulder to shoulder and laugh toward the lens. She is centre-right and closest to the lens, her face filling about a third of the frame width, sharp; the friends squeeze in around and slightly behind her. Warm string lights and city bokeh behind, a slight on-camera-flash look on the faces. Her early lines are clearly visible: the light frown line between her brows, faint horizontal forehead lines and crinkling at the outer eye corners as she laughs. The friends' skin looks fresh and smooth. Every person has exactly two arms and two hands with five fingers each; no extra hands or arms, and nobody's hand is on her face. Her hair is still pulled back in the claw clip; she wears a simple black top tonight and the same gold huggie earrings. Drinking glasses and a small birthday cake with candles on the table edge, out of focus. Nobody wears eyeglasses. Photorealistic smartphone photo, unretouched, no beauty filter, visible pores and natural skin texture, sharp focus on her face. Her hair is pulled fully back off her forehead. The skin is dry and matte with no cream or lotion. No mirror in the shot. No text, captions, logos or watermark.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$K1_NIGHT_ID"
+          }
+        ]
+      }
+    },
+    {
+      "id": "K3_SLEEP",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "Identify the reference photos by what they show, not by upload order. THE CAST PHOTO shows the only person in this image; keep her face, skin, age, hair and earrings exactly as shown. THE PLACEMENT PHOTO shows a different person wearing the patches; use it only for where each piece sits and never copy that person's face, hair or skin. THE SHEET PHOTO shows the five pieces on their backing sheet; use it for exact shape, size and transparency. In this job only THE CAST PHOTO is supplied (K1). Keep everything as placed. CHANGES ONLY: she is now asleep, lying on her side facing the camera, her cheek, the outer corner of one eye and the side of her forehead pressed into an oat-coloured pillow so the skin folds against it and visible sleep creases form there; eyes closed, lips closed, face relaxed. The duvet is pulled up to her shoulder. Her phone is not in her hand. The lamp is dimmed to a low warm glow; the nightstand and its teal tray with the clear pieces stay in the background, small and out of focus. Bare face, no patches on her. Camera slightly above the pillow, close. Photorealistic smartphone photo, unretouched, no beauty filter, visible pores and natural skin texture, sharp focus on her face. Her hair is pulled fully back off her forehead. The skin is dry and matte with no cream or lotion. No mirror in the shot. No text, captions, logos or watermark.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$K1_NIGHT_ID"
+          }
+        ]
+      }
+    },
+    {
+      "id": "K4_PRESS_ON",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "Identify the reference photos by what they show, not by upload order. THE CAST PHOTO shows the only person in this image; keep her face, skin, age, hair and earrings exactly as shown. THE PLACEMENT PHOTO shows a different person wearing the patches; use it only for where each piece sits and never copy that person's face, hair or skin. THE SHEET PHOTO shows the five pieces on their backing sheet; use it for exact shape, size and transparency. In this job THE CAST PHOTO is K1 (the bedroom selfie of her). No placement photo is supplied; placement comes from the text. In this job THE SHEET PHOTO is supplied as two single product photos: <<<6375c707-7ad9-4df9-b7e0-69750993e7aa>>> is the forehead band, drawn with its small rounded tab pointing DOWN, and <<<9d766c06-2818-43e8-8ec4-1aac02d63897>>> is a pair of the slim crescents; the Face Set has four of these crescents, all the same shape, plus the one forehead band. The patches are the exact clear silicone pieces shown in the product reference, and nothing else. They are thin, transparent and slightly frosted; her skin and lines stay visible through them; they are noticed only by a thin raised edge that catches the light and a soft satin sheen. They are never white, beige, pink, gold, opaque, gel pads, hydrogel, fabric, paper or tape. Forehead piece: a wide, gently curved band covering the middle two-thirds of the forehead, with a small rounded tab at the centre of its lower edge pointing down between the eyebrows; it does not reach the hairline. Under-eye pieces: one slim crescent per eye, just below the lower lashes, following the curve of the lower lid, the outer end reaching toward the outer eye corner; never covering the eye or lashes; never circles, rings or glasses shapes. Smile-line pieces: one slim crescent on each side, along the fold from beside the nostril to beside the mouth corner; the lips stay uncovered. Every patch lies completely flat, with no bubbles, folds or lifted edges. A piece the prompt does not mention is not on her face. Keep everything as placed in THE CAST PHOTO: same woman, bedroom, lamp light, framing, T-shirt, hair and earrings. CHANGES ONLY: she sits up against the headboard; her left hand holds her phone at chest height and her eyes are on the phone screen, not on the lens, not posing. The fingertips of her right hand (two fingers) press the forehead piece flat at its centre, as if smoothing it on from the centre outward; the forehead piece covers the middle two-thirds of the forehead, tab pointing DOWN between the eyebrows, and does not reach the hairline. Already on: one slim crescent under each eye and one slim crescent along each smile line. Exactly five pieces on her face: the forehead band and four crescents. Lips closed, not smiling, calm. Exactly two hands with five fingers each. The tray on the nightstand is now empty. Photorealistic smartphone photo, unretouched, no beauty filter, visible pores and natural skin texture, sharp focus on her face. Her hair is pulled fully back off her forehead. The skin is dry and matte with no cream or lotion. No mirror in the shot. No text, captions, logos or watermark.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$K1_NIGHT_ID"
+          }
+        ]
+      }
+    },
+    {
+      "id": "K5_SHEET_HOLD",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "Identify the reference photos by what they show, not by upload order. THE CAST PHOTO shows the only person in this image; keep her face, skin, age, hair and earrings exactly as shown. THE PLACEMENT PHOTO shows a different person wearing the patches; use it only for where each piece sits and never copy that person's face, hair or skin. THE SHEET PHOTO shows the five pieces on their backing sheet; use it for exact shape, size and transparency. In this job THE CAST PHOTO is K1 (the bedroom selfie of her). No placement photo is supplied. In this job THE SHEET PHOTO is supplied as two single product photos: <<<6375c707-7ad9-4df9-b7e0-69750993e7aa>>> is the forehead band, drawn with its small rounded tab pointing DOWN, and <<<9d766c06-2818-43e8-8ec4-1aac02d63897>>> is a pair of the slim crescents; the Face Set has four of these crescents, all the same shape, plus the one forehead band. Where the pieces are in THIS image: none of them is on her face; her face is completely bare. The five pieces lie flat on their clear backing film exactly as described below, and the face-placement lines of the patch description apply only to the shape of each piece, not to this image. The patches are the exact clear silicone pieces shown in the product reference, and nothing else. They are thin, transparent and slightly frosted; her skin and lines stay visible through them; they are noticed only by a thin raised edge that catches the light and a soft satin sheen. They are never white, beige, pink, gold, opaque, gel pads, hydrogel, fabric, paper or tape. Forehead piece: a wide, gently curved band covering the middle two-thirds of the forehead, with a small rounded tab at the centre of its lower edge pointing down between the eyebrows; it does not reach the hairline. Under-eye pieces: one slim crescent per eye, just below the lower lashes, following the curve of the lower lid, the outer end reaching toward the outer eye corner; never covering the eye or lashes; never circles, rings or glasses shapes. Smile-line pieces: one slim crescent on each side, along the fold from beside the nostril to beside the mouth corner; the lips stay uncovered. Every patch lies completely flat, with no bubbles, folds or lifted edges. A piece the prompt does not mention is not on her face. Again, for this image: no piece is on her face; her forehead, under-eyes and smile lines are bare skin, and all five pieces are on the film in her right hand. Keep everything as placed in THE CAST PHOTO: same woman, bedroom, lamp light, framing, T-shirt, hair and earrings. CHANGES ONLY: her right hand holds the clear backing film with the five pieces on it (one forehead band, tab pointing down, and four slim crescents) up beside her right cheek toward the lens, the pieces facing the camera, flat on the film, their thin raised edges catching the warm lamp light. The film and the pieces do not touch her face. Her left hand still holds her phone low at chest height. Her eyes look at the lens; her mouth is relaxed, lips just parted as if mid-sentence. The teal tray on the nightstand is now empty. Bare face. Exactly two hands with five fingers each. Photorealistic smartphone photo, unretouched, no beauty filter, visible pores and natural skin texture, sharp focus on her face. Her hair is pulled fully back off her forehead. The skin is dry and matte with no cream or lotion. No mirror in the shot. No text, captions, logos or watermark.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$K1_NIGHT_ID"
+          }
+        ]
+      }
+    },
+    {
+      "id": "K6_TODAY",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "Identify the reference photos by what they show, not by upload order. THE CAST PHOTO shows the only person in this image; keep her face, skin, age, hair and earrings exactly as shown. THE PLACEMENT PHOTO shows a different person wearing the patches; use it only for where each piece sits and never copy that person's face, hair or skin. THE SHEET PHOTO shows the five pieces on their backing sheet; use it for exact shape, size and transparency. In this job THE CAST PHOTO is K1 (the bedroom selfie of her). No placement photo is supplied. Only the forehead band is shown in this image: <<<6375c707-7ad9-4df9-b7e0-69750993e7aa>>> is the forehead band, drawn with its small rounded tab pointing DOWN. Where the pieces are in THIS image: only the forehead band appears, held in her fingers beside her face. No piece is on her face; her face is completely bare. There is no backing film and no other piece anywhere in the image. The face-placement lines of the patch description apply only to the shape of the forehead band, not to this image. The patches are the exact clear silicone pieces shown in the product reference, and nothing else. They are thin, transparent and slightly frosted; her skin and lines stay visible through them; they are noticed only by a thin raised edge that catches the light and a soft satin sheen. They are never white, beige, pink, gold, opaque, gel pads, hydrogel, fabric, paper or tape. Forehead piece: a wide, gently curved band covering the middle two-thirds of the forehead, with a small rounded tab at the centre of its lower edge pointing down between the eyebrows; it does not reach the hairline. Under-eye pieces: one slim crescent per eye, just below the lower lashes, following the curve of the lower lid, the outer end reaching toward the outer eye corner; never covering the eye or lashes; never circles, rings or glasses shapes. Smile-line pieces: one slim crescent on each side, along the fold from beside the nostril to beside the mouth corner; the lips stay uncovered. Every patch lies completely flat, with no bubbles, folds or lifted edges. A piece the prompt does not mention is not on her face. Again, for this image: no piece is on her face; her forehead, under-eyes and smile lines are bare skin. Keep everything as placed in THE CAST PHOTO: same woman, same bedroom, same framing and camera distance, same T-shirt, hair in the claw clip and earrings. CHANGES ONLY: it is morning; the lamp is off and the only light is soft daylight from a window on the right. Neutral, relaxed expression, eyes to the lens, lips closed. No phone: her left hand is lowered out of frame. Only her right hand is visible, with exactly five fingers. Her right hand holds the clear forehead band between thumb and index finger beside her face at temple height, the band hanging as one soft, curved, transparent sheet; nothing is on her face. The teal tray on the nightstand is empty. Her skin looks rested after the night: the frown line between her brows, the forehead lines and the crinkling at the outer eye corners are visibly softer than in THE CAST PHOTO but still present and still the same lines in the same places, not erased, not airbrushed. Photorealistic smartphone photo, unretouched, no beauty filter, visible pores and natural skin texture, sharp focus on her face. Her hair is pulled fully back off her forehead. The skin is dry and matte with no cream or lotion. No mirror in the shot. No text, captions, logos or watermark.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$K1_NIGHT_ID"
+          }
+        ]
+      }
+    },
+    {
+      "id": "K7_YESTERDAY",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "Identify the reference photos by what they show, not by upload order. THE CAST PHOTO shows the only person in this image; keep her face, skin, age, hair and earrings exactly as shown. THE PLACEMENT PHOTO shows a different person wearing the patches; use it only for where each piece sits and never copy that person's face, hair or skin. THE SHEET PHOTO shows the five pieces on their backing sheet; use it for exact shape, size and transparency. In this job two photos of the same woman are supplied, and there is no placement photo or sheet photo. THE MORNING PHOTO (K6) is the image to edit. THE CAST PHOTO (K1, at night) is used ONLY as the reference for how deep her lines are. Keep everything as placed in THE MORNING PHOTO: same morning window light from the right, framing, camera distance, expression, eye line, T-shirt, hair and earrings. CHANGES ONLY: the clear forehead band and her right hand are gone (her hand is lowered out of frame); her frown line, forehead lines and the crinkling at the outer eye corners are restored to exactly the depth, length and placement they have in THE CAST PHOTO, never deeper, never more lines than THE CAST PHOTO, no added redness, shadows or tiredness. No patches, nothing in her hands. Photorealistic smartphone photo, unretouched, no beauty filter, visible pores and natural skin texture, sharp focus on her face. Her hair is pulled fully back off her forehead. The skin is dry and matte with no cream or lotion. No mirror in the shot. No text, captions, logos or watermark.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$K6_TODAY"
+          },
+          {
+            "role": "image_references",
+            "value": "$K1_NIGHT_ID"
+          }
+        ]
+      }
+    },
+    {
+      "id": "CLIP_A",
+      "tool": "generate_video",
+      "params": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "on",
+        "duration": 14,
+        "aspect_ratio": "9:16",
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "$K1_NIGHT_ID"
+          },
+          {
+            "role": "end_image",
+            "value": "$K1_NIGHT_ID"
+          }
+        ],
+        "prompt": "Motion only; the start frame sets her, the room and the light. Camera locked: front-camera selfie framing from a phone propped at her eye level, no zoom, no shake, no camera movement. She is bare-faced the whole clip; nothing is ever placed on her face. What must NOT move: the lamp and its warm light, the nightstand and the teal tray, the bedding, the background; her hair stays pulled back in the claw clip and nothing falls on her forehead; her earrings stay. Timed beats: 0-0.7s she glances from the phone in her left hand up to the lens. 0.7-4.1s she asks the question with eyebrows slightly raised and a small head tilt. 4.3-6s a small dry shrug on the word me. 6-11s she lists her lines, eyes flicking up toward her own forehead. 11-13.5s a short self-aware exhale on the last sentence. 13.5-14s she settles back into the exact pose of the start frame, phone in her left hand. She starts speaking right at the start of the clip. Delivery: confessional, a little embarrassed, a little funny. She says exactly these words, in this order, and nothing else: \"Can't take a group photo without filtering your lines? My friends look smooth. Me? Frown lines, forehead lines, crinkling by my eyes. I filter it, feel like a fraud.\" Voice: A warm, casual young American woman's voice in her late twenties, mid-pitch and slightly breathy, quick conversational pace with small natural pauses, a little self-aware humor, speaking softly as if it is late at night in her bedroom. Exactly two hands with five fingers each. Her wrinkles do not change during the clip. Unretouched, no beauty filter, visible pores. No fades, no cuts, no text, no captions, no music, no new objects, no other people. Only her voice and quiet room tone. She does not say anything that is not in the quoted words."
+      }
+    },
+    {
+      "id": "CLIP_B1",
+      "tool": "generate_video",
+      "params": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "on",
+        "duration": 13,
+        "aspect_ratio": "9:16",
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "$K1_NIGHT_ID"
+          },
+          {
+            "role": "end_image",
+            "value": "$K1_NIGHT_ID"
+          }
+        ],
+        "prompt": "Motion only; the start frame sets her, the room and the light. Camera locked: front-camera selfie framing from a phone propped at her eye level, no zoom, no shake, no camera movement. She is bare-faced the whole clip; nothing is ever placed on her face. What must NOT move: the lamp and its warm light, the nightstand and the teal tray, the bedding, the background; her hair stays pulled back in the claw clip and nothing falls on her forehead; her earrings stay. Timed beats: 0-4.8s she lists the ingredients, lightly counting on the fingers of her free right hand at chest height. 4.8-7.7s a small grimace and a slight shake of the head. 7.9-12.8s she leans in slightly toward the lens and lowers her voice, eyebrows up as she asks the question. 12.8-13s she holds, back in the pose of the start frame. Tretinoin is pronounced tret-ih-noyn. Delivery: honest, a little worried, then curious and conspiratorial on the question. She says exactly these words, in this order, and nothing else: \"I've researched tretinoin, vitamin C, peptides, even Botox of lesser strength. But I'm scared it'll look unnatural. Ever notice your lines look worst right when you wake up?\" Voice: A warm, casual young American woman's voice in her late twenties, mid-pitch and slightly breathy, quick conversational pace with small natural pauses, a little self-aware humor, speaking softly as if it is late at night in her bedroom. Exactly two hands with five fingers each. Her wrinkles do not change during the clip. Unretouched, no beauty filter, visible pores. No fades, no cuts, no text, no captions, no music, no new objects, no other people. Only her voice and quiet room tone. She does not say anything that is not in the quoted words."
+      }
+    },
+    {
+      "id": "CLIP_B2",
+      "tool": "generate_video",
+      "params": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "on",
+        "duration": 15,
+        "aspect_ratio": "9:16",
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "$K1_NIGHT_ID"
+          },
+          {
+            "role": "end_image",
+            "value": "$K5_SHEET_HOLD"
+          }
+        ],
+        "prompt": "Motion only; the start frame sets her, the room and the light. Camera locked: front-camera selfie framing from a phone propped at her eye level, no zoom, no shake, no camera movement. She is bare-faced the whole clip; nothing is ever placed on her face. What must NOT move: the lamp and its warm light, the nightstand and the teal tray, the bedding, the background; her hair stays pulled back in the claw clip and nothing falls on her forehead; her earrings stay. Lead action: at 4.4s her free right hand reaches to the teal tray on the nightstand, picks up the clear backing film with the five clear pieces on it, and by 6s holds it still beside her right cheek toward the lens, exactly as in the end frame; the film and pieces keep their shape, stay flat and clear, and never touch her face; exactly five pieces, none added or lost. Timed beats: 0-4.2s she says the first sentence calmly, matter-of-fact, looking at the lens. 4.4-6s the pick-up, one smooth movement. 6-15s she holds the pieces still and keeps talking; the left hand keeps the phone low. She says the word photo with a light, playful emphasis, a little slower, not shouted. Delivery: calm, relieved, friendly. She says exactly these words, in this order, and nothing else: \"A lot of them get pressed in every night. So now I sleep in these. They hold my skin flat all night. Comment photo and I'll send you what I use.\" Voice: A warm, casual young American woman's voice in her late twenties, mid-pitch and slightly breathy, quick conversational pace with small natural pauses, a little self-aware humor, speaking softly as if it is late at night in her bedroom. Exactly two hands with five fingers each. Her wrinkles do not change during the clip. Unretouched, no beauty filter, visible pores. No fades, no cuts, no text, no captions, no music, no new objects, no other people. Only her voice and quiet room tone. She does not say anything that is not in the quoted words."
+      }
+    }
+  ]
+}

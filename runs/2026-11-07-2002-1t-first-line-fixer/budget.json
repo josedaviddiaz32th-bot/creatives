@@ -1,0 +1,63 @@
+{
+  "cap": 135,
+  "stage": "tof",
+  "reserve_for_retries": 15,
+  "first_pass_limit": 120,
+  "estimate": [
+    {
+      "job": "K1_NIGHT_ID",
+      "model": "nano_banana_2 1k 9:16, 2 Elements",
+      "credits": 1.5
+    },
+    {
+      "job": "K2_POV_GROUP",
+      "model": "nano_banana_2 2k 9:16, 1 ref",
+      "credits": 2
+    },
+    {
+      "job": "K3_SLEEP",
+      "model": "nano_banana_2 1k 9:16, 1 ref",
+      "credits": 1.5
+    },
+    {
+      "job": "K4_PRESS_ON",
+      "model": "nano_banana_2 1k 9:16, 1 ref + 2 Elements",
+      "credits": 1.5
+    },
+    {
+      "job": "K5_SHEET_HOLD",
+      "model": "nano_banana_2 1k 9:16, 1 ref + 2 Elements",
+      "credits": 1.5
+    },
+    {
+      "job": "K6_TODAY",
+      "model": "nano_banana_2 1k 9:16, 1 ref + 1 Element",
+      "credits": 1.5
+    },
+    {
+      "job": "K7_YESTERDAY",
+      "model": "nano_banana_2 1k 9:16, 2 refs",
+      "credits": 1.5
+    },
+    {
+      "job": "CLIP_A",
+      "model": "kling3_0 pro sound on 14s 9:16 start+end",
+      "credits": 35
+    },
+    {
+      "job": "CLIP_B1",
+      "model": "kling3_0 pro sound on 13s 9:16 start+end",
+      "credits": 32.5
+    },
+    {
+      "job": "CLIP_B2",
+      "model": "kling3_0 pro sound on 15s 9:16 start+end",
+      "credits": 37.5
+    }
+  ],
+  "estimate_total": 116.0,
+  "actual": [],
+  "actual_total": 0,
+  "preflight": "get_cost:true on Higgsfield 2026-11-07 (no jobs submitted). Returned: kling3_0 pro sound on 14s=35, 13s=32.5, 15s=37.5 (with start+end media); nano_banana_2 9:16 1k=1.5 (text+Elements, 1 ref, 1 ref+Elements, 2 refs), 2k=2. Stills not yet generated, so frame-dependent jobs were priced with a stand-in media id; price depends only on model/mode/sound/duration/resolution.",
+  "status": "WITHIN_BUDGET: 116.0 first pass <= 120 (135 cap - 15 reserve); 131.0 with reserve <= 135. Nothing cut. Margin before reserve: 4.0 (3 still redos at 1.5)."
+}
