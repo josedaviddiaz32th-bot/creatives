@@ -8,7 +8,7 @@ happens after the click (pages, offers, email) is in
 
 Sources: the owner's instructions (Nov 7, 2026), `docs/lessons-learned.md`,
 the Avatars doc, and `docs/research/` (web research, the creator videos, the
-funnel videos).
+funnel videos, the Meta Ad Library scan of the category).
 
 ## 1. Why this exists
 

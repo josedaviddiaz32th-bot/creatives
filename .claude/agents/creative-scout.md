@@ -17,17 +17,44 @@ this slot.
 
 ## 2. Find a winning creative
 Search for **the slot's format** first, then widen to the slot's funnel
-stage. Use the ad-research tools connected to this session:
-- **AdWhispr** (Meta Ad Library and TikTok ads): `search_ads`,
-  `research_tiktok_ads`, `get_brand_ads` sorted by longevity.
-- **Gethookd** (call `get_user_profile` first, as its instructions require):
-  `search_ads`, `get_top_ads`, `get_ad_hooks`, `get_creative_breakdown`,
-  `transcribe_ad`.
+stage. Use whichever of these sources this session has (say which you used):
+
+- **Meta Ad Library in Chrome** (Claude in Chrome, the owner's Facebook
+  login): `facebook.com/ads/library/?active_status=active&ad_type=all&country=US&media_type=video&search_type=keyword_unordered&q=<keyword>`.
+  It sorts by **total impressions** by default and shows each ad's start
+  date (longevity), whether it runs through a creator's page (whitelisting)
+  and how many versions it has. Search category words ("wrinkle patches",
+  "forehead lines", "under eye patches") and adjacent ones for the slot's
+  problem ("look tired", "med spa", "sleep wrinkles"). Read with
+  `get_page_text`; open "See ad details" for the video. Load the Chrome
+  tools in one ToolSearch call and close every tab you open.
+- **TikTok Creative Center → Top Ads** in Chrome
+  (`ads.tiktok.com/business/creativecenter/inspiration/topads/pc/en`):
+  likes, CTR percentile and budget per ad, filterable by region, industry
+  (beauty & personal care) and objective. Filters must be set in the page
+  (URL keywords don't apply); close the promo popup first. Its likes and
+  CTR are **engagement signals**, the best TOF reference.
+- **Organic TikTok / Instagram search in Chrome** for the slot's problem,
+  sorted by most liked: TOF formats that earn attention without paying.
+- **AdWhispr** (Meta and TikTok ads via API): `search_ads`,
+  `research_tiktok_ads`, `get_brand_ads` sorted by longevity. Works in
+  cloud sessions without a browser.
+- **Gethookd** (call `get_user_profile` first): `search_ads`, `get_top_ads`,
+  `get_top_hooks`, `get_creative_breakdown`, `transcribe_ad`. As of Nov 7,
+  2026 the workspace has no MCP access; skip it if it still says so.
+- **Higgsfield `tiktok_music_trending`** for a current sound when the
+  format uses music.
+
+Chrome sources need the owner's Mac with Chrome open (local sessions). In a
+cloud session, use AdWhispr and the swipe library.
 
 **What counts as winning** (record which signal you used):
-- active 30+ days (advertisers don't keep paying for losers), best signal;
-- many live variations of the same concept;
-- top-ranked by the tool (top ads, top hooks), or unusually high engagement.
+- **MOF/BOF:** active 30+ days (advertisers don't keep paying for losers);
+  many live variations or creator versions of the same concept; top
+  impressions in the Ad Library.
+- **TOF:** engagement first: Creative Center likes and CTR, organic videos
+  with unusually high likes, shares and comments for the account's size.
+  A long-running ad is a bonus, not the main signal.
 
 For **TOF** slots, also pull the strongest hooks around (AdWhispr
 long-running ads; Gethookd `get_top_hooks` when it has access) and note
@@ -39,8 +66,12 @@ its `outcome` in the index is WIN; add at least one new breakdown to the
 library every 3 runs anyway, so the library keeps growing.
 
 ## 3. Break it down
-Watch or transcribe it (`transcribe_ad`, `get_creative_breakdown`, or
-frames). For the one you pick, fill in:
+Watch it, don't guess: transcribe it (`transcribe_ad`,
+`get_creative_breakdown`), or in a local session download the video into a
+new empty folder in the scratchpad, transcribe it with Whisper
+(`whisper-cli -m ~/.cache/whisper/ggml-small.en.bin`, or `ggml-small.bin`
+for other languages) and pull frames with ffmpeg. If you couldn't watch it,
+say so in the breakdown. For the one you pick, fill in:
 
 | Element | What they did | Why it may persuade |
 |---------|---------------|---------------------|
