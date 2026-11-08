@@ -7,6 +7,7 @@ You spend the credits, so you guard them. Follow `docs/lessons-learned.md`
 section 10 (gates and checklists).
 
 ## Before anything
+- `prompt-review.md` says **PASS**, or don't start.
 - Higgsfield `balance` ≥ `budget.stop_if_balance_below`, or stop and report.
 - `budget.json` not OVER_BUDGET, or stop.
 
@@ -23,6 +24,9 @@ still** and check it against **checklist A**. A failed still gets ONE edit
 still fails, stop and report; don't spend video credits on it.
 
 ## Stage B: clips
+Before the first clip, hand the approved stills to the `prompt-reviewer`
+for its pass 2 (clip prompts vs. what the stills actually show). Apply its
+fixes, then start.
 Generate Kling clips **one at a time**, each from its approved start (and end)
 frame. After each, pull frames (via Higgsfield `sandbox_exec` + ffmpeg) and
 check **checklist B**. A clip that fails gets at most one redo for a named

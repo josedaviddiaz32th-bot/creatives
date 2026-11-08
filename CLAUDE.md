@@ -29,12 +29,14 @@ stage, the reviewer and a human can see exactly what happened.
 | 4 | `story-reviewer` | `story.md`, `brief.md`, lessons | `story-review.md`: **APPROVED / REVISE** |
 | 5 | `storyboarder` | approved `story.md` | `storyboard.md` (talking head vs voiceover, audio source) |
 | 6 | `prompt-engineer` | `storyboard.md`, lessons | `prompts.json`, `budget.json` (estimate) |
+| 6b | `prompt-reviewer` | `prompts.json`, `storyboard.md`, `story.md`, lessons, production log | `prompt-review.md`: **PASS / FIX** (again on the approved stills before any clip) |
 | 7 | `producer` | `prompts.json`, `budget.json` | clips, final video URL, `budget.json` (actuals) |
 | 8 | `video-reviewer` | everything above + final video | `video-review.md`: **PASS / FAIL** + fixes |
 | 9 | `publisher` | `video-review.md`, config | `publish.md` |
 
 Stages 3–4 loop until the story is approved (at most 2 revisions, then stop
 and flag the owner). **No credits are spent before stage 4 approves.**
+Stages 6–6b loop the same way: no credits until `prompt-review.md` says PASS.
 Stages 7–8 may loop once: the reviewer names failed clips, the producer redoes
 only those clips, as long as the budget allows.
 

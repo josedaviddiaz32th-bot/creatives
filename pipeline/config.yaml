@@ -76,4 +76,5 @@ review:
   min_story_score: 8            # story-reviewer, before any credits are spent
   min_hook_score_tof: 9         # TOF hooks and shareability must reach this
   max_story_revisions: 2        # then stop and flag for the owner
+  max_prompt_revisions: 2       # prompt-reviewer loops, then flag the owner
   min_score_to_publish: 8       # video-reviewer scores 1-10

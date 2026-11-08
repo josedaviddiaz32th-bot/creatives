@@ -59,3 +59,6 @@ you cut. If it still doesn't fit, mark OVER_BUDGET and stop.
 
 Write `prompts.json` (every job's exact tool + params, in order: stills, then
 clips, then voiceover) and `budget.json`.
+
+Then hand off to the `prompt-reviewer`. Nothing is generated until
+`prompt-review.md` says PASS; on FIX, apply its replacement text and resubmit.
