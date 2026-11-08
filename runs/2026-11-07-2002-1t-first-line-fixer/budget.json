@@ -220,7 +220,7 @@
       "credits": 1.5,
       "balance_before": 1182.5,
       "balance_after": 1181,
-      "gate_A": "PASS (owner override: 'Yes, accept K6'; band as is) — later REPLACED as TODAY by fe37523b (pair rebuild)",
+      "gate_A": "PASS (owner override: 'Yes, accept K6'; band as is) \u2014 later REPLACED as TODAY by fe37523b (pair rebuild)",
       "owner_approval": "Yes, fix K6",
       "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3K4XoW4Rud6flkLxNibt0IrMyg5/hf_20261108_024139_b4e64508-bf5e-482b-a2c0-8484357a02ff.png"
     },
@@ -301,9 +301,20 @@
       "balance_after": 1071.5,
       "gate_B": "FAIL: pick-up t~5.8-7.2s - pieces lift off the tray as loose dangling crescents (no film, band not visible), then swing out of frame-right in a motion smear and come back at t~7.25 as a larger flat film with band + 4 crescents (shape/size/count not kept through the move). t 0-5.75 and 7.3-15 are clean; end matches K5. Owner decision needed; no redo run.",
       "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3K4XoW4Rud6flkLxNibt0IrMyg5/hf_20261108_031040_17a139b3-1bfd-4313-a0cb-792a8dc3057f.mp4"
+    },
+    {
+      "job": "PROPS_TRIED_ITEMS (assembly v2 hand cover, owner-approved single image)",
+      "generation_id": "629dcc29-150b-4ba5-8276-aceae69d0b62",
+      "model": "nano_banana_2 (served as nano_banana_flash) 1k 1:1, text only, count 1",
+      "preflight": 1.5,
+      "credits": 1.5,
+      "balance_before": 1071.5,
+      "balance_after": 1070,
+      "result": "USED: four unbranded items on white (tube, amber dropper, frosted jar, syringe); only text was a printed '1ml' on the syringe barrel, blurred out in code",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3K4XoW4Rud6flkLxNibt0IrMyg5/hf_20261108_034239_629dcc29-150b-4ba5-8276-aceae69d0b62.png"
     }
   ],
-  "actual_total": 128.5,
+  "actual_total": 130.0,
   "preflight": "get_cost:true on Higgsfield 2026-11-07 (no jobs submitted). Returned: kling3_0 pro sound on 14s=35, 13s=32.5, 15s=37.5 (with start+end media); nano_banana_2 9:16 1k=1.5 (text+Elements, 1 ref, 1 ref+Elements, 2 refs), 2k=2. Stills not yet generated, so frame-dependent jobs were priced with a stand-in media id; price depends only on model/mode/sound/duration/resolution.",
   "status": "WITHIN_BUDGET: 116.0 first pass <= 120 (135 cap - 15 reserve); 131.0 with reserve <= 135. Nothing cut. Margin before reserve: 4.0 (3 still redos at 1.5).",
   "generation_ids": {
@@ -324,7 +335,8 @@
     "K6_TODAY_replaced_owner_accepted": "b4e64508-bf5e-482b-a2c0-8484357a02ff",
     "CLIP_A": "977b4161-ff61-41ca-9805-6ead5d784bf2",
     "CLIP_B1": "33261546-7002-4fa8-bd30-14e243311494",
-    "CLIP_B2": "17a139b3-1bfd-4313-a0cb-792a8dc3057f"
+    "CLIP_B2": "17a139b3-1bfd-4313-a0cb-792a8dc3057f",
+    "PROPS_TRIED_ITEMS": "629dcc29-150b-4ba5-8276-aceae69d0b62"
   },
   "stage_A_status": "COMPLETE: all 7 stills approved (see generation_ids). End card = K7_YESTERDAY d21e9014 | K6_TODAY fe37523b (same light/framing). Next: prompt-reviewer pass 2 before any clip. Projection: 23.5 spent + 105 clips = 128.5 <= 135 cap (8.5 over first-pass 120, owner-approved reserve draws); 6.5 credits headroom left.",
   "still_fix_spend_auto": {
@@ -335,5 +347,6 @@
       "K5_SHEET_HOLD_FIX"
     ]
   },
-  "stage_B_status": "STOPPED FOR OWNER: all 3 clips generated once (A PASS, B1 PASS, B2 FAIL on the pick-up t~5.8-7.2s). Spent 128.5 of 135 cap; 6.5 headroom, so a B2 redo (37.5) does not fit the cap. Proposed: cut around the glitch in assembly (0 credits). No assembly yet."
+  "stage_B_status": "STOPPED FOR OWNER: all 3 clips generated once (A PASS, B1 PASS, B2 FAIL on the pick-up t~5.8-7.2s). Spent 128.5 of 135 cap; 6.5 headroom, so a B2 redo (37.5) does not fit the cap. Proposed: cut around the glitch in assembly (0 credits). No assembly yet.",
+  "assembly_status": "v2 assembled locally (video-review fixes 1-5 + owner hand-cover request); 1 paid still (1.5). actual_total 130.0 <= 135 cap."
 }
