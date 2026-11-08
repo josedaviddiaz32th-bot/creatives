@@ -135,9 +135,23 @@
       "balance_after": 1190,
       "gate_A": "FAIL",
       "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3K4XoW4Rud6flkLxNibt0IrMyg5/hf_20261108_020942_9d36306f-d048-43c1-88c0-79d02d58400e.png"
+    },
+    {
+      "job": "K4_PRESS_ON_FIX",
+      "generation_id": "02a0082c-acd1-43d7-a34c-850d33ec389a",
+      "edit_of": "9d36306f-d048-43c1-88c0-79d02d58400e",
+      "model": "nano_banana_2 (served as nano_banana_flash) 1k 9:16, 1 ref + 2 Elements, count 1",
+      "preflight": 1.5,
+      "credits": 1.5,
+      "balance_before": 1190,
+      "balance_after": 1188.5,
+      "gate_A": "FAIL",
+      "counts_toward_still_fix_credits_auto": true,
+      "owner_note": "owner accepted ~1 credit reserve draw for this fix",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3K4XoW4Rud6flkLxNibt0IrMyg5/hf_20261108_021758_02a0082c-acd1-43d7-a34c-850d33ec389a.png"
     }
   ],
-  "actual_total": 10.0,
+  "actual_total": 11.5,
   "preflight": "get_cost:true on Higgsfield 2026-11-07 (no jobs submitted). Returned: kling3_0 pro sound on 14s=35, 13s=32.5, 15s=37.5 (with start+end media); nano_banana_2 9:16 1k=1.5 (text+Elements, 1 ref, 1 ref+Elements, 2 refs), 2k=2. Stills not yet generated, so frame-dependent jobs were priced with a stand-in media id; price depends only on model/mode/sound/duration/resolution.",
   "status": "WITHIN_BUDGET: 116.0 first pass <= 120 (135 cap - 15 reserve); 131.0 with reserve <= 135. Nothing cut. Margin before reserve: 4.0 (3 still redos at 1.5).",
   "generation_ids": {
@@ -146,7 +160,15 @@
     "K2_POV_GROUP_rejected_v1": "6bbee4ea-14fd-480e-948d-d63b5b9cb8db",
     "K2_POV_GROUP": "91d09592-2072-4ca3-84de-d0b15a1830cb",
     "K3_SLEEP": "f0d61ae3-a6a7-4172-a518-e9586bda1c00",
-    "K4_PRESS_ON_rejected_v1": "9d36306f-d048-43c1-88c0-79d02d58400e"
+    "K4_PRESS_ON_rejected_v1": "9d36306f-d048-43c1-88c0-79d02d58400e",
+    "K4_PRESS_ON_rejected_fix": "02a0082c-acd1-43d7-a34c-850d33ec389a"
   },
-  "stage_A_status": "STOPPED at K4: gate A fail (under-eye pieces are wide half-moon pads, left one outlines up around the eye corner = ring/glasses shape; smile-line pieces are comma blobs, not slim crescents). K1 91d6abc0, K2 91d09592, K3 f0d61ae3 approved. K5-K7 not generated. No redo without owner OK. See stills-check.md."
+  "stage_A_status": "STOPPED at K4: the one fix also failed gate A (under-eye half-moon pads, teardrop smile-line pieces). Approved: K1 91d6abc0, K2 91d09592, K3 f0d61ae3. K5-K7 not generated. Projected: 11.5 spent + 4.5 stills + 105 clips = 121 (<=135 cap; 1 over first-pass limit, reserve draw accepted by owner).",
+  "still_fix_spend_auto": {
+    "allowance": 3,
+    "used": 1.5,
+    "jobs": [
+      "K4_PRESS_ON_FIX"
+    ]
+  }
 }

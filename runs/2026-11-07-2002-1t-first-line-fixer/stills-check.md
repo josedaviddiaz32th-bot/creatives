@@ -1,7 +1,7 @@
 # Stills check (gate A): 2026-11-07-2002-1t-first-line-fixer
 
 Producer, Stage A only. Owner rules: one generation per shot (count 1), no automatic redo, stop at the first failed still.
-Balance before: 1200. Balance after: 1190. Spent: 10.0 (budget.json `actual_total`).
+Balance before: 1200. Balance after: 1188.5. Spent: 11.5 (budget.json `actual_total`). Still-fix allowance (`still_fix_credits_auto`): 1.5 of 3 used.
 
 **Status: STOPPED at K4.**
 - Approved: K1 = `91d6abc0` (owner-approved fix), K2 = `91d09592` (owner-approved fix) and K3 = `f0d61ae3`.
@@ -15,7 +15,8 @@ Balance before: 1200. Balance after: 1190. Spent: 10.0 (budget.json `actual_tota
 | K2 v1 | 6bbee4ea-14fd-480e-948d-d63b5b9cb8db | 2 | ❌ superseded |
 | **K2 (fix)** | **91d09592-2072-4ca3-84de-d0b15a1830cb** | 2 | ✅ (1 note) |
 | **K3** | **f0d61ae3-a6a7-4172-a518-e9586bda1c00** | 1.5 | ✅ |
-| K4 | 9d36306f-d048-43c1-88c0-79d02d58400e | 1.5 | ❌ stopped here |
+| K4 v1 | 9d36306f-d048-43c1-88c0-79d02d58400e | 1.5 | ❌ |
+| K4 fix | 02a0082c-acd1-43d7-a34c-850d33ec389a | 1.5 | ❌ stopped here (fix failed) |
 
 Local stills: `/private/tmp/claude-501/-Users-josediaz--claude-spares-spare-SRaU1E/2f87790f-784b-45bc-9668-95f59d8eab95/scratchpad/stills-1t/`
 
@@ -137,6 +138,24 @@ Local stills: `/private/tmp/claude-501/-Users-josediaz--claude-spares-spare-SRaU
 
 **Note for the owner:** K5 and K6 edit K1 only, and K7 edits K6. None of them depends on K4. With the owner's OK, Stage A can go on with K5 to K7 whether or not K4 is fixed. I didn't do this, because the instruction was to stop at the failed still.
 
+## K4_PRESS_ON fix (owner rule `still_fix_credits_auto: 3`): FAIL ❌. Stage A stopped.
+
+- Generation ID: `02a0082c-acd1-43d7-a34c-850d33ec389a`. This is an edit of 9d36306f, with both Elements and the proportion wording "7.8 × 2.2 cm, 3.5× longer than wide, fingernail clipping; never a half-moon pad, bean, teardrop, circle, ring or glasses shape".
+- Credits: 1.5 (preflight 1.5, count 1). Balance 1190 → 1188.5. Still-fix allowance used: 1.5 of 3.
+- Local file: `.../stills-1t/K4_fix/K4_PRESS_ON_fix.png`
+
+| Check | Result | Notes |
+|---|---|---|
+| Under-eye: slim crescents, no edge above or around the eye corner | ❌ | They're still wide half-moon pads, about 2:1 rather than 3.5:1. The ring arc above her left eye corner is gone, which is better than v1, but the shape is still wrong. |
+| Smile-line: slim crescents along the fold | ❌ | Still teardrop or comma blobs, almost unchanged from v1. |
+| Everything else (person, band with tab DOWN, 5 pieces, lips closed and not smiling, hands, light, framing) | ✅ | Unchanged from v1. |
+
+**Cause:** an edit of a still with wrong-shaped pieces keeps their footprint. The source image outweighs the proportion text. This is logged in `learning/production-log.md`.
+
+**Proposed fix (needs owner OK, because the rule stops after one fix per still):** rebuild K4 fresh from the clean K1 rather than editing the bad still. Use the prompts.json K4 prompt as it stands (`medias: K1 = 91d6abc0`, both Elements, 1k, count 1) and insert the COUNT AND SHAPE sentence from K5 right after "Already on: …": "Each crescent is about 7.8 × 2.2 cm, about three and a half times longer than it is wide, narrow like a fingernail clipping; under each eye it lies just below the lower lashes with no edge above or around the eye corner; never a half-moon pad, bean, teardrop, circle, ring or glasses shape." It costs 1.5, which uses the last 1.5 of the allowance. The projection becomes 122.5: still ≤ 135, but 2.5 over the first-pass limit of 120, drawn from the reserve.
+
+**Fallback (no credits):** in the edit, push in to a tight crop of the forehead band and the pressing fingers, cutting off below the brows. The band and tab are correct in both K4 versions. This loses the "full set on" read for those 3.5 s.
+
 ## K5_SHEET_HOLD to K7_YESTERDAY: not generated
 
-Stopped at K4 by the rule. No credits spent.
+These depend only on K1/K6, not on K4, but the rule says to stop when a fix fails. No credits spent. The K5 prompt already has the COUNT AND SHAPE sentence.
