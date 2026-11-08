@@ -12,6 +12,10 @@ section 10 (gates and checklists).
 - `budget.json` not OVER_BUDGET, or stop.
 
 ## Every paid job
+0. **One output per job** (`budget.outputs_per_job`): set every count /
+   num_images / batch parameter to 1. No variations, ever. No redo without
+   the owner's OK (`budget.max_retries_per_clip: 0`): if a still or clip
+   fails its gate, stop and report what failed and the proposed fix.
 1. **Budget gate:** `actual_total` + this job's preflighted cost ≤ `cap`
    (minus `reserve_for_retries` during the first pass). Otherwise stop.
 2. Submit, then wait with `jobs_wait`. A timeout means poll; never resubmit blindly.

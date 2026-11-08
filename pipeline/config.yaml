@@ -45,7 +45,8 @@ budget:
   # Hard cap per video, by the slot's funnel stage: stop before any job that would exceed it.
   max_credits_by_stage: { tof: 135, mof: 120, bof: 70 }
   max_credits_per_video: 135    # absolute ceiling for any video
-  max_retries_per_clip: 1       # only for clips that fail review
+  max_retries_per_clip: 0       # owner: one generation per shot; any redo needs the owner's OK
+  outputs_per_job: 1            # owner: never generate variations (num_images / batch = 1)
   reserve_for_retries: 15       # credits held back from the first pass for fixes
   stop_if_balance_below: 100    # don't start a run that can't finish
   always_preflight: true        # get_cost: true before every paid job
