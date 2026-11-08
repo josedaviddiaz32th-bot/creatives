@@ -47,5 +47,21 @@
       "runs/2026-11-07-2002-1t-first-line-fixer"
     ],
     "outcome": "untested"
+  },
+  {
+    "id": "2026-11-08-resilia-skeleton-14-day-timeline",
+    "file": "learning/swipe-file/2026-11-08-resilia-skeleton-14-day-timeline.md",
+    "advertiser": "Resilia (via publisher-style page 'Garlic Health Report')",
+    "category": "supplements / heart and circulation",
+    "format": "AI 3D see-through skeleton day-by-day timeline with inside-the-artery CGI, narrator VO, one-word kinetic captions (2:37)",
+    "funnel": "tof",
+    "presenter": "none (AI cartoon character + narrator VO)",
+    "hook_type": "result-in-a-timeframe promise + inside-the-body visual",
+    "mechanism": "Watch it work inside you, day by day: a see-through body acts out a dated ladder of small relatable wins while CGI shows the hidden mechanism, so belief is built before the late brand pitch.",
+    "winning_signal": "Meta Ad Library 'resilia' search sorted by total impressions, read 2026-11-08: #2 overall and top video (Library ID 3030773153939023); started Oct 23, 2026 (16 days); same copy runs across 8+ pages and many cuts",
+    "used_in": [
+      "runs/2026-11-08-0230-2t-proactive-problem-solver"
+    ],
+    "outcome": "untested"
   }
 ]

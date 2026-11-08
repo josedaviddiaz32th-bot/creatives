@@ -1,0 +1,813 @@
+{
+  "run": "2026-11-08-0230-2t-proactive-problem-solver",
+  "notes": [
+    "Order: P01 -> P02..P18 (edits of P01 chain) -> P20A/P20B/P22 (edits + Elements) -> X08A (gpt) -> X08B, X15, X21, X23, X24 (edits) -> R12 -> R11 -> R27 -> S19 -> gate A on ALL stills + prompt-review on stills -> clips C01..C24 -> voiceover. Nothing is submitted until prompt-review.md says PASS.",
+    "$<ID> in medias = the job_id of that earlier still once generated and approved at gate A.",
+    "One output per job (budget.outputs_per_job = 1); no variations, no batches.",
+    "Image models: nano_banana_2 (config generation.image_model) for the identity anchors and every edit, because each still must keep the same Pixar character / P2 face / cutaway and Elements work on it; gpt_image_2_6 (config cheap_image_model) only for X08A, a fresh text-only stylised composition with no person and no product (0.5 vs 1.5). gpt_image_2_6 is the text/logo model, but no still here needs printed text: the box is never re-rendered (lessons section 7 asset composited in code) and every word on screen is added in code.",
+    "Box rule: P01, P03, P07, P10, P17, P18 leave the nightstand top empty; assembly composites the real box face-set-box-v1.png (job 0f24791e-57ce-49ab-afe4-85d5f8e0d243, cut out in code from the mint background) into that spot, including over C01 (locked camera). The hero/CTA uses job 39637096-4223-49c3-a881-37feba3e280a unchanged.",
+    "Runway cross-section assets 4478cf98 / d7e35b5e / 53a8695f were checked (get_task) and NOT used: they are photoreal medical renders prompted 'no cartoon style' (lessons section 0 requires 'Pixar style' for skin cross-sections) and show collagen/elastin fibres and capillaries, which the brief keeps out of this video.",
+    "Kling clips carry no Element placeholders: the patch geometry is locked by approved start/end frames built from the Elements.",
+    "Clip prompts must be re-checked after gate A against what each start/end still actually shows (production log: CLIP_A).",
+    "All on-screen text (hook, clock times, labels, chips, brand, CTA) is added in code at assembly (storyboard.md).",
+    "Revision 1 (prompt-review round 1 FIX): appendix prompts pasted verbatim for P02_SQUASH_MACRO, P03_LAMP, P04_TOPDOWN, P05_SIDE_SINK, P06A_EYE_FLAT, P06B_EYE_FOLD, P07_CLOCK, P09_GLOW_CREASE, P10_ALARM_START, P13_CUPCAKE, P14_CREAM_SHELF, P16_PILLOWCASE_PRINT, P17_REALISE, P18_REACH, P20A_NIGHT1_HOLD, P20B_NIGHT1_ON, P22_ASLEEP_PATCHED, X21_PATCH_FLAT, X23_MOISTURE, X24_PLUMP, R11_EYE_MACRO, R27_AFTER, C03_LAMP, C06_FOLD, C10_ALARM, VO_LARA; Forehead-patch Element added to X23/X24 medias; new S19_SHEET_LAMP replaces the Runway bd37ae30 reuse; VO says 'Comment pillow' (no caps). The producer takes the Lara voice_id from creative_list_voices before submitting.",
+    "Pass 2 (prompt-review, after gate A): C01, C03, C06, C08, C10, C20 prompts replaced word for word; C06 start-only (end_image removed; owner decision Nov 8, P06B failed); C21, C24 unchanged.",
+    "Nov 8: VO_LARA renamed VO_HOPE (owner voice change); Emily fallback removed (owner: no other voice)."
+  ],
+  "blocks_used_verbatim": [
+    "PATCHES",
+    "REFERENCE ROLES",
+    "STYLE"
+  ],
+  "jobs": [
+    {
+      "id": "P01_FLOP_START",
+      "shots": "1 (Kling C01 start); identity anchor for every P still",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "A Pixar style 3D-animated bedroom at night. The character is the same Pixar style 3D-animated see-through woman of about 38 in every shot: a glossy ivory skeleton body like a friendly anatomy toy; a thin translucent skin layer over her face and hands, softly tinted warm peach-rose like tinted glass (never colourless), so the skin and any fold in it can be seen; big friendly expressive eyes; dark hair pulled fully back in a low bun, nothing on her forehead; small silver stud earrings; a sage-green sleep shirt. Her mouth stays closed; she does not speak. She kneels upright on a big soft bed, facing the camera, about to flop sideways onto a huge fluffy white pillow that sits on the frame-left side of the bed; her eyes are sleepy and half-closed, her mouth closed. Her hands rest on the duvet in front of her knees. The nightstand stands on the frame-right side of the bed; the front half of its top is clear, flat and empty, with nothing on it (a real product box is added there later in editing); never draw any box, package, bottle or product. A small warm lamp on the back of the nightstand is switched on. Light: a moonlit blue bedroom lit by one warm bedside lamp on the nightstand. Medium-wide shot at the height of the mattress, camera straight on, the whole bed, the pillow and the nightstand in frame. Pixar style: 3D-animated, soft rounded shapes, warm cinematic light, glossy subsurface materials, gentle shallow depth of field. Vertical 9:16 frame. No mirror in the shot. No text, numbers, digits, captions, labels, logos or watermark anywhere in the image.",
+        "medias": []
+      },
+      "outputs": 1,
+      "preflight_credits": 1.5,
+      "note": "Fresh, text-only. nano_banana_2 so every later P still is an edit of this same image (config image model for continuity)."
+    },
+    {
+      "id": "P02_SQUASH_MACRO",
+      "shots": "2",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "Keep everything as placed: the same character, her proportions, her tinted see-through skin layer, hair, earrings and sleep shirt, the same bedroom, palette and Pixar style render. The character is the same Pixar style 3D-animated see-through woman of about 38 in every shot: a glossy ivory skeleton body like a friendly anatomy toy; a thin translucent skin layer over her face and hands, softly tinted warm peach-rose like tinted glass (never colourless), so the skin and any fold in it can be seen; big friendly expressive eyes; dark hair pulled fully back in a low bun, nothing on her forehead; small silver stud earrings; a sage-green sleep shirt. Her mouth stays closed; she does not speak. Only the parts of her that fall inside this framing are visible. CHANGES ONLY: a macro close-up of her face as she lies on her right side, the camera upright and level with the pillow: her head lies sideways, her right cheek pressed down into the big white pillow along the bottom of the frame and her left cheek facing up toward the top of the frame, so her right eye is the lower eye and her left eye the upper eye. On the pillow side (the lower half of her face) the tinted see-through skin layer is squashed and bunched against the pillow, with three faint soft sunrise-orange glowing lines at the outer corner of the lower eye and on that cheek; the upper half of her face (her left side) is smooth with no glowing lines. Her eyes are closed, calm; her mouth stays closed; she does not speak. Moonlit blue light with a warm lamp glow from frame-right. Pixar style: 3D-animated, soft rounded shapes, warm cinematic light, glossy subsurface materials, gentle shallow depth of field. Vertical 9:16 frame. No mirror in the shot. No text, numbers, digits, captions, labels, logos or watermark anywhere in the image.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$P01_FLOP_START"
+          }
+        ]
+      },
+      "outputs": 1,
+      "preflight_credits": 1.5,
+      "note": ""
+    },
+    {
+      "id": "P03_LAMP",
+      "shots": "3 (Kling C03 start)",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "Keep everything as placed: the same character, her proportions, her tinted see-through skin layer, hair, earrings and sleep shirt, the same bedroom, palette and Pixar style render. The character is the same Pixar style 3D-animated see-through woman of about 38 in every shot: a glossy ivory skeleton body like a friendly anatomy toy; a thin translucent skin layer over her face and hands, softly tinted warm peach-rose like tinted glass (never colourless), so the skin and any fold in it can be seen; big friendly expressive eyes; dark hair pulled fully back in a low bun, nothing on her forehead; small silver stud earrings; a sage-green sleep shirt. Her mouth stays closed; she does not speak. CHANGES ONLY: a close-up of the nightstand on the frame-right side: her see-through hand (exactly five fingers) reaches in from frame-left and her fingertip rests on the small push switch at the base of the warm bedside lamp; the lamp is still on. The front half of the nightstand top stays clear and empty, never any box or product. Her head is blurred on the pillow in the background, eyes closed, mouth closed. Light: a moonlit blue bedroom lit by one warm bedside lamp on the nightstand. Pixar style: 3D-animated, soft rounded shapes, warm cinematic light, glossy subsurface materials, gentle shallow depth of field. Vertical 9:16 frame. No mirror in the shot. No text, numbers, digits, captions, labels, logos or watermark anywhere in the image.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$P01_FLOP_START"
+          }
+        ]
+      },
+      "outputs": 1,
+      "preflight_credits": 1.5,
+      "note": ""
+    },
+    {
+      "id": "P04_TOPDOWN",
+      "shots": "4",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "Keep everything as placed: the same character, her proportions, her tinted see-through skin layer, hair, earrings and sleep shirt, the same bedroom, palette and Pixar style render. The character is the same Pixar style 3D-animated see-through woman of about 38 in every shot: a glossy ivory skeleton body like a friendly anatomy toy; a thin translucent skin layer over her face and hands, softly tinted warm peach-rose like tinted glass (never colourless), so the skin and any fold in it can be seen; big friendly expressive eyes; dark hair pulled fully back in a low bun, nothing on her forehead; small silver stud earrings; a sage-green sleep shirt. Her mouth stays closed; she does not speak. CHANGES ONLY: a top-down shot from straight above the bed: she lies curled on her right side under the duvet, her head on the big white pillow, eyes closed, mouth closed; the pillow has a deep, worn dent on that same side under her head. The lamp is now off: the room is lit only by cool moonlit blue light from a window. The nightstand top on the frame-right edge stays clear and empty. Pixar style: 3D-animated, soft rounded shapes, warm cinematic light, glossy subsurface materials, gentle shallow depth of field. Vertical 9:16 frame. No mirror in the shot. No text, numbers, digits, captions, labels, logos or watermark anywhere in the image.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$P01_FLOP_START"
+          }
+        ]
+      },
+      "outputs": 1,
+      "preflight_credits": 1.5,
+      "note": ""
+    },
+    {
+      "id": "P05_SIDE_SINK",
+      "shots": "5; base for P06A, P09, P22",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "Keep everything as placed: the same character, her proportions, her tinted see-through skin layer, hair, earrings and sleep shirt, the same bedroom, palette and Pixar style render. The character is the same Pixar style 3D-animated see-through woman of about 38 in every shot: a glossy ivory skeleton body like a friendly anatomy toy; a thin translucent skin layer over her face and hands, softly tinted warm peach-rose like tinted glass (never colourless), so the skin and any fold in it can be seen; big friendly expressive eyes; dark hair pulled fully back in a low bun, nothing on her forehead; small silver stud earrings; a sage-green sleep shirt. Her mouth stays closed; she does not speak. CHANGES ONLY: a close side view at pillow height: she lies asleep on her right side, her head on the big white pillow, face three-quarters toward the camera, eyes closed, mouth closed; her right cheek sinks deep into the pillow and, seen through her tinted see-through skin layer, the skin of that cheek is pushed up toward the outer corner of her eye. The lamp is off; cool moonlit blue light from a window behind the camera. Pixar style: 3D-animated, soft rounded shapes, warm cinematic light, glossy subsurface materials, gentle shallow depth of field. Vertical 9:16 frame. No mirror in the shot. No text, numbers, digits, captions, labels, logos or watermark anywhere in the image.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$P01_FLOP_START"
+          }
+        ]
+      },
+      "outputs": 1,
+      "preflight_credits": 1.5,
+      "note": ""
+    },
+    {
+      "id": "P06A_EYE_FLAT",
+      "shots": "6 (Kling C06 start)",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "Keep everything as placed: the same character, her proportions, her tinted see-through skin layer, hair, earrings and sleep shirt, the same bedroom, palette and Pixar style render. The character is the same Pixar style 3D-animated see-through woman of about 38 in every shot: a glossy ivory skeleton body like a friendly anatomy toy; a thin translucent skin layer over her face and hands, softly tinted warm peach-rose like tinted glass (never colourless), so the skin and any fold in it can be seen; big friendly expressive eyes; dark hair pulled fully back in a low bun, nothing on her forehead; small silver stud earrings; a sage-green sleep shirt. Her mouth stays closed; she does not speak. Only the parts of her that fall inside this framing are visible. CHANGES ONLY: an extreme macro of the outer corner of her right eye, the eye that is against the pillow: her eye is closed; the tinted see-through skin beside the eye is smooth and pressed against the soft white pillowcase, with no fold yet. Fine pillowcase weave visible. Moonlit blue light. Her mouth is out of frame. Pixar style: 3D-animated, soft rounded shapes, warm cinematic light, glossy subsurface materials, gentle shallow depth of field. Vertical 9:16 frame. No mirror in the shot. No text, numbers, digits, captions, labels, logos or watermark anywhere in the image.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$P05_SIDE_SINK"
+          }
+        ]
+      },
+      "outputs": 1,
+      "preflight_credits": 1.5,
+      "note": ""
+    },
+    {
+      "id": "P06B_EYE_FOLD",
+      "shots": "6 (Kling C06 end)",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "Keep everything as placed: the same character, her proportions, her tinted see-through skin layer, hair, earrings and sleep shirt, the same bedroom, palette and Pixar style render. The character is the same Pixar style 3D-animated see-through woman of about 38 in every shot: a glossy ivory skeleton body like a friendly anatomy toy; a thin translucent skin layer over her face and hands, softly tinted warm peach-rose like tinted glass (never colourless), so the skin and any fold in it can be seen; big friendly expressive eyes; dark hair pulled fully back in a low bun, nothing on her forehead; small silver stud earrings; a sage-green sleep shirt. Her mouth stays closed; she does not speak. Only the parts of her that fall inside this framing are visible. CHANGES ONLY: the tinted see-through skin beside the closed eye now folds over itself into one soft pleat against the pillowcase, a clear crease line running from the outer eye corner toward the temple, faintly glowing soft sunrise-orange along the fold. Same macro framing, same light, eye still closed. Pixar style: 3D-animated, soft rounded shapes, warm cinematic light, glossy subsurface materials, gentle shallow depth of field. Vertical 9:16 frame. No mirror in the shot. No text, numbers, digits, captions, labels, logos or watermark anywhere in the image.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$P06A_EYE_FLAT"
+          }
+        ]
+      },
+      "outputs": 1,
+      "preflight_credits": 1.5,
+      "note": ""
+    },
+    {
+      "id": "P07_CLOCK",
+      "shots": "7 (box composited in code; 2:00 AM card in code)",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "Keep everything as placed: the same character, her proportions, her tinted see-through skin layer, hair, earrings and sleep shirt, the same bedroom, palette and Pixar style render. The character is the same Pixar style 3D-animated see-through woman of about 38 in every shot: a glossy ivory skeleton body like a friendly anatomy toy; a thin translucent skin layer over her face and hands, softly tinted warm peach-rose like tinted glass (never colourless), so the skin and any fold in it can be seen; big friendly expressive eyes; dark hair pulled fully back in a low bun, nothing on her forehead; small silver stud earrings; a sage-green sleep shirt. Her mouth stays closed; she does not speak. CHANGES ONLY: a low close shot across the nightstand top on the frame-right side: a small round bedside clock with a soft glowing blank display (it shows no digits, no numbers and no hands) stands at the back of the nightstand; the front half of the nightstand top stays clear and empty, never any box or product. Behind it, out of focus, she sleeps on her right side on the big white pillow, eyes closed, mouth closed. Lamp off, moonlit blue light and the clock's faint glow. Pixar style: 3D-animated, soft rounded shapes, warm cinematic light, glossy subsurface materials, gentle shallow depth of field. Vertical 9:16 frame. No mirror in the shot. No text, numbers, digits, captions, labels, logos or watermark anywhere in the image.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$P05_SIDE_SINK"
+          }
+        ]
+      },
+      "outputs": 1,
+      "preflight_credits": 1.5,
+      "note": ""
+    },
+    {
+      "id": "P09_GLOW_CREASE",
+      "shots": "9 (4:30 AM card in code)",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "Keep everything as placed: the same character, her proportions, her tinted see-through skin layer, hair, earrings and sleep shirt, the same bedroom, palette and Pixar style render. The character is the same Pixar style 3D-animated see-through woman of about 38 in every shot: a glossy ivory skeleton body like a friendly anatomy toy; a thin translucent skin layer over her face and hands, softly tinted warm peach-rose like tinted glass (never colourless), so the skin and any fold in it can be seen; big friendly expressive eyes; dark hair pulled fully back in a low bun, nothing on her forehead; small silver stud earrings; a sage-green sleep shirt. Her mouth stays closed; she does not speak. CHANGES ONLY: the same pose and framing; the moonlight now falls from a lower, cooler angle, later in the night; she has not moved; the crease by the outer corner of her right eye, against the pillow, is now traced by a soft sunrise-orange glow line. Eyes closed, mouth closed. Pixar style: 3D-animated, soft rounded shapes, warm cinematic light, glossy subsurface materials, gentle shallow depth of field. Vertical 9:16 frame. No mirror in the shot. No text, numbers, digits, captions, labels, logos or watermark anywhere in the image.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$P05_SIDE_SINK"
+          }
+        ]
+      },
+      "outputs": 1,
+      "preflight_credits": 1.5,
+      "note": ""
+    },
+    {
+      "id": "P10_ALARM_START",
+      "shots": "10 (Kling C10 start)",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "Keep everything as placed: the same character, her proportions, her tinted see-through skin layer, hair, earrings and sleep shirt, the same bedroom, palette and Pixar style render. The character is the same Pixar style 3D-animated see-through woman of about 38 in every shot: a glossy ivory skeleton body like a friendly anatomy toy; a thin translucent skin layer over her face and hands, softly tinted warm peach-rose like tinted glass (never colourless), so the skin and any fold in it can be seen; big friendly expressive eyes; dark hair pulled fully back in a low bun, nothing on her forehead; small silver stud earrings; a sage-green sleep shirt. Her mouth stays closed; she does not speak. CHANGES ONLY: a medium-wide shot of the bed at dawn: she lies asleep on her right side on the big white pillow, eyes closed, mouth closed, the duvet up to her shoulder; pale early-morning daylight from a window on the frame-left side, lamp off. The nightstand top on the frame-right side stays clear and empty except a small round bedside clock at its back with a soft glowing blank display (it shows no digits, no numbers and no hands); never draw any box or product. Room enough above her head for her to sit up in frame. Pixar style: 3D-animated, soft rounded shapes, warm cinematic light, glossy subsurface materials, gentle shallow depth of field. Vertical 9:16 frame. No mirror in the shot. No text, numbers, digits, captions, labels, logos or watermark anywhere in the image.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$P01_FLOP_START"
+          }
+        ]
+      },
+      "outputs": 1,
+      "preflight_credits": 1.5,
+      "note": ""
+    },
+    {
+      "id": "P13_CUPCAKE",
+      "shots": "13 (any '38' would be added in code; default none)",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "Keep everything as placed: the same character, her proportions, her tinted see-through skin layer, hair, earrings and sleep shirt, the same bedroom, palette and Pixar style render. The character is the same Pixar style 3D-animated see-through woman of about 38 in every shot: a glossy ivory skeleton body like a friendly anatomy toy; a thin translucent skin layer over her face and hands, softly tinted warm peach-rose like tinted glass (never colourless), so the skin and any fold in it can be seen; big friendly expressive eyes; dark hair pulled fully back in a low bun, nothing on her forehead; small silver stud earrings; a sage-green sleep shirt. Her mouth stays closed; she does not speak. CHANGES ONLY: a bright kitchen counter in soft morning daylight: she stands behind the counter in her sage sleep shirt, unimpressed, one see-through fingertip (hand on the frame-left side, exactly five fingers) poking at the line by the outer corner of her right eye (the eye on the frame-left side): one small soft crease line in her tinted see-through skin there, drawn as a faint sunrise-orange glowing line, clearly visible under her fingertip; on the counter in front of her a single cupcake with one plain thin birthday candle, lit (no number candle, no lettering). Her other arm rests at her side. Mouth closed; she does not speak. Pixar style: 3D-animated, soft rounded shapes, warm cinematic light, glossy subsurface materials, gentle shallow depth of field. Vertical 9:16 frame. No mirror in the shot. No text, numbers, digits, captions, labels, logos or watermark anywhere in the image.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$P01_FLOP_START"
+          }
+        ]
+      },
+      "outputs": 1,
+      "preflight_credits": 1.5,
+      "note": ""
+    },
+    {
+      "id": "P14_CREAM_SHELF",
+      "shots": "14",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "Keep everything as placed: the same character, her proportions, her tinted see-through skin layer, hair, earrings and sleep shirt, the same bedroom, palette and Pixar style render. The character is the same Pixar style 3D-animated see-through woman of about 38 in every shot: a glossy ivory skeleton body like a friendly anatomy toy; a thin translucent skin layer over her face and hands, softly tinted warm peach-rose like tinted glass (never colourless), so the skin and any fold in it can be seen; big friendly expressive eyes; dark hair pulled fully back in a low bun, nothing on her forehead; small silver stud earrings; a sage-green sleep shirt. Her mouth stays closed; she does not speak. CHANGES ONLY: a close shot of a bedroom dresser top in soft daylight, crowded with many half-used plain cream jars and tubes in pastel colours, all completely blank with no labels, no lettering, no logos; she stands just behind the dresser, shoulders up in a shrug, palms up (exactly two hands with five fingers each), mouth closed. The wall behind is plain painted plaster; no mirror and no reflective surface anywhere in the shot. Pixar style: 3D-animated, soft rounded shapes, warm cinematic light, glossy subsurface materials, gentle shallow depth of field. Vertical 9:16 frame. No mirror in the shot. No text, numbers, digits, captions, labels, logos or watermark anywhere in the image.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$P01_FLOP_START"
+          }
+        ]
+      },
+      "outputs": 1,
+      "preflight_credits": 1.5,
+      "note": ""
+    },
+    {
+      "id": "P16_PILLOWCASE_PRINT",
+      "shots": "16",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "Keep everything as placed: the same character, her proportions, her tinted see-through skin layer, hair, earrings and sleep shirt, the same bedroom, palette and Pixar style render. The character is the same Pixar style 3D-animated see-through woman of about 38 in every shot: a glossy ivory skeleton body like a friendly anatomy toy; a thin translucent skin layer over her face and hands, softly tinted warm peach-rose like tinted glass (never colourless), so the skin and any fold in it can be seen; big friendly expressive eyes; dark hair pulled fully back in a low bun, nothing on her forehead; small silver stud earrings; a sage-green sleep shirt. Her mouth stays closed; she does not speak. Only the parts of her that fall inside this framing are visible. CHANGES ONLY: an extreme macro of her right cheek resting on a crumpled white pillowcase: the pillowcase's wrinkles press into her tinted see-through skin layer and print a few matching soft lines into it, faintly glowing sunrise-orange. Moonlit blue light, eye closed at the top edge of the frame, mouth out of frame. Pixar style: 3D-animated, soft rounded shapes, warm cinematic light, glossy subsurface materials, gentle shallow depth of field. Vertical 9:16 frame. No mirror in the shot. No text, numbers, digits, captions, labels, logos or watermark anywhere in the image.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$P02_SQUASH_MACRO"
+          }
+        ]
+      },
+      "outputs": 1,
+      "preflight_credits": 1.5,
+      "note": ""
+    },
+    {
+      "id": "P17_REALISE",
+      "shots": "17",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "Keep everything as placed: the same character, her proportions, her tinted see-through skin layer, hair, earrings and sleep shirt, the same bedroom, palette and Pixar style render. The character is the same Pixar style 3D-animated see-through woman of about 38 in every shot: a glossy ivory skeleton body like a friendly anatomy toy; a thin translucent skin layer over her face and hands, softly tinted warm peach-rose like tinted glass (never colourless), so the skin and any fold in it can be seen; big friendly expressive eyes; dark hair pulled fully back in a low bun, nothing on her forehead; small silver stud earrings; a sage-green sleep shirt. Her mouth stays closed; she does not speak. CHANGES ONLY: morning daylight from a window on the frame-left side: she sits on the edge of the bed facing the camera, twisted at the waist to look back over her shoulder at the big white pillow behind her, which shows a deep dent on one side; a look of realisation, eyebrows lifted only slightly, mouth closed. Her hands rest on the mattress edge. The nightstand stands on the frame-right side; the front half of its top is clear and empty, never any box or product. Pixar style: 3D-animated, soft rounded shapes, warm cinematic light, glossy subsurface materials, gentle shallow depth of field. Vertical 9:16 frame. No mirror in the shot. No text, numbers, digits, captions, labels, logos or watermark anywhere in the image.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$P01_FLOP_START"
+          }
+        ]
+      },
+      "outputs": 1,
+      "preflight_credits": 1.5,
+      "note": ""
+    },
+    {
+      "id": "P18_REACH",
+      "shots": "18 (real box composited in code resting on her open palm, traced mask + contact shadow; shot ends with the box in her hand)",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "Keep everything as placed: the same character, her proportions, her tinted see-through skin layer, hair, earrings and sleep shirt, the same bedroom, palette and Pixar style render. The character is the same Pixar style 3D-animated see-through woman of about 38 in every shot: a glossy ivory skeleton body like a friendly anatomy toy; a thin translucent skin layer over her face and hands, softly tinted warm peach-rose like tinted glass (never colourless), so the skin and any fold in it can be seen; big friendly expressive eyes; dark hair pulled fully back in a low bun, nothing on her forehead; small silver stud earrings; a sage-green sleep shirt. Her mouth stays closed; she does not speak. CHANGES ONLY: she still sits on the edge of the bed, now turned back toward the camera; her see-through hand on the frame-right side (exactly five fingers) is held out in front of her chest, palm up, flat and open, fingers together and relaxed, as if she has just picked something up from the nightstand; the palm is empty and nothing rests on it (a real product box is placed on her palm later in editing). Her other hand rests on the mattress. She looks down at her open palm, eyebrows lifted only slightly, mouth closed; she does not speak. The nightstand on the frame-right side keeps the front half of its top clear and empty. Never draw any box, package or product on the nightstand, on her palm or anywhere in the image. Pixar style: 3D-animated, soft rounded shapes, warm cinematic light, glossy subsurface materials, gentle shallow depth of field. Vertical 9:16 frame. No mirror in the shot. No text, numbers, digits, captions, labels, logos or watermark anywhere in the image.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$P17_REALISE"
+          }
+        ]
+      },
+      "outputs": 1,
+      "preflight_credits": 1.5,
+      "note": ""
+    },
+    {
+      "id": "P20A_NIGHT1_HOLD",
+      "shots": "20 (Kling C20 start)",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "Identify the reference photos by what they show, not by upload order. THE CAST PHOTO shows the only person in this image; keep her face, skin, age, hair and earrings exactly as shown. THE PLACEMENT PHOTO shows a different person wearing the patches; use it only for where each piece sits and never copy that person's face, hair or skin. THE SHEET PHOTO shows the five pieces on their backing sheet; use it for exact shape, size and transparency. In this job THE CAST PHOTO is the input image of the Pixar style character; keep her exactly as drawn. There is no placement photo. THE SHEET PHOTO is supplied as two single product references: <<<6375c707-7ad9-4df9-b7e0-69750993e7aa>>> is the clear forehead band, drawn with its small rounded tab pointing DOWN, and <<<9d766c06-2818-43e8-8ec4-1aac02d63897>>> is a pair of the slim clear crescents; the Face Set has four of these crescents, all the same shape, plus the one forehead band. Render the patches in the same Pixar style as her, but keep their exact shape, size and clear, slightly frosted look. Where the pieces are in THIS image: the forehead band is already on her forehead, flat, tab pointing DOWN between the eyebrows, covering the middle two-thirds of the forehead and not reaching the hairline. One crescent is held between the thumb and index fingertip of her hand on the frame-left side, just below the lower lashes of the eye on the frame-left side, not yet touching the skin. No other piece is on her face or in frame: no other under-eye crescent and no smile-line pieces. The patches are the exact clear silicone pieces shown in the product reference, and nothing else. They are thin, transparent and slightly frosted; her skin and lines stay visible through them; they are noticed only by a thin raised edge that catches the light and a soft satin sheen. They are never white, beige, pink, gold, opaque, gel pads, hydrogel, fabric, paper or tape. Forehead piece: a wide, gently curved band covering the middle two-thirds of the forehead, with a small rounded tab at the centre of its lower edge pointing down between the eyebrows; it does not reach the hairline. Under-eye pieces: one slim crescent per eye, just below the lower lashes, following the curve of the lower lid, the outer end reaching toward the outer eye corner; never covering the eye or lashes; never circles, rings or glasses shapes. Smile-line pieces: one slim crescent on each side, along the fold from beside the nostril to beside the mouth corner; the lips stay uncovered. Every patch lies completely flat, with no bubbles, folds or lifted edges. A piece the prompt does not mention is not on her face. Each crescent is a slim curved sliver about 7.8 x 2.2 cm, about 3.5 times longer than it is wide; never a half-moon pad, circle, ring or glasses shape. The forehead band's tab points DOWN between the eyebrows. Her skin layer stays softly tinted warm peach-rose so each clear patch reads on top of it by its thin bright raised edge and satin sheen; the patches are never made white or coloured to be seen. Keep everything as placed: the same character, her proportions, her tinted see-through skin layer, hair, earrings and sleep shirt, the same bedroom, palette and Pixar style render. The character is the same Pixar style 3D-animated see-through woman of about 38 in every shot: a glossy ivory skeleton body like a friendly anatomy toy; a thin translucent skin layer over her face and hands, softly tinted warm peach-rose like tinted glass (never colourless), so the skin and any fold in it can be seen; big friendly expressive eyes; dark hair pulled fully back in a low bun, nothing on her forehead; small silver stud earrings; a sage-green sleep shirt. Her mouth stays closed; she does not speak. CHANGES ONLY: she sits up in bed against the headboard at night, warm lamp on (frame-right), facing the camera in a medium close-up from the chest up, face filling about half the frame width; her other hand rests on the duvet; calm face, mouth closed; she does not speak and does not smile. Pixar style: 3D-animated, soft rounded shapes, warm cinematic light, glossy subsurface materials, gentle shallow depth of field. Vertical 9:16 frame. No mirror in the shot. No text, numbers, digits, captions, labels, logos or watermark anywhere in the image.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$P01_FLOP_START"
+          },
+          {
+            "role": "image_references",
+            "value": "6375c707-7ad9-4df9-b7e0-69750993e7aa"
+          },
+          {
+            "role": "image_references",
+            "value": "9d766c06-2818-43e8-8ec4-1aac02d63897"
+          }
+        ]
+      },
+      "outputs": 1,
+      "preflight_credits": 1.5,
+      "note": "Elements passed both in medias and as <<<id>>>; the producer checks which form the tool accepts and keeps the other out (no extra cost)."
+    },
+    {
+      "id": "P20B_NIGHT1_ON",
+      "shots": "20 (Kling C20 end)",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "Identify the reference photos by what they show, not by upload order. THE CAST PHOTO shows the only person in this image; keep her face, skin, age, hair and earrings exactly as shown. THE PLACEMENT PHOTO shows a different person wearing the patches; use it only for where each piece sits and never copy that person's face, hair or skin. THE SHEET PHOTO shows the five pieces on their backing sheet; use it for exact shape, size and transparency. In this job THE CAST PHOTO is the input image of the Pixar style character; keep her exactly as drawn. There is no placement photo. THE SHEET PHOTO is supplied as two single product references: <<<6375c707-7ad9-4df9-b7e0-69750993e7aa>>> is the clear forehead band, drawn with its small rounded tab pointing DOWN, and <<<9d766c06-2818-43e8-8ec4-1aac02d63897>>> is a pair of the slim clear crescents; the Face Set has four of these crescents, all the same shape, plus the one forehead band. Render the patches in the same Pixar style as her, but keep their exact shape, size and clear, slightly frosted look. Where the pieces are in THIS image: the forehead band is on her forehead, flat, tab pointing DOWN between the eyebrows, covering the middle two-thirds of the forehead and not reaching the hairline. One crescent now lies completely flat on the skin just below the lower lashes of the eye on the frame-left side, following the curve of the lower lid, its outer end reaching toward the outer eye corner; the index fingertip of her hand on the frame-left side rests lightly on the outer end of that crescent. No other piece is on her face or in frame. The patches are the exact clear silicone pieces shown in the product reference, and nothing else. They are thin, transparent and slightly frosted; her skin and lines stay visible through them; they are noticed only by a thin raised edge that catches the light and a soft satin sheen. They are never white, beige, pink, gold, opaque, gel pads, hydrogel, fabric, paper or tape. Forehead piece: a wide, gently curved band covering the middle two-thirds of the forehead, with a small rounded tab at the centre of its lower edge pointing down between the eyebrows; it does not reach the hairline. Under-eye pieces: one slim crescent per eye, just below the lower lashes, following the curve of the lower lid, the outer end reaching toward the outer eye corner; never covering the eye or lashes; never circles, rings or glasses shapes. Smile-line pieces: one slim crescent on each side, along the fold from beside the nostril to beside the mouth corner; the lips stay uncovered. Every patch lies completely flat, with no bubbles, folds or lifted edges. A piece the prompt does not mention is not on her face. Each crescent is a slim curved sliver about 7.8 x 2.2 cm, about 3.5 times longer than it is wide; never a half-moon pad, circle, ring or glasses shape. The forehead band's tab points DOWN between the eyebrows. Her skin layer stays softly tinted warm peach-rose so each clear patch reads on top of it by its thin bright raised edge and satin sheen; the patches are never made white or coloured to be seen. Keep everything as placed: the same character, her proportions, her tinted see-through skin layer, hair, earrings and sleep shirt, the same bedroom, palette and Pixar style render. The character is the same Pixar style 3D-animated see-through woman of about 38 in every shot: a glossy ivory skeleton body like a friendly anatomy toy; a thin translucent skin layer over her face and hands, softly tinted warm peach-rose like tinted glass (never colourless), so the skin and any fold in it can be seen; big friendly expressive eyes; dark hair pulled fully back in a low bun, nothing on her forehead; small silver stud earrings; a sage-green sleep shirt. Her mouth stays closed; she does not speak. CHANGES ONLY: the one crescent that was held between her thumb and index fingertip in the input image is now stuck completely flat on the skin just below the lower lashes of the eye on the frame-left side; her thumb has moved away and holds nothing; only the tip of her index finger touches the crescent's outer end; nothing is left in her fingers. The forehead band stays exactly as placed. Exactly two pieces in the whole image: the forehead band and this one crescent. Same framing, light, pose and expression; mouth closed; she does not speak and does not smile. Pixar style: 3D-animated, soft rounded shapes, warm cinematic light, glossy subsurface materials, gentle shallow depth of field. Vertical 9:16 frame. No mirror in the shot. No text, numbers, digits, captions, labels, logos or watermark anywhere in the image.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$P20A_NIGHT1_HOLD"
+          },
+          {
+            "role": "image_references",
+            "value": "6375c707-7ad9-4df9-b7e0-69750993e7aa"
+          },
+          {
+            "role": "image_references",
+            "value": "9d766c06-2818-43e8-8ec4-1aac02d63897"
+          }
+        ]
+      },
+      "outputs": 1,
+      "preflight_credits": 1.5,
+      "note": ""
+    },
+    {
+      "id": "P22_ASLEEP_PATCHED",
+      "shots": "22",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "Identify the reference photos by what they show, not by upload order. THE CAST PHOTO shows the only person in this image; keep her face, skin, age, hair and earrings exactly as shown. THE PLACEMENT PHOTO shows a different person wearing the patches; use it only for where each piece sits and never copy that person's face, hair or skin. THE SHEET PHOTO shows the five pieces on their backing sheet; use it for exact shape, size and transparency. In this job THE CAST PHOTO is the input image of the Pixar style character; keep her exactly as drawn. There is no placement photo. THE SHEET PHOTO is supplied as two single product references: <<<6375c707-7ad9-4df9-b7e0-69750993e7aa>>> is the clear forehead band, drawn with its small rounded tab pointing DOWN, and <<<9d766c06-2818-43e8-8ec4-1aac02d63897>>> is a pair of the slim clear crescents; the Face Set has four of these crescents, all the same shape, plus the one forehead band. Render the patches in the same Pixar style as her, but keep their exact shape, size and clear, slightly frosted look. Where the pieces are in THIS image: she wears the whole Face Set: the forehead band (tab pointing DOWN between the eyebrows, middle two-thirds of the forehead, not reaching the hairline), one slim crescent under each eye, and one slim crescent along each smile line; the lips stay uncovered. Exactly five pieces in total; the pieces on the pillow side may be partly hidden by the pillow but are not missing. The patches are the exact clear silicone pieces shown in the product reference, and nothing else. They are thin, transparent and slightly frosted; her skin and lines stay visible through them; they are noticed only by a thin raised edge that catches the light and a soft satin sheen. They are never white, beige, pink, gold, opaque, gel pads, hydrogel, fabric, paper or tape. Forehead piece: a wide, gently curved band covering the middle two-thirds of the forehead, with a small rounded tab at the centre of its lower edge pointing down between the eyebrows; it does not reach the hairline. Under-eye pieces: one slim crescent per eye, just below the lower lashes, following the curve of the lower lid, the outer end reaching toward the outer eye corner; never covering the eye or lashes; never circles, rings or glasses shapes. Smile-line pieces: one slim crescent on each side, along the fold from beside the nostril to beside the mouth corner; the lips stay uncovered. Every patch lies completely flat, with no bubbles, folds or lifted edges. A piece the prompt does not mention is not on her face. Each crescent is a slim curved sliver about 7.8 x 2.2 cm, about 3.5 times longer than it is wide; never a half-moon pad, circle, ring or glasses shape. The forehead band's tab points DOWN between the eyebrows. Her skin layer stays softly tinted warm peach-rose so each clear patch reads on top of it by its thin bright raised edge and satin sheen; the patches are never made white or coloured to be seen. Keep everything as placed: the same character, her proportions, her tinted see-through skin layer, hair, earrings and sleep shirt, the same bedroom, palette and Pixar style render. The character is the same Pixar style 3D-animated see-through woman of about 38 in every shot: a glossy ivory skeleton body like a friendly anatomy toy; a thin translucent skin layer over her face and hands, softly tinted warm peach-rose like tinted glass (never colourless), so the skin and any fold in it can be seen; big friendly expressive eyes; dark hair pulled fully back in a low bun, nothing on her forehead; small silver stud earrings; a sage-green sleep shirt. Her mouth stays closed; she does not speak. CHANGES ONLY: she sleeps on her right side wearing the patches; the cheek against the pillow no longer bunches up: seen through her tinted skin layer, the skin by the eye on the pillow side lies smooth and flat, with no fold and no glowing crease. Eyes closed, calm, mouth closed; she does not speak and does not smile; no pose to camera. Lamp off, moonlit blue light. Pixar style: 3D-animated, soft rounded shapes, warm cinematic light, glossy subsurface materials, gentle shallow depth of field. Vertical 9:16 frame. No mirror in the shot. No text, numbers, digits, captions, labels, logos or watermark anywhere in the image.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$P05_SIDE_SINK"
+          },
+          {
+            "role": "image_references",
+            "value": "6375c707-7ad9-4df9-b7e0-69750993e7aa"
+          },
+          {
+            "role": "image_references",
+            "value": "9d766c06-2818-43e8-8ec4-1aac02d63897"
+          }
+        ]
+      },
+      "outputs": 1,
+      "preflight_credits": 1.5,
+      "note": ""
+    },
+    {
+      "id": "X08A_FLAT",
+      "shots": "8 (Kling C08 start); base of every cutaway",
+      "tool": "generate_image",
+      "params": {
+        "model": "gpt_image_2_6",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "Pixar style 3D-animated cutaway of a small block of facial skin seen from the side, like a soft slice of cake floating in the frame: the top skin layer is a smooth band softly tinted warm peach-rose with a gentle satin sheen and fine surface texture; beneath it a softer, lighter pink cushiony layer; simple rounded shapes, no medical detail, no fibres, no cells, no blood vessels, no hair follicles. Dark deep-teal (#17393D) background with a warm sunrise-orange rim light. A soft white pillow fabric, drawn as a thick quilted cloth, rests lightly on top of the skin block; the top skin layer is still flat and smooth. Centered, the block fills about 70% of the frame width. Pixar style: 3D-animated, soft rounded shapes, warm cinematic light, glossy subsurface materials, gentle shallow depth of field. Vertical 9:16 frame. No mirror in the shot. No text, numbers, digits, captions, labels, logos or watermark anywhere in the image.",
+        "quality": "medium",
+        "medias": []
+      },
+      "outputs": 1,
+      "preflight_credits": 0.5,
+      "note": "Fresh, text-only composition with no person or product: gpt_image_2_6 medium is 0.5 vs 1.5 and renders clean stylised 3D; later cutaways are nano_banana_2 edits of it for continuity."
+    },
+    {
+      "id": "X08B_CREASE",
+      "shots": "8 (Kling C08 end)",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "Keep everything as placed: the same skin-block cutaway, camera angle, framing, colours, teal background, orange rim light and Pixar style render. CHANGES ONLY: the pillow fabric now presses down hard on the middle of the block; the top skin layer is pinched into one deep V-shaped crease under it, glowing soft sunrise-orange along the crease. Pixar style: 3D-animated, soft rounded shapes, warm cinematic light, glossy subsurface materials, gentle shallow depth of field. Vertical 9:16 frame. No mirror in the shot. No text, numbers, digits, captions, labels, logos or watermark anywhere in the image.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$X08A_FLAT"
+          }
+        ]
+      },
+      "outputs": 1,
+      "preflight_credits": 1.5,
+      "note": ""
+    },
+    {
+      "id": "X15_CREAM",
+      "shots": "15",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "Keep everything as placed: the same skin-block cutaway, camera angle, framing, colours, teal background, orange rim light and Pixar style render. CHANGES ONLY: a few round, glossy white cream droplets now sit on top of the skin layer; the pillow fabric still presses down and the V-shaped crease still forms beneath the droplets, which sit uselessly on the surface. Pixar style: 3D-animated, soft rounded shapes, warm cinematic light, glossy subsurface materials, gentle shallow depth of field. Vertical 9:16 frame. No mirror in the shot. No text, numbers, digits, captions, labels, logos or watermark anywhere in the image.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$X08B_CREASE"
+          }
+        ]
+      },
+      "outputs": 1,
+      "preflight_credits": 1.5,
+      "note": ""
+    },
+    {
+      "id": "X21_PATCH_FLAT",
+      "shots": "21 (Kling C21 start)",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "In this job the input image is a Pixar style skin-block cutaway, and <<<6375c707-7ad9-4df9-b7e0-69750993e7aa>>> is a product reference for the clear silicone patch material only: use it for its transparency, frosted finish and thin bright raised edge. In this cutaway only a small section of one patch is shown, as a thin clear layer lying on the top skin layer; the face-placement lines below apply only to its material. The patches are the exact clear silicone pieces shown in the product reference, and nothing else. They are thin, transparent and slightly frosted; her skin and lines stay visible through them; they are noticed only by a thin raised edge that catches the light and a soft satin sheen. They are never white, beige, pink, gold, opaque, gel pads, hydrogel, fabric, paper or tape. Forehead piece: a wide, gently curved band covering the middle two-thirds of the forehead, with a small rounded tab at the centre of its lower edge pointing down between the eyebrows; it does not reach the hairline. Under-eye pieces: one slim crescent per eye, just below the lower lashes, following the curve of the lower lid, the outer end reaching toward the outer eye corner; never covering the eye or lashes; never circles, rings or glasses shapes. Smile-line pieces: one slim crescent on each side, along the fold from beside the nostril to beside the mouth corner; the lips stay uncovered. Every patch lies completely flat, with no bubbles, folds or lifted edges. A piece the prompt does not mention is not on her face. Keep everything as placed: the same skin-block cutaway, camera angle, framing, colours, teal background, orange rim light and Pixar style render. CHANGES ONLY: a thin, clear, slightly frosted silicone patch layer now lies flat across the whole top of the skin block, slightly overhanging the front edge so its thin cut edge catches a bright highlight; the pillow fabric presses down on top of the patch, but the skin layer underneath stays flat and smooth, with no V and no crease. The skin layer stays softly tinted warm peach-rose so the clear patch reads on top of it by its bright raised edge and satin sheen; the patch is never white or coloured. Pixar style: 3D-animated, soft rounded shapes, warm cinematic light, glossy subsurface materials, gentle shallow depth of field. Vertical 9:16 frame. No mirror in the shot. No text, numbers, digits, captions, labels, logos or watermark anywhere in the image.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$X08A_FLAT"
+          },
+          {
+            "role": "image_references",
+            "value": "6375c707-7ad9-4df9-b7e0-69750993e7aa"
+          }
+        ]
+      },
+      "outputs": 1,
+      "preflight_credits": 1.5,
+      "note": "Edit of X08A (flat), not X08B, so no crease needs to be removed (production log: edits keep footprints)."
+    },
+    {
+      "id": "X23_MOISTURE",
+      "shots": "23 (Kling C24 start)",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "In this job the input image is a Pixar style skin-block cutaway with a clear patch layer on top. <<<6375c707-7ad9-4df9-b7e0-69750993e7aa>>> is a product reference for the clear silicone patch material only: use it for its transparency, frosted finish and thin bright raised edge. In this cutaway only a small section of one patch is shown, as a thin clear layer lying on the top skin layer; the face-placement lines below apply only to its material, so never draw a face, a forehead-band outline, a tab or crescent shapes in this image. The patches are the exact clear silicone pieces shown in the product reference, and nothing else. They are thin, transparent and slightly frosted; her skin and lines stay visible through them; they are noticed only by a thin raised edge that catches the light and a soft satin sheen. They are never white, beige, pink, gold, opaque, gel pads, hydrogel, fabric, paper or tape. Forehead piece: a wide, gently curved band covering the middle two-thirds of the forehead, with a small rounded tab at the centre of its lower edge pointing down between the eyebrows; it does not reach the hairline. Under-eye pieces: one slim crescent per eye, just below the lower lashes, following the curve of the lower lid, the outer end reaching toward the outer eye corner; never covering the eye or lashes; never circles, rings or glasses shapes. Smile-line pieces: one slim crescent on each side, along the fold from beside the nostril to beside the mouth corner; the lips stay uncovered. Every patch lies completely flat, with no bubbles, folds or lifted edges. A piece the prompt does not mention is not on her face. Keep everything as placed: the same skin-block cutaway, camera angle, framing, colours, teal background, orange rim light and Pixar style render. CHANGES ONLY: the pillow fabric is gone; tiny clear moisture droplets rise from the top skin layer and stay trapped under the clear patch layer, catching small bright highlights; none escape above it. Skin layer flat. The skin layer stays softly tinted warm peach-rose so the clear patch reads on top of it by its bright raised edge and satin sheen; the patch is never white or coloured. Pixar style: 3D-animated, soft rounded shapes, warm cinematic light, glossy subsurface materials, gentle shallow depth of field. Vertical 9:16 frame. No mirror in the shot. No text, numbers, digits, captions, labels, logos or watermark anywhere in the image.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$X21_PATCH_FLAT"
+          },
+          {
+            "role": "image_references",
+            "value": "6375c707-7ad9-4df9-b7e0-69750993e7aa"
+          }
+        ]
+      },
+      "outputs": 1,
+      "preflight_credits": 1.5,
+      "note": ""
+    },
+    {
+      "id": "X24_PLUMP",
+      "shots": "24 (Kling C24 end); shot 25 = code macro crop of this still (patch flat on plump skin, nothing between)",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "In this job the input image is a Pixar style skin-block cutaway with a clear patch layer on top. <<<6375c707-7ad9-4df9-b7e0-69750993e7aa>>> is a product reference for the clear silicone patch material only: use it for its transparency, frosted finish and thin bright raised edge. In this cutaway only a small section of one patch is shown, as a thin clear layer lying on the top skin layer; the face-placement lines below apply only to its material, so never draw a face, a forehead-band outline, a tab or crescent shapes in this image. The patches are the exact clear silicone pieces shown in the product reference, and nothing else. They are thin, transparent and slightly frosted; her skin and lines stay visible through them; they are noticed only by a thin raised edge that catches the light and a soft satin sheen. They are never white, beige, pink, gold, opaque, gel pads, hydrogel, fabric, paper or tape. Forehead piece: a wide, gently curved band covering the middle two-thirds of the forehead, with a small rounded tab at the centre of its lower edge pointing down between the eyebrows; it does not reach the hairline. Under-eye pieces: one slim crescent per eye, just below the lower lashes, following the curve of the lower lid, the outer end reaching toward the outer eye corner; never covering the eye or lashes; never circles, rings or glasses shapes. Smile-line pieces: one slim crescent on each side, along the fold from beside the nostril to beside the mouth corner; the lips stay uncovered. Every patch lies completely flat, with no bubbles, folds or lifted edges. A piece the prompt does not mention is not on her face. Keep everything as placed: the same skin-block cutaway, camera angle, framing, colours, teal background, orange rim light and Pixar style render. CHANGES ONLY: the moisture droplets have soaked into the top skin layer, which is now softly plumper and fuller, smooth and flat, with a gentle warm glow; the clear patch layer still lies flat on top with its bright edge. The skin layer stays softly tinted warm peach-rose so the clear patch reads on top of it by its bright raised edge and satin sheen; the patch is never white or coloured. Pixar style: 3D-animated, soft rounded shapes, warm cinematic light, glossy subsurface materials, gentle shallow depth of field. Vertical 9:16 frame. No mirror in the shot. No text, numbers, digits, captions, labels, logos or watermark anywhere in the image.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$X23_MOISTURE"
+          },
+          {
+            "role": "image_references",
+            "value": "6375c707-7ad9-4df9-b7e0-69750993e7aa"
+          }
+        ]
+      },
+      "outputs": 1,
+      "preflight_credits": 1.5,
+      "note": ""
+    },
+    {
+      "id": "R12_NOON",
+      "shots": "12; identity anchor for R11 and R27",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "A 38-year-old woman with warm medium-brown skin (South Asian or mixed heritage), dark hair pulled fully back in a low sleek bun with nothing on her forehead, small silver stud earrings, minimal makeup, unretouched skin; fine lines under both eyes and at the outer eye corners, two or three faint horizontal forehead lines, and a pillow sleep crease that is clearly deeper on her right side (the frame-left side of the image): diagonal crease lines across the outer corner of that eye and the upper cheek. Front-on head-and-shoulders portrait at midday, looking straight at the lens, neutral relaxed expression, lips closed, no smile. She wears a fitted cream knit sweater. Soft, even, diffuse daylight from a large window in front of her (not raking), plain warm-white wall behind. Both sides of her face equally lit so the deeper crease on the frame-left side is easy to compare with the smoother frame-right side. Phone camera at eye level, face about 55% of the frame width. Photorealistic smartphone photo, unretouched, no beauty filter, visible pores and natural skin texture, sharp focus on her face. Her hair is pulled fully back off her forehead. The skin is dry and matte with no cream or lotion. No mirror in the shot. No text, captions, logos or watermark.",
+        "medias": []
+      },
+      "outputs": 1,
+      "preflight_credits": 1.5,
+      "note": "New P2 face (brief: nothing in lessons section 7 fits). Saved as an Element for 2-M and 2-B after approval (free)."
+    },
+    {
+      "id": "R11_EYE_MACRO",
+      "shots": "11 and 26 (YESTERDAY / before)",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "In this job THE CAST PHOTO is the input image; keep her face, skin, age, every line and the crease exactly as shown. Keep everything about her as placed. She is a 38-year-old woman with warm medium-brown skin (South Asian or mixed heritage), dark hair pulled fully back in a low sleek bun with nothing on her forehead, small silver stud earrings, minimal makeup, unretouched skin. CHANGES ONLY: a tight macro close-up of the outer corner of the eye on the frame-left side (her right eye) and the upper cheek below it, eye open and relaxed, looking at the lens; the diagonal pillow crease lines across the outer corner and the upper cheek are clearly visible, every line kept at exactly the depth shown; soft, even morning window daylight from the front (not raking). Her lips are out of frame. Framing: eye corner and crease fill the frame. Photorealistic smartphone photo, unretouched, no beauty filter, visible pores and natural skin texture, sharp focus on her face. Her hair is pulled fully back off her forehead. The skin is dry and matte with no cream or lotion. No mirror in the shot. No text, captions, logos or watermark.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$R12_NOON"
+          }
+        ]
+      },
+      "outputs": 1,
+      "preflight_credits": 1.5,
+      "note": ""
+    },
+    {
+      "id": "R27_AFTER",
+      "shots": "27 (MORNING 1 / after)",
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "In this job THE CAST PHOTO is the input image; keep her face, skin, framing and light exactly as shown. Keep everything as placed. She is a 38-year-old woman with warm medium-brown skin (South Asian or mixed heritage), dark hair pulled fully back in a low sleek bun with nothing on her forehead, small silver stud earrings, minimal makeup, unretouched skin. CHANGES ONLY: the pillow crease lines and fine lines at the outer eye corner and on the upper cheek are softer and shallower, about two-thirds as visible as in the input image, every line still traceable, not erased; skin texture and pores unchanged; no glow, no shine. Photorealistic smartphone photo, unretouched, no beauty filter, visible pores and natural skin texture, sharp focus on her face. Her hair is pulled fully back off her forehead. The skin is dry and matte with no cream or lotion. No mirror in the shot. No text, captions, logos or watermark.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$R11_EYE_MACRO"
+          }
+        ]
+      },
+      "outputs": 1,
+      "preflight_credits": 1.5,
+      "note": "Production log confirmed fix: the after is a softening edit of the before, same light and framing; 'two-thirds as visible, every line traceable' per the K6 end-card note."
+    },
+    {
+      "id": "S19_SHEET_LAMP",
+      "shots": "19 (replaces the Runway bd37ae30 reuse; code motion: slow 6% push + light flicker on the edges)",
+      "tool": "generate_image",
+      "outputs": 1,
+      "preflight_credits": 1.5,
+      "params": {
+        "model": "nano_banana_2",
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "prompt": "Identify the reference photos by what they show, not by upload order. THE CAST PHOTO shows the only person in this image; keep her face, skin, age, hair and earrings exactly as shown. THE PLACEMENT PHOTO shows a different person wearing the patches; use it only for where each piece sits and never copy that person's face, hair or skin. THE SHEET PHOTO shows the five pieces on their backing sheet; use it for exact shape, size and transparency. In this job THE CAST PHOTO is the approved R12_NOON portrait, used only for the skin tone, age and texture of her hand; her face is not in this image. There is no placement photo. THE SHEET PHOTO is the studio flat lay of the five pieces (564c68fa-cbff-4997-8c84-feaa071f7d0b): use it for the count, the layout on the film and the forehead band's small rounded tab pointing DOWN; <<<9d766c06-2818-43e8-8ec4-1aac02d63897>>> shows the true slim crescent shape. The person is a 38-year-old woman with warm medium-brown skin (South Asian or mixed heritage), dark hair pulled fully back in a low sleek bun with nothing on her forehead, small silver stud earrings, minimal makeup, unretouched skin. Only her hand and wrist are in frame. Night, in her bedroom, close-up: exactly one hand with five fingers holds a thin, clear backing film upright in front of a warm bedside lamp, pinching its top-right corner between thumb and index finger, the other fingers curled loosely below that corner; the cuff of a sage-green sleep shirt shows at her wrist near the bottom-right of the frame. Natural knuckle creases, short unpainted nails. The film hangs flat and fills about 60% of the frame. The film holds exactly five pieces: one forehead band and four crescents, laid out as in THE SHEET PHOTO, with the forehead band across the top and its small rounded tab pointing DOWN, and the four crescents below it. Light: the warm lamp glows just behind the film, slightly to the frame-right, backlighting it so each piece's thin raised edge glows warm and the film reads as clear; the bedroom behind is dark moonlit blue and softly out of focus. These pieces are on the film in her hand, not on anyone's face. The patches are the exact clear silicone pieces shown in the product reference, and nothing else. They are thin, transparent and slightly frosted; her skin and lines stay visible through them; they are noticed only by a thin raised edge that catches the light and a soft satin sheen. They are never white, beige, pink, gold, opaque, gel pads, hydrogel, fabric, paper or tape. Forehead piece: a wide, gently curved band covering the middle two-thirds of the forehead, with a small rounded tab at the centre of its lower edge pointing down between the eyebrows; it does not reach the hairline. Under-eye pieces: one slim crescent per eye, just below the lower lashes, following the curve of the lower lid, the outer end reaching toward the outer eye corner; never covering the eye or lashes; never circles, rings or glasses shapes. Smile-line pieces: one slim crescent on each side, along the fold from beside the nostril to beside the mouth corner; the lips stay uncovered. Every patch lies completely flat, with no bubbles, folds or lifted edges. A piece the prompt does not mention is not on her face. Each crescent is a slim curved sliver about 7.8 x 2.2 cm, about 3.5 times longer than it is wide; never a half-moon pad, circle, ring or glasses shape. The forehead band's tab points DOWN. No box, no packaging and no other objects in frame. Her face is out of frame in this shot, so the sharp focus in the style notes below is on the film and her fingertips. Photorealistic smartphone photo, unretouched, no beauty filter, visible pores and natural skin texture, sharp focus on her face. Her hair is pulled fully back off her forehead. The skin is dry and matte with no cream or lotion. No mirror in the shot. No text, captions, logos or watermark.",
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "$R12_NOON"
+          },
+          {
+            "role": "image_references",
+            "value": "564c68fa-cbff-4997-8c84-feaa071f7d0b"
+          },
+          {
+            "role": "image_references",
+            "value": "9d766c06-2818-43e8-8ec4-1aac02d63897"
+          }
+        ]
+      },
+      "note": "Prompt-review round 1: photoreal, her hand (skin from R12), night lamp backlight to match shots 18 and 20, sage cuff bridges to the Pixar character. Runs after R12 passes gate A."
+    },
+    {
+      "id": "C01_FLOP",
+      "shots": "1",
+      "tool": "generate_video",
+      "outputs": 1,
+      "preflight_credits": 5.25,
+      "params": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "duration": 3,
+        "aspect_ratio": "9:16",
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "$P01_FLOP_START"
+          }
+        ],
+        "prompt": "Motion only; the start frame sets the character, the bedroom and the light. Camera locked: no zoom, no pan, no shake. Lead action: she flops sideways onto the big pillow. 0-1s: from kneeling upright with both hands resting on her thighs and her eyes half-closed, she tips over toward the big pale pillow on the frame-left side, playful and weighty. 1-2s: her head lands on the pillow on her cheek and the pillow puffs up softly around it. 2-3s: she settles on her side, eyes fully closed, perfectly still. Her tinted see-through skin keeps showing the skeleton inside the whole time, unchanged. What must NOT move: the nightstand on the frame-right side, the clear empty front of its top, the lamp and its warm light, the walls. Never add a box or any object to the nightstand. SHE DOES NOT TALK: her lips stay closed the whole time; her mouth never moves as if speaking. Exactly two hands with five fingers each. No new objects. No fades, no cuts, no text, no numbers, no logos. Pixar style 3D animation, the same render as the start frame. Sound off."
+      }
+    },
+    {
+      "id": "C03_LAMP",
+      "shots": "3",
+      "tool": "generate_video",
+      "outputs": 1,
+      "preflight_credits": 5.25,
+      "params": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "duration": 3,
+        "aspect_ratio": "9:16",
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "$P03_LAMP"
+          }
+        ],
+        "prompt": "Motion only; the start frame sets the scene. Camera locked: no zoom, no pan, no shake. Lead action: her fingertip presses the switch on the lamp base. 0-1s: the index fingertip of the hand reaching in from the frame-left side presses the small switch on the lamp base once, small and precise. 1-1.5s: the lamp shade goes dark and the room drops to cool moonlit blue. 1.5-3s: her hand slides back out of frame toward the frame-left side; everything is still. What must NOT move: the nightstand, the clear empty front of its top, the lamp itself and its pull chain (the chain does not swing and is not pulled), her sleeping head on the pillow with her eyes closed. SHE DOES NOT TALK: her lips stay closed the whole time; her mouth never moves as if speaking. Only one hand is in frame, with exactly five fingers; no second hand appears. No new objects. No fades, no cuts, no text, no numbers, no logos. Pixar style 3D animation, the same render as the start frame. Sound off."
+      }
+    },
+    {
+      "id": "C06_FOLD",
+      "shots": "6",
+      "tool": "generate_video",
+      "outputs": 1,
+      "preflight_credits": 5.25,
+      "params": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "duration": 3,
+        "aspect_ratio": "9:16",
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "$P06A_EYE_FLAT"
+          }
+        ],
+        "prompt": "Motion only; the start frame sets the framing, the colours and the light. Locked-off macro, the camera does not move. Lead action: the white pillowcase pushes the skin beside her closed eye into one fold. 0-1s: her cheek sinks a little deeper into the white pillowcase in the lower right of the frame, and the pillow pushes up against the side of her face. 1-2.5s: the skin at the outer corner of her closed eye, between the eye and her ear, is squeezed by the pillow and bunches into one soft raised pleat of skin, a real ridge with a shadowed groove beside it, running from the outer eye corner toward the temple; the skin bulges and folds like soft dough, a shape you can see in relief, not a drawn or glowing line. 2.5-3s: the pleat stays pressed in place; everything holds still. The pillowcase stays the same pale white, the same weave and the same colour the whole time; it never turns green or any other colour. The light stays the same cool night light; no glow, no orange light, no lines appear on the skin. The eye stays closed and the lashes do not move; the eyebrow, ear, earring and hair stay as they are. Smooth, weighty motion. SHE DOES NOT TALK: her lips stay closed the whole time; her mouth never moves as if speaking. No hands in frame. No new objects. No fades, no cuts, no text, no numbers, no logos. Pixar style 3D animation, the same render as the start frame. Sound off."
+      }
+    },
+    {
+      "id": "C08_PRESS",
+      "shots": "8",
+      "tool": "generate_video",
+      "outputs": 1,
+      "preflight_credits": 5.25,
+      "params": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "duration": 3,
+        "aspect_ratio": "9:16",
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "$X08A_FLAT"
+          },
+          {
+            "role": "end_image",
+            "value": "$X08B_CREASE"
+          }
+        ],
+        "prompt": "Motion only; the start and end frames set the cutaway and the light. Camera locked. Lead action: the pillow fabric presses the skin into a crease. 0-1s: the quilted pillow, already resting on top of the skin block, slowly sinks deeper into its middle. 1-2.5s: the top skin layer pinches under it into one deep V-shaped crease, soft and elastic like dough, the pillow's underside bulging down into the V. 2.5-3s: the crease glows soft sunrise-orange; hold on the end frame. The block does not rotate, the background and rim light do not change, no new objects. No fades, no text, no labels, no numbers. Pixar style 3D animation, the same render as the start frame. Sound off."
+      }
+    },
+    {
+      "id": "C10_ALARM",
+      "shots": "10",
+      "tool": "generate_video",
+      "outputs": 1,
+      "preflight_credits": 5.25,
+      "params": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "duration": 3,
+        "aspect_ratio": "9:16",
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "$P10_ALARM_START"
+          }
+        ],
+        "prompt": "Motion only; the start frame sets the character, the bedroom and the dawn light. Camera locked: no zoom, no pan, no shake. Lead action: she sits bolt upright. 0-0.8s: still asleep on her side facing the camera, head on the pillow on the frame-right side, both hands tucked together in front of her chest. 0.8-1.2s: her eyes snap wide open. 1.2-2.2s: she sits bolt upright in one quick, cartoony spring, the duvet sliding to her waist. 2.2-3s: she holds still, upright, eyes wide, facing the camera. Her tinted see-through skin keeps showing the skeleton inside, unchanged. The round clock on the nightstand on the frame-left side stays exactly as it is: its hands do not move and its face never shows digits or numbers. The nightstand in the frame-right foreground stays empty; nothing is added to either nightstand. The window light does not change. SHE DOES NOT TALK: her lips stay closed the whole time; her mouth never moves as if speaking. Her surprise shows only in her wide eyes and lifted shoulders; her mouth stays shut, with no gasp, no yawn and no open-mouthed expression. Exactly two hands with five fingers each. No new objects. No fades, no cuts, no text, no numbers, no logos. Pixar style 3D animation, the same render as the start frame. Sound off."
+      }
+    },
+    {
+      "id": "C20_PRESS_ON",
+      "shots": "20",
+      "tool": "generate_video",
+      "outputs": 1,
+      "preflight_credits": 5.25,
+      "params": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "duration": 3,
+        "aspect_ratio": "9:16",
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "$P20A_NIGHT1_HOLD"
+          },
+          {
+            "role": "end_image",
+            "value": "$P20B_NIGHT1_ON"
+          }
+        ],
+        "prompt": "Motion only; the start and end frames set her, the patches and the light. Camera locked, medium shot from the waist up, no zoom. Lead action: she presses the clear crescent flat below her eye, centre first. 0-1s: the crescent is already resting on the skin just below the lower lashes of the eye on the frame-left side, held by the fingertips of the hand on the frame-left side; the fingertips relax their pinch and the index fingertip presses the centre of the crescent flat. 1-2s: the index fingertip glides along the crescent toward its outer end, on the frame-left side, smoothing it flat. 2-3s: the fingertip rests on the outer end of the crescent as in the end frame. The forehead band does not move, bend or change shape, and its tab stays pointing down between the eyebrows. The crescent stays one plump, clear, slightly frosted piece; it never turns white or opaque; exactly one crescent, under the frame-left eye only; the eye on the frame-right side stays bare; no other piece appears. Her head stays still; her other hand, on the frame-right side, stays resting on the duvet. Eyes stay open and calm. The lamp on the frame-right side stays on. SHE DOES NOT TALK: her lips stay closed the whole time; her mouth never moves as if speaking. She does not smile. Exactly two hands with five fingers each. No new objects. No fades, no cuts, no text, no numbers, no logos. Pixar style 3D animation, the same render as the start frame. Sound off."
+      }
+    },
+    {
+      "id": "C21_HELD",
+      "shots": "21",
+      "tool": "generate_video",
+      "outputs": 1,
+      "preflight_credits": 5.25,
+      "params": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "duration": 3,
+        "aspect_ratio": "9:16",
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "$X21_PATCH_FLAT"
+          }
+        ],
+        "prompt": "Motion only; the start frame sets the cutaway and the light. Camera locked. Lead action: the pillow presses, the skin stays flat. 0-1s: the quilted pillow fabric presses down on top of the clear patch layer. 1-2.5s: it pushes harder, but the clear patch layer and the skin layer under it stay flat and smooth, with no V and no crease. 2.5-3s: the pillow eases off slightly; everything holds flat. The clear patch keeps its thin bright edge and stays clear and slightly frosted; it never turns white or opaque. The block does not rotate; background and rim light do not change; no new objects. No fades, no text, no labels, no numbers. Pixar style 3D animation, the same render as the start frame. Sound off."
+      }
+    },
+    {
+      "id": "C24_PLUMP",
+      "shots": "23-24",
+      "tool": "generate_video",
+      "outputs": 1,
+      "preflight_credits": 5.25,
+      "params": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "duration": 3,
+        "aspect_ratio": "9:16",
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "$X23_MOISTURE"
+          },
+          {
+            "role": "end_image",
+            "value": "$X24_PLUMP"
+          }
+        ],
+        "prompt": "Motion only; the start and end frames set the cutaway and the light. Camera locked. Lead action: trapped moisture soaks back into the skin and the top layer plumps. 0-1.5s: the tiny moisture droplets under the clear patch layer drift and shimmer but none escape above it. 1.5-3s: the droplets soak into the top skin layer, which softly fills and plumps with a gentle warm glow, ending as in the end frame. The clear patch layer stays flat on top with its thin bright edge, clear and slightly frosted, never white or opaque. The block does not rotate; background and rim light do not change; no new objects. No fades, no text, no labels, no numbers. Pixar style 3D animation, the same render as the start frame. Sound off."
+      }
+    },
+    {
+      "id": "VO_HOPE",
+      "shots": "all",
+      "tool": "creative_generate_speech (ElevenLabs connector)",
+      "outputs": 1,
+      "preflight_credits": 0,
+      "params": {
+        "voice_id": "tnSpp4vdxKPjI9w0GnoV",
+        "voice_name": "Hope - upbeat and clear (ElevenLabs library, young American female, social media)",
+        "model": "eleven_v3",
+        "stability": 0.45,
+        "style": 0.5,
+        "similarity_boost": 0.75,
+        "language": "en",
+        "text": "Why are your wrinkles worse on one side? Lights out. You roll onto your side. Same side, every night. Your cheek sinks in. The skin by your eye folds. Two a.m. That fold is pressed into a crease. Four-thirty. You haven't moved. Neither has it. Alarm. There it is, on that side. Still there at lunch. You blamed your age. Tried every cream going. But no cream stops a pillow folding your face. A lot of those lines are pressed in while you sleep. So you can stop them. Night one: clear silicone patches hold the skin flat, so it can't fold and crease. They seal in moisture, so the top layer stays plump. Nothing goes under your skin. Morning one: your lines look smoother. Comment pillow and we'll send you the link."
+      },
+      "note": "Owner change Nov 8, 2026: voice Lara -> Hope. Chosen ID tnSpp4vdxKPjI9w0GnoV ('Hope - upbeat and clear', the natural upbeat social-media Hope; other Hope library voices: zGjIP4SZlMnY9m93k97r podcaster, OYTbf65OHHFELVut7v2H natural conversations). NOT YET GENERATED: ElevenLabs connector quota exhausted (192 of 716 credits), Runway workspace out of credits, Higgsfield has no Hope voice. A superseded Lara take exists (ElevenLabs gen QXzpQVlCP3Pz8NOq63Xm, 45.84 s, words verified) and is NOT to be used. Owner rule: no fallback to another voice."
+    }
+  ],
+  "revision": 1
+}

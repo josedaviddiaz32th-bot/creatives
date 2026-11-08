@@ -1,0 +1,553 @@
+{
+  "cap": 135,
+  "stage": "tof",
+  "reserve_for_retries": 15,
+  "first_pass_limit": 120,
+  "preflights_2026_11_08": {
+    "nano_banana_2 1k 9:16 (with or without refs)": 1.5,
+    "gpt_image_2_6 medium 1k 9:16 (with or without refs)": 0.5,
+    "gpt_image_2_6 high 2k 9:16": 2.75,
+    "kling3_0 pro sound off 3s (start only, or start+end)": 5.25,
+    "kling3_0 pro sound off 5s start+end": 8.75,
+    "kling3_0 std sound off 3s": 4.5,
+    "text2speech_v2 elevenlabs, 133 words (Emily preset)": 2.25
+  },
+  "estimate": [
+    {
+      "job": "P01_FLOP_START",
+      "model": "nano_banana_2 1k 9:16",
+      "credits": 1.5
+    },
+    {
+      "job": "P02_SQUASH_MACRO",
+      "model": "nano_banana_2 1k 9:16",
+      "credits": 1.5
+    },
+    {
+      "job": "P03_LAMP",
+      "model": "nano_banana_2 1k 9:16",
+      "credits": 1.5
+    },
+    {
+      "job": "P04_TOPDOWN",
+      "model": "nano_banana_2 1k 9:16",
+      "credits": 1.5
+    },
+    {
+      "job": "P05_SIDE_SINK",
+      "model": "nano_banana_2 1k 9:16",
+      "credits": 1.5
+    },
+    {
+      "job": "P06A_EYE_FLAT",
+      "model": "nano_banana_2 1k 9:16",
+      "credits": 1.5
+    },
+    {
+      "job": "P06B_EYE_FOLD",
+      "model": "nano_banana_2 1k 9:16",
+      "credits": 1.5
+    },
+    {
+      "job": "P07_CLOCK",
+      "model": "nano_banana_2 1k 9:16",
+      "credits": 1.5
+    },
+    {
+      "job": "P09_GLOW_CREASE",
+      "model": "nano_banana_2 1k 9:16",
+      "credits": 1.5
+    },
+    {
+      "job": "P10_ALARM_START",
+      "model": "nano_banana_2 1k 9:16",
+      "credits": 1.5
+    },
+    {
+      "job": "P13_CUPCAKE",
+      "model": "nano_banana_2 1k 9:16",
+      "credits": 1.5
+    },
+    {
+      "job": "P14_CREAM_SHELF",
+      "model": "nano_banana_2 1k 9:16",
+      "credits": 1.5
+    },
+    {
+      "job": "P16_PILLOWCASE_PRINT",
+      "model": "nano_banana_2 1k 9:16",
+      "credits": 1.5
+    },
+    {
+      "job": "P17_REALISE",
+      "model": "nano_banana_2 1k 9:16",
+      "credits": 1.5
+    },
+    {
+      "job": "P18_REACH",
+      "model": "nano_banana_2 1k 9:16",
+      "credits": 1.5
+    },
+    {
+      "job": "P20A_NIGHT1_HOLD",
+      "model": "nano_banana_2 1k 9:16",
+      "credits": 1.5
+    },
+    {
+      "job": "P20B_NIGHT1_ON",
+      "model": "nano_banana_2 1k 9:16",
+      "credits": 1.5
+    },
+    {
+      "job": "P22_ASLEEP_PATCHED",
+      "model": "nano_banana_2 1k 9:16",
+      "credits": 1.5
+    },
+    {
+      "job": "X08A_FLAT",
+      "model": "gpt_image_2_6 1k medium 9:16",
+      "credits": 0.5
+    },
+    {
+      "job": "X08B_CREASE",
+      "model": "nano_banana_2 1k 9:16",
+      "credits": 1.5
+    },
+    {
+      "job": "X15_CREAM",
+      "model": "nano_banana_2 1k 9:16",
+      "credits": 1.5
+    },
+    {
+      "job": "X21_PATCH_FLAT",
+      "model": "nano_banana_2 1k 9:16",
+      "credits": 1.5
+    },
+    {
+      "job": "X23_MOISTURE",
+      "model": "nano_banana_2 1k 9:16",
+      "credits": 1.5
+    },
+    {
+      "job": "X24_PLUMP",
+      "model": "nano_banana_2 1k 9:16",
+      "credits": 1.5
+    },
+    {
+      "job": "R12_NOON",
+      "model": "nano_banana_2 1k 9:16",
+      "credits": 1.5
+    },
+    {
+      "job": "R11_EYE_MACRO",
+      "model": "nano_banana_2 1k 9:16",
+      "credits": 1.5
+    },
+    {
+      "job": "R27_AFTER",
+      "model": "nano_banana_2 1k 9:16",
+      "credits": 1.5
+    },
+    {
+      "job": "S19_SHEET_LAMP",
+      "model": "nano_banana_2 1k 9:16, 3 refs",
+      "credits": 1.5
+    },
+    {
+      "job": "C01_FLOP",
+      "model": "kling3_0 pro sound off 3s 9:16 start",
+      "credits": 5.25
+    },
+    {
+      "job": "C03_LAMP",
+      "model": "kling3_0 pro sound off 3s 9:16 start",
+      "credits": 5.25
+    },
+    {
+      "job": "C06_FOLD",
+      "model": "kling3_0 pro sound off 3s 9:16 start+end",
+      "credits": 5.25
+    },
+    {
+      "job": "C08_PRESS",
+      "model": "kling3_0 pro sound off 3s 9:16 start+end",
+      "credits": 5.25
+    },
+    {
+      "job": "C10_ALARM",
+      "model": "kling3_0 pro sound off 3s 9:16 start",
+      "credits": 5.25
+    },
+    {
+      "job": "C20_PRESS_ON",
+      "model": "kling3_0 pro sound off 3s 9:16 start+end",
+      "credits": 5.25
+    },
+    {
+      "job": "C21_HELD",
+      "model": "kling3_0 pro sound off 3s 9:16 start",
+      "credits": 5.25
+    },
+    {
+      "job": "C24_PLUMP",
+      "model": "kling3_0 pro sound off 3s 9:16 start+end",
+      "credits": 5.25
+    },
+    {
+      "job": "VO_LARA",
+      "model": "ElevenLabs eleven_v3 Lara (ElevenLabs plan); counted at the Higgsfield text2speech_v2 elevenlabs fallback price",
+      "credits": 2.25
+    }
+  ],
+  "estimate_by_kind": {
+    "stills": 41.0,
+    "clips": 42.0,
+    "voiceover": 2.25
+  },
+  "estimate_total": 85.25,
+  "headroom_vs_first_pass_limit": 34.75,
+  "status": "VO done (Higgsfield Zoe 4.8; Gia 4.8 superseded). Assembly done locally, 0 credits (v2 review fixes). Higgsfield total 100.1 of 135 (stills 48.5 + clips 42.0 + VO 9.6). New photoreal stills for R11/R12/R27/S19 (owner change) not included yet. | Recast (owner): R12 v2 pass, R11 v2 + S19 v2 fail, R27 v2 not run; total now 104.6. | Recast rebuilds R11 v3, R27 v3, S19 v3 passed; total now 109.1.",
+  "actual": [
+    {
+      "job": "P01_FLOP_START",
+      "generation_id": "6b59993c-053f-42b7-aa19-74062a661ba8",
+      "credits": 1.5,
+      "gate_a": "PASS"
+    },
+    {
+      "job": "P02_SQUASH_MACRO",
+      "generation_id": "5220cf39-bc3f-42c8-9bf7-6c91c8f9b140",
+      "credits": 1.5,
+      "gate_a": "PASS (note)"
+    },
+    {
+      "job": "P03_LAMP",
+      "generation_id": "333ac7de-a7a5-4f0c-a5b3-f48eeec42331",
+      "credits": 1.5,
+      "gate_a": "PASS"
+    },
+    {
+      "job": "P04_TOPDOWN",
+      "generation_id": "cb35577d-6e0f-4fe5-a0b5-ce3f16ce5d88",
+      "credits": 1.5,
+      "gate_a": "PASS"
+    },
+    {
+      "job": "P05_SIDE_SINK (v1)",
+      "generation_id": "a2dec880-b0bd-44dd-9585-b87caa976ece",
+      "credits": 1.5,
+      "gate_a": "FAIL"
+    },
+    {
+      "job": "P05_SIDE_SINK (fix)",
+      "generation_id": "bc72e6fa-f98f-4765-87ca-c46f590a5646",
+      "credits": 1.5,
+      "gate_a": "PASS"
+    },
+    {
+      "job": "P06A_EYE_FLAT",
+      "generation_id": "eba81a36-bbe4-49da-997e-5d39a72026f1",
+      "credits": 1.5,
+      "gate_a": "FAIL"
+    },
+    {
+      "job": "P07_CLOCK",
+      "generation_id": "2b3fc561-2c10-40ae-9ec0-9f77725285b5",
+      "credits": 1.5,
+      "gate_a": "PASS"
+    },
+    {
+      "job": "P09_GLOW_CREASE",
+      "generation_id": "7d6d6181-3e18-4706-86c2-f84e493974a3",
+      "credits": 1.5,
+      "gate_a": "PASS (note)"
+    },
+    {
+      "job": "P10_ALARM_START",
+      "generation_id": "dc0c41c6-7e5a-4eaa-a1ae-72504e640999",
+      "credits": 1.5,
+      "gate_a": "PASS (note)"
+    },
+    {
+      "job": "P13_CUPCAKE",
+      "generation_id": "48f924a4-85cd-446c-9e32-06f79898344c",
+      "credits": 1.5,
+      "gate_a": "PASS"
+    },
+    {
+      "job": "P14_CREAM_SHELF",
+      "generation_id": "8aea7b40-1f0c-461d-bb74-9684d68d4433",
+      "credits": 1.5,
+      "gate_a": "PASS"
+    },
+    {
+      "job": "P16_PILLOWCASE_PRINT",
+      "generation_id": "add4717a-ef80-44aa-b846-17cd79ded3ca",
+      "credits": 1.5,
+      "gate_a": "FAIL"
+    },
+    {
+      "job": "P17_REALISE",
+      "generation_id": "32b544b9-f9a8-4aa8-be3b-5a1531afaaa1",
+      "credits": 1.5,
+      "gate_a": "PASS (note)"
+    },
+    {
+      "job": "P18_REACH",
+      "generation_id": "e0946a9f-025f-4705-ac3e-38054cff712c",
+      "credits": 1.5,
+      "gate_a": "PASS"
+    },
+    {
+      "job": "P20A_NIGHT1_HOLD",
+      "generation_id": "d3460c6d-9c8b-4996-b557-b82c906e2f49",
+      "credits": 1.5,
+      "gate_a": "PASS (note)"
+    },
+    {
+      "job": "P20B_NIGHT1_ON (v1)",
+      "generation_id": "f06f9b5e-8854-4b0c-abd4-7ef29f2c3e41",
+      "credits": 1.5,
+      "gate_a": "FAIL"
+    },
+    {
+      "job": "P20B_NIGHT1_ON (fix)",
+      "generation_id": "c874220f-b2a3-44a4-b8cf-30606a40c621",
+      "credits": 1.5,
+      "gate_a": "PASS (note)"
+    },
+    {
+      "job": "P22_ASLEEP_PATCHED",
+      "generation_id": "03f6bb12-5521-423d-979c-42d50c015851",
+      "credits": 1.5,
+      "gate_a": "PASS"
+    },
+    {
+      "job": "X08A_FLAT",
+      "generation_id": "e2341d95-381c-4860-8aa7-c2333725b926",
+      "credits": 0.5,
+      "gate_a": "PASS"
+    },
+    {
+      "job": "X08B_CREASE",
+      "generation_id": "5f649d8e-aac8-44f6-908e-65622f14786a",
+      "credits": 1.5,
+      "gate_a": "PASS"
+    },
+    {
+      "job": "X15_CREAM",
+      "generation_id": "3f265c1c-04e1-46b6-b542-26c3074166c3",
+      "credits": 1.5,
+      "gate_a": "PASS"
+    },
+    {
+      "job": "X21_PATCH_FLAT",
+      "generation_id": "c699a899-6557-4527-b47b-e6005fbb2114",
+      "credits": 1.5,
+      "gate_a": "PASS"
+    },
+    {
+      "job": "X23_MOISTURE",
+      "generation_id": "03c2cd85-8998-4d23-a695-4ee17fe3781b",
+      "credits": 1.5,
+      "gate_a": "FAIL"
+    },
+    {
+      "job": "R12_NOON",
+      "generation_id": "c531252c-247e-4b79-9e55-0c0ff403d32b",
+      "credits": 1.5,
+      "gate_a": "PASS"
+    },
+    {
+      "job": "R11_EYE_MACRO",
+      "generation_id": "8e34995e-fd0f-4c00-81c8-f6279156ec6d",
+      "credits": 1.5,
+      "gate_a": "PASS"
+    },
+    {
+      "job": "R27_AFTER",
+      "generation_id": "c0d117bf-959d-4641-aa03-a879d63fd7cf",
+      "credits": 1.5,
+      "gate_a": "PASS"
+    },
+    {
+      "job": "S19_SHEET_LAMP",
+      "generation_id": "5c7308cd-339c-4370-beb4-c9810630e3a3",
+      "credits": 1.5,
+      "gate_a": "PASS (note)"
+    },
+    {
+      "job": "P06A_EYE_FLAT (owner fix)",
+      "generation_id": "d02dc525-36a7-43bb-a151-3b670dff921f",
+      "credits": 1.5,
+      "gate_a": "PASS (note)"
+    },
+    {
+      "job": "P16_PILLOWCASE_PRINT (owner fix)",
+      "generation_id": "2bff5c1b-1e7b-4659-bf87-b0eb55a9bda6",
+      "credits": 1.5,
+      "gate_a": "PASS (note)"
+    },
+    {
+      "job": "X23_MOISTURE (owner fix)",
+      "generation_id": "5e02dcf9-710d-4bce-970c-5cbf407049c0",
+      "credits": 1.5,
+      "gate_a": "PASS"
+    },
+    {
+      "job": "P06B_EYE_FOLD",
+      "generation_id": "baf0f102-b002-4bae-8785-53b0aef1b027",
+      "credits": 1.5,
+      "gate_a": "FAIL"
+    },
+    {
+      "job": "X24_PLUMP",
+      "generation_id": "e64ef8e1-5820-47ff-82fc-2f1c294a4de6",
+      "credits": 1.5,
+      "gate_a": "PASS (note)"
+    },
+    {
+      "job": "C01_FLOP",
+      "generation_id": "7bd30ef7-4620-49c7-a9f4-082df7c8ef91",
+      "credits": 5.25,
+      "gate_b": "PASS (note)"
+    },
+    {
+      "job": "C03_LAMP",
+      "generation_id": "be68ab42-c1e5-436a-8384-1f5c177bb497",
+      "credits": 5.25,
+      "gate_b": "PASS"
+    },
+    {
+      "job": "C06_FOLD",
+      "generation_id": "a4c8b26f-dd03-4eb9-bdf6-36aae96fff72",
+      "credits": 5.25,
+      "gate_b": "PASS (trim)"
+    },
+    {
+      "job": "C08_PRESS",
+      "generation_id": "bdb87e0d-1604-4424-a5ca-b04639ad5555",
+      "credits": 5.25,
+      "gate_b": "PASS"
+    },
+    {
+      "job": "C10_ALARM",
+      "generation_id": "fe865bee-5794-4822-a789-593adfe2f949",
+      "credits": 5.25,
+      "gate_b": "FAIL"
+    },
+    {
+      "job": "C20_PRESS_ON",
+      "generation_id": "558ff853-6453-4be2-85da-7b90be38b471",
+      "credits": 5.25,
+      "gate_b": "PASS"
+    },
+    {
+      "job": "C21_HELD",
+      "generation_id": "244e958c-fb99-4511-b67a-7fbba736264d",
+      "credits": 5.25,
+      "gate_b": "FAIL"
+    },
+    {
+      "job": "C24_PLUMP",
+      "generation_id": "942d430c-9af8-403c-9061-5db833339580",
+      "credits": 5.25,
+      "gate_b": "PASS (note)"
+    },
+    {
+      "job": "VO_LARA (superseded by owner voice change)",
+      "generation_id": "elevenlabs:QXzpQVlCP3Pz8NOq63Xm",
+      "credits": 0,
+      "elevenlabs_credits": 716,
+      "note": "ElevenLabs plan, not Higgsfield; not to be used"
+    },
+    {
+      "job": "VO_HOPE",
+      "generation_id": null,
+      "credits": 0,
+      "status": "BLOCKED: ElevenLabs quota 192 < 716 needed; Runway out of credits; no Higgsfield Hope voice"
+    },
+    {
+      "job": "VO_GIA (superseded by Zoe)",
+      "generation_id": "aa0d0f48-bbb5-438c-971f-31e09f85e492",
+      "model": "seed_audio",
+      "credits": 4.8,
+      "note": "owner voice change; not used in the video"
+    },
+    {
+      "job": "VO_ZOE (final voiceover)",
+      "generation_id": "1fd85be1-ebd8-4eb5-9309-23b858b2b97b",
+      "model": "seed_audio",
+      "credits": 4.8
+    },
+    {
+      "job": "ASSEMBLY v1 + v2 (local ffmpeg/PIL/whisper)",
+      "credits": 0
+    },
+    {
+      "job": "R12_NOON v2 (white recast)",
+      "generation_id": "2f3ff919-1b67-4a8a-bf47-5e0ae05ee9e4",
+      "credits": 1.5,
+      "gate_a": "PASS"
+    },
+    {
+      "job": "R11_EYE_MACRO v2",
+      "generation_id": "ebd5da72-76d2-45cf-a252-f9f899e562e9",
+      "credits": 1.5,
+      "gate_a": "FAIL"
+    },
+    {
+      "job": "S19_SHEET_LAMP v2",
+      "generation_id": "01f20925-aeb1-447b-b7a4-054f81de5ece",
+      "credits": 1.5,
+      "gate_a": "FAIL"
+    },
+    {
+      "job": "R11_EYE_MACRO v3 (rebuild from R12 v2)",
+      "generation_id": "165b818c-b7ad-414e-8959-a6e70bb6a231",
+      "credits": 1.5,
+      "gate_a": "PASS (note)"
+    },
+    {
+      "job": "R27_AFTER v3 (softening edit of R11 v3)",
+      "generation_id": "a387016a-aee1-41aa-b5ef-924269552189",
+      "credits": 1.5,
+      "gate_a": "PASS"
+    },
+    {
+      "job": "S19_SHEET_LAMP v3 (rebuild)",
+      "generation_id": "e363bae6-1ba5-40f9-83ab-1230d9deffee",
+      "credits": 1.5,
+      "gate_a": "PASS (note)"
+    }
+  ],
+  "actual_total": 109.1,
+  "revision": "1: +S19 (1.5); every other change is text or a free reference; changed paid jobs re-preflighted 2026-11-08 (unchanged prices)",
+  "still_fix_spend": 3.0,
+  "balance_after_stage_a": 1016.0,
+  "still_fix_owner_approved": 4.5,
+  "balance_after_stage_b_clips": 974.0,
+  "pass2_change": "Nov 8: prompt-review pass 2 replacements applied to C01, C03, C06, C08, C10, C20; C06 start-only (owner), cost unchanged 5.25",
+  "owner_changes": [
+    {
+      "date": "2026-11-08",
+      "change": "Voiceover voice -> Higgsfield Gia (owner). Hope blocked by ElevenLabs credits.",
+      "job": "VO_GIA aa0d0f48-bbb5-438c-971f-31e09f85e492",
+      "model": "seed_audio",
+      "voice_id": "530df032-c311-483b-a750-cb3c9e1bcdfd",
+      "credits": 4.8,
+      "raw_seconds": 56.08
+    },
+    {
+      "date": "2026-11-08",
+      "change": "Owner: 'Try Zoe'. Final voiceover -> Higgsfield Zoe (Gia superseded).",
+      "job": "VO_ZOE 1fd85be1-ebd8-4eb5-9309-23b858b2b97b",
+      "model": "seed_audio",
+      "voice_id": "d0374db1-44b9-4f05-939e-0a9ae9dbbe6a",
+      "speech_rate": 15,
+      "credits": 4.8,
+      "raw_seconds": 49.46,
+      "words_ok": true
+    }
+  ]
+}
