@@ -30,6 +30,9 @@ section 2 here sets what we may claim about the product.**
   buy.** TOF is for unaware or problem-aware people and is mostly about the
   problem, but it subtly shows the product as the answer and that we're a
   brand, never just a tips page. MOF is solution-aware.
+- **Fast-paced edits** (Nov 7, 2026): cuts, punch-ins, pop-ups, word-by-word
+  captions and SFX; pauses trimmed; a mild whole-clip speed-up (≤1.08×,
+  video and audio together, pitch kept) is allowed. Spec: `editing` in config.
 - **One generation per shot** (Nov 7, 2026): every job makes exactly one
   output, no variations or batches. A shot that fails a gate is not redone
   automatically; the run stops and the owner decides. Exception: still

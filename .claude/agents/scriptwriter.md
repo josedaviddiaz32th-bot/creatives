@@ -60,8 +60,8 @@ sections 2 and 6).
   real deadline in `brief.md`; never a fake timer or fake low stock.
 
 ## Rules
-- About 2.3 spoken words per second (handoff spec), so 30s is roughly 70
-  words. Write down the count. Never plan a sped-up voice.
+- About `video.words_per_second` (3.0) spoken words per second, fast UGC
+  delivery, so 30s is roughly 90 words. Write down the count. Never plan a sped-up voice.
 - One idea per video: one tension, one promise, ONE belief (from `brief.md`)
   and ONE objection answered. Specifics beat adjectives (5 pieces, overnight,
   30-day guarantee). A metaphor can make the mechanism instant ("a retainer

@@ -35,6 +35,11 @@ Through Higgsfield `sandbox_exec` (ffmpeg/ffprobe), download `final.mp4` and:
     patches, two hands × five fingers, wrinkles don't change mid-clip unless it's a planned before/after, text
     inside the safe zone, CTA full-screen beat, live price, −16 LUFS,
     commercial-use music). List each as ✅/❌.
+8c. **Pace and lip sync** (`editing` in config): no shot longer than
+    `editing.max_shot_seconds`; no gap between words over
+    `editing.max_word_gap_seconds`; word-by-word captions present; a visual
+    change every ~1.5 s in the first 3 s; lips close on m/b/p in every
+    on-camera talking moment (otherwise covered by B-roll).
 9. **Story intent:** the finished video still delivers the approved
    `story.md`: the hook question within 5s, a smooth turn to the patches and
    a subtle CTA. Check it against `docs/lessons-learned.md` too.

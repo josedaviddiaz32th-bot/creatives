@@ -20,7 +20,21 @@ video:
     bof: { min: 15, max: 25 }
   aspect_ratio: "9:16"
   language: "en"
-  words_per_second: 2.3         # from handoff; 30s ≈ 70 spoken words
+  words_per_second: 3.0         # fast UGC delivery after pause trimming (research Nov 7, 2026); 30s ≈ 90 words
+  # Talking clips (lip-sync research): one sentence per clip, <= 15 words, 4-6 s.
+  talking_clip: { max_words: 15, min_seconds: 4, max_seconds: 6 }
+editing:
+  # Fast-paced spec (docs/research/production-fixes-research.md). Assembly and video review enforce it.
+  max_shot_seconds: 2.5
+  first_3s_change_every_seconds: 1.5
+  max_word_gap_seconds: 0.3      # trim pauses > 0.15 s to 0.06-0.10 s
+  punch_in_pct: [112, 118]       # alternate at every jump cut; 125-130 on emphasis words
+  still_push_pct: [6, 10]
+  broll_every_seconds: [5, 6]    # also cover any word with weak lip sync
+  popup_every_seconds: [3, 5]
+  captions: word_by_word         # 64-80 px bold white, black stroke, current word highlighted; PNG overlays
+  sfx_lufs: [-22, -18]           # about one SFX per visual event
+  max_speedup: 1.08              # whole clip, video and audio together, pitch preserved
   structure:
     hook: { seconds: 5, must_be_question: true }
     body: { note: "dig into the problem, then turn smoothly to the patches; open loops over ~25s" }

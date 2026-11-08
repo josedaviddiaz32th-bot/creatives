@@ -21,8 +21,12 @@ Read `docs/lessons-learned.md` sections 3, 5, 6, 8 and 10 first.
 Write the choice and the reason at the top.
 
 ## 2. Clip plan
-- Kling 3.0 clips are 3–15s. Use the **fewest clips** that work (usually 3–4;
-  every clip is paid). Clip lengths come from word count at 2.3 words/s.
+- **Talking clips: one sentence per clip, at most `video.talking_clip.max_words`
+  (15) words, 4–6 s** (lip-sync research, Nov 7, 2026: Kling 3.0 misses
+  mouth shapes on long, wordy clips). Medium close-up, face at least ~45% of
+  the frame width, head still while speaking, no hand gestures during the
+  line. Avoid clusters of m/b/p words in the hook. Silent B-roll clips can be
+  longer. Clip lengths come from word count at `video.words_per_second`.
 - Never cut a sentence across clips. The hook question opens clip 1 and ends
   cleanly within ~5s, so the hook can be re-shot alone for A/B tests.
 - **One action per clip.** Hands do one simple thing. Applying and wearing

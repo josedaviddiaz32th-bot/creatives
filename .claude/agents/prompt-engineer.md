@@ -54,6 +54,11 @@ checks it. Never pay to generate something a listed asset already covers.
 - **Talking clips:** "She says exactly these words, in this order, and nothing
   else: "…"", the continuity sheet's voice description word for word, "only
   her voice and quiet room tone". No ALL CAPS; describe emphasis instead.
+  The voice description is energetic and clearly articulated, fast casual
+  TikTok UGC delivery with a wide mouth opening; never "soft", "breathy",
+  "whispered" or "late at night" (they shrink mouth movement and break lip
+  sync). Add: "her lips fully close on every m, b and p; her mouth moves
+  only while she speaks"; one sentence, no hand gestures during the line.
 - **Silent clips:** "SHE DOES NOT TALK: her lips stay closed the whole time."
 - **Peel:** "folds back over itself", "pulled sideways close to the skin", "a
   fold line travels across". Never "lifts away" / "peels off" alone. End frame
