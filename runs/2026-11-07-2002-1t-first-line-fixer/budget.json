@@ -145,30 +145,158 @@
       "credits": 1.5,
       "balance_before": 1190,
       "balance_after": 1188.5,
-      "gate_A": "FAIL",
+      "gate_A": "PASS (owner override: 'K4 looks good to me, keep it'; plumper crescents accepted)",
       "counts_toward_still_fix_credits_auto": true,
       "owner_note": "owner accepted ~1 credit reserve draw for this fix",
       "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3K4XoW4Rud6flkLxNibt0IrMyg5/hf_20261108_021758_02a0082c-acd1-43d7-a34c-850d33ec389a.png"
+    },
+    {
+      "job": "K5_SHEET_HOLD",
+      "generation_id": "2b3b35f6-a4ec-41f4-8df4-7f01998187e8",
+      "refs": [
+        "91d6abc0-eb0a-4f1c-bce6-b2a663bbaf69"
+      ],
+      "model": "nano_banana_2 (served as nano_banana_flash) 1k 9:16, 1 ref + 2 Elements, count 1",
+      "preflight": 1.5,
+      "credits": 1.5,
+      "balance_before": 1188.5,
+      "balance_after": 1187,
+      "gate_A": "FAIL",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3K4XoW4Rud6flkLxNibt0IrMyg5/hf_20261108_022401_2b3b35f6-a4ec-41f4-8df4-7f01998187e8.png"
+    },
+    {
+      "job": "K5_SHEET_HOLD_FIX",
+      "generation_id": "f7bdded8-3f73-4641-a013-b05cb77043c6",
+      "edit_of": "2b3b35f6-a4ec-41f4-8df4-7f01998187e8",
+      "model": "nano_banana_2 (served as nano_banana_flash) 1k 9:16, 1 ref + 2 Elements, count 1",
+      "preflight": 1.5,
+      "credits": 1.5,
+      "balance_before": 1187,
+      "balance_after": 1185.5,
+      "gate_A": "FAIL",
+      "counts_toward_still_fix_credits_auto": true,
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3K4XoW4Rud6flkLxNibt0IrMyg5/hf_20261108_022525_f7bdded8-3f73-4641-a013-b05cb77043c6.png"
+    },
+    {
+      "job": "K5_SHEET_HOLD_REBUILD",
+      "generation_id": "4576bff3-729e-4096-afcc-a16ec4389720",
+      "refs": [
+        "91d6abc0-eb0a-4f1c-bce6-b2a663bbaf69"
+      ],
+      "model": "nano_banana_2 (served as nano_banana_flash) 1k 9:16, 1 ref + 2 Elements, count 1",
+      "preflight": 1.5,
+      "credits": 1.5,
+      "balance_before": 1185.5,
+      "balance_after": 1184,
+      "gate_A": "PASS",
+      "owner_approval": "Yes, rebuild and continue",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3K4XoW4Rud6flkLxNibt0IrMyg5/hf_20261108_022957_4576bff3-729e-4096-afcc-a16ec4389720.png"
+    },
+    {
+      "job": "K6_TODAY",
+      "generation_id": "7de6281d-1bd4-4d1a-80fa-563d13196ec6",
+      "refs": [
+        "91d6abc0-eb0a-4f1c-bce6-b2a663bbaf69"
+      ],
+      "model": "nano_banana_2 (served as nano_banana_flash) 1k 9:16, 1 ref + 1 Element, count 1",
+      "prompt_change": "tray sentence strengthened per production-log K5 lesson",
+      "preflight": 1.5,
+      "credits": 1.5,
+      "balance_before": 1184,
+      "balance_after": 1182.5,
+      "gate_A": "FAIL",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3K4XoW4Rud6flkLxNibt0IrMyg5/hf_20261108_023252_7de6281d-1bd4-4d1a-80fa-563d13196ec6.png"
+    },
+    {
+      "job": "K6_TODAY_FIX",
+      "generation_id": "b4e64508-bf5e-482b-a2c0-8484357a02ff",
+      "edit_of": "7de6281d-1bd4-4d1a-80fa-563d13196ec6",
+      "refs": [
+        "7de6281d-1bd4-4d1a-80fa-563d13196ec6",
+        "91d6abc0-eb0a-4f1c-bce6-b2a663bbaf69"
+      ],
+      "model": "nano_banana_2 (served as nano_banana_flash) 1k 9:16, 2 refs + 1 Element, count 1",
+      "preflight": 1.5,
+      "credits": 1.5,
+      "balance_before": 1182.5,
+      "balance_after": 1181,
+      "gate_A": "PASS (owner override: 'Yes, accept K6'; band as is) — later REPLACED as TODAY by fe37523b (pair rebuild)",
+      "owner_approval": "Yes, fix K6",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3K4XoW4Rud6flkLxNibt0IrMyg5/hf_20261108_024139_b4e64508-bf5e-482b-a2c0-8484357a02ff.png"
+    },
+    {
+      "job": "K7_YESTERDAY",
+      "generation_id": "f8e52cb0-9ab3-4478-9057-c3b5f77db762",
+      "refs": [
+        "b4e64508-bf5e-482b-a2c0-8484357a02ff",
+        "91d6abc0-eb0a-4f1c-bce6-b2a663bbaf69"
+      ],
+      "model": "nano_banana_2 (served as nano_banana_flash) 1k 9:16, 2 refs, count 1",
+      "preflight": 1.5,
+      "credits": 1.5,
+      "balance_before": 1181,
+      "balance_after": 1179.5,
+      "gate_A": "FAIL",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3K4XoW4Rud6flkLxNibt0IrMyg5/hf_20261108_024826_f8e52cb0-9ab3-4478-9057-c3b5f77db762.png"
+    },
+    {
+      "job": "K7_YESTERDAY_REBUILD (relight of K1)",
+      "generation_id": "d21e9014-d6cf-4db6-a005-100099a168b4",
+      "refs": [
+        "91d6abc0-eb0a-4f1c-bce6-b2a663bbaf69"
+      ],
+      "model": "nano_banana_2 (served as nano_banana_flash) 1k 9:16, 1 ref, count 1",
+      "preflight": 1.5,
+      "credits": 1.5,
+      "balance_before": 1179.5,
+      "balance_after": 1178,
+      "gate_A": "PASS",
+      "owner_approval": "Rebuild the pair",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3K4XoW4Rud6flkLxNibt0IrMyg5/hf_20261108_025223_d21e9014-d6cf-4db6-a005-100099a168b4.png"
+    },
+    {
+      "job": "K6_TODAY_REBUILD (edit of new YESTERDAY)",
+      "generation_id": "fe37523b-b596-425d-be03-5369cfbb7d8a",
+      "refs": [
+        "d21e9014-d6cf-4db6-a005-100099a168b4"
+      ],
+      "model": "nano_banana_2 (served as nano_banana_flash) 1k 9:16, 1 ref + 1 Element, count 1",
+      "preflight": 1.5,
+      "credits": 1.5,
+      "balance_before": 1178,
+      "balance_after": 1176.5,
+      "gate_A": "PASS",
+      "owner_approval": "Rebuild the pair",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3K4XoW4Rud6flkLxNibt0IrMyg5/hf_20261108_025340_fe37523b-b596-425d-be03-5369cfbb7d8a.png"
     }
   ],
-  "actual_total": 11.5,
+  "actual_total": 23.5,
   "preflight": "get_cost:true on Higgsfield 2026-11-07 (no jobs submitted). Returned: kling3_0 pro sound on 14s=35, 13s=32.5, 15s=37.5 (with start+end media); nano_banana_2 9:16 1k=1.5 (text+Elements, 1 ref, 1 ref+Elements, 2 refs), 2k=2. Stills not yet generated, so frame-dependent jobs were priced with a stand-in media id; price depends only on model/mode/sound/duration/resolution.",
   "status": "WITHIN_BUDGET: 116.0 first pass <= 120 (135 cap - 15 reserve); 131.0 with reserve <= 135. Nothing cut. Margin before reserve: 4.0 (3 still redos at 1.5).",
   "generation_ids": {
     "K1_NIGHT_ID": "91d6abc0-eb0a-4f1c-bce6-b2a663bbaf69",
-    "K1_NIGHT_ID_rejected_v1": "712c622b-31b0-4425-a939-293e6c64afa5",
-    "K2_POV_GROUP_rejected_v1": "6bbee4ea-14fd-480e-948d-d63b5b9cb8db",
     "K2_POV_GROUP": "91d09592-2072-4ca3-84de-d0b15a1830cb",
     "K3_SLEEP": "f0d61ae3-a6a7-4172-a518-e9586bda1c00",
+    "K4_PRESS_ON": "02a0082c-acd1-43d7-a34c-850d33ec389a",
+    "K5_SHEET_HOLD": "4576bff3-729e-4096-afcc-a16ec4389720",
+    "K6_TODAY": "fe37523b-b596-425d-be03-5369cfbb7d8a",
+    "K7_YESTERDAY": "d21e9014-d6cf-4db6-a005-100099a168b4",
+    "K1_NIGHT_ID_rejected_v1": "712c622b-31b0-4425-a939-293e6c64afa5",
+    "K2_POV_GROUP_rejected_v1": "6bbee4ea-14fd-480e-948d-d63b5b9cb8db",
     "K4_PRESS_ON_rejected_v1": "9d36306f-d048-43c1-88c0-79d02d58400e",
-    "K4_PRESS_ON_rejected_fix": "02a0082c-acd1-43d7-a34c-850d33ec389a"
+    "K5_SHEET_HOLD_rejected_v1": "2b3b35f6-a4ec-41f4-8df4-7f01998187e8",
+    "K5_SHEET_HOLD_rejected_fix": "f7bdded8-3f73-4641-a013-b05cb77043c6",
+    "K6_TODAY_rejected_v1": "7de6281d-1bd4-4d1a-80fa-563d13196ec6",
+    "K7_YESTERDAY_rejected_v1": "f8e52cb0-9ab3-4478-9057-c3b5f77db762",
+    "K6_TODAY_replaced_owner_accepted": "b4e64508-bf5e-482b-a2c0-8484357a02ff"
   },
-  "stage_A_status": "STOPPED at K4: the one fix also failed gate A (under-eye half-moon pads, teardrop smile-line pieces). Approved: K1 91d6abc0, K2 91d09592, K3 f0d61ae3. K5-K7 not generated. Projected: 11.5 spent + 4.5 stills + 105 clips = 121 (<=135 cap; 1 over first-pass limit, reserve draw accepted by owner).",
+  "stage_A_status": "COMPLETE: all 7 stills approved (see generation_ids). End card = K7_YESTERDAY d21e9014 | K6_TODAY fe37523b (same light/framing). Next: prompt-reviewer pass 2 before any clip. Projection: 23.5 spent + 105 clips = 128.5 <= 135 cap (8.5 over first-pass 120, owner-approved reserve draws); 6.5 credits headroom left.",
   "still_fix_spend_auto": {
     "allowance": 3,
-    "used": 1.5,
+    "used": 3.0,
     "jobs": [
-      "K4_PRESS_ON_FIX"
+      "K4_PRESS_ON_FIX",
+      "K5_SHEET_HOLD_FIX"
     ]
   }
 }
