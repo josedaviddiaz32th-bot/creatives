@@ -45,7 +45,7 @@ the owner says so.
 
 ### Who the videos are for
 - **US viewers only** (Nov 8, 2026). 2-T reached 64.8% India and 0% US: "we definitely don't want this".
-  - Results are judged on US women in the persona's age band. Views from elsewhere are reach, not success.
+  - Results are judged on US viewers. **18–34 is fine** (owner, Nov 8: "18-34 is fine, that is not an issue"); country is the problem, not age. Views from elsewhere are reach, not success.
   - Every video carries US signals: American English, US settings and props, US-coded captions, posting at US Eastern times.
 
 ### What the owner waved through (don't block on these)
@@ -95,3 +95,4 @@ the owner says so.
 | 2026-11-08 | 2-T | Caption | "not more than 2 hashtags and make them hashtags tailored to avatar" | Caption rule (above) |
 | 2026-11-08 | 2-T | Result | "The second video you created was awesome" | 2-T is the quality bar |
 | 2026-11-08 | 1-T, 2-T | First numbers | 1-T v3.1: 36/233/39 views (IG/FB/TT), ~60% gone by 2 s, audience 35–64. 2-T: 1392/7/36, 13 s average watch, 50% held to 11 s, 90% 18–34, 64.8% India, 0% US. "we definitely don't want this" | US-only audience rule (above). The 1-T hook (static photo POV) failed; 2-T's moving animated opener held |
+| 2026-11-08 | 2-T | Why India? | "18-34 is fine… it might the time at which I posted, I posted at about 3 AM, although I have another animation video i posted a month ago at night, and it also went 60% to india" | Age is fine. Posting time is a likely cause (3 AM Eastern is 1:30 PM in India). The account already skews India from an earlier animated video. Test: post the next videos at 7–9 pm Eastern and compare the country split |
