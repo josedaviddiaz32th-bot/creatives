@@ -23,6 +23,11 @@ video:
   words_per_second: 3.0         # fast UGC delivery after pause trimming (research Nov 7, 2026); 30s ≈ 90 words
   # Talking clips (lip-sync research): one sentence per clip, <= 15 words, 4-6 s.
   talking_clip: { max_words: 15, min_seconds: 4, max_seconds: 6 }
+  structure:
+    hook: { seconds: 5, must_be_question: true }
+    body: { note: "dig into the problem, then turn smoothly to the patches; open loops over ~25s" }
+    cta: { seconds: 5, style: subtle }
+  strategy: "docs/creative-strategy.md"   # every run fills one slot from it
 editing:
   # Fast-paced spec (docs/research/production-fixes-research.md). Assembly and video review enforce it.
   max_shot_seconds: 2.5
@@ -35,11 +40,6 @@ editing:
   captions: word_by_word         # 64-80 px bold white, black stroke, current word highlighted; PNG overlays
   sfx_lufs: [-22, -18]           # about one SFX per visual event
   max_speedup: 1.08              # whole clip, video and audio together, pitch preserved
-  structure:
-    hook: { seconds: 5, must_be_question: true }
-    body: { note: "dig into the problem, then turn smoothly to the patches; open loops over ~25s" }
-    cta: { seconds: 5, style: subtle }
-  strategy: "docs/creative-strategy.md"   # every run fills one slot from it
 
 generation:
   provider: higgsfield
