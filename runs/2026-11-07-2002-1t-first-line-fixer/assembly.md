@@ -105,3 +105,120 @@ All text boxes were again asserted inside y 269–1248, each is ≤8 words, and 
 - **TODAY blend:** the lines read softer, not erased. This is a code edit of an AI after-image, which is allowed under the owner's AI before/after rule. Post it with the platform's AI-content label (as the reviewer noted under claims).
 - **"worst"/"worse":** small.en hears "worse" again on this mix. The on-screen text says "Worst".
 - **Not uploaded to Higgsfield**, as instructed. Not committed.
+
+---
+
+# v3 (fast-paced re-cut, owner request "more fast-paced… cuts, images popping, sounds")
+
+**0 credits.** No Higgsfield/ElevenLabs/Runway calls, no uploads, not committed. Built locally with ffmpeg, Python/PIL/numpy and whisper-cli (small.en). v2 is untouched: `final.mp4` here is still v2, and `assembly-1t/final-v2-PASS.mp4` is the fallback.
+
+- **Final:** `final-v3.mp4` (13.1 MB) and `final-v3-contact.png` (4 fps, 12 per row, so row r, column c = (12r + c) × 0.25 s) in this folder.
+- **Scripts:** `/private/tmp/claude-501/-Users-josediaz--claude-spares-spare-SRaU1E/2f87790f-784b-45bc-9668-95f59d8eab95/scratchpad/assembly-1t-v3/`. `edl.py` does the pause cut and voice track, `words.py` the word timings, `render3.py` the picture, captions, pop-ups and SFX cues, and `audio3.py` the speed, SFX synthesis, mix, loudnorm and mux.
+- **Spec:** **27.00 s**, 1080×1920, **30 fps**, H.264 High yuv420p, AAC 48 kHz stereo 192k.
+  - That's **below the TOF 30–50 s window**. The brief allowed it: the same 88 words, minus the pauses, at 1.08×.
+- **Loudness:** two-pass loudnorm (I −16, TP −2.0, LRA 11; dynamic mode, as in v2). Measured on the final with ebur128: **−16.0 LUFS integrated, true peak −2.0 dBFS, LRA 3.4 LU**.
+- **SFX level:** set 5 LU under the voice, so about **−21 LUFS** in the master.
+- **Music:** none. I didn't build a code-generated bed, because a synth loop would likely sound cheap. SFX only.
+- **Speech check:** Whisper on the final mix returns **all 88 words, in order** (it hears "worse" for "worst" again, as in v1). Speech runs 0.41–25.35 s, which is **3.5 spoken words/s**.
+
+## What changed vs v2
+
+1. **Pauses cut, and video cut with them.**
+   - Speech islands come from a 10 ms RMS envelope: speech > −45 dB, edges extended while > −52 dB, so soft "f"/"s" tails are kept. Whisper's own word times have no gaps, so they can't place cuts.
+   - Every gap over 0.15 s is cut to **0.06–0.105 s pre-speed (0.057–0.097 s in the final)**. Each cut sits on a 24 fps source-frame boundary, and the same cut is applied to audio and video, so lip sync is exact. Each audio join gets a 4 ms fade, and every join is in silence.
+   - There's one deliberate **0.20 s beat** before the reveal ("…wake up?" → K3, "Nobody told me why.").
+   - 13 pauses were removed: 42 s of clips → 27.75 s pre-speed.
+2. **Speed 1.08×.**
+   - Audio: `atempo=1.08` on the whole voice track, pitch preserved.
+   - Video: rendered directly in output time at 30 fps, and each talking frame is the source frame under the same pre-speed instant, so sync holds. At this speed each 24 fps source frame shows for about 1.16 output frames.
+   - **Why 1.08:** after the pause cut, speech sat at about 3.3 w/s, and 1.08 lands at 3.5 w/s. That's inside the research's natural 3–3.9 range and below the 1.10–1.15 smear zone.
+   - I could not listen. I checked it with Whisper instead: the sped voice alone transcribes clean, 88/88. **The owner should listen.** A 1.0× build is one command (`python3 render3.py 1.0 && python3 audio3.py`, about 29 s long).
+3. **Jump cuts and punch-ins.**
+   - Talking shots alternate 100% ↔ 112–115% at each cut, anchored on her face.
+   - Emphasis punches go to 128% over 4 frames on "lines", "fraud" and "worst".
+   - The vitamin-C punch-in is anchored on the hand area, so the chip still hides the backlit counting hand.
+   - Stills get a +5–8% push. "Me?" is a 5-frame snap zoom. K3 and the packshot open with a slam-out zoom.
+4. **B-roll over the weak lip-sync words.** With a cover on, no talking footage shows.
+   - "look smooth": K2 friends.
+   - "by my eyes": K2 eye macro on the ME side.
+   - "peptides": jar card.
+   - "even Botox of lesser strength": syringe card.
+   - "scared it'll look unnatural": the FILTER face in a card. This is the smoothed K2 crop, cut off above the laughing mouth.
+   - "pressed": K3 crease macro.
+   - "So now I sleep in these": product insert.
+   - "They hold my skin flat all night" (patch on): K4.
+   - "Comment photo…": YESTERDAY | TODAY.
+   - The A furrow window (A t ≥ 3.875 to ≈6.5) and the B1 grimace/furrow window (t 3.29–9.21) are never on screen. Every talking source range used is listed in the shot list below.
+5. **Word-by-word captions.**
+   - Helvetica Neue Bold, 74 px (auto-shrinks to fit), white with a 7 px black stroke and soft shadow. The current word is in brand **Sunrise Orange #F08A2C**.
+   - Hand-set 1–4 word phrase chunks, upper case, centred at y 1172. Every caption is asserted in code to sit inside y 269–1248 and x 16–1064.
+   - During the chip shots, captions shift left (centre x 330) so they clear the chips. Spelling follows story.md ("Frown", "worst", "PHOTO").
+   - **Hook:** the hook card "Filtering your lines / out of every photo?" serves as the caption for the first sentence. Its words light up orange as she says them (photo, filtering, lines), so there are no stacked captions on the hook.
+6. **Cards merged or dropped** (captions now carry the speech):
+   - Dropped because captions repeat them: "Botox… of lesser strength?", "Worst when you wake up?", "Pressed in. Every night." and "Holds skin flat all night".
+   - Dropped to declutter: "It ages me more than I'd like." and "And it keeps getting worse." (unspoken lines). Chip labels too, since the captions name each item.
+   - Kept: hook card · FILTER / ME · "Nobody told me why." (the silent beat) · "The Wrinkle Smooth Face Set" pill on the insert · YESTERDAY / TODAY · "Same light. No filter." · packshot brand lines · **CTA "Comment PHOTO"** (a comment-bubble sticker on the packshot; it's also spoken, and the caption highlights PHOTO on the end card).
+7. **Pop-ups** scale in 25 → 110 → 100% over 6 frames. All are drawn in code or cut from our own assets:
+   - Timer dot and flash.
+   - Orange rings on the frown line, the forehead and the eye crinkle.
+   - Sparkles on "filter".
+   - Product chips, plus the big jar and syringe cards.
+   - Orange "?" badge, grimace emoji, arrow on the crease, Face Set pill, green check, moon-and-z, comment bubble.
+   - The gap between pops never exceeds ≈4 s.
+   - **Bigger interrupts:** flash 0.33 · FILTER|ME wipe 4.28 · white flash 13.31 · K3 slam with record scratch 17.36 · end-card wipe-in 23.15. That's ≤ 9 s apart.
+8. **SFX.** Synthesized in numpy, so no third-party audio: whoosh, pop, ding, click, timer beep, shutter, record scratch and riser. 30 cues, about one per visual event.
+   - Every cue lands **0.12 s before** its word or cut. A pop that sat on the "F" of "Frown" and on "all night" made Whisper hear "Brown" and "almost", so those were moved or removed (see the production log).
+9. **The 5 polish items from round 2:**
+   - (a) Chip cut-outs are keyed off the paper with a border flood-fill, edge-feathered, and the card draws its own shadow. There's no photo-box seam. The tube uses a wide feathered fade, because keying white-on-white ate the tube, and it's enlarged.
+   - (b) The syringe is now a full-screen card, not over a friend's face.
+   - (c) The reprise silence is gone: the reprise is gone, and the pause is cut.
+   - (d) The insert crop moved right (x 646–1076, was 600) and scales to 105%. There's no cheek/ear sliver; checked at full res.
+   - (e) The end-card crop moved left (K6/K7 box x 150–490, was 210–550), so the held band's sliver is out of TODAY. Eye lines still match (same box on both).
+
+## v3 shot list (output seconds)
+
+| Out | Dur | Shot | Source / note |
+|---|---|---|---|
+| 0.00–0.88 | 0.88 | K2 POV push, timer dot, flash 0.33 | beeps, shutter; voice enters 0.41 |
+| 0.88–1.61 | 0.73 | A talk 100% | A t1.91–2.70 |
+| 1.61–2.58 | 0.97 | A talk 115%, punch 128% on "lines" | A t2.70–3.75 (before the 3.875 furrows) |
+| 2.58–3.90 | 1.31 | K2 friends push | "My friends look smooth." |
+| 3.90–4.28 | 0.39 | K2 snap zoom to her | "Me?" |
+| 4.28–5.93 | 1.65 | FILTER \| ME wipe (8 frames) + rings | "Frown lines, forehead lines," |
+| 5.93–7.18 | 1.24 | K2 ME-side eye macro + ring | "crinkling by my eyes." |
+| 7.18–7.79 | 0.62 | A talk 100% + sparkles | A t10.71–11.37 |
+| 7.79–8.72 | 0.93 | A talk 115%, punch on "fraud" | A t11.37–12.375 |
+| 8.72–9.91 | 1.20 | B1 talk 100% + tube chip | B1 t0.33–1.63 |
+| 9.91–10.60 | 0.69 | B1 talk 112% (hand-anchored) + vitamin C chip | B1 t1.83–2.58 |
+| 10.60–11.32 | 0.72 | Jar card | "peptides," |
+| 11.32–13.31 | 1.99 | Syringe card + "?" | "even Botox of lesser strength," |
+| 13.31–15.01 | 1.70 | White flash → FILTER face card + grimace emoji | "but I'm scared it'll look unnatural." |
+| 15.01–15.92 | 0.92 | B1 talk 100% | B1 t9.79–10.77 |
+| 15.92–17.36 | 1.44 | B1 talk 115%, punch on "worst" | B1 t10.77–12.33 |
+| 17.36–18.30 | 0.94 | K3 slam (flash + record scratch) + "Nobody told me why." | "A lot of them get" (after a 0.20 s beat) |
+| 18.30–18.72 | 0.42 | K3 crease macro + arrow | "pressed" |
+| 18.72–19.71 | 1.00 | B2 talk 112% | B2 t2.22–3.29 |
+| 19.71–21.37 | 1.66 | Product insert (B2 hold t9.2+, film + hand) + Face Set pill | "So now I sleep in these." |
+| 21.37–23.15 | 1.77 | K4 press-on push + check + moon | "They hold my skin flat all night." |
+| 23.15–25.38 | 2.24 | End card K7 \| K6-blend35 (TODAY wipes in) | "Comment photo and I'll send you what I use." |
+| 25.38–26.97 | 1.58 | Packshot + brand + Comment PHOTO bubble | room tone fades out |
+
+**Shot stats:** 23 shots. **Average 1.17 s, max 2.24 s** (end card), min 0.39 s. Visual changes in the first 3 s land at 0.33 (flash), 0.88, 1.61 and 2.58.
+
+**Self-QA:**
+- ✅ No shot > 2.5 s.
+- ✅ Largest inter-word gap on the final voice track is **0.22 s** (the planned beat); the next largest is 0.11 s.
+- ✅ Whisper 88/88, in order.
+- ✅ Every caption and card is asserted inside the safe zone. I looked at the full 4 fps contact sheet; nothing collides.
+- ✅ −16.0 LUFS / −2.0 dBTP.
+
+## Known issues (v3)
+
+- **27.0 s is under TOF's 30 s minimum** (accepted in the brief).
+- **1.08× wasn't auditioned by ear.** Whisper reads it cleanly, but the owner should listen. 1.0× would give ≈29 s and its stock 24 fps cadence.
+- **30 fps from 24 fps sources:** talking frames repeat about every 6th frame (pulldown-style cadence). It's normal on phones, but v2 was native 24 fps.
+- **K2 is still ≈27% of runtime** (7.2 s: POV, friends, Me, split, eye macro, FILTER card), down from 35%. The eye macro is a 2× upscale of the photo, so it's slightly soft. Her laughing photo face shows there, but it reads as the photo, not live speech.
+- The tube chip is still pale-on-white by nature. A faint lighter square remains on the syringe barrel where "1ml" was blurred (visible on the big card only at full res).
+- Dropped storyboard cards ("It ages me more than I'd like.", "And it keeps getting worse.") are no longer on screen. Restore one if the owner wants that line.
+- "worst" vs "worse": Whisper hears "worse"; the caption says WORST, as in story.md.
+- No music bed. Post with the platform's AI-content label (as in v2). Not uploaded, not committed.
