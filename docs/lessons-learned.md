@@ -444,6 +444,23 @@ consideration and high physics details… otherwise it will look fake"):
 - skin slightly magnified through the clear silicone;
 - the released sheet floppy, swaying and curling at the edges, never rigid.
 
+**Staging that makes an AI peel work** (Dermaclara ad 2165910151027201, fully AI,
+studied Nov 8, 2026; our U2 fold-back peel failed mid-motion). Staging matters
+more than physics words:
+- **Start frame already mid-peel:** the corner is lifted and pinched in her fingers.
+  The model continues a motion; it never has to invent the first lift.
+- **Pull outward and sideways, off the edge of the face,** in the image plane. The
+  sheet leaves the face fast and ends in the air beside her head. No long
+  fold-back across the forehead toward the lens: that's a self-overlapping
+  transparent fold, the hardest thing to render.
+- **Second hand anchors the skin** (fingertips pressed beside the patch), like a
+  real peel.
+- **3/4 angle, head tilted, close, eyes down**, not frontal and posed.
+- **Short beats:** each peel ~1 s, cut between *different* patches (forehead →
+  under-eye → nose). Cuts between pieces read as editing; a cut in the middle of
+  one peel reads as a hidden failure (the owner spotted ours).
+- Small, thin, matte-looking pieces; phone-grade UGC look with text over it.
+
 If the prompt also carries the PATCHES block, replace its "no folds or lifted edges"
 with "before she starts peeling…".
 
