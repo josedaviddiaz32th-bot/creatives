@@ -124,9 +124,10 @@ K3 sleeping still, code slow push-in, pillow-rustle SFX. Text 0:27.8 **Nobody to
 ### End card — 0:39.3–0:44.5 (code, full screen, the CTA's own beat)
 K7 | K6 side by side as two separate single-subject stills composed in code (never a split
 reference image), centre seam, matched eye line. Labels **YESTERDAY | TODAY**, then **Same light.
-No filter.**, then **Comment PHOTO**. From 0:43.4: hold with a crop of the five pieces (from K5,
-or the Higgsfield studio shot 564c68fa only if the producer verifies it exists) and **The Wrinkle
-Smooth Face Set · The Daily Glow Co.** + **Comment PHOTO**.
+No filter.**, then **Comment PHOTO**. From 0:43.4: hold on the **Higgsfield studio shot of the
+Face Set** (existing generation `564c68fa-cbff-4997-8c84-feaa071f7d0b`, top-down flat lay, tab
+down; verified Nov 7, no credits; crop off the dark band at the top in code), with **The Wrinkle
+Smooth Face Set · The Daily Glow Co.** + **Comment PHOTO**. Fallback: a crop of K5.
 
 ## Assembled timeline
 

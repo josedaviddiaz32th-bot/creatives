@@ -39,6 +39,10 @@ Check each job in `prompts.json`, in order, against its storyboard beat.
 - End frame of clip N = start frame of clip N+1 where shots connect.
 - Wardrobe, hair (fully off the forehead), jewellery and light don't drift.
 
+**2b. Reuse.** Check the prompt-engineer's asset plan against
+`docs/lessons-learned.md` section 7 and the Higgsfield/Runway listings: flag
+any paid job that an existing asset already covers.
+
 **3. The product (the rule that fixes most failures)**
 - Every patch-visible job uses the real product reference or Element, never
   a model's guess, and pastes the **PATCHES block verbatim** (lessons §4).

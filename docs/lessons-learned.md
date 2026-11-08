@@ -410,6 +410,32 @@ Higgsfield Elements go in a prompt as `<<<element_id>>>`. Runway items are task 
 - Worn, smiling (Runway; don't use: smiling with patches is banned): Face Set 0fb86087 · …
 - **Product only, brand studio look (Higgsfield):** Face Set 564c68fa · Forehead f3fbd28d · Under-Eye 5ad6b508 · Smile Line dc3ee260 · Chest 0d919a1f · Hand b186063a · 11-piece 2b6f1e2b.
 
+**Where these live and their full IDs** (verified Nov 7, 2026):
+- The Higgsfield studio shots are **generations, not uploads**: find them in
+  Higgsfield generation history (`show_generations`), and reuse one by
+  passing its generation ID in `medias` (no credits). Full IDs: Face Set
+  `564c68fa-cbff-4997-8c84-feaa071f7d0b` (flat lay, tab down; its crescents
+  look plumper than the real ones, so use the Eye-patches Element for shape,
+  and this shot for brand/end cards) · Forehead
+  `f3fbd28d-6b11-4b21-9388-b5e9cecb58cf` · Under-Eye
+  `5ad6b508-d200-4eaa-a2d4-47e3303ed3ba` · Smile Line
+  `dc3ee260-0341-412c-9b29-d78735f612b3` · Chest
+  `0d919a1f-8d19-40e8-b5e9-2db8c178a23e` · Hand
+  `b186063a-c9b3-42c8-aad6-0d0adb142d89` · 11-piece
+  `2b6f1e2b-6d2e-4f70-8c4f-91d96059bfa9`.
+- Runway items need their **full task ID** (the short IDs above are
+  rejected). `list_recent` only reaches back ~50 items (to Oct 25, 2026).
+  Found there: Face Set sheet held to a window, 5s, an older hand in a white
+  robe sleeve, real-looking bedroom (`bd37ae30-ad4a-4070-a00f-eebc50c42a21`);
+  3D skin base (`4478cf98-b5cc-4d74-b2e5-522b460dd381`); clear patch on top
+  (`d7e35b5e-dbec-4ace-af32-666f6534a2cc`); base→patch clip
+  (`53a8695f-f3e7-4b3f-b74f-9a9855601c54`); needle→base clip
+  (`244b7231-a592-41ec-9375-e72579af67ac`). The character portraits
+  (2aed9b2b, fe59332f, 2652b5b2, 53be5c97) are older: the owner has to
+  supply their full IDs or the image files.
+- To use a Runway or local file in Higgsfield, upload it as Higgsfield media
+  first; uploads cost no credits.
+
 **Clips and graphics (Runway):** 3D skin cross-section set: base 4478cf98 ·
 needle 10cae659 · clear patch on top d7e35b5e · base→patch clip 53a8695f ·
 needle→base clip 244b7231. Face Set sheet held to a window, 5s: bd37ae30. On

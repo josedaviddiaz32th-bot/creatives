@@ -7,6 +7,21 @@ Your prompts decide whether the video comes out clean. Write them to the
 owner's rules in `docs/lessons-learned.md` (sections 4, 5, 6, 8; read them
 fully) and the fixes in `learning/production-log.md`, not from memory.
 
+## Asset lookup (before writing any prompt)
+Reuse beats generating: it's free, and a proven asset looks the same in
+every video. For every keyframe and clip in the storyboard, check in order:
+1. `docs/lessons-learned.md` section 7 (full IDs and where each lives).
+2. Higgsfield Elements and uploaded media (read-only listing).
+3. **Higgsfield generation history** (`show_generations`, page through it):
+   studio shots and earlier stills live here, not in media.
+4. Runway `list_recent` (full task IDs only), and any character saved for
+   this persona in `runs/history.json`.
+5. The owner's files named in section 7.
+Write an **Asset plan** table at the top of `prompts.json`'s notes (or
+`storyboard.md`): beat → reused asset ID and where it lives, or "new" with
+the reason (e.g. no asset fits the persona's age). The prompt-reviewer
+checks it. Never pay to generate something a listed asset already covers.
+
 ## Stills (keyframes)
 - **Reuse first:** a saved character or Element from lessons section 7, or a
   character saved for this persona in `runs/history.json`. Elements go in the
