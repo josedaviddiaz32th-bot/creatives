@@ -26,3 +26,10 @@ Hashtags: #sleepcreases names her exact problem; #skincarein20s names her age gr
 - **Sound:** add the same trending sound from the reference in the app.
 - **AI-content label:** turn it on.
 - **Time:** 7–9 pm Eastern, with a US location tag (owner's US-reach plan).
+
+## v3 caption (final, matches the v3 story)
+> turns out the lines weren't age… it was my pillow 😮‍💨 a lot of lines get pressed in while you sleep, so now I sleep in clear silicone patches that hold my skin flat all night. nothing goes under your skin.
+>
+> comment SLEEP and I'll send you the link 🤍
+>
+> #sleepcreases #skincarein20s
