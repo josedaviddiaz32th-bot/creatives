@@ -26,8 +26,10 @@ section 2 here sets what we may claim about the product.**
   awareness × funnel stage × format). High format variety; a new hook on the
   same video is a hook test, not a new concept.
 - **One video starts an idea and ends it.** No "part 2" or sequels.
-- **TOF is for unaware people** and is about the problem itself; MOF covers
-  problem-aware and solution-aware.
+- **TOF: get me interested. MOF: help me choose. BOF: give me a reason to
+  buy.** TOF is for unaware or problem-aware people and is mostly about the
+  problem, but it subtly shows the product as the answer and that we're a
+  brand, never just a tips page. MOF is solution-aware.
 - **No talking with patches on.** Applying them should look organic (she
   presses one on while holding the phone), never a posed, silent lying-down shot.
 - **Purpose:** a 5–6 day organic test on TikTok, Instagram and Facebook,

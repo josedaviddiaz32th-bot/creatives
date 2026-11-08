@@ -34,17 +34,20 @@ inside the same video.
 
 ### The three stages
 
-| | **TOF** | **MOF** | **BOF** |
+**TOF: get me interested. MOF: help me choose. BOF: give me a reason to
+buy.** (owner)
+
+| | **TOF: get me interested** | **MOF: help me choose** | **BOF: give me a reason to buy** |
 |--|---------|---------|---------|
-| **Awareness** | Unaware | Problem-aware (MOF-P) and solution-aware (MOF-S) | Product-aware and most aware |
-| **What she knows** | She sees lines or looks tired or angry in photos, but doesn't know why, or doesn't see it as something she can fix | MOF-P: knows her lines bother her, not what fixes them. MOF-S: knows creams, Botox, tape and patches; doubts patches | Knows our patches; something stops her from buying |
-| **The video's job** | **The problem itself:** show it, reveal a cause she didn't know, make her feel it | MOF-P: why what she tried doesn't fit, and that an overnight patch is a different kind of fix. MOF-S: make *these* patches believable | Remove ONE objection, make the offer, give a real reason to act now |
-| **Product** | None, or one closing line or shot as the answer | MOF-P: arrives as the answer, mid-video. MOF-S: the subject from early on | From the first second |
-| **Proof** | The insight itself; visuals of the problem (pillow crease, morning lines, photo moment) | Mechanism, demo, before/after, side-by-side, stays-on test | Before/after, specs, price math, offer, guarantee (once the refund page is fixed) |
-| **Belief (lessons §2)** | Optional opener: "some lines are pressed in overnight" | 1 (overnight smoothing), 2 (others fell off), 3 (gentle) | 3, 4 (value), 5 (guarantee) |
+| **Awareness** | Unaware (TOF-U) or problem-aware (TOF-P) | Solution-aware | Product-aware and most aware |
+| **What she knows** | TOF-U: sees lines or looks tired/angry in photos, doesn't know why. TOF-P: knows her lines bother her, not what to do | Knows creams, Botox, tape and patches exist; is weighing them; doubts patches | Knows our patches; something stops her from buying |
+| **The video's job** | **Mostly the problem:** show it, reveal a cause she didn't know, make her feel it. Then, subtly, show there's an answer and that it comes from a brand | Why overnight patches over creams, Botox and tape; why *this* kit (whole face, stays on, reusable); how it works; what it looks like in a real night | Remove ONE objection, make the offer, give a real reason to act now |
+| **Product and brand** | ~80% problem; the last ~20% shows the patch as the answer (on the face or the morning result, one line on how it works). It may sit in frame earlier without comment. Brand visible: the product packaging in shot, brand name on screen or in the caption, the keyword CTA. **It must never read like a skincare-tips page with no product.** | The subject from early on | From the first second |
+| **Proof** | The insight itself; visuals of the problem (pillow crease, morning lines, photo moment) | Mechanism, demo, before/after, transformation, side-by-side, stays-on test | Before/after, results in her own words (or real customer reviews the owner supplies), specs, price math, offer, guarantee (once the refund page is fixed) |
+| **Belief (lessons §2)** | Opener: "some lines are pressed in overnight", or belief 1 in the closing answer | 1 (overnight smoothing), 2 (others fell off), 3 (gentle) | 3, 4 (value), 5 (guarantee) |
 | **Length** (`video.seconds_by_stage`) | 30–50s | 25–45s | 15–25s |
-| **CTA** | Soft or none: "comment PILLOW and I'll send you what I use" | "Comment STAY and I'll send you the link" / link in bio | The offer, subtly: "2 sets are $60 right now, link's in my bio" |
-| **Primary metric** | Hook rate, avg watch %, shares, saves, follows; reached the persona's age/gender | Completion, saves, profile visits, comments, keyword comments | Keyword comments, link clicks, store sessions, orders, revenue per visitor |
+| **CTA** | Soft: "comment PILLOW and I'll send you what I use" | "Comment STAY and I'll send you the link" / link in bio | The offer, subtly: "2 sets are $60 right now, comment NEEDLE" |
+| **Primary metric** | Hook rate, avg watch %, shares, saves, follows; reached the persona's age/gender | Completion, saves, profile visits, keyword comments | Keyword comments, link clicks, store sessions, orders, revenue per visitor |
 | **Where the click goes, test week** | Product page | Product page | Product page |
 | **Where it goes once a persona wins** (`docs/funnel-strategy.md`) | Advertorial: problem → cause → solution | Listicle: "7 reasons…" | Product page with the persona's offer |
 | **Share of videos** | ~40% | ~35% | ~25% |
@@ -73,7 +76,7 @@ inside the same video.
 |-------|--------|
 | Persona | P1–P4, plus explore avatars (section 3) |
 | Desire | Being liked / attraction (photos, partner) · comfort (sleep, no needles) · safety (no side effects) · winning (control over her body) |
-| Awareness and stage | Section 2 table |
+| Awareness and stage | TOF-U · TOF-P · MOF · BOF (section 2 table) |
 | Belief and objection | Lessons §2 |
 | Video type | Section 5, by stage |
 | Presenter | Peer who looks like the persona · authority look (no stated credential) · voiceover only |
@@ -106,18 +109,18 @@ scriptwriter drafts 5+. Keywords must be unique across the week.
 
 | Slot | Persona | Stage | Video type | Presenter · copy angle | Belief / objection | Hook direction | Keyword |
 |------|---------|-------|------------|------------------------|--------------------|----------------|---------|
-| **1-T** | P1 | TOF | POV of the group-photo moment, then the explanation | Peer · narrative | Opener | "Ever look angry in a photo when you were actually happy?" | PHOTO |
-| **2-T** | P2 | TOF | Authority-look explainer: your pillow folds your face 7 hours a night; crease visuals | Authority · evidence | Opener | "Why are your wrinkles worse on one side?" | PILLOW |
-| **3-T** | P3 | TOF | Green-screen reaction to a Reddit post ("I'm 21 and have lines when I smile") | Peer · narrative | — | "In your 20s and your lines stay after you stop frowning?" | FIRST |
-| **4-T** | P4 | TOF | Long authority-look explainer (45–50s): why under-eyes look paper-thin and tired in the morning | Authority · evidence | Opener | "In your 40s and everyone asks if you're tired?" | TIRED |
-| **E1-T** | E1 | TOF | Voiceover over B-roll (ElevenLabs): the face after weight loss | Voiceover · narrative | — | "Lost the weight, so why does your face look more tired?" | LOOSE |
-| **E2-T** | E2 | TOF | Talking-head confession, warm and accepting | Peer · narrative | — | "What if your lines aren't the problem you think they are?" | LOVE |
-| **1-M** | P1 | MOF-P | "I tried everything": her routine, why retinol didn't do it and Botox isn't for her, then the overnight patch; morning before/after | Peer · narrative | 1 · "I already have a routine" | "Retinol, creams… why do my forehead lines still win?" | ROUTINE |
-| **2-M** | P2 | MOF-S | Stays-on test: side sleeping, tossing and turning, still on at 7am; before/after | Peer · evidence | 2 · "falls off" | "Do wrinkle patches really stay on if you sleep on your side?" | STAY |
-| **3-M** | P3 | MOF-S | Myth-busting: "patches don't work", because they fell off or weren't shaped for each area | Authority · evidence | 2 | "Tried patches and they did nothing?" | MYTH |
-| **4-M** | P4 | MOF-P | Us vs them under the eyes: eye cream vs tape vs overnight patch, before/after | Authority · evidence | 3 · "safe under my eyes?" | "Eye cream, tape or patches: what works on paper-thin under-eyes?" | EYES |
+| **1-T** | P1 | TOF-U | POV of the group-photo moment, then the explanation | Peer · narrative | Opener | "Ever look angry in a photo when you were actually happy?" | PHOTO |
+| **2-T** | P2 | TOF-U | Authority-look explainer: your pillow folds your face 7 hours a night; crease visuals | Authority · evidence | Opener | "Why are your wrinkles worse on one side?" | PILLOW |
+| **3-T** | P3 | TOF-P | Green-screen reaction to a Reddit post ("I'm 21 and have lines when I smile") | Peer · narrative | — | "In your 20s and your lines stay after you stop frowning?" | FIRST |
+| **4-T** | P4 | TOF-P | Long authority-look explainer (45–50s): why under-eyes look paper-thin and tired in the morning | Authority · evidence | Opener | "In your 40s and everyone asks if you're tired?" | TIRED |
+| **E1-T** | E1 | TOF-U | Voiceover over B-roll (ElevenLabs): the face after weight loss | Voiceover · narrative | — | "Lost the weight, so why does your face look more tired?" | LOOSE |
+| **E2-T** | E2 | TOF-P | Talking-head confession, warm and accepting | Peer · narrative | — | "What if your lines aren't the problem you think they are?" | LOVE |
+| **1-M** | P1 | MOF | Night routine / step-by-step "how I use them" with her existing skincare, morning before/after | Peer · evidence | 1 · "I already have a routine" | "Ever wondered what wearing wrinkle patches all night actually looks like?" | ROUTINE |
+| **2-M** | P2 | MOF | Stays-on test: side sleeping, tossing and turning, still on at 7am; before/after | Peer · evidence | 2 · "falls off" | "Do wrinkle patches really stay on if you sleep on your side?" | STAY |
+| **3-M** | P3 | MOF | Myth-busting: "patches don't work", because they fell off or weren't shaped for each area | Authority · evidence | 2 | "Tried patches and they did nothing?" | MYTH |
+| **4-M** | P4 | MOF | Us vs them under the eyes: eye cream vs tape vs overnight patch, before/after | Authority · evidence | 3 · "safe under my eyes?" | "Eye cream, tape or patches: what works on paper-thin under-eyes?" | EYES |
 | **1-B** | P1 | BOF | Price math: Botox every 3 months vs one reusable kit; offer card | Peer · direct response | 4 · "why not Botox" | "$435 every 3 months… or?" (re-check live prices) | NEEDLE |
-| **2-B** | P2 | BOF | "Things I wish I knew before buying wrinkle patches", rapid list → offer | Peer · direct response | 3 · "stops sticking?" | "Buying wrinkle patches? Here's what nobody tells you." | KNOW |
+| **2-B** | P2 | BOF | "Things I wish I knew before buying wrinkle patches", rapid list → offer | Peer · direct response | 3 · "stops sticking?" | "Thinking about wrinkle patches? Here's what nobody tells you." | KNOW |
 | **3-B** | P3 | BOF | Unboxing / first reaction, value vs $13 sets, offer card | Peer · direct response | 4 · "why $45 when Amazon has $13 sets" | "Is a $45 patch set actually worth it?" (re-check price) | WORTH |
 | **4-B** | P4 | BOF | Objection answer (red marks, breakouts under the eyes), then offer | Authority · direct response | 3 · irritation | "Worried patches will irritate your under-eyes?" | GENTLE |
 | **I-1…I-4** | Winners | any | Iterations (section 8): same angle, new video type, face or setting | — | same as the winner | — | new keyword each |
@@ -127,25 +130,34 @@ scriptwriter drafts 5+. Keywords must be unique across the week.
 Adapted from winning ads the creative-scout breaks down (any category; see
 `learning/swipe-file/`). Copy the shape, never the words, face or brand.
 
-- **TOF (unaware):** curiosity explainer ("why your lines are deepest at
-  7am") · POV / skit of the moment she notices · authority-look explainer ·
-  green-screen reaction to a post or article · counterintuitive fact /
-  myth · "things your face does while you sleep" · voiceover over B-roll ·
-  talking-head confession.
-- **MOF (problem- and solution-aware):** "I tried everything" story ·
-  night routine / GRWM · mechanism explainer · us vs them · demo · stays-on
-  test · before/after (any form) · myth-busting · long-form authority video.
-- **BOF (product- and most aware):** objection answer · "things I wish I
-  knew" · price math · unboxing / first reaction · rapid-fire FAQ ·
-  before/after + offer · near-static offer card with a real deadline.
+- **TOF (get me interested):** storytelling reel with a strong hook ·
+  POV / relatable moment · bold take or myth ("your night cream isn't the
+  problem, your pillow is") · bite-sized tip worth saving · curiosity
+  explainer ("why your lines are deepest at 7am") · authority-look explainer
+  · green-screen reaction to a post or article · personal confession ·
+  voiceover over B-roll. Every one ends on the patch as the answer.
+- **MOF (help me choose):** step-by-step "how I use them" · day in the life
+  / night routine · transformation (before/after, any form) · us vs them ·
+  demo · stays-on test · myth-busting about patches · process breakdown
+  ("what the silicone actually does overnight") · long-form authority
+  video.
+- **BOF (give me a reason to buy):** offer with a clear CTA · results in
+  her own words · price / bundle breakdown · objection answer · "things I
+  wish I knew before buying" · unboxing / first reaction · rapid-fire FAQ ·
+  real limited-time offer.
 
 ## 6. Script rules
 
 - **Hook = a question that calls her out**: her age, moment or body area, so
   the wrong people scroll past and the platform learns who it's for. Visual,
   sound and ≤8-word on-screen text land in the first 2s (lessons §3).
-- **TOF is about the problem.** The product is at most the answer in the
-  last seconds. Don't name the product category in the hook.
+- **TOF is mostly the problem, but always from a brand.** The hook and
+  ~80% of the video are about the problem; the last ~20% shows the patch as
+  the answer; the brand is visible. Don't name the product category in the
+  hook.
+- **MOF hooks are about choosing** (comparing fixes, doubting patches);
+  **BOF hooks are about buying** (price, offer, last objection). A hook about
+  the problem belongs in TOF.
 - **Open loops** in anything over ~25s, closed inside the same video.
 - **Peer or authority, both allowed.** The authority look is fine; a stated
   credential she doesn't have is not.

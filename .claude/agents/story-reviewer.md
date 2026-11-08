@@ -31,7 +31,10 @@ Read: `brief.md`, `format.md`, `story.md`, `docs/lessons-learned.md`,
    anything in section 2's "still off limits" list (a stated credential the character doesn't have,
    made-up statistics, fake customer reviews), is an automatic FAIL. Usage wording matches
    lessons section 1 ("overnight", "just clean and reuse").
-9. **Stands alone:** one idea opened and closed in this video; any "part 2"
+9. **Stage job:** TOF gets her interested (mostly the problem, ends on
+   the patch as the answer, brand visible); MOF helps her choose; BOF gives
+   a reason to buy. A hook that belongs to another stage is REVISE.
+   **Stands alone:** one idea opened and closed in this video; any "part 2"
    or cliffhanger into another video is REVISE.
    **Length:** fits the slot's stage in `video.seconds_by_stage` at 2.3 words/s.
    **Strategy fit:** does it do its funnel stage's job, move the slot's belief,

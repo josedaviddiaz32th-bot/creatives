@@ -15,11 +15,12 @@ they override anything here).
 ## Structure (length from the slot's stage in `video.seconds_by_stage`)
 
 The funnel stage in `brief.md` sets the job, the belief and when the
-product appears (`docs/creative-strategy.md` section 2). TOF (unaware): the
-video is about the problem itself; the product is at most the answer at the
-end. MOF-P (problem-aware): the patch arrives as the
-answer mid-video. MOF-S (solution-aware): the product is the subject. BOF: product and
-offer from the first second. **One video starts an idea and ends it:** no
+product appears (`docs/creative-strategy.md` section 2). TOF (get me
+interested; unaware or problem-aware): ~80% about the problem, the last ~20%
+shows the patch as the answer, and the brand is visible; it must never read
+like a tips page with no product. MOF (help me choose; solution-aware): the
+product is the subject: why patches, why this kit, how it works. BOF (give me
+a reason to buy): product and offer from the first second. **One video starts an idea and ends it:** no
 "part 2", no cliffhanger into another video. Over ~25s, add an open loop
 (closed inside the same video) after the first
 body beat ("but that wasn't the weird part").

@@ -34,7 +34,7 @@ You choose WHAT this video is about. You don't write the script.
    say a price".
 
 ## Write `brief.md`
-- **Slot:** its ID, persona, desire, awareness level (TOF / MOF-P / MOF-S /
+- **Slot:** its ID, persona, desire, awareness level (TOF-U / TOF-P / MOF /
   BOF), funnel stage, video type, presenter, copy angle, comment keyword,
   target length (`video.seconds_by_stage`), credit cap
   (`budget.max_credits_by_stage`), and the hook direction from the strategy.

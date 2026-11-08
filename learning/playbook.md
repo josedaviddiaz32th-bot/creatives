@@ -19,7 +19,7 @@ Nothing has been judged yet. Everything starts UNTESTED.
 | length band | 15–25s · 25–45s · 30–50s | 0 | 0 | 0 | UNTESTED | |
 | belief | 1–5 | 0 | 0 | 0 | UNTESTED | |
 | copy angle | narrative · evidence · direct response | 0 | 0 | 0 | UNTESTED | |
-| awareness | TOF · MOF-P · MOF-S · BOF | 0 | 0 | 0 | UNTESTED | |
+| awareness | TOF-U · TOF-P · MOF · BOF | 0 | 0 | 0 | UNTESTED | |
 | CTA type | | | | | | |
 | swipe source | see `swipe-index.json` | | | | | |
 
