@@ -61,5 +61,23 @@
       "audience": "90% 18-34; 64.8% India; 0% US",
       "owner_reaction": "awesome (quality bar)"
     }
+  },
+  {
+    "run": "runs/2026-11-08-0909-ref-problem-vs-solution",
+    "slot": "trend remake (owner pick)",
+    "persona": "P3 Appearance-Conscious Youth",
+    "awareness": "TOF-P",
+    "funnel": "TOF",
+    "video_type": "trend remake: 'The Problem / Vs… / The Solution' UGC, no speech, trending sound added in-app",
+    "presenter": "none (couple, photoreal)",
+    "hook_type": "on-screen caption 'The Problem 😭🛏️'",
+    "keyword": "SLEEP",
+    "seconds": 15.07,
+    "credits": 45,
+    "swipe_source": "2026-11-08-ugc-problem-vs-solution-car",
+    "posted": null,
+    "captions": "runs/2026-11-08-0909-ref-problem-vs-solution/captions.md",
+    "links": {},
+    "metrics": {}
   }
 ]

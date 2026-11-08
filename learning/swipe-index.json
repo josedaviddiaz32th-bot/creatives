@@ -63,5 +63,21 @@
       "runs/2026-11-08-0230-2t-proactive-problem-solver"
     ],
     "outcome": "untested"
+  },
+  {
+    "id": "2026-11-08-ugc-problem-vs-solution-car",
+    "file": "learning/swipe-file/2026-11-08-ugc-problem-vs-solution-car.md",
+    "advertiser": "organic couple creator (owner-supplied trending video)",
+    "category": "lifestyle / relationship / comfort (no brand)",
+    "format": "silent couple POV UGC, 3-caption 'The Problem / Vs… / The Solution' trend template, music only (15.07 s)",
+    "funnel": "tof",
+    "presenter": "peer couple, no speech",
+    "hook_type": "meme caption + relatable miserable moment",
+    "mechanism": "Instant contrast with no words: a relatable miserable moment, a caring partner builds the fix, then visible cosy bliss; the product IS the transformation and the caption template does the telling.",
+    "winning_signal": "owner: 'trending a lot' (recurring trend template, Nov 8, 2026); no counts on file",
+    "used_in": [
+      "runs/2026-11-08-0909-ref-problem-vs-solution"
+    ],
+    "outcome": "untested"
   }
 ]
