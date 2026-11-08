@@ -79,5 +79,26 @@
     "captions": "runs/2026-11-08-0909-ref-problem-vs-solution/captions.md",
     "links": {},
     "metrics": {}
+  },
+  {
+    "run": "runs/2026-11-08-1338-ref-real-or-sus-p4",
+    "slot": "trend remake (owner pick)",
+    "persona": "P4 Botox-Resistant Pragmatist",
+    "awareness": "MOF",
+    "funnel": "MOF",
+    "video_type": "'REAL or SUS?' expert stitch: UGC apply/peel + green-screen expert verdict",
+    "presenter": "original expert look (no credential), Gemini Veo + Kling",
+    "hook_type": "skeptic question title 'REAL or SUS?'",
+    "belief": "holds skin flat + seals moisture; shaped kit vs tape",
+    "objection": "is this TikTok hype / real?",
+    "keyword": "REAL",
+    "seconds": 28.12,
+    "credits": 46.75,
+    "gemini_videos": 2,
+    "swipe_source": "2026-11-08-real-or-sus-stitch",
+    "posted": null,
+    "captions": "runs/2026-11-08-1338-ref-real-or-sus-p4/captions.md",
+    "links": {},
+    "metrics": {}
   }
 ]
