@@ -68,6 +68,9 @@ section 2 here sets what we may claim about the product.**
   footage, every shot is a video clip. Never stand in stills with zoom or shake
   for live-action beats ("it's supposed to be all video"). Stills are only
   start/end frames for clips, or for formats that are stills in the reference.
+- **Short videos cap at 50 credits** (Nov 8, 2026), all versions included
+  (`budget.max_credits_short_video`). The 135 cap is for ~45 s videos.
+  Scale the plan to the length.
 - **One credit pool per video, all versions included** (Nov 8, 2026): a
   video's cap (`budget.max_credits_by_stage`) covers v1, v2, v3 and every fix
   together. A new version is not a new pool; it works with what is left.

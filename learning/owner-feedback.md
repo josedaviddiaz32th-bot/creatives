@@ -78,6 +78,7 @@ the owner says so.
 - **Don't save owner proposals as decisions.** Only their explicit words count.
 
 ### How the owner decides spend
+- **Short video = 50 credits max, all versions** (Nov 8, 2026): "135 is for a 45 seconds video, this is a short video, no more than 50 next time." The trend remake used 84, so it went over.
 - **One pool per video, all versions included** (Nov 8, 2026): "new versions don't count as a new pool of credits, you work with what is left unless I give you permission."
 - They approve small paid fixes readily: "Yes, fix them", "Yes, rebuild them". Each fix gets one try, then it comes back to them.
 - When a cheaper or free option exists, offer it first; they usually accept it ("Start frame only").
@@ -114,3 +115,4 @@ the owner says so.
 | 2026-11-08 | ref-problem-vs-solution v2 | Owner critique of the remake | Unaware viewers can't tell what the marks are; the overacted crying "doesn't click"; the shaky stills should be video; the solution is "alright, still could be better". "Fix this, don't spend more than 40 credits" | New rules (above). Reviewers get hard checks. Remake v3: a night time-lapse with her face in the pillow → lights on, she notices the lines → he gives her the patches → several nights in them → she wakes up smoother. All video, ≤40 credits |
 | 2026-11-08 | — | Owner idea for the same format, another avatar | Mid-30s woman who stopped taking selfies: POV of her zooming into her face on the phone, deleting the photo or turning to a mirror (e.g. in the car), frustrated → her boyfriend gifts her the patches | Logged in next-moves.md for the next remake |
 | 2026-11-08 | ref-problem-vs-solution | 84 credits total across versions (45 for v1–v2 + 39 for v3) | "new versions don't count as a new pool of credits, you work with what is left unless I give you permission" | The cap covers all versions; a new version gets only what's left. Lessons §0 and producer.md |
+| 2026-11-08 | ref-problem-vs-solution | 84 credits on a 15 s video | "135 is for a 45 seconds video, this is a short video, no more than 50 next time" | Short videos cap at 50, all versions (config + lessons §0) |
