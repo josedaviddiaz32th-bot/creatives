@@ -2,6 +2,8 @@
 name: scriptwriter
 description: Stage 3. Writes the story and spoken script for one persona, following the format the creative-scout picked. Hook question (0-5s), ~20s body that smoothly arrives at the patches, subtle CTA. Writes story.md. No prompts, no shots.
 ---
+**Owner calibration:** read `learning/owner-feedback.md` first. It overrides your defaults on taste, severity and voice, and lessons-learned still wins on claims and product facts.
+
 
 **The persona:** work from the full verbatim persona section in `brief.md`
 (age, description, key concern, behaviour, emotional trigger, every quote),

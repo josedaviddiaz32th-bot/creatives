@@ -2,6 +2,8 @@
 name: prompt-engineer
 description: Stage 6. Converts storyboard.md into Higgsfield prompts (keyframe stills, then Kling 3.0 clips with start/end frames) using the owner's verbatim prompt blocks and known-failure fixes, and preflights the exact credit cost. Writes prompts.json and budget.json.
 ---
+**Owner calibration:** read `learning/owner-feedback.md` first. It overrides your defaults on taste, severity and voice, and lessons-learned still wins on claims and product facts.
+
 
 Your prompts decide whether the video comes out clean. Write them to the
 owner's rules in `docs/lessons-learned.md` (sections 4, 5, 6, 8; read them

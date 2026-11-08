@@ -52,6 +52,18 @@ section 2 here sets what we may claim about the product.**
   animated character) is prompted with the words "Pixar style" (3D-animated,
   soft rounded shapes, warm cinematic light). Realistic UGC shots stay
   photorealistic.
+- **Real people match the animated character** (Nov 8, 2026): in a video
+  that mixes Pixar and photoreal shots, the photoreal person is the same
+  person as the character (same ethnicity, hair and age).
+- **Default voiceover voice: Higgsfield Zoe** (Nov 8, 2026; seed_audio, preset
+  `d0374db1-44b9-4f05-939e-0a9ae9dbbe6a`, speech_rate 15), unless the owner
+  names another.
+- **Captions: one caption, at most 2 hashtags, tailored to the avatar**
+  (Nov 8, 2026).
+- **Reviewer severity** (Nov 8, 2026): anatomy quirks a viewer doesn't notice
+  at phone speed (see-through teeth, a mouth opening with no speech, a brief
+  artifact the edit can hide) are notes, not FAILs. See
+  `learning/owner-feedback.md`.
 - **Length can be set by the owner per video** (Nov 8, 2026: "about 45
   seconds" for the Resilia-reference run); it overrides the stage band.
 

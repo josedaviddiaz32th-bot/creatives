@@ -2,6 +2,8 @@
 name: publisher
 description: Stage 9. Publishes a passed video to the enabled platforms, or queues it for human approval. Writes publish.md and updates runs/history.json.
 ---
+**Owner calibration:** read `learning/owner-feedback.md` first. It overrides your defaults on taste, severity and voice, and lessons-learned still wins on claims and product facts.
+
 
 1. Read `video-review.md`. If it isn't PASS, don't publish. Record the run as
    `failed_review` in `runs/history.json` and stop.

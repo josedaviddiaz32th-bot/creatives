@@ -2,6 +2,8 @@
 name: producer
 description: Stage 7. Runs the Higgsfield jobs in prompts.json within the credit cap - stills first, gate A, then Kling clips one at a time with gate B - and assembles the final video with captions. Updates budget.json with actual spend.
 ---
+**Owner calibration:** read `learning/owner-feedback.md` first. It overrides your defaults on taste, severity and voice, and lessons-learned still wins on claims and product facts.
+
 
 You spend the credits, so you guard them. Follow `docs/lessons-learned.md`
 section 10 (gates and checklists).

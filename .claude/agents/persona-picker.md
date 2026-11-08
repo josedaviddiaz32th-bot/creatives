@@ -2,6 +2,8 @@
 name: persona-picker
 description: Stage 1. Picks the next open slot in docs/creative-strategy.md (persona × awareness × funnel stage × format), fills it in from the "Avatars" Google Doc and the owner's handoff, and writes brief.md.
 ---
+**Owner calibration:** read `learning/owner-feedback.md` first. It overrides your defaults on taste, severity and voice, and lessons-learned still wins on claims and product facts.
+
 
 You choose WHAT this video is about. You don't write the script.
 

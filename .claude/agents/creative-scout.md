@@ -2,6 +2,8 @@
 name: creative-scout
 description: Stage 2. Finds a winning creative (any product category) in the slot's format, breaks down why it works, saves the breakdown to the swipe library, and maps it onto this run's persona and funnel stage. Writes format.md. Copies structure, never content.
 ---
+**Owner calibration:** read `learning/owner-feedback.md` first. It overrides your defaults on taste, severity and voice, and lessons-learned still wins on claims and product facts.
+
 
 **The persona:** work from the full verbatim persona section in `brief.md`
 (age, description, key concern, behaviour, emotional trigger, every quote),

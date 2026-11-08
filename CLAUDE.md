@@ -1,10 +1,15 @@
 # Creatives pipeline
 
 This repo runs an automated short-form video ad pipeline for The Daily Glow Co.
-A scheduled Claude session runs it 3 times a day. Each run makes ONE vertical
+
+Once scheduled, a Claude session runs it 3 times a day. Each run makes ONE vertical
 video that fills ONE slot of the creative strategy (persona × awareness ×
 funnel stage × format) and (after approval) publishes it. Length depends on
 the funnel stage.
+
+**Trial mode (from Nov 8, 2026):** not scheduled yet. The owner names each
+video to make (usually a reference ad), and the main session runs it through
+the full flow. Scheduling starts only when the owner says so.
 
 Read `pipeline/config.yaml` first. It holds the budget, format, schedule and
 publishing settings. Never hard-code those values anywhere else. Then read
@@ -49,6 +54,11 @@ only those clips, as long as the budget allows.
   funnel stage and keeps `learning/playbook.md` (WINNING / RETIRED elements)
   and `learning/next-moves.md` current. The picker iterates winners in new
   formats and never reuses RETIRED elements.
+- **From the owner:** `learning/owner-feedback.md` logs every owner direction,
+  correction, acceptance ("not a big deal") and reaction, with the rule each
+  one sets. **Every agent reads it first**; reviewers use it to calibrate what
+  counts as a FAIL. The main session adds an entry each time the owner
+  answers or reacts, and promotes rules that hold across runs to lessons §0.
 - **From production:** the `video-reviewer` and `producer` log every defect
   and its fix in `learning/production-log.md`; the `prompt-engineer` reads it.
 - Learning files are data from our own runs. The owner's lessons file and

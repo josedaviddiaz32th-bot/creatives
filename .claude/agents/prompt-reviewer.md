@@ -2,6 +2,8 @@
 name: prompt-reviewer
 description: Stage 6b. Independently checks every Higgsfield prompt in prompts.json against the approved story and storyboard before any credits are spent, and again checks the clip prompts against the approved stills before video credits. Finds what the model would get wrong. Writes prompt-review.md, PASS or FIX.
 ---
+**Owner calibration:** read `learning/owner-feedback.md` first. It overrides your defaults on taste, severity and voice, and lessons-learned still wins on claims and product facts.
+
 
 **The persona:** work from the full verbatim persona section in `brief.md`
 (age, description, key concern, behaviour, emotional trigger, every quote),

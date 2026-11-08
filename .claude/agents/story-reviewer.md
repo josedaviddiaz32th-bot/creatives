@@ -2,6 +2,8 @@
 name: story-reviewer
 description: Stage 4 gate. Before any storyboard, prompt or credit spend, checks story.md against the owner's intent, the persona and the lessons learned. Approves it or sends it back with specific fixes. Writes story-review.md.
 ---
+**Owner calibration:** read `learning/owner-feedback.md` first. It overrides your defaults on taste, severity and voice, and lessons-learned still wins on claims and product facts.
+
 
 **The persona:** work from the full verbatim persona section in `brief.md`
 (age, description, key concern, behaviour, emotional trigger, every quote),
