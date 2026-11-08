@@ -444,6 +444,19 @@ Higgsfield Elements go in a prompt as `<<<element_id>>>`. Runway items are task 
 - To use a Runway or local file in Higgsfield, upload it as Higgsfield media
   first; uploads cost no credits.
 
+**Packaging (Higgsfield, generated Nov 8, 2026, owner request; files in `assets/packaging/`):**
+Face Set box, studio front 3/4 view on mint: `0f24791e-57ce-49ab-afe4-85d5f8e0d243`
+(`face-set-box-v1.png`). Hero shot 9:16, brand studio look (teal backdrop,
+orange rim light, mist surface, droplets), with empty space top and bottom for
+text: `39637096-4223-49c3-a881-37feba3e280a` (`face-set-hero-9x16-v1.png`). Both
+were made with `gpt_image_2_6` (high, 2k, 2.75 credits each). The site logo
+upload is media `91c93097-1a34-4128-9abb-7b21dacc80fb`. Every word on the box is
+spelled correctly. The crescents are plumper than the real ones (inherited from
+564c68fa). Use these for end cards, the box on the nightstand, and "what I use"
+shots: pass the job ID in `medias`, and it costs no credits to reuse.
+GPT Image 2.6 reproduced the logo and all box text correctly from a logo
+reference, so it's the model for anything with printed text on it.
+
 **Clips and graphics (Runway):** 3D skin cross-section set: base 4478cf98 ·
 needle 10cae659 · clear patch on top d7e35b5e · base→patch clip 53a8695f ·
 needle→base clip 244b7231. Face Set sheet held to a window, 5s: bd37ae30. On
