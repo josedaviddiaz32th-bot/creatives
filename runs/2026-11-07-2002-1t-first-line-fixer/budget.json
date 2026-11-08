@@ -268,9 +268,42 @@
       "gate_A": "PASS",
       "owner_approval": "Rebuild the pair",
       "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3K4XoW4Rud6flkLxNibt0IrMyg5/hf_20261108_025340_fe37523b-b596-425d-be03-5369cfbb7d8a.png"
+    },
+    {
+      "job": "CLIP_A",
+      "generation_id": "977b4161-ff61-41ca-9805-6ead5d784bf2",
+      "model": "kling3_0 pro sound on 14s 9:16 start=end=K1 91d6abc0, count 1",
+      "preflight": 35,
+      "credits": 35,
+      "balance_before": 1176.5,
+      "balance_after": 1141.5,
+      "gate_B": "PASS (note: deep expression forehead furrows when brows raise t~4.0-6.5s; relax back to K1 lines)",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3K4XoW4Rud6flkLxNibt0IrMyg5/hf_20261108_025932_977b4161-ff61-41ca-9805-6ead5d784bf2.mp4"
+    },
+    {
+      "job": "CLIP_B1",
+      "generation_id": "33261546-7002-4fa8-bd30-14e243311494",
+      "model": "kling3_0 pro sound on 13s 9:16 start=end=K1 91d6abc0, count 1",
+      "preflight": 32.5,
+      "credits": 32.5,
+      "balance_before": 1141.5,
+      "balance_after": 1109,
+      "gate_B": "PASS (notes: expression furrows on grimace/brow raise; 'worst right' heard as 'worse' by one Whisper pass)",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3K4XoW4Rud6flkLxNibt0IrMyg5/hf_20261108_030427_33261546-7002-4fa8-bd30-14e243311494.mp4"
+    },
+    {
+      "job": "CLIP_B2",
+      "generation_id": "17a139b3-1bfd-4313-a0cb-792a8dc3057f",
+      "model": "kling3_0 pro sound on 15s 9:16 start=K1 91d6abc0 end=K5 4576bff3, count 1",
+      "preflight": 37.5,
+      "credits": 37.5,
+      "balance_before": 1109,
+      "balance_after": 1071.5,
+      "gate_B": "FAIL: pick-up t~5.8-7.2s - pieces lift off the tray as loose dangling crescents (no film, band not visible), then swing out of frame-right in a motion smear and come back at t~7.25 as a larger flat film with band + 4 crescents (shape/size/count not kept through the move). t 0-5.75 and 7.3-15 are clean; end matches K5. Owner decision needed; no redo run.",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3K4XoW4Rud6flkLxNibt0IrMyg5/hf_20261108_031040_17a139b3-1bfd-4313-a0cb-792a8dc3057f.mp4"
     }
   ],
-  "actual_total": 23.5,
+  "actual_total": 128.5,
   "preflight": "get_cost:true on Higgsfield 2026-11-07 (no jobs submitted). Returned: kling3_0 pro sound on 14s=35, 13s=32.5, 15s=37.5 (with start+end media); nano_banana_2 9:16 1k=1.5 (text+Elements, 1 ref, 1 ref+Elements, 2 refs), 2k=2. Stills not yet generated, so frame-dependent jobs were priced with a stand-in media id; price depends only on model/mode/sound/duration/resolution.",
   "status": "WITHIN_BUDGET: 116.0 first pass <= 120 (135 cap - 15 reserve); 131.0 with reserve <= 135. Nothing cut. Margin before reserve: 4.0 (3 still redos at 1.5).",
   "generation_ids": {
@@ -288,7 +321,10 @@
     "K5_SHEET_HOLD_rejected_fix": "f7bdded8-3f73-4641-a013-b05cb77043c6",
     "K6_TODAY_rejected_v1": "7de6281d-1bd4-4d1a-80fa-563d13196ec6",
     "K7_YESTERDAY_rejected_v1": "f8e52cb0-9ab3-4478-9057-c3b5f77db762",
-    "K6_TODAY_replaced_owner_accepted": "b4e64508-bf5e-482b-a2c0-8484357a02ff"
+    "K6_TODAY_replaced_owner_accepted": "b4e64508-bf5e-482b-a2c0-8484357a02ff",
+    "CLIP_A": "977b4161-ff61-41ca-9805-6ead5d784bf2",
+    "CLIP_B1": "33261546-7002-4fa8-bd30-14e243311494",
+    "CLIP_B2": "17a139b3-1bfd-4313-a0cb-792a8dc3057f"
   },
   "stage_A_status": "COMPLETE: all 7 stills approved (see generation_ids). End card = K7_YESTERDAY d21e9014 | K6_TODAY fe37523b (same light/framing). Next: prompt-reviewer pass 2 before any clip. Projection: 23.5 spent + 105 clips = 128.5 <= 135 cap (8.5 over first-pass 120, owner-approved reserve draws); 6.5 credits headroom left.",
   "still_fix_spend_auto": {
@@ -298,5 +334,6 @@
       "K4_PRESS_ON_FIX",
       "K5_SHEET_HOLD_FIX"
     ]
-  }
+  },
+  "stage_B_status": "STOPPED FOR OWNER: all 3 clips generated once (A PASS, B1 PASS, B2 FAIL on the pick-up t~5.8-7.2s). Spent 128.5 of 135 cap; 6.5 headroom, so a B2 redo (37.5) does not fit the cap. Proposed: cut around the glitch in assembly (0 credits). No assembly yet."
 }
