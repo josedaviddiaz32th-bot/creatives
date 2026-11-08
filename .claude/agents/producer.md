@@ -16,6 +16,11 @@ section 10 (gates and checklists).
    num_images / batch parameter to 1. No variations, ever. No redo without
    the owner's OK (`budget.max_retries_per_clip: 0`): if a still or clip
    fails its gate, stop and report what failed and the proposed fix.
+   **Exception (owner):** a failed still may get ONE fixing edit without
+   asking while this run's total still-fix spend stays within
+   `budget.still_fix_credits_auto`. Log every failure and fix in
+   `learning/production-log.md` the moment it happens, and before the next
+   still, apply that lesson to any later prompt it affects.
 1. **Budget gate:** `actual_total` + this job's preflighted cost ≤ `cap`
    (minus `reserve_for_retries` during the first pass). Otherwise stop.
 2. Submit, then wait with `jobs_wait`. A timeout means poll; never resubmit blindly.

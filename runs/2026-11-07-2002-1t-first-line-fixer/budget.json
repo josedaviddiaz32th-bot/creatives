@@ -56,8 +56,97 @@
     }
   ],
   "estimate_total": 116.0,
-  "actual": [],
-  "actual_total": 0,
+  "actual": [
+    {
+      "job": "K1_NIGHT_ID",
+      "generation_id": "712c622b-31b0-4425-a939-293e6c64afa5",
+      "model": "nano_banana_2 (served as nano_banana_flash) 1k 9:16, 2 Elements, count 1",
+      "preflight": 1.5,
+      "credits": 1.5,
+      "balance_before": 1200,
+      "balance_after": 1198.5,
+      "gate_A": "FAIL",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3K4XoW4Rud6flkLxNibt0IrMyg5/hf_20261108_015747_712c622b-31b0-4425-a939-293e6c64afa5.png"
+    },
+    {
+      "job": "K1_NIGHT_ID_FIX",
+      "generation_id": "91d6abc0-eb0a-4f1c-bce6-b2a663bbaf69",
+      "edit_of": "712c622b-31b0-4425-a939-293e6c64afa5",
+      "model": "nano_banana_2 (served as nano_banana_flash) 1k 9:16, 1 ref + 2 Elements, count 1",
+      "preflight": 1.5,
+      "credits": 1.5,
+      "balance_before": 1198.5,
+      "balance_after": 1197,
+      "gate_A": "PASS",
+      "owner_approval": "Yes, fix the tray",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3K4XoW4Rud6flkLxNibt0IrMyg5/hf_20261108_020147_91d6abc0-eb0a-4f1c-bce6-b2a663bbaf69.png"
+    },
+    {
+      "job": "K2_POV_GROUP",
+      "generation_id": "6bbee4ea-14fd-480e-948d-d63b5b9cb8db",
+      "refs": [
+        "91d6abc0-eb0a-4f1c-bce6-b2a663bbaf69"
+      ],
+      "model": "nano_banana_2 (served as nano_banana_flash) 2k 9:16, 1 ref, count 1",
+      "preflight": 2,
+      "credits": 2,
+      "balance_before": 1197,
+      "balance_after": 1195,
+      "gate_A": "FAIL",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3K4XoW4Rud6flkLxNibt0IrMyg5/hf_20261108_020307_6bbee4ea-14fd-480e-948d-d63b5b9cb8db.png"
+    },
+    {
+      "job": "K2_POV_GROUP_FIX",
+      "generation_id": "91d09592-2072-4ca3-84de-d0b15a1830cb",
+      "edit_of": "6bbee4ea-14fd-480e-948d-d63b5b9cb8db",
+      "model": "nano_banana_2 (served as nano_banana_flash) 2k 9:16, 1 ref, count 1",
+      "preflight": 2,
+      "credits": 2,
+      "balance_before": 1195,
+      "balance_after": 1193,
+      "gate_A": "PASS (note: friend 2 still wears a small gold hoop)",
+      "owner_approval": "Yes, fix and continue",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3K4XoW4Rud6flkLxNibt0IrMyg5/hf_20261108_020701_91d09592-2072-4ca3-84de-d0b15a1830cb.png"
+    },
+    {
+      "job": "K3_SLEEP",
+      "generation_id": "f0d61ae3-a6a7-4172-a518-e9586bda1c00",
+      "refs": [
+        "91d6abc0-eb0a-4f1c-bce6-b2a663bbaf69"
+      ],
+      "model": "nano_banana_2 (served as nano_banana_flash) 1k 9:16, 1 ref, count 1",
+      "preflight": 1.5,
+      "credits": 1.5,
+      "balance_before": 1193,
+      "balance_after": 1191.5,
+      "gate_A": "PASS",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3K4XoW4Rud6flkLxNibt0IrMyg5/hf_20261108_020832_f0d61ae3-a6a7-4172-a518-e9586bda1c00.png"
+    },
+    {
+      "job": "K4_PRESS_ON",
+      "generation_id": "9d36306f-d048-43c1-88c0-79d02d58400e",
+      "refs": [
+        "91d6abc0-eb0a-4f1c-bce6-b2a663bbaf69"
+      ],
+      "model": "nano_banana_2 (served as nano_banana_flash) 1k 9:16, 1 ref + 2 Elements, count 1",
+      "preflight": 1.5,
+      "credits": 1.5,
+      "balance_before": 1191.5,
+      "balance_after": 1190,
+      "gate_A": "FAIL",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3K4XoW4Rud6flkLxNibt0IrMyg5/hf_20261108_020942_9d36306f-d048-43c1-88c0-79d02d58400e.png"
+    }
+  ],
+  "actual_total": 10.0,
   "preflight": "get_cost:true on Higgsfield 2026-11-07 (no jobs submitted). Returned: kling3_0 pro sound on 14s=35, 13s=32.5, 15s=37.5 (with start+end media); nano_banana_2 9:16 1k=1.5 (text+Elements, 1 ref, 1 ref+Elements, 2 refs), 2k=2. Stills not yet generated, so frame-dependent jobs were priced with a stand-in media id; price depends only on model/mode/sound/duration/resolution.",
-  "status": "WITHIN_BUDGET: 116.0 first pass <= 120 (135 cap - 15 reserve); 131.0 with reserve <= 135. Nothing cut. Margin before reserve: 4.0 (3 still redos at 1.5)."
+  "status": "WITHIN_BUDGET: 116.0 first pass <= 120 (135 cap - 15 reserve); 131.0 with reserve <= 135. Nothing cut. Margin before reserve: 4.0 (3 still redos at 1.5).",
+  "generation_ids": {
+    "K1_NIGHT_ID": "91d6abc0-eb0a-4f1c-bce6-b2a663bbaf69",
+    "K1_NIGHT_ID_rejected_v1": "712c622b-31b0-4425-a939-293e6c64afa5",
+    "K2_POV_GROUP_rejected_v1": "6bbee4ea-14fd-480e-948d-d63b5b9cb8db",
+    "K2_POV_GROUP": "91d09592-2072-4ca3-84de-d0b15a1830cb",
+    "K3_SLEEP": "f0d61ae3-a6a7-4172-a518-e9586bda1c00",
+    "K4_PRESS_ON_rejected_v1": "9d36306f-d048-43c1-88c0-79d02d58400e"
+  },
+  "stage_A_status": "STOPPED at K4: gate A fail (under-eye pieces are wide half-moon pads, left one outlines up around the eye corner = ring/glasses shape; smile-line pieces are comma blobs, not slim crescents). K1 91d6abc0, K2 91d09592, K3 f0d61ae3 approved. K5-K7 not generated. No redo without owner OK. See stills-check.md."
 }

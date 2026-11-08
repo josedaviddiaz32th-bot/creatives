@@ -32,7 +32,9 @@ section 2 here sets what we may claim about the product.**
   brand, never just a tips page. MOF is solution-aware.
 - **One generation per shot** (Nov 7, 2026): every job makes exactly one
   output, no variations or batches. A shot that fails a gate is not redone
-  automatically; the run stops and the owner decides.
+  automatically; the run stops and the owner decides. Exception: still
+  fixes (one edit per failed still) may run while the run's still-fix spend
+  stays within 3 credits.
 - **No talking with patches on.** Applying them should look organic (she
   presses one on while holding the phone), never a posed, silent lying-down shot.
 - **Purpose:** a 5–6 day organic test on TikTok, Instagram and Facebook,
