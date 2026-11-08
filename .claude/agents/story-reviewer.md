@@ -49,7 +49,10 @@ Read: `brief.md`, `format.md`, `story.md`, `docs/lessons-learned.md`,
     story to work.
 
 ## Verdict in `story-review.md`
-- **APPROVED** if every score is ≥ 8 and claims are clean.
+- **APPROVED** if every score is ≥ 8 and claims are clean. For **TOF**, the
+  three hook scores (1–3) must each reach `review.min_hook_score_tof`, and
+  you also score **Shareability** (would she comment, save or send it to a
+  friend?) against the same bar.
 - **REVISE** otherwise. Give exact fixes (which line, what's wrong, a
   suggested rewrite). The scriptwriter revises and you review again. After 2
   rejected revisions, stop the run and flag it for the owner; don't let a

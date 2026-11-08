@@ -28,6 +28,9 @@ number; if a source is unavailable, write that down and move on.
 
 ## 2. Judge each video
 - Hook rate = 3s views ÷ views (Meta) or 2s views ÷ views (TikTok).
+- Engagement rate = (likes + comments + shares + saves) ÷ views. TOF is
+  judged on engagement first: it should be the highest of any stage, and a
+  TOF video below the MOF median engagement is a LOSS whatever its views.
 - Compare each video with the **median of its own funnel stage** on that
   stage's primary metric (`docs/creative-strategy.md` section 2):
   TOF = hook rate and avg watch %; MOF = completion, saves, profile visits,

@@ -29,6 +29,10 @@ stage. Use the ad-research tools connected to this session:
 - many live variations of the same concept;
 - top-ranked by the tool (top ads, top hooks), or unusually high engagement.
 
+For **TOF** slots, also pull the strongest hooks around (AdWhispr
+long-running ads; Gethookd `get_top_hooks` when it has access) and note
+the hook patterns in `format.md` for the scriptwriter.
+
 Pick 1–3 candidates. Prefer ones not already in the swipe index. You may
 reuse a library breakdown instead of searching when it fits the slot and
 its `outcome` in the index is WIN; add at least one new breakdown to the

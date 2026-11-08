@@ -66,8 +66,12 @@ sections 2 and 6).
   "forehead lines", never "11s". Product name: "The Wrinkle Smooth Face Set".
 - Usage wording exactly as lessons section 1: "overnight", "just clean and
   reuse", clean dry skin, nothing underneath.
-- Draft 5+ hook questions from the hook types in lessons section 3, keep the
-  best 3 (the main one + 2 alternatives).
+- Draft 5+ hook questions from the hook types in lessons section 3 (**10+
+  for TOF**, which must earn the highest engagement), keep the best 3 (the
+  main one + 2 alternatives). Use WINNING hook types from the playbook.
+  TOF frame one has motion or a pattern break, and the video gives people a
+  reason to comment or share (a relatable moment, a surprising fact, a mild
+  hot take).
 - It's one person talking the way they talk, in first person, unless the
   format is voiceover-only.
 - Every factual claim traces to APPROVED CLAIMS in `brief.md`; tag it like

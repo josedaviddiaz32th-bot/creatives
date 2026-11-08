@@ -47,7 +47,7 @@ buy.** (owner)
 | **Belief (lessons §2)** | Opener: "some lines are pressed in overnight", or belief 1 in the closing answer | 1 (overnight smoothing), 2 (others fell off), 3 (gentle) | 3, 4 (value), 5 (guarantee) |
 | **Length** (`video.seconds_by_stage`) | 30–50s | 25–45s | 15–25s |
 | **CTA** | Soft: "comment PILLOW and I'll send you what I use" | "Comment STAY and I'll send you the link" / link in bio | The offer, subtly: "2 sets are $60 right now, comment NEEDLE" |
-| **Primary metric** | Hook rate, avg watch %, shares, saves, follows; reached the persona's age/gender | Completion, saves, profile visits, keyword comments | Keyword comments, link clicks, store sessions, orders, revenue per visitor |
+| **Primary metric** | **Engagement, the highest of any stage:** hook rate, engagement rate (likes + comments + shares + saves ÷ views), avg watch %, follows; reached the persona's age/gender | Completion, saves, profile visits, keyword comments | Keyword comments, link clicks, store sessions, orders, revenue per visitor |
 | **Where the click goes, test week** | Product page | Product page | Product page |
 | **Where it goes once a persona wins** (`docs/funnel-strategy.md`) | Advertorial: problem → cause → solution | Listicle: "7 reasons…" | Product page with the persona's offer |
 | **Share of videos** | ~40% | ~35% | ~25% |
@@ -151,6 +151,13 @@ Adapted from winning ads the creative-scout breaks down (any category; see
 - **Hook = a question that calls her out**: her age, moment or body area, so
   the wrong people scroll past and the platform learns who it's for. Visual,
   sound and ≤8-word on-screen text land in the first 2s (lessons §3).
+- **TOF needs the strongest hooks of all** (owner): it has to earn the
+  highest engagement from people who weren't looking for us. For TOF the
+  scriptwriter drafts 10+ hooks and keeps 3; frame one has motion or a
+  pattern break (never a static title); the story reviewer scores TOF hooks
+  against `review.min_hook_score_tof`. TOF also earns comments and shares on
+  purpose: a relatable moment, a surprising fact or a mild hot take people
+  want to react to or send to a friend.
 - **TOF is mostly the problem, but always from a brand.** The hook and
   ~80% of the video are about the problem; the last ~20% shows the patch as
   the answer; the brand is visible. Don't name the product category in the
@@ -240,7 +247,16 @@ need more credits, or fewer iterations. Caps per stage live in
    that win, an advertorial for their TOF traffic, a listicle for MOF, and a
    persona-matched offer on the product page (`docs/funnel-strategy.md`).
 3. **Paid:** winners become the first ads, grouped by persona; launch new
-   creative weekly; retarget by video views and site visits (section 2).
+   creative weekly. Objective and audience by stage:
+
+   | | TOF | MOF | BOF |
+   |--|-----|-----|-----|
+   | Objective | Video views, reach, engagement | Traffic, engagement, lead generation (the guide) | Conversions, catalog sales |
+   | Audience | Broad, interests, lookalikes (1–3%) | Video viewers (e.g. 50%+ of a TOF video), engagers, site visitors | Site visitors, add-to-carts, email leads |
+   | Content | The TOF videos that won on engagement | MOF winners, testimonials, transformations | BOF winners, offers, demos with a strong CTA |
+
+   After purchase, retention (loyalty) is email and SMS
+   (`docs/funnel-strategy.md`).
 4. **Macro moves next:** new avatars (Spanish-language buyers, the explore
    avatars that won), then new offers and hero products (Eye Patches, Chest
    Pad, the 11-piece set).
