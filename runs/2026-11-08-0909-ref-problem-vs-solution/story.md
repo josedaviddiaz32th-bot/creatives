@@ -1,3 +1,111 @@
+# Story v3 (owner fix, 2026-11-08): run 2026-11-08-0909, "The Problem / Vs… / The Solution"
+
+**Status: CURRENT.** v3 replaces v2 (kept below under "v2 (superseded)") after the owner's critique in
+`learning/owner-feedback.md` (newest entry). Stage 3, rewritten by the main session's fix agent. Silent video, no
+speech, no voiceover; the owner adds the trending sound in-app. Budget for the fix: ≤40 new credits (plan ≤34).
+
+**What the owner said was wrong with v2, and what v3 does about each:**
+| Owner critique (quoted) | v3 answer |
+|---|---|
+| Her pointing at marks "could be cat nail scratches or they might not have a clue what it is" | Show the CAUSE first: a 1.4 s night-after-night time-lapse of her face squashed into the pillow, then the EFFECT in the bathroom light. Cause → effect, like the ref's head-hits-the-window |
+| The exaggerated sad/screaming reaction "just doesn't click" | One small, real frown and a quiet sigh in the mirror. No crying, no wail. C1 (the cry) is retired |
+| Shaky stills of the boyfriend handing the patches: "it's supposed to be all video" | Every beat is a Kling clip. No still with code zoom/shake anywhere |
+| Solution "is alright, still could be better" | A real result beat: the same bathroom framing the next morning(s), lines visibly softer, she touches her smooth skin and gives a small genuine smile (patches are off) |
+
+## 1. Concept
+She sleeps with her face crushed into the pillow night after night; one morning the bathroom light shows the
+lines it's pressing into her face. Her boyfriend hands her The Wrinkle Smooth Face Set. Several nights in the
+clear patches later, the same bathroom light shows softer, smoother skin and she smiles. (Owner's own story,
+nearly word for word.) **Why it fits P3 (20s, scared of aging, side/stomach sleeper):** the cause is her own
+habit, the fix is effortless (sleep in it), and the caring-boyfriend beat keeps the trend's "send this to him"
+share hook.
+
+## 2. Format
+Silent trend remake, three captions in code, couple/selfie phone UGC, photoreal, **all live-action video**
+(lessons §0 "match the reference's medium"). Same length (15.07 s), same captions and caption timings, fast
+reference-like rhythm (cuts moved to fit the new beats).
+
+## 3. Hook
+No question (owner's captions override). The hook is frame one: **motion + cause**: a fast time-lapse of her face
+squashed into the pillow under **"The Problem 😭🛏️"**. Bed emoji + face-in-pillow = the cause is named in the
+first second.
+
+## 4. Marketing read (cold-viewer test, lessons §0 "think like a marketer")
+**How the reference does it:** in 3–5 s a stranger sees her head flop against the window as she tries to sleep.
+Cause (no head support) and effect (she can't sleep, she's miserable) are both on screen, so the caption only
+has to label it. The fix (a pillow) visibly answers that exact cause.
+**How v3 does it:**
+| Time a cold viewer has watched | What they see | What they understand |
+|---|---|---|
+| 1 s | Sped-up night footage: a woman asleep with her cheek and forehead squashed into a pillow, nuzzling her face deeper into it; "The Problem 😭🛏️" | "She sleeps with her face smashed into the pillow, and that's the problem." |
+| 3 s | Bathroom light snaps on; she leans in close (camera = her mirror), touches pressed-in lines at her outer eye and cheek, a small frown | "The pillow is creasing her face; she's noticing lines/wrinkles." Cause → effect, no context needed. The lines read as sleep folds because we just watched them being pressed in, so not scratches |
+| 5 s | "Vs…": his hand comes in holding a sheet of clear face patches; she looks pleasantly surprised; that night she presses them on in bed | "He got her something for it: clear patches you sleep in." The product answers the exact cause shown (the face against the pillow) |
+| 10 s | Night after night she sleeps in them (light changes between nights) | "She keeps doing it, every night." Effortless routine |
+| 15 s | Same bathroom framing, morning: smoother skin, soft smile, "The Solution 🤤❤️" | Before/after in the same framing: "It worked for her." |
+**Pass test (from the first 3 s alone, as a stranger):** "A girl who sleeps face-down in her pillow wakes up with
+creases and lines on her face and doesn't like it." ✔
+
+## 5. Beat list (total 15.067 s; captions unchanged)
+Captions (code): **"The Problem 😭🛏️"** 0–3.267 · **"Vs…"** 3.267–10.0 · **"The Solution 🤤❤️"** 10.0–15.067.
+
+| # | Time (s) | What the viewer sees | Patches | Light |
+|---|---|---|---|---|
+| 1 | 0.000–1.433 | **Night time-lapse** (2 nights, hard cut between): locked phone on the nightstand, close side view. She stays on her side the whole time: she shifts, nuzzles her face deeper into the pillow so her cheek and the skin beside her eye fold against it, pulls the pillow tighter, and settles still, face squashed in. Night 1 warm lamp; night 2 lamp off, cool blue, ending on a pre-dawn lift | none | night |
+| 2 | 1.433–3.267 | **Bathroom, camera = mirror.** Dark → the vanity light snaps on. She leans toward the lens, studies her face, touches the soft pressed sleep lines (following the pillowcase seam) at her outer eye/cheek and the line on her forehead, lit by angled vanity light so they show at phone size; a small, real frown, shoulders drop once, lips closed | none | morning vanity light |
+| 3 | 3.267–4.700 | Same bathroom: his hand (navy sleeve) comes in at frame-right holding the clear sheet of five pieces; she turns to it, brows lift, a small pleased smile, her fingertips take the sheet | on sheet (5) | vanity |
+| 4 | 4.700–6.300 | That night in bed: she presses the forehead band (tab DOWN) flat, then the crescents under her eyes and along her smile lines, and sinks back | band → full set | lamp |
+| 5 | 6.300–7.700 | Night 1 in patches: he pulls the throw up and tucks her in | full set | warm lamp |
+| 6 | 7.700–8.480 | Night 2: close-up asleep in the patches (hard cut + exposure flicker between nights) | full set | dimmer lamp |
+| 7 | 8.480–10.000 | Night 3: asleep, mirrored closer crop with no lamp in frame, cool, pre-dawn lift | full set | cool night |
+| 8 | 10.000–12.400 | **Morning, same bathroom framing as shot 2, patches off:** the lines visibly softer. She leans in, fingertips glide over her outer eye and forehead where the lines were | none | vanity (same as shot 2) |
+| 9 | 12.400–15.067 | Punch-in: a small, real, happy smile, she turns her cheek to the light and glances off to him (frame-right) | none | vanity |
+
+**Reactions (owner rule):** shot 2 = a small frown, shoulders drop once, lips closed; shot 3 = mild pleasant surprise; shot 9 = a small
+genuine smile. Nothing exaggerated anywhere.
+**No smile with patches on** (shots 4–7). Smiling is fine in shots 3 (sheet in hand, bare face) and 9 (patches off).
+**Nothing looks like an injury:** sleep lines are soft pressed folds in skin colour with at most a faint natural
+flush; the cause (pillow) is shown first, so they read as sleep creases.
+**Brand (rev 1, main-session decision per lessons §0 "TOF shows the brand subtly"):** the real box sits on the
+bathroom vanity counter corner in shots 8–9 as a free code composite (the near-static mirror framing makes it
+safe), never over her face. The patches are on screen from 3.3 s to 10 s.
+
+## 6. The turn, explained
+It mirrors the reference: the instant the problem ends, the partner walks in with the fix. The patches answer
+the exact cause the viewer just watched (her face pressing into the pillow), so it feels like the punchline, not a pitch.
+
+## 7. Word count
+0 spoken words; 3 captions (unchanged). 15.067 s.
+
+## 8. Hypothesis
+Same as v2 (format + trending sound vs our explainer formats, judged on US engagement rate and 3 s hold), with
+one change to watch: **does a cause → effect opener lift the 3 s hold vs v2's marks-only opener** (if v2 is ever posted).
+
+## 9. Claims check
+No claim spoken or written. The before/after (shot 2 vs shot 8) is allowed (lessons §0, "Before/afters are
+allowed", including AI-generated). It shows *softer* lines, not erased skin or "permanent" results; same skin
+texture and pores in both. Usage shown matches lessons §1: applied in bed at night, worn overnight, off in the
+morning, no cream visible.
+
+## 10. Caption
+Unchanged plan: one posting caption with keyword SLEEP, ≤2 hashtags tailored to her (e.g. #sidesleeper +
+a 20s identity tag), brand name, no claim beyond lessons §1–2.
+
+## v3 revision 1 (2026-11-08, story-review "v3 review" REVISE + prompt-review "v3 pass 1" FIX; 0 credits)
+1. Shot 1: she stays on her side (no stomach roll), nuzzling her face into the pillow; real-time motion, the
+   speed-up is done in code; each night ends on ≥0.25 s of the still, squashed face; pre-dawn grade lift at the end of 1b.
+2. Bathroom: angled vanity light so the creases and fine lines show; creases follow the pillowcase seam; he is
+   excluded from frames built from S1.
+3. Nights montage re-cut: C3 only 0.00–0.50 (lips closed), C2 tail flipped and cropped to hide the lamp,
+   exposure flicker between nights. Optional third-night clip dropped.
+4. Shots 8/9 no longer repeat 0.37 s of source. C_APPLY slowed to 1.25×.
+5. C_NIGHTS, C_BATH_GIVE, C_AFTER on Kling pro; C_APPLY std. New total 37.0 (39.0 with one still fix) ≤ 40.
+6. Real box back as a code composite on the bathroom counter in the Solution shot.
+7. Hair warmth pulled down in shots 4–7 in the grade (free).
+
+---
+
+# v2 (superseded by v3 above; kept for history)
+
 # Story: run 2026-11-08-0909, "The Problem / Vs… / The Solution" (P3, trend remake)
 
 Stage 3 (scriptwriter). Reads: `brief.md`, `format.md`, `learning/owner-feedback.md`, lessons (in full),
@@ -100,3 +208,6 @@ main session; calm, eyes-closed face instead of a smile). Applied all six review
 5. Shot 8: one slow contented exhale, shoulders melt, no smile.
 6. Continuity lines added for her and for him (wardrobe, hair, look, hands).
 No credits spent.
+
+
+_v3 revision 2 (2026-11-08): story-review v3 round 2 fix 1 applied (1 s row wording). Box spot moved to a small wall shelf behind her (prompt-review v3 round 2)._

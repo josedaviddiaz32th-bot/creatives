@@ -1,4 +1,141 @@
-# Assembly: run 2026-11-08-0909 "The Problem / Vs… / The Solution" (v2)
+# Assembly v3.2 (owner-ordered remake): run 2026-11-08-0909 "The Problem / Vs… / The Solution"
+
+## v3.2 fixes (coordinator: no shot may read as a still; free)
+- **Shot 6 (7.70–8.48), night 2:** now C2 1.40–2.40 at 1.28×. His hand draws the throw up; tight 1.5× crop on her and the hand; dim amber. It was a 1.97× window of her already asleep, at 1.2%.
+- **Shot 7 (8.48–10.0), night 3:** now C2 2.40–3.92 at 1×. His hand leaves frame and her eyes close; mirrored, 1.3× crop; natural cool night. No C2 second is used twice: 0–1.40, then 1.40–2.40, then 2.40–3.92.
+- **Shot 1a:** C_NIGHTS 0.00–1.55 at 2.1×. It ends before the 1.6 s head lift, and the hand slide is more visible.
+- **Cuts and captions are unchanged.**
+
+### Motion per shot
+The metric is exposure-normalised mean |Δ| between frames: the first and last frame of each shot, after the flicker, on 270×480 luma with a 2 px blur. Grade ramps (the pre-dawn lift) don't count as motion. **No shot is under 5%.**
+```
+shot 1a   0.000- 0.733: first->last   6.2%  max pairwise   6.2%
+shot 1b   0.733- 1.433: first->last   7.5%  max pairwise   6.9%
+shot 2    1.433- 3.267: first->last  10.3%  max pairwise  10.6%
+shot 3    3.267- 4.700: first->last   6.3%  max pairwise   6.9%
+shot 4a   4.700- 5.700: first->last   7.7%  max pairwise   8.1%
+shot 4b   5.700- 6.300: first->last   7.2%  max pairwise   7.2%
+shot 5    6.300- 7.700: first->last   6.5%  max pairwise   6.5%
+shot 6    7.700- 8.467: first->last   5.3%  max pairwise   5.2%
+shot 7    8.467-10.000: first->last   5.0%  max pairwise   5.0%
+shot 8   10.000-12.400: first->last   8.3%  max pairwise  10.0%
+shot 9   12.400-15.067: first->last   7.5%  max pairwise   8.3%
+```
+QA after the re-render:
+- −0.007 frame vs ref.
+- All 10 planned cuts found.
+- Caption bands 0–3.267 / 3.267–10.0 / 10.0–15.067.
+- Contact sheet checked: hand motion is visible in shots 5–7, and "Vs…" sits on collars and necks.
+
+All outputs are re-rendered: `final.mp4`, the v3 named copy, `post-silent.mp4`, `preview-small.mp4` (preview only) and both contact sheets.
+
+---
+
+# Assembly v3.1 (superseded by v3.2 above): run 2026-11-08-0909 "The Problem / Vs… / The Solution"
+
+## v3.1 fixes (video-review "v3 review" FAIL on the medium check; free)
+- **Shot 7 (8.48–10.0) is re-cut.** v3 used C2 3.78–4.92 at 0.75×, which read frozen (~2% pixel change).
+  - Now: the unused C2 window 1.40–2.92 at **1×**. His hand finishes tucking the throw, leaves, and she settles and her eyes close.
+  - Framing: mirrored, a 1.12× crop (wider than shot 6's 1.35×). "Vs…" is on her neck.
+  - Grade: a natural cool night (WB 0.91/0.97/1.10, exposure 0.76, saturation 0.90), so skin stays natural with no banding.
+  - Measured first→last change: **20.7%** (it was ~2%). I looked at the frames, and the motion is plain.
+- **Shot 6 (7.70–8.48)** is now a 1.97× time-lapse of C2 2.96–4.50 (it was 1×). She's asleep, so motion stays low (1.2% first→last): a breathing beat under a flicker cut, not a held frame. No C2 second is used twice; C2 now covers 0–1.40, 1.40–2.92 and 2.96–4.50.
+- **Shelf box.**
+  - Shadows: a softer, wider contact shadow (12 px feather, lower opacity) and a fainter back-panel shadow.
+  - Room light: brighter and a touch warmer on the side facing the vanity light, cooler away from it, 10% of the niche's ambient wrapped in, and sensor noise on the card; edges feathered 1.2 px.
+- **Outputs re-rendered:** `final.mp4`, the v3 named copy, `post-silent.mp4` (11.1 MB), `preview-small.mp4` (11.4 MB, preview only) and both contact sheets.
+- **QA re-run:** −0.007 frame vs ref; all 10 planned cuts found; caption bands 0–3.267 / 3.267–10.0 / 10.0–15.067.
+
+---
+
+# Assembly v3 (superseded by v3.1 above; details below still apply except shots 6–7)
+
+**Status: CURRENT.** v1/v2 are kept below for history. **0 credits** (PIL + numpy + ffmpeg).
+Scripts are in `scratchpad/asm-v3/`: `render_v3.py` (picture; it reuses the caption and box code in `asm-trend/render.py`),
+then `mux_qa.sh` → `qa.py`.
+
+**Medium: ALL VIDEO.** Every frame comes from a Kling clip. No still is on screen, and there's no code shake or Ken Burns. The only
+code moves are static crops or punch-ins at cuts, speed changes and grades.
+
+## Deliverables (mp4s are gitignored)
+| File | What it is |
+|---|---|
+| `final.mp4` | **Post file:** 1080×1920, 30 fps, 452 frames = 15.067 s, H.264 CRF 16, silent stereo AAC (−91 dB). |
+| `problem-vs-solution-sleep_trend_v3_2026-11-08.mp4` | Named copy of `final.mp4` (byte-identical). |
+| `post-silent.mp4` | Phone-sized post file: CRF 20, 10.8 MB, silent stereo AAC. |
+| `final-preview-with-ref-audio.mp4` / `preview-small.mp4` | **PREVIEW ONLY, NOT FOR POSTING.** Our picture with ref.mp4's song, for checking the cuts against the beat (preview-small is 11.1 MB). |
+| `final-contact.png` (4 fps), `compare-contact.png` (ref \| ours, 2 fps), `qa.json` | QA. |
+
+## Shot list (out time ← source)
+| # | Out (s) | Source window | Speed | Frame / look |
+|---|---|---|---|---|
+| 1a | 0.000–0.733 | C_NIGHTS 0.00–1.30 | 1.77× (time-lapse; sub-frames averaged) | Night 1: warm lamp. Avoids the 1.6–2.0 head lift |
+| 1b | 0.733–1.433 | C_NIGHTS 2.20–4.00 | 2.57× | Night 2: lamp off, cool blue, flicker at the cut; the last 0.3 s lifts to pale pre-dawn grey |
+| 2 | 1.433–3.267 | C_BATH_GIVE 0.20–2.03 | 1× | Bathroom: 3 near-black frames, then the light snaps on (a hard switch). She studies and touches the sleep lines with a small frown. 1.06× crop so the vanity light bar sits above the caption |
+| 3 | 3.267–4.700 | C_BATH_GIVE 3.55–4.98 | 1× | Punch-in to 1.42×: his hand with the five-piece sheet, her small smile. Her face is lifted so "Vs…" sits on her collar |
+| 4a | 4.700–5.692 | C_APPLY 0.80–2.04 (src frames ≤ 49) | 1.25× | Evening: band on, pressing the crescents. 716×1284 upscaled (Lanczos + unsharp), 1.2× crop so "Vs…" sits on her neck |
+| 4b | 5.692–6.300 | C_APPLY 2.07–2.83 (src frames ≥ 50) | 1.25× | Kling's own hard cut (between src frames 49 and 50) is used as our cut; wide shot, hands to her lap |
+| 5 | 6.300–7.700 | C2_TUCK_DOZE 0.00–1.40 | 1× | Night 1 in patches: he tucks the throw (warm) |
+| 6 | 7.700–8.480 | C2_TUCK_DOZE 2.98–3.76 | 1× | Night 2: tight 1.35× crop, dimmer deep-amber lamp, flicker cut |
+| 7 | 8.480–10.000 | ~~C2_TUCK_DOZE 3.78–4.92 at 0.75×~~ → v3.1: C2 1.40–2.92 at 1× | (see v3.1) | Night 3: mirrored, 1.25× crop with the lamp out of frame, cool blue, pre-dawn lift in the last 0.3 s |
+| 8 | 10.000–12.400 | C_AFTER 0.00–2.20 | 0.92× | Morning, same 1.06× framing as shot 2: smoother skin, fingertips over the cheek and forehead. Real box on the wall shelf |
+| 9 | 12.400–15.067 | C_AFTER 2.20–4.45 | 0.84× | Punch-in to 1.15×: a small, real smile (ends before the 4.5 s smile-line peak); the box stays in frame |
+
+Departures from storyboard v3 (with reasons):
+- **Shot 6 uses C2 2.98–3.76, not C3 0–0.5.** C3 is a full-face close-up, and at "Vs…"'s fixed y=50% the caption would sit on her nose or patches whatever the crop.
+- **No source second is shown twice.** C2 is used as 0–1.40, then 2.98–3.76, then 3.78–4.92, and C_AFTER splits at 2.20 with no overlap. The 0.37 s repeat is gone.
+- **C_APPLY is two shots,** split on its internal cut.
+- **C_AFTER uses 0–4.45 with mild slow-downs,** so the end lands on the clean 3.3–4.3 s smile and not the 4.5 s+ smile lines.
+
+## Overlays
+- **Captions:** identical to v1/v2 in look and size. "The Problem 😭🛏️" 0–3.267 and "The Solution 🤤❤️" 10.0–end sit at y≈416, on the dark wall at night or her hair line in the bathroom, with the light bar above. "Vs…" 3.267–10.0 sits at y≈956, on collars and necks. None of them covers a face, the patches or the sheet.
+- **Real box** (`face-set-box-v1.png`, front face, 100×168 px) stands on the empty recessed wall shelf behind her at frame-right, shoulder height, in shots 8–9.
+  - Tracking: niche-corner template tracking (±14 px).
+  - Light: colour matched to the shelf's warm-grey ambient (sampled box ≈ 1.07× the niche back), with a top-to-bottom falloff and a 0.9 px softening to the background focus.
+  - Shadows: a contact shadow on the shelf floor and a soft shadow on the back panel.
+  - Her head never crosses it.
+
+## Grade: different nights read as different nights
+| Look | Shots | What it does |
+|---|---|---|
+| n1 | 1a | warm lamp |
+| n2 | 1b | dark cool blue, lamp off |
+| eve | 4, 5 | the v2 warm evening |
+| n2p | 6 | dimmer deep amber |
+| n3 | 7 | cool blue, no lamp |
+| bath | 2, 3, 8, 9 | one neutral-cool morning vanity look |
+
+- **Night changes:** every night change is a hard cut plus a 2-frame exposure flicker (+38%, then +14%). Both the 1b and 7 nights end on a pre-dawn lift.
+- **One look for her:** her hair is evened out to one honey/light-brown in every clip. This is a hair-only key (warm hue, saturation > 0.40, value < 0.70) inside a head ellipse with the face excluded; I checked it on debug overlays.
+- **Grain:** light grain on every frame (~1.6 luma sigma).
+
+## QA
+| Check | Result |
+|---|---|
+| Duration | 15.0667 s vs ref 15.0669 s (**−0.007 frame**) PASS |
+| Format | 1080×1920, 30/1, 452 frames, stereo AAC silent PASS |
+| Planned cuts (scdet 3) | 0.733 · 1.433 · 3.267 · 4.700 · 5.700 (= 5.692 rounded to the frame) · 6.300 · 7.700 · 8.467 (= 8.480 rounded to the frame) · 10.000 · 12.400: all found PASS. Extra hits are intentional: 1.533 (the light snaps on), 7.767 and 8.5–8.53 (flicker frames), 1.867 (her hand rising fast in the source). A stray dissolve frame at 5.733 (sub-frame averaging across Kling's cut) is fixed by clamping each shot to its own source frames |
+| Captions (pixel scan) | top band 0.000–3.267 and 10.000–15.067; mid band 3.267–10.000 PASS |
+| Medium | every shot is a clip; no stills, no code shake PASS |
+| Reactions | small frown (2), small closed-lip smile (3), calm (4–7), small real smile (9). Nothing overacted PASS |
+| Frozen look | every shot has live motion; the slowest is shot 7 at 0.75× of a sleeper breathing. Nothing reads as a freeze PASS |
+
+### Cold-viewer test (`final-contact.png`, watched as a stranger)
+- **1 s:** at night, a woman sleeps with her cheek and the skin beside her eye squashed into the pillow, nuzzling deeper; "The Problem 😭🛏️". *"Her face is smashed into the pillow, and that's the problem."*
+- **3 s:** the bathroom light snaps on. Close to the "mirror", she frowns a little and touches the pressed-in lines at her outer eye and cheek. *"Sleeping like that leaves lines on her face."* Cause → effect is clear; they read as sleep folds, not marks.
+- **5 s:** "Vs…". His hand gives her a sheet of clear face patches and she smiles a little; that night she presses them on in bed. *"He got her patches for it, and you wear them to sleep."*
+- **10 s:** he tucks her in, then night after night (warm, amber, blue) she sleeps in the patches. *"She does it every night."*
+- **15 s:** the same bathroom framing in the morning: smoother cheek and forehead, a small real smile, the Face Set box on the shelf behind her; "The Solution 🤤❤️". *"It worked, and that's the product."*
+
+**Notes (not blocking):**
+- The emoji are Apple's set.
+- C_APPLY is upscaled from 716 px, so it's slightly softer than the pro clips at full size.
+- Shot 3's punch-in crops her forehead for 1.4 s so the caption clears her face.
+- Her under-eye pressing (4a) is quick but reads as applying patches.
+
+---
+
+# Assembly v2 (superseded): run 2026-11-08-0909 "The Problem / Vs… / The Solution"
 
 Stage 7 producer, assembly. **0 credits** (PIL + numpy + ffmpeg only). The run total is unchanged at 45 of the 135 cap.
 Scripts: `scratchpad/asm-trend/render.py` (picture) and `mux_qa.sh` → `qa.py` (mux + QA). The scratchpad is

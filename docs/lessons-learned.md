@@ -77,6 +77,10 @@ section 2 here sets what we may claim about the product.**
   Spending past the remainder needs the owner's explicit permission. A fix
   budget the owner names ("don't spend more than 40") comes out of what is
   left, unless they say it's extra.
+- **Montages need different sources** (Nov 8, 2026): "several nights" cut
+  from one clip reads as one night, even with different grades. Plan one
+  short clip per night (different angle, pose or pyjamas), or don't promise
+  "several". Never slow a clip down to fill time; it reads as a still.
 - **Real people match the animated character** (Nov 8, 2026): in a video
   that mixes Pixar and photoreal shots, the photoreal person is the same
   person as the character (same ethnicity, hair and age).

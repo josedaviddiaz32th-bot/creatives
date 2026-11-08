@@ -1,0 +1,217 @@
+{
+ "cap": 135,
+ "stage": "tof",
+ "reserve_for_retries": 15,
+ "first_pass_limit": 120,
+ "aim": "<=60 (brief)",
+ "preflights_2026_11_08": {
+  "nano_banana_2 2k 9:16 (0-3 refs)": 2,
+  "nano_banana_2 1k 9:16": 1.5,
+  "kling3_0 pro sound off 3s start only": 5.25,
+  "kling3_0 pro sound off 4s start only": 7,
+  "kling3_0 pro sound off 5s start+end": 8.75
+ },
+ "preflight_method": "get_cost: true per job with the exact model/mode/sound/duration/resolution/media count; stand-in media IDs (39637096, 564c68fa, 0f24791e) used where $-placeholders point at stills not yet generated. Nothing submitted.",
+ "estimate": [
+  {
+   "job": "S1_PROBLEM",
+   "model": "nano_banana_2 2k 9:16, 0 ref(s)",
+   "credits": 2
+  },
+  {
+   "job": "S2_BOX",
+   "model": "nano_banana_2 2k 9:16, 1 ref(s)",
+   "credits": 2
+  },
+  {
+   "job": "S3_INSERT",
+   "model": "nano_banana_2 2k 9:16, 2 ref(s)",
+   "credits": 2
+  },
+  {
+   "job": "S4_BAND",
+   "model": "nano_banana_2 2k 9:16, 2 ref(s)",
+   "credits": 2
+  },
+  {
+   "job": "S5_SET",
+   "model": "nano_banana_2 2k 9:16, 2 ref(s)",
+   "credits": 2
+  },
+  {
+   "job": "S6_TUCK",
+   "model": "nano_banana_2 2k 9:16, 3 ref(s)",
+   "credits": 2
+  },
+  {
+   "job": "S7_DOZE",
+   "model": "nano_banana_2 2k 9:16, 2 ref(s)",
+   "credits": 2
+  },
+  {
+   "job": "S8_CLOSE",
+   "model": "nano_banana_2 2k 9:16, 2 ref(s)",
+   "credits": 2
+  },
+  {
+   "job": "S9_LOW",
+   "model": "nano_banana_2 2k 9:16, 2 ref(s)",
+   "credits": 2
+  },
+  {
+   "job": "S10_WIDE",
+   "model": "nano_banana_2 2k 9:16, 2 ref(s)",
+   "credits": 2
+  },
+  {
+   "job": "C1_PROBLEM",
+   "model": "kling3_0 pro sound off 4s start only",
+   "credits": 7
+  },
+  {
+   "job": "C2_TUCK_DOZE",
+   "model": "kling3_0 pro sound off 5s start+end",
+   "credits": 8.75
+  },
+  {
+   "job": "C3_EXHALE",
+   "model": "kling3_0 pro sound off 3s start only",
+   "credits": 5.25
+  }
+ ],
+ "estimate_total": 41.0,
+ "stills_total": 20,
+ "clips_total": 21.0,
+ "estimate_plus_reserve": 56.0,
+ "fits_cap": true,
+ "cuts_made": [
+  "Shots 2,3,4,5,9,10 are stills with code motion (no clip)",
+  "Shots 6+7 share one 5 s clip (same angle in the reference)",
+  "All clips sound off",
+  "No voiceover, no music"
+ ],
+ "actual": [
+  {
+   "job": "S1_PROBLEM",
+   "generation_id": "e3e348fc-9a5f-4d82-84fc-382f725e77f3",
+   "model": "nano_banana_2 2k 9:16",
+   "credits": 2,
+   "result": "Gate A PASS, then owner review: creases read as scratches/injury -> replaced by S1_PROBLEM_fix"
+  },
+  {
+   "job": "S2_BOX",
+   "generation_id": "873abce2-a81a-4c68-9f7a-153b3a12e22e",
+   "model": "nano_banana_2 2k 9:16",
+   "credits": 2,
+   "result": "PASS"
+  },
+  {
+   "job": "S3_INSERT",
+   "generation_id": "3c75a7fb-4372-4a82-aeb8-5fc6d9a5c33f",
+   "model": "nano_banana_2 2k 9:16",
+   "credits": 2,
+   "result": "PASS"
+  },
+  {
+   "job": "S4_BAND",
+   "generation_id": "2d9dbe01-82c0-455c-a387-6e42c6ea967b",
+   "model": "nano_banana_2 2k 9:16",
+   "credits": 2,
+   "result": "PASS"
+  },
+  {
+   "job": "S5_SET",
+   "generation_id": "d65f6fb0-4df1-4f7a-a03e-853524a6d20f",
+   "model": "nano_banana_2 2k 9:16",
+   "credits": 2,
+   "result": "PASS"
+  },
+  {
+   "job": "S6_TUCK",
+   "generation_id": "3fe0a84c-ffa7-4a2d-b8ef-592c88adfb54",
+   "model": "nano_banana_2 2k 9:16",
+   "credits": 2,
+   "result": "PASS"
+  },
+  {
+   "job": "S7_DOZE",
+   "generation_id": "ca4073b6-f4bc-49e5-a79b-d7f234440b60",
+   "model": "nano_banana_2 2k 9:16",
+   "credits": 2,
+   "result": "PASS"
+  },
+  {
+   "job": "S8_CLOSE",
+   "generation_id": "cc8d6a37-21e7-49a3-bce0-cad485821d8e",
+   "model": "nano_banana_2 2k 9:16",
+   "credits": 2,
+   "result": "FAIL (duplicated second head) - replaced by fix"
+  },
+  {
+   "job": "S9_LOW",
+   "generation_id": "5df74de8-9db4-4cba-8776-c3ebe75f25a2",
+   "model": "nano_banana_2 2k 9:16",
+   "credits": 2,
+   "result": "PASS after free code crop (grey seam band at top)"
+  },
+  {
+   "job": "S10_WIDE",
+   "generation_id": "ea1af1e3-2039-4a16-9f6b-034d4feab2b9",
+   "model": "nano_banana_2 2k 9:16",
+   "credits": 2,
+   "result": "PASS"
+  },
+  {
+   "job": "S8_CLOSE_fix",
+   "generation_id": "e26cdd37-0161-43cb-a833-6689fe841aad",
+   "model": "nano_banana_2 2k 9:16",
+   "credits": 2,
+   "result": "PASS (still fix, rebuilt from S7)"
+  },
+  {
+   "job": "S1_PROBLEM_fix (attempt 1)",
+   "generation_id": "453f34be-6f92-4e52-8a97-a8b580f705d9",
+   "model": "nano_banana_2 2k 9:16",
+   "credits": 0,
+   "result": "failed on platform, 2 refunded"
+  },
+  {
+   "job": "S1_PROBLEM_fix",
+   "generation_id": "974e98b0-1aad-45b1-a389-6a10dc78ca77",
+   "model": "nano_banana_2 2k 9:16",
+   "credits": 2,
+   "result": "PASS (owner-approved redo; natural sleep creases)"
+  },
+  {
+   "job": "C1_PROBLEM",
+   "generation_id": "4a47ae5f-aa57-465e-a9a3-0d412e50519c",
+   "model": "kling3_0 pro 4s sound off, start S1 974e98b0",
+   "credits": 7,
+   "result": "PASS"
+  },
+  {
+   "job": "C2_TUCK_DOZE",
+   "generation_id": "d259fbf8-4ee7-4575-ab57-f49049fb33f9",
+   "model": "kling3_0 pro 5s sound off, S6 3fe0a84c -> S7 ca4073b6",
+   "credits": 8.75,
+   "result": "PASS (lips part in a silent sigh 2.1-3.2 s; owner-waved)"
+  },
+  {
+   "job": "C3_EXHALE",
+   "generation_id": "c0eee195-16fc-4328-9edc-10b230e4da76",
+   "model": "kling3_0 pro 3s sound off, start S8 fix e26cdd37",
+   "credits": 5.25,
+   "result": "PASS (lips part during the exhale 0.8-2.4 s, closed at end; owner-waved)"
+  }
+ ],
+ "actual_total": 45.0,
+ "still_fix_spend": 4,
+ "stage_a_status": "Gate A: all 10 stills PASS (S8 after one 2-credit fix; S9 after a free code crop). Credits checked against transactions + balance (955.4 -> 933.4). No clips submitted. S1 redone on owner request; use 974e98b0 as $S1_PROBLEM.",
+ "still_fix_note": "S8 fix 2 (auto, within 3) + S1 redo 2 (owner-approved Nov 8: \"Yes, redo it\")",
+ "clip_urls": {
+  "C1_PROBLEM": "https://d8j0ntlcm91z4.cloudfront.net/user_3K4XoW4Rud6flkLxNibt0IrMyg5/hf_20261108_144639_4a47ae5f-aa57-465e-a9a3-0d412e50519c.mp4",
+  "C2_TUCK_DOZE": "https://d8j0ntlcm91z4.cloudfront.net/user_3K4XoW4Rud6flkLxNibt0IrMyg5/hf_20261108_144837_d259fbf8-4ee7-4575-ab57-f49049fb33f9.mp4",
+  "C3_EXHALE": "https://d8j0ntlcm91z4.cloudfront.net/user_3K4XoW4Rud6flkLxNibt0IrMyg5/hf_20261108_145243_c0eee195-16fc-4328-9edc-10b230e4da76.mp4"
+ },
+ "stage_b_status": "3/3 clips PASS gate B (notes in clips-check.md). Balance 931.4 -> 910.4 (21). Run total 45 of cap 135."
+}

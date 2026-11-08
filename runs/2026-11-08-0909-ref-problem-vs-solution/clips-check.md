@@ -17,3 +17,21 @@ I looked at six frames per clip, plus full-resolution face crops for C2.
 
 Clip URLs are in `budget.json` → `clip_urls`.
 **Owner to glance at:** the parted lips with patches on in C2 and C3. A breath, not a smile or speech; keep, or trim to the closed-lip frames.
+
+---
+
+# v3 clips (owner-ordered fix, ≤40 new credits)
+
+All clips are kling3_0, sound off, one output each, one at a time, and each was preflighted. Local files: `/private/tmp/claude-501/-Users-josediaz--claude-spares-spare-SRaU1E/2f87790f-784b-45bc-9668-95f59d8eab95/scratchpad/clips-trend/v3_<CLIP>.mp4`, with frame grids in `frames/`.
+
+**Result: 4/4 PASS with notes. Clip spend: 29.0. v3 total: 39.0 of the owner's 40** (balance 910.4 → 871.4). **Run total: 84 of 135.**
+
+| Clip | Generation ID | Mode / s | Frames | Cost | Gate B | Notes |
+|---|---|---|---|---|---|---|
+| C_NIGHTS | `bbac6e12-6e51-4d81-b6c9-8e633e909872` | pro 4 | ST_NIGHT → none | 7 | PASS | Real-time sleeper motion: she nuzzles into the pillow and her hand grips it. Locked camera, eyes and lips closed, one hand, no injury look. Note: at about 1.6–2.0 s she lifts her head off the pillow and resettles (continuous, no jump), and her face looks briefly smoother at the top of the lift. **Edit windows:** 0–1.3 s and 2.2–4.0 s (face squashed). |
+| C_BATH_GIVE | `35f390ea-b025-4a07-b508-4f28e4ace9fd` | pro 5 | ST_BATH_BEFORE fix → ST_BATH_GIVE | 8.75 | PASS | She studies her face with a small, real frown, and her fingertip touches the creases near her eye (no overacting). His hand brings the film in from the frame-right, and she gives a small closed-lip smile. The film's five pieces are clear with the tab down, never more than two hands. Notes: the crease texture looks a little coarse in close-up, but it's skin-coloured grooves, not injury. A plain mirror-cabinet panel appears behind her from about 3 s with nothing reflected. Her rising hand is motion-blurred at about 3.8 s. |
+| C_APPLY | `8db7ef3d-928a-41a5-9ee3-5c1942e47f1f` | std 3 | S4 → S5 | 4.5 | PASS (note) | She presses the band (frosted and see-through, tab DOWN), then the crescents. No smile, no talking, and it ends on S5 with all five clear pieces. **Defect:** Kling inserted a hard cut at about 2.05 s, from the close-up to the wide S5 framing (against "no cuts"). Use it as two shots split at 2.05 s; the planned window 0.80–2.80 crosses the cut. Output is std resolution, **716×1284**, so it needs upscaling to 1080×1920 in assembly. Logged. |
+| C_AFTER | `4c520df3-2cd4-4fcd-b2e3-0039f6eb18ad` | pro 5 | ST_BATH_AFTER → none | 8.75 | PASS | Same framing as the before. Her fingertips glide over the cheek and forehead, then a small, real smile (no patches on, so allowed). The skin stays smooth with no creases. One hand. The shelf stays clear for the box composite. Note: natural smile lines form at her outer eyes at the smile peak (about 4.5–5 s), which slightly undercuts "softer lines". The cleanest payoff is about 3.3–4.3 s. |
+
+**Owner checks:** no exaggerated reactions; no mirror reflection anywhere; no patches turn white; the tab is DOWN; nothing looks like an injury; and every beat is now video.
+**Owner to glance at:** the bathroom face reads older and more tired than the night face. The crease texture in the bathroom close-up is a little coarse.

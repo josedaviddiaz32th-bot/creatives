@@ -184,3 +184,97 @@ frame, and the model may pull the throw up or invent shoulders under it.
 
 **After these three replacements and the ID swaps, the clips are ready to submit. No further review is needed:
 the fixes are text only, and the cost and settings are unchanged.**
+
+
+---
+
+## v3 pass 1 (prompts.json revision 3, before any credits): **FIX**
+
+Reviewer: prompt-reviewer (6b), independent. Read: owner-feedback (newest), lessons §0, §3–8, §10, brief, story v3,
+storyboard v3, prompts v3, budget v3, config, production log; looked at the reused S1/S2/S4/S5/S10 and the reused
+C2/C3 windows at full-res crops. Script check: STYLE block verbatim in all 4 stills; REFERENCE ROLES + PATCHES
+verbatim in ST_BATH_GIVE; continuity sentence word for word in all 4 stills; Elements 6375c707/9d766c06 only as
+`<<<id>>>` in ST_BATH_GIVE text, never in `medias`; every clip `sound: off`; no injury words anywhere ("red",
+scratch, rash, etc. absent; "cut" only in "no cuts"); mirror words only as "no mirror"; no smile asked with patches on.
+
+| Job | Verdict | Issue (what the model would do) |
+|---|---|---|
+| ST_NIGHT | OK | Squashed cheek/eye fold described; one hand; no box; dark top fifth. Fold side (her right cheek, down) matches the bathroom lines (frame-left = her right cheek). |
+| ST_BATH_BEFORE | **FIX** | (1) "lights her face evenly from the front" flattens skin-texture creases (2-T R12 failure): the lines vanish at phone size and the cold-viewer test fails. (2) The source S1 has **his jaw at frame-left**; "the only woman" doesn't stop the edit keeping a man's face edge. (3) Missing the wording that worked in the S1 fix ("following a pillowcase seam and fabric fold"), which is also the visual that says *pillow* to a stranger. (4) The after needs something to soften: the outer-eye and forehead fine lines must show clearly here. |
+| ST_BATH_GIVE | OK | Edit chain from $ST_BATH_BEFORE, roles block, PATCHES verbatim, off-face note, 2 hands, bare-face smile allowed. |
+| ST_BATH_AFTER | OK | Single-image edit, "keep everything as placed", softer not erased, same pores, lips closed, no hands. Inherits the new light from the fixed BEFORE. |
+| C_NIGHTS | **FIX** | (1) "A fast time-lapse… everything sped up" + 2.8× in code = double speed: jittery fast-forward, and Kling tends to add light flicker to "time-lapse". (2) "rolls onto her stomach" at 50 cm, locked: her face leaves the frame or turns away, and a full-body roll is a high-failure motion; it also makes the read "restless sleeper", not "face squashed". (3) Mode std → pro (hook frame one). |
+| C_BATH_GIVE | **FIX** | (1) "lets out a small sigh through her nose": Kling animates sighs/exhales as an open-mouth breath (production log, C2/C3). (2) "She does not cry" names crying; state the positive instead. (3) The sheet is patch-visible; add the clear/never-white line. (4) Mode std → pro (the before lines need resolution). |
+| C_APPLY | **FIX** | Patches are visible and the PATCHES block is missing (agent rule: every patch-visible job pastes it verbatim). Std is fine here. |
+| C_AFTER | **FIX (settings only)** | Text OK (small smile, patches off, no creases appear, ≤1 hand). Mode std → pro: at std res the "softer lines" result can be invisible, which makes the solution weak. |
+| Reuse C3_EXHALE | **FIX (assembly)** | Full-res crops: **lips part from ≈0.55 s, teeth by 0.70 s**, so the 0.00–0.78 window shows an open mouth with patches on. Use 0.00–0.50 at 0.64× (or 2.45–3.04 at 0.76×). |
+| Reuse C2_TUCK_DOZE | OK | 0.00–1.40 and 3.40–4.92 are closed-lip (checked 3.4 and 4.9). Lamp is ON in frame: shot 7's "lamp off" grade needs a crop that excludes the lamp. |
+
+### Exact replacement text
+
+**ST_BATH_BEFORE**: three edits.
+- Replace `Light: a warm-white vanity light just above the lens lights her face evenly from the front and slightly above.` with:
+  `Light: a warm-white vanity light bar just above the lens and slightly to the frame-right side lights her face from the front, angled a little across it, so the soft creases on her frame-left cheek and the line on her forehead catch tiny soft shadows.`
+- Replace the sentence that starts `Gentle pillow sleep creases from the night:` (through `as tiny soft shadows.`) with:
+  `Gentle pillow sleep creases from the night: soft, shallow pressed grooves in her cheek on the frame-left side of the image (her right cheek), following a pillowcase seam and fabric fold pattern from near the ear toward the outer corner of her eye and joining the fine lines there, plus one soft horizontal crease across her forehead; soft rounded edges, the same colour as the rest of her skin with at most a faint natural pink flush; visible as texture in the skin rather than colour, catching the vanity light as tiny soft shadows, easy to see at a glance on a phone screen. In this light the fine lines at the outer corners of her eyes and the line across her forehead also show clearly.`
+- After `There is no mirror, no reflective surface and no second copy of her anywhere in the frame.` insert:
+  `She is the only person in the frame: no man, and no second face, jaw, shoulder or hand at any edge of the frame.`
+
+**C_NIGHTS**: `"mode": "pro"`; replace the whole prompt with:
+`Motion only; the start frame sets her, the bedroom and the light. The phone is propped on the nightstand and locked off: the camera does not move. Natural real-time movement of a deep sleeper, not sped up. She stays lying on her side facing the lens the whole time. 0–1s: asleep, she shifts and nuzzles her face deeper into the pillow, her cheek and the skin beside her lower eye folding against it. 1–2s: her hand pulls the pillow a little tighter under her face. 2–3s: she shifts her shoulders under the duvet and presses her face further into the pillow, the edge of her forehead sinking into the pillowcase. 3–4s: she lies still, her cheek and forehead squashed into the pillow. Her face stays in the same place in the frame and stays visible the whole time. Her eyes stay closed; she stays asleep the whole time. SHE DOES NOT TALK: her lips stay closed the whole time. Exactly one hand in frame, hers, with five fingers; no other hands, no other people. The lamp, the nightstand and the fairy lights do not move and the light does not change. Unretouched, no beauty filter; her skin texture does not change. Exactly one woman; no mirror, no reflection, no second face. No new objects. No fades, no cuts, no text, no captions, no logos. Sound off.`
+
+**C_BATH_GIVE**: `"mode": "pro"`; replace the whole prompt with:
+`Motion only; the start and end frames set her, the bathroom and the light. The phone rests on the shelf: almost no camera movement, no zoom. 0–0.6s: she leans a little closer to the lens, studying her face. 0.6–2.2s: her hand on the frame-left side comes up and her index fingertip gently touches the soft sleep creases on her cheek on the frame-left side of the image, near the outer corner of her eye, then the soft line on her forehead; her brows draw slightly together in a small, quiet frown and her shoulders drop once in a small sigh, her lips pressed softly together. Her face stays calm apart from the small frown; the reaction is small and believable. 2.2–2.6s: that hand lowers out of frame. 2.6–5s: his hand, in a navy T-shirt sleeve, comes in from the frame-right edge at her shoulder height holding up the clear backing film with the five clear pieces; she turns her head slightly toward it, her brows lift in pleasant surprise and a small natural closed-lip smile appears; her hand on the frame-right side rises and her fingertips touch the bottom edge of the film. The sleep creases on her cheek and forehead keep exactly the same soft look for the whole clip, no sharper and no darker. The five pieces on the film stay thin, transparent and slightly frosted, never white or opaque, and keep their exact shapes; the forehead piece's tab points DOWN. She does not talk or mouth words. Never more than two hands in frame at once, five fingers each. Unretouched, no beauty filter; her skin texture does not change. Exactly one woman; no mirror, no reflection, no second face. No new objects. No fades, no cuts, no text, no captions, no logos. Sound off.`
+
+**C_APPLY** (stays std): after `2.2–3s: she lowers both hands to the duvet in her lap and sinks back against the pillows.` insert:
+`By the end of the clip all five pieces are on her face as follows. The patches are the exact clear silicone pieces shown in the product reference, and nothing else. They are thin, transparent and slightly frosted; her skin and lines stay visible through them; they are noticed only by a thin raised edge that catches the light and a soft satin sheen. They are never white, beige, pink, gold, opaque, gel pads, hydrogel, fabric, paper or tape. Forehead piece: a wide, gently curved band covering the middle two-thirds of the forehead, with a small rounded tab at the centre of its lower edge pointing down between the eyebrows; it does not reach the hairline. Under-eye pieces: one slim crescent per eye, just below the lower lashes, following the curve of the lower lid, the outer end reaching toward the outer eye corner; never covering the eye or lashes; never circles, rings or glasses shapes. Smile-line pieces: one slim crescent on each side, along the fold from beside the nostril to beside the mouth corner; the lips stay uncovered. Every patch lies completely flat, with no bubbles, folds or lifted edges. A piece the prompt does not mention is not on her face.`
+
+**C_AFTER**: `"mode": "pro"`. Prompt unchanged.
+
+**Assembly (reuse windows):** shot 6 = C3 0.00–0.50 at 0.64× (not 0.00–0.78); shot 7 = C2 3.40–4.92 flipped, 1.25×
+crop excluding the lamp (story-review v3 fix 3); shot 8/9 = C_AFTER 0.00–2.40 / 2.40–5.00 at 0.975× (fix 4);
+shot 4 = C_APPLY 0.80–2.80 at 1.25× (fix 5).
+
+### Settings and cost
+| Job | Mode | Credits |
+|---|---|---|
+| 4 stills (nano_banana_2 2k) | — | 8 |
+| C_NIGHTS 4 s start | **pro** | 7 |
+| C_BATH_GIVE 5 s start+end | **pro** | 8.75 |
+| C_APPLY 3 s start+end | std | 4.5 |
+| C_AFTER 5 s start | **pro** | 8.75 |
+| **Total** | | **37.0** (39.0 with one 2-cr still fix) ≤ 40 |
+Preflights still missing: **pro 4 s start-only, pro 5 s start+end, and nano_banana_2 with 1 ref** (only the 2-ref
+still and pro 5 s start-only were preflighted). Run them before submitting; stop if any differs from the table.
+Optional C_NIGHT3: not recommended (story-review v3); it does not fit with the pro upgrade (41.5).
+
+**After these replacements: PASS** for pass 1 (text and settings only). Pass 2 still runs on the approved stills
+before any clip (rewrite each clip's first/last beat from what the stills actually show).
+
+---
+
+## v3 round 2 (prompts.json "3 rev 1"): **FIX (two stills, one clip line; text only)**
+
+Script check again:
+- STYLE block verbatim in all 4 stills; REFERENCE ROLES and PATCHES verbatim in ST_BATH_GIVE; PATCHES now verbatim in C_APPLY.
+- The continuity sentence is word for word in every still.
+- Elements appear only as text.
+- Sound is off everywhere; no injury words.
+- Modes: pro for C_NIGHTS, C_BATH_GIVE and C_AFTER; std for C_APPLY. All are preflighted (7 / 8.75 / 8.75 / 4.5 credits; 2 per still). **Total 37.0, or 39.0 with one still fix, ≤ 40.**
+
+Every pass-1 replacement is applied exactly. ST_NIGHT, ST_BATH_GIVE, C_NIGHTS, C_BATH_GIVE and C_APPLY are **OK**.
+
+**The new problem is the counter box spot.** ST_BATH_BEFORE asks for a "close-up from the top of her head to her collarbones" from a phone at eye level, where the mirror would hang. It also asks for "the edge of the white vanity countertop along the bottom of the frame", while her hands rest "on the edge of the sink below the frame". A vanity counter is at hip height, so it can't be in a head-to-collarbone frame. The model will either:
+- widen the shot, which makes her face smaller and the lines weaker (the exact thing round 1 fixed), or
+- invent a foreground ledge right at the lens, where a sharp composited box would look pasted on.
+
+The shot-9 punch-in to 112% also crops the bottom-right corner, so the box would drop out of shot 9. Fix: put the box on a small wall shelf behind her, at shoulder height, frame-right, set in from the edge.
+
+| Job | Verdict | Exact replacement |
+|---|---|---|
+| ST_BATH_BEFORE | FIX | Replace `The edge of the white vanity countertop runs along the bottom of the frame, and the countertop corner at the bottom of the frame on the frame-right side is clear and empty, with nothing standing on it.` with `On the tile wall behind her, on the frame-right side at the height of her shoulder and about a fifth of the frame width in from the right edge, there is a small empty white wall shelf with nothing standing on it; her head and shoulders do not cover it.` |
+| ST_BATH_AFTER | FIX | Replace `The countertop corner at the bottom of the frame on the frame-right side stays clear and empty, with nothing standing on it.` with `The small white wall shelf behind her on the frame-right side stays empty, with nothing standing on it.` |
+| C_AFTER | FIX | After `0–0.8s: she leans a little closer to the lens, studying her face, just as on the morning before.` insert `Her head and shoulders never move over the small white wall shelf behind her on the frame-right side.` |
+| Assembly | note | Composite the real box standing on that shelf, slightly softened to match the background focus, with a contact shadow on the shelf and vanity-light shading. Keep it in shots 8 and 9: at 112% the shelf, about 20% in from the edge, stays in frame. No box in shots 2–3. |
+
+**After these three edits: PASS**, with no further review of this pass. Pass 2 still runs on the approved stills before any clip.

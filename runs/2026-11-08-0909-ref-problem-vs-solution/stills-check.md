@@ -29,3 +29,23 @@ The balance went from 955.4 to 931.4. No clips were submitted.
 - **Patches** are always clear or frosted, never white or opaque. The tab is DOWN everywhere, and each frame shows the right pieces.
 - **No mirror and no model text** anywhere. The placeholder boxes (S2, S10) are blank.
 - **Ready for prompt-review pass 2** (clip prompts against these stills), then owner approval of the stills before any clip credits.
+
+---
+
+# v3 stills (owner-ordered fix, ≤40 new credits)
+
+`prompts.json` "3 rev 2": prompt-review v3 round 2 applied word for word. The box spot is now a small empty wall shelf behind her at frame-right, at shoulder height, left empty for a code composite.
+Full-resolution files: `/private/tmp/claude-501/-Users-josediaz--claude-spares-spare-SRaU1E/2f87790f-784b-45bc-9668-95f59d8eab95/scratchpad/stills-trend/v3_<JOB>.png`.
+Contact sheet: `stills-contact-v3.png`.
+
+**Result: 4/4 PASS** (ST_BATH_BEFORE after the one allowed still fix). **Stills spend: 10** (4 × 2 plus a 2-credit fix).
+
+| Job | Generation ID | Cost | Gate A | Notes |
+|---|---|---|---|---|
+| ST_NIGHT | `e0811a49-6398-4ec8-9e5b-40f77693bd48` | 2 | PASS | Dark room with a fairy-light glow. She's asleep on her side with her face squashed into the pillow: cheek and eye skin fold against it, which reads as the cause. One hand, five fingers. Lips closed, no box, no mirror. |
+| ST_BATH_BEFORE v1 | `db2254b8-d621-4aa5-b024-ba8ea5db5a90` | 2 | **FAIL** | A near copy of S1 (bedroom, blinds, pillow, same pose), with no bathroom. Logged in the production log. |
+| ST_BATH_BEFORE (fix) | `03346ec1-6a63-44cb-ab91-ef0140bdbdc0` | 2 | PASS | Rebuilt from S2 `873abce2` as identity only, opening with "a NEW photo in a different room". She's alone in a bathroom with the camera as the mirror; no mirror or reflection is visible. The vanity bar is behind her. The empty white wall shelf is at frame-right, shoulder height. The soft pillow-seam grooves on her frame-left cheek are skin-coloured and read as texture, nothing injury-like, and the forehead and outer-eye lines are visible. A small, real frown. **Owner note:** she reads a few years older and more tired than in the night shot (no make-up, flat morning light). It's the same face, freckles, hair and studs. |
+| ST_BATH_GIVE | `944cf852-760b-4965-b16f-ce0b8a181eb8` | 2 | PASS | His hand holds the backlit film: five clear pieces, tab DOWN, never white. Her fingertips touch the bottom edge, so two hands. Small closed-lip smile, which is allowed with a bare face. The creases are still visible. Notes: a plain grey mirror-cabinet panel appears behind her head with nothing reflected in it, and the film covers the shelf. |
+| ST_BATH_AFTER | `61d5547a-f08e-49c3-abf2-88b5bc8c7bff` | 2 | PASS | Same framing as BEFORE. The creases are gone and the forehead and outer-eye lines are softer, with real texture (freckles, pores) kept. Calm, lips closed, no hands, and the shelf is empty for the box composite. |
+
+**Producer pass-2 (clip prompts vs these frames):** one wording change. In C_NIGHTS, "she shifts her shoulders under the duvet" became "she shifts her shoulders slightly", because ST_NIGHT shows no duvet. The other three prompts match their frames as written. Clip medias were set to the IDs above.

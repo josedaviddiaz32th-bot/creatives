@@ -53,3 +53,44 @@ No score below 8 (`review.min_score_to_publish` = 8). Claims clean. Budget 45 / 
 
 ## Logged
 Two lines added to `learning/production-log.md` (caption band over patch/face in shots 3–4; milky under-eye crescents in C2/S9).
+
+---
+
+# v3 review (2026-11-08): **FAIL** (one free fix needed; one weak beat)
+
+Video: `final.mp4` (byte-identical to `problem-vs-solution-sleep_trend_v3_2026-11-08.mp4`), 15.067 s, 1080×1920, silent AAC.
+This review applies the owner's critique of v2 (which I had passed) and the hard "Owner checks" in `video-reviewer.md`.
+How I checked: 28 full-res frames plus extra frames at every cut; full-res face, patch and box crops; frame-difference
+measurements per shot, with grain blurred out, to catch frozen-looking footage. Budget: 84, over the short-video cap of 50,
+so **only free fixes are possible**. Frames are in the session scratchpad under `vrev3/`.
+
+## Hard owner checks
+| Check | Result | Evidence |
+|---|---|---|
+| **Cold-viewer test (0–5 s)** | **PASS (borderline)** | Notes from watching only 0–5 s: *0–1.4 s:* a young woman asleep on her side, cheek sunk into the pillow, two different nights (warm lamp, then dark blue), "The Problem 😭🛏️". *1.4–3.3 s:* a bathroom light snaps on; close to the mirror she frowns and touches pressed-in lines at her outer eye and diagonal grooves on her cheek. *3.3–5 s:* "Vs…", his hand holds out a sheet of clear face patches, she half-smiles, then presses them on in bed. **A stranger would say:** "She sleeps on her face and wakes up with lines and wrinkles; he gets her overnight face patches." The marks read as creases and wrinkles, not scratches: no redness, no streaks. Risks: the bed shots show ordinary side-sleeping, not a squashed face, so the cause rests on the cut and the 🛏️ emoji. The cheek grooves appear on the opposite cheek from the one on the pillow, but nobody will check that at phone speed |
+| **Reactions** | **PASS** | A small worried frown (2.0–3.2), a small closed-lip smile (3.5), calm while applying and sleeping, a small real smile at the end. Nothing made me wince; the overacted cry is gone |
+| **Medium (nothing frozen)** | **FAIL** | **Shot 7 (8.48–10.00, night 3)** is C2 3.78–4.92 slowed to 0.75×. Comparing 8.6 s with 9.5 s with grain blurred out, only **2% of pixels change** (8.6→9.0: 0.3%). For 1.5 s it plays as a held frame with a colour shift (the pre-dawn lift). At phone speed it reads as a still. Every other shot has clear live motion (8–43% of pixels change) |
+
+## Owner's other questions
+| Question | Verdict |
+|---|---|
+| Does "several nights" read as several? | **Weak (6/10).** Night 1 (tuck), night 2 (amber) and night 3 (blue) use the same clip: the same pose, throw, sweater, claw clip and headboard. A cold viewer reads **one night with the lamp being turned off**, not three nights. The 0–1.4 s problem nights are clearer because the framing differs |
+| Is the morning payoff clearly smoother but believable? | **Yes (8/10).** Same bathroom framing as shot 2. The cheek grooves and the deep brow furrow are gone (partly because she isn't frowning). Pores, freckles and faint crow's feet stay, so it's believable, not airbrushed. The box on the shelf ties it to the product |
+| Does a viewer notice her look changing? | **Yes, somewhat (7/10).** Hair, sweater, double studs and claw clip match. Under the harsh vanity light, though, the bathroom face (2, 3, 8, 9) reads ~10 years older than the bedroom face (4–7): deep forehead lines, crow's feet, dark under-eyes, heavy pore texture. Across the 4.7 s cut (bathroom → bed) an attentive viewer could think it's a younger woman. It reads as "tired morning face", not a different person, but it's noticeable |
+| Does the box on the shelf look real? | **Mostly (7/10).** Correct label, sits in the niche, lit to match, with a contact shadow. But it's a flat front face only: no visible side or top edge, so at full res it looks a little like a card stood up. At phone size it's small and passes |
+| Do the captions match the reference and stay off faces and patches? | **PASS.** Same text, emoji, size, style and timing (0–3.267 / 3.267–10.0 / 10.0–end). "The Problem" and "The Solution" sit on the wall or hairline; "Vs…" sits on collar or neck in every shot (3.5, 4.0, 5.0, 5.5, 6.8, 8.0, 9.5 checked). Nothing covers a face, the patches or the sheet |
+| Is anything injury-like? | **No.** The grooves are skin texture with no colour |
+| Any smile with patches on? | **No.** Calm faces only in shots 4–7. Her lips are slightly parted in shot 6 (7.7–7.9), which the owner has waived. Both smiles (3.5 s and the end) are with no patches on |
+| Patches | Tab points down (sheet at 3.5–4.7 and band at 5.0). Crescents are under the eyes and along the smile lines, lips uncovered. Clear-frosted, slightly milky in the warm lamp light (within tolerance) |
+
+## Scores (1–10)
+Trend fidelity 10 · Cold-viewer problem 8 · Reactions 9 · **Medium 5 (shot 7)** · **Several nights 6** · Morning payoff 8 ·
+**Continuity of her look 7** · **Box realism 7** · Patches 8 · Captions 9 · Injury-free 10 · No smile with patches 9 · Claims 10 · Budget n/a (owner-acknowledged overrun).
+
+## Fixes (all free; no credits remain)
+1. **[free, required] Shot 7 frozen.** Replace C2 3.78–4.92 at 0.75× with the **unused C2 1.40–2.98 at 1×**: she lets go of the throw, settles and her eyes close, so there's live motion. Grade it n3 (cool blue, no lamp), mirror it and crop it differently from shot 5 (e.g. 1.25×, centred low) so it doesn't repeat shot 5's opening. The window is 1.52 s, and 1.58 s of source fits. Keep "Vs…" on her collar. If that window shows his hand, start after it leaves. Re-check the frame difference: at least 8% of pixels should change across the shot.
+2. **[free, partial] Several nights.** Make each night's framing clearly different, not just its colour: night 1 wide (as now), night 2 tight on the face and shoulders (as now), night 3 mirrored and lower (fix 1). Put the 2-frame flicker on both night changes (already done). A full fix (a second sleeping pose or angle) **needs credits**, which aren't available.
+3. **[free, optional] Her look across the bathroom and bedroom.** Apply a mild face-only texture soften (local clarity −15–20%) and lift the under-eye shadows in **shots 2–3 and 8–9 equally**. That narrows the age gap with the bedroom shots without changing the payoff: the creases in shot 2 still have to read, so check shot 2 at full res afterwards.
+4. **[free, optional] Box depth.** Add a 6–8 px darker side face on the box's left edge (inside the niche) and a thin top-edge highlight, so it reads as a box, not a card.
+
+**Verdict:** FAIL on the hard medium rule (shot 7). After fix 1 (free) the video should pass. Fixes 2–4 are polish; "several nights" stays the weakest beat until there's budget for a second sleeping shot.
