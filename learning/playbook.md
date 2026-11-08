@@ -28,6 +28,11 @@ Nothing has been judged yet. Everything starts UNTESTED.
 (What the winners share that the losers don't, with how many videos support
 each. One video is a hunch, not a rule.)
 
+- **Hunch (2 videos, Nov 8):** an animated, moving first frame with a direct question (2-T: Pixar character flopping onto a pillow, "Why are your wrinkles worse on one side?") held viewers far better than a static photo POV with a text hook (1-T: ~60% gone by 2 s; 2-T: half still watching at 11 s of 42.7 s). Test it again before calling it a rule.
+- **Hunch (1 video):** Pixar/animated explainers travel broadly and skew young/global (2-T: 90% 18–34, 64.8% India, 0% US). Reach ≠ the persona. Judge on US women 30–55 only.
+
 ## Change log
 
 (date · element · old → new status · evidence)
+
+- 2026-11-08 · first owner-read numbers for 1-T and 2-T filed; nothing changes status on one read (need 48 h stage medians).

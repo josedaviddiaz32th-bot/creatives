@@ -13,11 +13,53 @@
     "belief": "a lot of lines get pressed in every night",
     "objection": null,
     "keyword": "PHOTO",
-    "seconds": "27 (v3.1) or 39 (v2)",
+    "seconds": 27,
     "credits": 130,
-    "posted": "2026-11-08, uploaded by the owner on TikTok (version not stated)",
+    "posted": "2026-11-08, owner uploaded v3.1 (27 s) to Instagram, Facebook and TikTok",
     "captions": "runs/2026-11-07-2002-1t-first-line-fixer/captions.md",
     "links": {},
-    "metrics": {}
+    "metrics": {
+      "read_on": "2026-11-08 (owner, partial)",
+      "views": {
+        "instagram": 36,
+        "facebook": 233,
+        "tiktok": 39
+      },
+      "hook": "~60% dropped by 2 s",
+      "audience": "35-64; country n/a (too little data)"
+    }
+  },
+  {
+    "run": "runs/2026-11-08-0230-2t-proactive-problem-solver",
+    "slot": "2-T",
+    "persona": "P2 Proactive Problem-Solver",
+    "desire": "look rested / prevention",
+    "awareness": "TOF-U",
+    "funnel": "TOF",
+    "video_type": "Pixar see-through explainer, day-by-day night timeline (Resilia structure)",
+    "presenter": "voiceover (Higgsfield Zoe), animated character",
+    "copy_angle": "evidence / mechanism",
+    "hook_type": "curiosity question ('Why are your wrinkles worse on one side?')",
+    "belief": "lines pressed in by the pillow; silicone holds skin flat + seals moisture",
+    "objection": null,
+    "keyword": "PILLOW",
+    "seconds": 42.7,
+    "credits": 109.1,
+    "swipe_source": "2026-11-08-resilia-skeleton-14-day-timeline",
+    "posted": "2026-11-08, owner uploaded v2 to Instagram, Facebook and TikTok",
+    "captions": "runs/2026-11-08-0230-2t-proactive-problem-solver/captions.md",
+    "links": {},
+    "metrics": {
+      "read_on": "2026-11-08 (owner, partial)",
+      "views": {
+        "instagram": 1392,
+        "facebook": 7,
+        "tiktok": 36
+      },
+      "avg_watch_s": 13,
+      "half_retained_until_s": 11,
+      "audience": "90% 18-34; 64.8% India; 0% US",
+      "owner_reaction": "awesome (quality bar)"
+    }
   }
 ]
