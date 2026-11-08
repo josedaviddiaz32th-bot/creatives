@@ -222,3 +222,34 @@ All text boxes were again asserted inside y 269–1248, each is ≤8 words, and 
 - Dropped storyboard cards ("It ages me more than I'd like.", "And it keeps getting worse.") are no longer on screen. Restore one if the owner wants that line.
 - "worst" vs "worse": Whisper hears "worse"; the caption says WORST, as in story.md.
 - No music bed. Post with the platform's AI-content label (as in v2). Not uploaded, not committed.
+
+## v3.1 (fixes after video-review round 3 FAIL), 0 credits
+
+`final-v3.mp4` and `final-v3-contact.png` in this folder are now **v3.1**. The reviewed v3 is kept as `scratchpad/assembly-1t-v3/final-v3-pre-review.mp4`, and its scripts as `render3_v3.py` / `audio3_v3.py`. Spec is unchanged: 27.00 s, 30 fps, 1.08×, and the same 23 shots and cut points.
+
+| # | Fix | Done |
+|---|---|---|
+| 1 (required) | CTA bubble over the crescents (25.38–26.97) | Packshot plate reduced (740 → 700 px wide). The slam-out and push are now anchored at y 1080 (the crescents' bottom), so the product never grows downward. The bubble has no tail and is centred at y 1190, inside the safe zone. **Checked on every one of the 48 packshot frames** (`qa_pack.py`: the product mask from the plate, transformed per frame, against the bubble's opaque rows at its pop scale): the bubble clears the lowest product pixel by **≥ 44 px** in every frame, including the 110% pop frame and the slam-out. The real frames from the final were checked by eye too. |
+| 2 | Riser under "when you wake up?" | Riser removed (the record scratch at the cut stays). **New SFX duck on all cues:** while she's speaking (voice above −45 dB within ±20 ms), each SFX is held ≥ 12 dB under the quietest voice level in that window. Measured on the stems in 10 ms bins: **0 bins** where an SFX is louder than her voice while she speaks, and **0 bins** where it comes within 10 dB of a word body. SFX ≈ **−21 LUFS** in the master. |
+| 3 | "Nobody told me why." clashing with the caption | Card dropped. The K3 slam, flash and scratch carry the beat. |
+| 4a | Pops on "filter" and "I'm" | Sparkles and grimace emoji (visual + SFX) moved 0.12 s earlier; they're now ≈0.24 s before the word. |
+| 4b | Eye macro smear | The push is now **1.45 → 1.55×** (was 2.0–2.15×), framed on the unsmoothed ME eye (centre x 1130). The ring is re-placed on the ME-side outer eye corner. |
+| 4c | Persona key concern | **"It ages me."** pill (62 px, top, y 340), on the eye macro from "crinkling" to the cut. It's inside the safe zone and clear of the captions and the ring. |
+| 4d | Hook card karaoke out of order | The card now lights only the word being spoken right now ("photo", then "filtering", then "lines"), each for that word's duration only, with no build-up. |
+| 4e | White-on-white chips | All 4 items now use hand-traced outlines (clean alpha, no paper or shadow box). They sit on a **mint-teal tinted card** (#CEE3DC) with a white rim and their own soft shadow, so the tube and jar read at phone size. The "1ml" blur patch on the syringe remains, small. |
+
+**Self-QA (v3.1)**
+- **Whisper:** 88/88 words in order ("worse" for "worst", as before).
+- **Shots and gaps:** 23 shots, average 1.17 s, max 2.24 s, min 0.39 s. Largest inter-word gap 0.22 s (the planned beat).
+- **Loudness:** **−15.9 LUFS integrated**, true peak **−2.5 dBFS** (loudnorm TP ceiling lowered to −2.5 so AAC stays under −1.5), LRA 3.1.
+- **Safe zone:** every card and caption is asserted inside it.
+- **Contact sheet:** 4 fps sheet regenerated and checked by eye, including all end-card and packshot frames.
+
+**Remaining (v3.1)**
+- 27 s is under the TOF 30 s floor (accepted in the brief).
+- 1.08× and the synthetic SFX haven't been heard by a human.
+- 30 fps cadence from 24 fps clips.
+- K2 is ≈27% of runtime.
+- The end card is still the busiest frame: "Same light. No filter.", the labels and the caption.
+- "And it keeps getting worse." is still not on screen (only "It ages me." was restored).
+- Small "1ml" blur patch on the syringe.

@@ -191,3 +191,124 @@ Whisper small.en returns **all 88 words, in order**, and this time it hears "loo
 | e | 32.88–36.75 | Cut-off band sliver at TODAY's right edge | Crop it out, or widen enough to show the held band clearly |
 
 Logged: new defect types (cut-out seams on code-made product chips; a chip placed over a bystander's face; a long still reprise) were added to `learning/production-log.md`.
+
+---
+
+## Round 3 (v3 fast-paced) — Verdict: **FAIL**
+
+Independent review of `final-v3.mp4`. I inspected it locally with ffprobe/ffmpeg at /opt/homebrew/bin and whisper-cli (small.en, plus multilingual small as a second opinion). I used Python/numpy for the envelope, pitch and frame-difference measurements. No paid calls, and I made no edits to the video or to other stage files. v2 (`final.mp4`) was used as the comparison.
+
+Work files are in `/private/tmp/claude-501/-Users-josediaz--claude-spares-spare-SRaU1E/2f87790f-784b-45bc-9668-95f59d8eab95/scratchpad/review3-1t/`:
+- `c_0–4.png`: 4 fps contact sheets, labelled.
+- `full/t_*.png` and `fullA–C.png`: full-res frames.
+- `talk6.png`: talking frames.
+- `mouth_a/b/c.png`: 30 fps mouth strips on "group photo", "vitamin" and "wake up".
+- `wh_en.json` and `wh_ml.json`: transcripts.
+- `an.py`, `an2.py` and `f0.py`: gap, SFX and pitch measurements.
+- `fr30/`: frame cadence.
+
+**Only one item is below 8: product, at 7.** The CTA bubble covers the packshot again. That's a regression of round-1 fix 5. Claims are clean. Every fix is **free in assembly**, about 10 minutes of work. A re-review should pass after fix 1 alone; fixes 2 and 3 are strongly recommended.
+
+### Spec
+| Check | Result |
+|---|---|
+| Duration | **27.00 s**. Under the TOF 30–50 s window; the owner accepted this. |
+| Video | 1080×1920 (9:16 ✅), H.264, **30 fps**, 810 frames |
+| Audio | AAC 48 kHz stereo ✅ |
+| Loudness (ebur128) | **−16.0 LUFS integrated**, true peak −2.0 dBFS, LRA 3.4 LU ✅ |
+| Music | None; SFX synthesized ✅ |
+
+### Transcript vs story.md
+- small.en returns **all 88 words, in order**. The only difference is that it hears "worse" for "worst".
+- Multilingual small hears "**worst**" correctly, and also writes "tretinone" for tretinoin and "Comment, photo".
+- I checked short windows of the mix against the voice stem, at 7.1–8.8, 9.4–10.8, 13.4–15.1 and 15.0–17.5 s. They transcribe identically, so no SFX costs a word.
+
+### Measurements against `editing:`
+| Spec | Measured | |
+|---|---|---|
+| Max shot 2.5 s | Scene detection finds cuts at exactly the 23 listed boundaries. Longest shot 2.24 s (end card), shortest 0.39 s, average 1.17 s. | ✅ |
+| First 3 s, a change every ≤1.5 s | Changes at 0.33 (flash), 0.88, 1.61 and 2.58 | ✅ |
+| Max word gap 0.3 s | Largest gap on the voice stem is **0.18 s** at 17.34 (the planned beat). Next largest are 0.09, 0.08 and 0.08 s. Speech runs 0.41–25.36 s, about 3.5 w/s. | ✅ |
+| Speed 1.08×, pitch kept | Median F0 **195 Hz in v3 vs 193 Hz in v2** (+1%, within estimator error). A plain 1.08× resample would read ≈208 Hz, so pitch is preserved. I found no measurable artefact. I could not listen: **the owner should audition it.** With every sentence separated by only 60–90 ms, the delivery may sound breathless. | ✅ (by measurement) |
+| 30 fps from 24 fps | Talking shots repeat a frame irregularly, about every 4–7 frames (frame diff 0.0). That's mild pulldown judder, normal on phones, and invisible on stills, which are rendered at 30 fps. | ✅ minor |
+| Pop-ups every 3–5 s | Longest gap ≈3.7 s (13.7 → 17.36). Big interrupts at 0.33, 4.28, 13.31, 17.36 and 23.15. | ✅ |
+| SFX −22 to −18 LUFS, never on a stressed word | Two problems, below. | ⚠️ |
+
+**SFX.** I measured 23 cue onsets on the SFX stem against the voice stem.
+- Most cues sit about 0.1 s before their word, as the log rule says.
+- **The riser at 16.72–17.34 runs under "when you wake up?"** and peaks above her voice: about −13 to −17 dB against −21 to −25 dB in 10 ms RMS at 17.1–17.3. This is the open-loop self-check, the most shareable line. Whisper still gets it, but by ear it will sound like the riser is drowning the last two words. This also breaks the production log's own rule, "no risers under speech".
+- **Pops land on "filter" (7.48) and "I'm" (13.69)** at roughly equal level to the voice. Both words stay intelligible, so these are minor.
+
+### Lip sync (8c)
+On-camera talking is now only about 9.3 s, in 9 short shots. Every word with weak sync in the research list is covered by B-roll:
+- "look smooth", "by my", "peptides", "even Botox", "lesser strength", "my skin", "night" and "Comment photo" are all on cutaways.
+- I checked the bilabials still on camera at 30 fps:
+  - **"group photo"**: the lips close at 1.05–1.15 s.
+  - **"vitamin"**: the lips come near-closed at 10.25–10.32.
+  - **"wake up"**: the lips close fully at 17.22–17.35, just before the cut.
+- No frozen live face sits under speech. The eye macro (5.93–7.18) and the FILTER card (13.31–15.01) are her laughing *photo* face, and they read as the photo.
+- No talking with patches on: K4 is a silent picture.
+
+### Scores
+| # | Item | Score | Reason |
+|---|---|---|---|
+| 1 | Logic | **9** | Same arc as v2: hook → FILTER \| ME → what she's tried → self-check → reveal → product → press-on → YESTERDAY \| TODAY → Comment PHOTO. It's tighter, and both loops close. Captions now make it followable with the sound off. |
+| 2 | Script fidelity | **9** | 88/88 in order. The worst/worse elision is unchanged from earlier rounds, and the second model hears "worst". |
+| 3 | Lip sync | **9** | See above. On-camera time is down from ≈60% to ≈35%, all weak-sync words are covered, and the m/b/p closures I checked are present. |
+| 4 | Anatomy | **9** | Hands and fingers are fine in every shot I checked: phone hand, insert hand, K4 pressing hand, friends. No melting. Teeth and eyes are fine. |
+| 5 | Continuity | **8** | Same woman, room and wardrobe throughout. Jump cuts alternate 100/112–115% framing, so they read as deliberate. Deductions: K2 is still ≈27% of runtime. The **2× eye macro shows a smeared, waxy patch on the FILTER half** around her left brow and eye (6.0–7.1). The insert is a soft upscale. There's irregular 30 fps judder. |
+| 6 | Product | **7** | The **"Comment PHOTO" bubble covers the lower part of the two bottom crescents on the packshot** for the whole CTA hold (25.38–26.97), both during the slam-out and once settled. That's the round-1 fix 5 defect coming back, on the only clean full-set image. Everything else is good: the tray in frame from 0.88; the insert with the film, tab down and the Face Set pill; K4 on the face with lips closed; the packshot with all 5 pieces and the brand. |
+| 7 | Claims | **9 (clean)** | Spoken lines are unchanged: the approved opener ("pressed in every night") and the approved mechanism ("hold my skin flat all night"). New visuals make no claim: the green check on K4 sits on an approved line, and the chips and cards are unbranded with no product claims. The before/after is allowed. None of the off-limits items appear (credentials, stats, reviews, permanent/forever, "11s", "8 hours", "rinse and dry"). Post with the AI-content label ("No filter." sits on an AI before/after). |
+| 8 | Budget | **10** | `actual_total` 130.0 ≤ cap 135. v3 cost 0 credits. |
+| 8b | Owner checklists B + C | **8** | All ✅, with the same marginal ⚠️ on "product in the first 2 s" (the small tray from 0.88). Text is in the safe zone: top text at y ≥ ≈290, captions at y ≈1085–1215. Spelling matches story.md. |
+| 8c | Pace and lip sync | **9** | Every number is in spec: max shot 2.24, max gap 0.18, word-by-word captions with the current word in orange, a change every ≤1.5 s in the first 3 s, and m/b/p closures where she's on camera. Minus 1 for the hook card: it lights "photo → Filtering → lines" out of reading order, and the spoken "Can't take a group… without" has no caption. |
+| 9 | Story intent | **8** | The hook question finishes by 2.6 s, with motion, flash, SFX and text from frame 0. The turn is smooth, the problem/answer split is ≈73/27, and the CTA is subtle with a full-screen beat. Held back by three things. (a) The riser over "wake up?". (b) **"Nobody told me why."** was written for a silent beat that no longer exists, so it now sits over the spoken caption "A LOT OF THEM", and two sentences compete at 17.4–18.3. (c) The dropped persona lines. |
+
+### Hook, brand, CTA, YESTERDAY | TODAY, clutter
+- **First 2 s:** push-in from frame 0, a blinking dot, beeps, a white flash and shutter at 0.33, and the hook card on from frame 0. Her voice enters at 0.41, and there's a hard cut to her face at 0.88. This is stronger than v2: we're on her face 0.6 s sooner.
+- **Brand (TOF):** about 73% problem. The product name is on screen from 19.71 (pill), spoken at 19.84, and on the packshot. It is not a tips page ✅.
+- **CTA:** spoken, captioned with PHOTO highlighted, then a comment-bubble sticker on the packshot. Clear and subtle. It only fails on the overlap.
+- **YESTERDAY \| TODAY:** like-for-like and believable. TODAY's lines are softer but still traceable, and the held-band sliver is gone. The card is busy, though: "Same light. No filter.", the YESTERDAY/TODAY labels and the caption are stacked within ≈350 px at mid-chest. It's readable, but it's the most cluttered frame in the video.
+- **Pop-ups:** these look mostly clean and intentional. The scale-pop is consistent, the chips are keyed with no seams, and the syringe card no longer sits on a face. The cheap-looking items:
+  - The tretinoin tube and the peptides jar are white-on-white and low contrast at phone size.
+  - A faint blurred square shows on the syringe barrel.
+  - The emoji and the moon are generic, but they fit TikTok grammar.
+  - Nothing obscures a face, except that the split's "FOREHEAD LINES" caption sits over her laughing mouth in the photo, which is fine.
+
+### Dropped on-screen lines
+"It ages me more than I'd like." was the persona's **key concern** (story fix 6). "And it keeps getting worse." was her urgency line.
+- Without them, the video still reads as her: filter → fraud, frown, forehead and eye crinkles, tretinoin, peptides, "Botox of lesser strength".
+- But the **looking-older-than-my-age** motive is now only implied, and that motive is what separates this persona from a generic "lines" viewer.
+- It's a mild loss in persona fit, not a failure. The cheapest restore is one short pill, "It ages me." or "Makes me look older.", popped on the eye macro (5.93–7.18) at the top of the frame (y ≈ 300), where no other text sits.
+
+### Fix list (all free in assembly)
+| # | Time | Problem | Fix | Cost |
+|---|---|---|---|---|
+| 1 (**required**) | 25.38–26.97 | "Comment PHOTO" bubble covers the bottom two crescents on the packshot (regression of round-1 fix 5) | Move the bubble down to y ≈1150–1240 (still above 1248), or scale and raise the packshot ~8%. Check the slam-out frames as well as the settled ones. | free |
+| 2 (recommended) | 16.72–17.34 | Riser sits under "when you wake up?" and peaks above the voice | Start it at "up" offset (≈17.30), or duck it 12 dB under speech, or drop it and keep only the scratch at 17.36 | free |
+| 3 (recommended) | 17.36–18.30 | "Nobody told me why." overlaps the spoken caption "A LOT OF THEM" (the silent beat is gone) | Drop the card, or show it only during the 0.2 s beat plus the slam, cleared by 17.56 | free |
+| 4 (optional) | 7.48, 13.69 | Pops on "filter" and "I'm" at voice level | Move each 0.12 s earlier, per the log rule | free |
+| 5 (optional) | 5.93–7.18 | Eye macro: smeared, waxy patch on the FILTER half (2× upscale of the split) | Push less (≈1.5×), or shift the crop so the ME eye fills the frame and the FILTER half is a thin edge | free |
+| 6 (optional) | 5.93–7.18 | Key-concern line lost | Pill "It ages me." at the top of the eye macro | free |
+| 7 (optional) | 0.88–2.58 | Hook card highlights out of reading order | Highlight only the word being spoken that also appears on the card, in sync, or keep the card static | free |
+
+### v3 vs v2 for TOF engagement
+**v3 is the better TOF ad**, provided fixes 1–3 are made and the owner approves the sound by ear.
+- **Pace and attention.** v3 delivers the same 88 words in 27 s instead of 39, with 23 shots averaging 1.17 s instead of 13 shots averaging 3 s. It has no dead air, and a visual or sound event every 1–2 s. Average watch % and completion should rise, and those drive TOF delivery.
+- **Sound-off viewing.** Word-by-word captions make it work with the sound off; v2 had no speech captions at all.
+- **Lip sync.** It hides Kling's weak articulation: on-camera talking falls from about 60% to about 35% of runtime, with every weak m/b/p word on B-roll. That answers the owner's lip-sync complaint for free.
+- **Hook.** It reaches her face sooner.
+- **Costs:**
+  - It's 3 s under the 30 s TOF floor, which the owner accepted.
+  - The persona's "it ages me" line is gone.
+  - Some frames are busier: the end card, and the K3 text clash.
+  - The synthetic SFX and the 1.08× voice haven't been heard by a human.
+  - It's an untested style for this account, so it should be read as a pacing test against v2 (same words, same visuals) if the owner wants a clean A/B.
+
+### Logged
+New defect types are in `learning/production-log.md`:
+- a CTA sticker re-covering the product after a re-layout;
+- a riser under a key spoken line;
+- a silent-beat text card left on after the beat was cut;
+- smear on a code-smoothed half when it's upscaled;
+- the hook card lighting words out of reading order.
