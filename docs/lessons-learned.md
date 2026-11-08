@@ -439,7 +439,11 @@ gentle handheld sway.
 consideration and high physics details… otherwise it will look fake"):
 - slow, even pace, like peeling a soft screen protector;
 - a smooth, rounded fold about pencil-thick, never a sharp paper crease;
-- a clean release at the fold line with slight tackiness, and the skin never tugged, dimpled or stretched;
+- **visible resistance (owner, Nov 8, from a real peel video):** the patch is stuck, so the
+  pull is slow and slightly stop-start; the peeled part ripples into soft waves with moving
+  streaks of light instead of coming off as a flat strip; right at the release line the skin
+  lifts a hair with the silicone and springs back as the edge lets go (a gentle tug, never
+  red, never a mark); the anchor hand visibly presses the skin flat against the pull;
 - one bright highlight moving along the fold;
 - skin slightly magnified through the clear silicone;
 - the released sheet floppy, swaying and curling at the edges, never rigid.
