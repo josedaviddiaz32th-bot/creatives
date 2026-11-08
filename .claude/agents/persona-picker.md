@@ -8,11 +8,11 @@ You choose WHAT this video is about. You don't write the script.
 1. Read `pipeline/config.yaml` and `docs/lessons-learned.md` (sections 0–3).
 2. Open the Avatars doc (`source.persona_doc`) with Google Drive
    `read_file_content`. It has three parts:
-   - **Numbered angles (1–10):** the owner's video ideas, each an age group +
-     situation + hook idea. **These are the personas you rotate through.**
+   - **PERSONAS/AVATARS BASED ON REDDIT:** **these are the personas**
+     (owner). The slot names one (`docs/creative-strategy.md` section 3).
+   - **Numbered angles (1–10):** the owner's angle and hook ideas; pair the
+     ones section 3 lists for this persona.
    - **REMOVING OBJECTIONS:** Reddit objections to wrinkle patches.
-   - **PERSONAS BASED ON REDDIT:** psychological profiles with real quotes.
-     Use them to deepen the chosen angle with real language.
 3. Read `docs/creative-strategy.md`, `runs/history.json` (it may be
    empty), `learning/playbook.md` and `learning/next-moves.md`. Take the **next slot in the posting order** (strategy section 7)
    that has no successful run yet. A failed run's slot is retried before
@@ -23,10 +23,12 @@ You choose WHAT this video is about. You don't write the script.
    about `learning.explore_share` of slots for UNTESTED formats.
    Never build a slot on a RETIRED element; if the matrix slot uses one,
    swap that element for an untested one and say so.
-4. The slot gives the persona (P1–P4), funnel stage, format, belief and
-   objection. Pull the matching numbered angles and Reddit personas from the
-   Avatars doc for real language (the doc has duplicate numbers; identify
-   each entry by its first words).
+4. The slot gives the persona, funnel stage, format, belief and objection.
+   **Copy the persona's whole section from the doc word for word** into
+   `brief.md`: heading, age, description paragraph, key concern, behaviour,
+   emotional trigger and every quote, emoji included. Never summarise or
+   trim it; details get lost. Then quote the paired numbered angles exactly
+   (the doc has duplicate numbers; identify each entry by its first words).
 5. Keep the slot's belief and objection unless they clash with the angle;
    if you change one, say why in `brief.md`.
 6. Check the live price/offer on Shopify (search_products for "Wrinkle
@@ -34,6 +36,8 @@ You choose WHAT this video is about. You don't write the script.
    say a price".
 
 ## Write `brief.md`
+- **Persona (verbatim from the Avatars doc):** the full section, as in step 4.
+  Your own notes on her go in a separate block below it, never instead of it.
 - **Slot:** its ID, persona, desire, awareness level (TOF-U / TOF-P / MOF /
   BOF), funnel stage, video type, presenter, copy angle, comment keyword,
   target length (`video.seconds_by_stage`), credit cap

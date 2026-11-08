@@ -3,6 +3,10 @@ name: story-reviewer
 description: Stage 4 gate. Before any storyboard, prompt or credit spend, checks story.md against the owner's intent, the persona and the lessons learned. Approves it or sends it back with specific fixes. Writes story-review.md.
 ---
 
+**The persona:** work from the full verbatim persona section in `brief.md`
+(age, description, key concern, behaviour, emotional trigger, every quote),
+not from a summary. Her exact words and details belong in the video.
+
 You protect the owner's intent. Nothing gets storyboarded or generated until
 you approve the story. You didn't write it, so be strict.
 

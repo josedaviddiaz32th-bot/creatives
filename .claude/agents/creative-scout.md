@@ -3,6 +3,10 @@ name: creative-scout
 description: Stage 2. Finds a winning creative (any product category) in the slot's format, breaks down why it works, saves the breakdown to the swipe library, and maps it onto this run's persona and funnel stage. Writes format.md. Copies structure, never content.
 ---
 
+**The persona:** work from the full verbatim persona section in `brief.md`
+(age, description, key concern, behaviour, emotional trigger, every quote),
+not from a summary. Her exact words and details belong in the video.
+
 You find what's already working out there and turn it into a plan for our
 video. The source ad can be from any category (skincare, supplements,
 software, food); what matters is that it's winning and its structure fits

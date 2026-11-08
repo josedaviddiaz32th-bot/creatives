@@ -74,7 +74,7 @@ buy.** (owner)
 
 | Layer | Values |
 |-------|--------|
-| Persona | P1–P4, plus explore avatars (section 3) |
+| Persona | P1–P4 and E1–E2: Reddit personas from the Avatars doc, in full (section 3) |
 | Desire | Being liked / attraction (photos, partner) · comfort (sleep, no needles) · safety (no side effects) · winning (control over her body) |
 | Awareness and stage | TOF-U · TOF-P · MOF · BOF (section 2 table) |
 | Belief and objection | Lessons §2 |
@@ -89,18 +89,28 @@ with a new hook. A hook swap is a labelled *hook test*, not a new concept
 
 ## 3. Personas
 
-| ID | Persona | Avatars doc | Reddit persona | Lessons §2 situation | Main desire |
-|----|---------|-------------|----------------|----------------------|-------------|
-| **P1** | Mid-30s, "is that me?" moment, dodges photos, tried retinol, Botox isn't for her | 1, 7 | Botox-Resistant Pragmatist, First-Line Fixer | #3 needle-avoider | Being liked (photos) |
-| **P2** | Side sleeper, lines worse on one side, creases that don't fade by midday | 2 (pillow) | Proactive Problem-Solver | Side sleeper | Comfort / control |
-| **P3** | 20s, first expression lines, surprised and scared, wants to prevent | 3, 5, 10 | Appearance-Conscious Youth | #1 expression lines | Being liked / winning |
-| **P4** | 40s–50s, paper-thin under-eyes, dry skin, "should I just get Botox?" | 4, 6 | Botox-Resistant Pragmatist, Acceptance Seeker | #3 needle-avoider, #4 burned before | Safety / comfort |
-| **E1** (explore) | Lost weight, face looks looser and more tired | 8 (weight loss) | — | "Lifts sagging skin" (approved) | Winning |
-| **E2** (explore) | Accepts her age, still wants to feel in control; "you're beautiful as you are, and if you still want to…" | 2 (acceptance), 8 (embracing) | Acceptance Seeker, Aging-Gracefully Advocate | — | Comfort / control |
+**Personas come from the Avatars doc, section "PERSONAS/AVATARS BASED ON
+REDDIT"** (owner, Nov 7, 2026). Every stage works from the persona's **full
+description, quoted word for word**: age, the description paragraph, key
+concern, behaviour and emotional trigger, with every quote. Never a
+summary: the details are what make the video feel written for her. The
+numbered angles at the top of the doc are the owner's angle and hook ideas;
+pair the matching ones with the persona.
 
-Explore avatars test whether a new pocket of the market responds (F5's
-"macro move"). Spanish-language content for US Hispanic buyers is the next
-explore lane after the test week.
+| ID | Reddit persona (doc heading) | Numbered angles to pair | Lessons §2 situation | Main desire |
+|----|------------------------------|-------------------------|----------------------|-------------|
+| **P1** | The "First-Line Fixer" | 1, 7, 10 | #1 expression lines, #3 needle-avoider | Being liked (photos) |
+| **P2** | The Proactive Problem-Solver | 2 (pillow / one side) | Side sleeper | Comfort / control |
+| **P3** | The Appearance-Conscious Youth | 3, 5 | #1 expression lines | Being liked / winning |
+| **P4** | The "Botox-Resistant Pragmatist" | 4, 6 | #3 needle-avoider, #4 burned before | Safety / comfort |
+| **E1** (explore) | The "Relationship-Impacted Worrier" | — | — | Attraction / being liked |
+| **E2** (explore) | The "Acceptance Seeker" | 2 (acceptance), 8 (embracing) | — | Comfort / control |
+
+**Week-2 candidates:** The "Reversal Seeker", The Anti-Intervention
+Skeptic (strong for "no needles, nothing under the skin"), The
+Aging-Gracefully Advocate, The Relational Realist; angle 8 (weight loss,
+looser skin, now that "lifts sagging skin" is approved); Spanish-language
+content for US Hispanic buyers.
 
 ## 4. Test-week matrix: 14 concepts + 4 iterations
 
@@ -109,11 +119,11 @@ scriptwriter drafts 5+. Keywords must be unique across the week.
 
 | Slot | Persona | Stage | Video type | Presenter · copy angle | Belief / objection | Hook direction | Keyword |
 |------|---------|-------|------------|------------------------|--------------------|----------------|---------|
-| **1-T** | P1 | TOF-U | POV of the group-photo moment, then the explanation | Peer · narrative | Opener | "Ever look angry in a photo when you were actually happy?" | PHOTO |
+| **1-T** | P1 | TOF-U | POV of the group-photo moment, then the explanation | Peer · narrative | Opener | "Can't take a photo without a filter anymore?" / "Ever look angry in a photo when you were actually happy?" | PHOTO |
 | **2-T** | P2 | TOF-U | Authority-look explainer: your pillow folds your face 7 hours a night; crease visuals | Authority · evidence | Opener | "Why are your wrinkles worse on one side?" | PILLOW |
 | **3-T** | P3 | TOF-P | Green-screen reaction to a Reddit post ("I'm 21 and have lines when I smile") | Peer · narrative | — | "In your 20s and your lines stay after you stop frowning?" | FIRST |
 | **4-T** | P4 | TOF-P | Long authority-look explainer (45–50s): why under-eyes look paper-thin and tired in the morning | Authority · evidence | Opener | "In your 40s and everyone asks if you're tired?" | TIRED |
-| **E1-T** | E1 | TOF-U | Voiceover over B-roll (ElevenLabs): the face after weight loss | Voiceover · narrative | — | "Lost the weight, so why does your face look more tired?" | LOOSE |
+| **E1-T** | E1 | TOF-P | Voiceover over B-roll (ElevenLabs): the quiet moments she feels compared | Voiceover · narrative | Opener | "Ever wonder if he still sees you the way he used to?" | SEEN |
 | **E2-T** | E2 | TOF-P | Talking-head confession, warm and accepting | Peer · narrative | — | "What if your lines aren't the problem you think they are?" | LOVE |
 | **1-M** | P1 | MOF | Night routine / step-by-step "how I use them" with her existing skincare, morning before/after | Peer · evidence | 1 · "I already have a routine" | "Ever wondered what wearing wrinkle patches all night actually looks like?" | ROUTINE |
 | **2-M** | P2 | MOF | Stays-on test: side sleeping, tossing and turning, still on at 7am; before/after | Peer · evidence | 2 · "falls off" | "Do wrinkle patches really stay on if you sleep on your side?" | STAY |
