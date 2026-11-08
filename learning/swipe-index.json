@@ -14,5 +14,21 @@
       "runs/2026-11-07-1402-1t-p1-is-that-me"
     ],
     "outcome": "untested"
+  },
+  {
+    "id": "2026-11-07-nhilan-ugly-in-photos-camera-reveal",
+    "file": "learning/swipe-file/2026-11-07-nhilan-ugly-in-photos-camera-reveal.md",
+    "advertiser": "Nhi Lan (organic creator, @justkneebcidontcap)",
+    "category": "self-image / lifestyle (no brand)",
+    "format": "single-take selfie talking head, cause-reveal with physical demo",
+    "funnel": "tof",
+    "presenter": "peer",
+    "hook_type": "callout of a private insecurity (photos) + counterintuitive cause",
+    "mechanism": "It's not your face, it's a hidden cause: a peer names a private insecurity, moves the blame to a cause the viewer didn't know, and demonstrates it on camera.",
+    "winning_signal": "TikTok organic, read 2026-11-07: 322.7K plays on a 5.2K-follower account, 27.9K likes, 4.4K saves, 615 shares, 446 comments (~10.3% engagement)",
+    "used_in": [
+      "runs/2026-11-07-1926-1t-p1-angry-in-photos"
+    ],
+    "outcome": "untested"
   }
 ]
