@@ -69,3 +69,5 @@ description** reused word for word in every talking prompt.
 Write `storyboard.md`.
 
 **Peels:** any shot where a patch comes off uses `learning/peel-recipe.md` verbatim (locked by the owner, Nov 8, 2026): chained clips, start mid-peel, resistance wording, no end frame, cut when the patch comes free.
+
+**Applying patches + prompt structure (owner, Nov 8):** read `learning/prompting-research.md` and `learning/apply-recipe.md` (draft). The pinch grip is drawn in the start still, never left for the clip to invent; one slow action per clip with a stated end pose; motion first and short, PATCHES block verbatim, 3–5 named defects last.

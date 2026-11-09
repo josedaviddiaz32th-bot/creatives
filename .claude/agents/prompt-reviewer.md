@@ -110,4 +110,8 @@ something the still doesn't show.
 
 **Peels:** any shot where a patch comes off uses `learning/peel-recipe.md` verbatim (locked by the owner, Nov 8, 2026): chained clips, start mid-peel, resistance wording, no end frame, cut when the patch comes free.
 
+**Applying patches + prompt structure (owner, Nov 8):** read `learning/prompting-research.md` and `learning/apply-recipe.md` (draft). The pinch grip is drawn in the start still, never left for the clip to invent; one slow action per clip with a stated end pose; motion first and short, PATCHES block verbatim, 3–5 named defects last.
+
+**Grip (owner, Nov 8):** a patch is held only by its edge in a thumb-and-index-finger pinch, other fingers relaxed and curled; never flat on an open palm or straight fingers; the sticky side faces her skin and her fingers never touch it.
+
 **Hands (owner, Nov 8):** hands keep the same light and tone as the face in every frame. Hold items near the face, not at the lens. Check every hand frame at 10 fps for darkening or melting (Kling melts hands that drop fast).

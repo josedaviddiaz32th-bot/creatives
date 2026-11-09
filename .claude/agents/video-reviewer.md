@@ -66,4 +66,6 @@ Add one line per defect you found (pass or fail) to
 `learning/production-log.md`: date, run, clip, defect, the likely prompt or
 setting cause, and the fix (once a redo proves it works).
 
+**Grip (owner, Nov 8):** a patch is held only by its edge in a thumb-and-index-finger pinch, other fingers relaxed and curled; never flat on an open palm or straight fingers; the sticky side faces her skin and her fingers never touch it.
+
 **Hands (owner, Nov 8):** hands keep the same light and tone as the face in every frame. Hold items near the face, not at the lens. Check every hand frame at 10 fps for darkening or melting (Kling melts hands that drop fast).
