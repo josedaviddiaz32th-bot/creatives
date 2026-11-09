@@ -440,7 +440,7 @@ consideration and high physics details… otherwise it will look fake"):
 - slow, even pace, like peeling a soft screen protector;
 - a smooth, rounded fold about pencil-thick, never a sharp paper crease;
 - **visible resistance (owner, Nov 8, from a real peel video):** the patch is stuck, so the
-  pull is slow and slightly stop-start; the peeled part ripples into soft waves with moving
+  pull is slow, smooth and continuous, never pausing (a 1-second stall looks fake); the peeled part ripples into soft waves with moving
   streaks of light instead of coming off as a flat strip; right at the release line the skin
   lifts a hair with the silicone and springs back as the edge lets go (a gentle tug, never
   red, never a mark); the anchor hand visibly presses the skin flat against the pull;
@@ -448,7 +448,9 @@ consideration and high physics details… otherwise it will look fake"):
 - skin slightly magnified through the clear silicone;
 - the released sheet floppy, swaying and curling at the edges, never rigid.
 
-**LOCKED PEEL RECIPE:** use `learning/peel-recipe.md` verbatim for every peel (owner, Nov 8, 2026). In short: start mid-peel; chain two clips (models break on the last third); pull outward in stop-start tugs with visible resistance; no end frame; cut when the patch comes free; Gemini first.
+**Hands in any shot:** both hands keep the same light and skin tone as her face in every frame; no one-sided lamp that leaves a hand in shadow or darker near the lens (owner, Nov 8: a colour grade didn't save it).
+
+**LOCKED PEEL RECIPE:** use `learning/peel-recipe.md` verbatim for every peel (owner, Nov 8, 2026). In short: start mid-peel; chain two clips (models break on the last third); pull outward in one smooth, continuous pull that never pauses, resistance shown by stretch and skin lift; no end frame; cut when the patch comes free; Gemini first.
 
 **Staging that makes an AI peel work** (Dermaclara ad 2165910151027201, fully AI,
 studied Nov 8, 2026; our U2 fold-back peel failed mid-motion). Staging matters
