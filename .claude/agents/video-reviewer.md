@@ -65,3 +65,5 @@ Through Higgsfield `sandbox_exec` (ffmpeg/ffprobe), download `final.mp4` and:
 Add one line per defect you found (pass or fail) to
 `learning/production-log.md`: date, run, clip, defect, the likely prompt or
 setting cause, and the fix (once a redo proves it works).
+
+**Hands (owner, Nov 8):** hands keep the same light and tone as the face in every frame. Hold items near the face, not at the lens. Check every hand frame at 10 fps for darkening or melting (Kling melts hands that drop fast).

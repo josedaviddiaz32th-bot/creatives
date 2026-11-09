@@ -109,3 +109,5 @@ something the still doesn't show.
   that a rule doesn't already cover, so the next run's prompts avoid it.
 
 **Peels:** any shot where a patch comes off uses `learning/peel-recipe.md` verbatim (locked by the owner, Nov 8, 2026): chained clips, start mid-peel, resistance wording, no end frame, cut when the patch comes free.
+
+**Hands (owner, Nov 8):** hands keep the same light and tone as the face in every frame. Hold items near the face, not at the lens. Check every hand frame at 10 fps for darkening or melting (Kling melts hands that drop fast).

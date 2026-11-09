@@ -93,3 +93,10 @@ Every beat is live video. No clip is slowed and no still stands in for a beat. T
 - Same audio and timeline. 28.12 s, −16.1 LUFS. `final_v3.mp4` / `post_v3.mp4` (16.8 MB).
 - Renderer: `scratchpad/asm-p4/render_v3.py`. Raw: `raw/PEEL.rgb`, `raw/U1F.rgb`.
 - Credits: the peel redo cost 17 (still 2, Kling 4.0 9, Kling 3.0 std 6) plus 3 Gemini videos. Total for this video, all versions: 63.75.
+
+## v4 (Nov 8, night): regenerated apply shot + smooth peel
+- **U1 regenerated** (`v4/u1_v2.mp4`): a new start still with the band a hand's width from her face, and her face and hands lit from the camera side. Both hands measure as bright as her face. The hands smear while dropping (3.7–4.0 s), so that is never shown: the opening plays 0–3.6 s at 0.9×, then cuts to the rest pose. The green-screen sections use U1 0–3.55 s and 1.25–3.54 s only.
+- **Peel regenerated** (`v4/peel_v4.mp4`): Kling pro peel A 0.27–2.5 s plus Kling std peel B 0–2.6 s, at real speed. A smooth, continuous pull with no stall.
+- The colour-grade hand fix from v3 is no longer used.
+- Renderer `scratchpad/asm-p4/render_v4.py`. Same audio and timeline, 28.12 s, −16.1 LUFS.
+- v4 spend 29.75 of the owner's 40. All versions total 93.5 cr, plus 3 Gemini videos.

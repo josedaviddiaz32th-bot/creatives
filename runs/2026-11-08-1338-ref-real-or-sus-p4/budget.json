@@ -175,5 +175,14 @@
     "gemini_videos": 2,
     "note": "Owner gave 15 cr for the peel after S_PEEL_MID (2 cr, within the original 50 cap)."
   },
-  "all_versions_total": 63.75
+  "all_versions_total": 93.5,
+  "v4_regen": {
+    "S_U1_START_v2": 2,
+    "PEEL_A_std_fail": 6,
+    "U1_APPLY_v2_pro": 8.75,
+    "PEEL_A2_pro": 7,
+    "PEEL_B_std": 6,
+    "total": 29.75,
+    "owner_cap": 40
+  }
 }

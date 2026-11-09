@@ -450,6 +450,8 @@ consideration and high physics details… otherwise it will look fake"):
 
 **Hands in any shot:** both hands keep the same light and skin tone as her face in every frame; no one-sided lamp that leaves a hand in shadow or darker near the lens (owner, Nov 8: a colour grade didn't save it).
 
+**Shots where she puts something on with her hands (owner, Nov 8):** in the start still, hold the item about a hand's width in front of her face, never at the frame edges or near the lens. Light her face and hands from the camera side; the lamp is background glow only. In the clip, write "the light on both hands never changes… never move toward the lens". Kling melts hands that drop quickly out of frame (3.7–4.0 s of the P4 v4 apply clip), so end before the hands drop, or cut past it.
+
 **LOCKED PEEL RECIPE:** use `learning/peel-recipe.md` verbatim for every peel (owner, Nov 8, 2026). In short: start mid-peel; chain two clips (models break on the last third); pull outward in one smooth, continuous pull that never pauses, resistance shown by stretch and skin lift; no end frame; cut when the patch comes free; Gemini first.
 
 **Staging that makes an AI peel work** (Dermaclara ad 2165910151027201, fully AI,
