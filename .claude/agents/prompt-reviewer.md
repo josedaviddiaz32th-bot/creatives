@@ -107,3 +107,5 @@ something the still doesn't show.
   times, then stop and flag the owner.
 - Add a line to `learning/production-log.md` for every problem you catch
   that a rule doesn't already cover, so the next run's prompts avoid it.
+
+**Peels:** any shot where a patch comes off uses `learning/peel-recipe.md` verbatim (locked by the owner, Nov 8, 2026): chained clips, start mid-peel, resistance wording, no end frame, cut when the patch comes free.

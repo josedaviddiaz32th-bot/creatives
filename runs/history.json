@@ -68,9 +68,9 @@
     "persona": "P3 Appearance-Conscious Youth",
     "awareness": "TOF-P",
     "funnel": "TOF",
-    "video_type": "trend remake: 'The Problem / Vs… / The Solution' UGC, no speech, trending sound added in-app",
+    "video_type": "trend remake: 'The Problem / Vs\u2026 / The Solution' UGC, no speech, trending sound added in-app",
     "presenter": "none (couple, photoreal)",
-    "hook_type": "on-screen caption 'The Problem 😭🛏️'",
+    "hook_type": "on-screen caption 'The Problem \ud83d\ude2d\ud83d\udecf\ufe0f'",
     "keyword": "SLEEP",
     "seconds": 15.07,
     "credits": 45,
@@ -99,6 +99,12 @@
     "posted": null,
     "captions": "runs/2026-11-08-1338-ref-real-or-sus-p4/captions.md",
     "links": {},
-    "metrics": {}
+    "metrics": {},
+    "v3": {
+      "date": "2026-11-08",
+      "change": "continuous resistance peel (Gemini+Kling chain) + hand tone fix",
+      "file": "real-or-sus-p4_botox-question_v3_2026-11-08.mp4"
+    },
+    "credits_all_versions": 63.75
   }
 ]

@@ -67,3 +67,5 @@ setting, time of day, skin "dry and matte, unretouched", and **one voice
 description** reused word for word in every talking prompt.
 
 Write `storyboard.md`.
+
+**Peels:** any shot where a patch comes off uses `learning/peel-recipe.md` verbatim (locked by the owner, Nov 8, 2026): chained clips, start mid-peel, resistance wording, no end frame, cut when the patch comes free.

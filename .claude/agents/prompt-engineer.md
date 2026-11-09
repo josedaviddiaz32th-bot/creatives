@@ -84,3 +84,5 @@ clips, then voiceover) and `budget.json`.
 
 Then hand off to the `prompt-reviewer`. Nothing is generated until
 `prompt-review.md` says PASS; on FIX, apply its replacement text and resubmit.
+
+**Peels:** any shot where a patch comes off uses `learning/peel-recipe.md` verbatim (locked by the owner, Nov 8, 2026): chained clips, start mid-peel, resistance wording, no end frame, cut when the patch comes free.

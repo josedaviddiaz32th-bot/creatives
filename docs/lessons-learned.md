@@ -448,6 +448,8 @@ consideration and high physics details… otherwise it will look fake"):
 - skin slightly magnified through the clear silicone;
 - the released sheet floppy, swaying and curling at the edges, never rigid.
 
+**LOCKED PEEL RECIPE:** use `learning/peel-recipe.md` verbatim for every peel (owner, Nov 8, 2026). In short: start mid-peel; chain two clips (models break on the last third); pull outward in stop-start tugs with visible resistance; no end frame; cut when the patch comes free; Gemini first.
+
 **Staging that makes an AI peel work** (Dermaclara ad 2165910151027201, fully AI,
 studied Nov 8, 2026; our U2 fold-back peel failed mid-motion). Staging matters
 more than physics words:

@@ -1,171 +1,179 @@
 {
- "cap": 50,
- "cap_source": "owner rule: short videos max 50 credits, ALL versions (config budget.max_credits_short_video); owner has not chosen 85",
- "spent_before_this_estimate": 0,
- "preflights_2026_11_08": {
-  "nano_banana_2 2k 9:16 1 ref (+Element in text)": 2,
-  "nano_banana_2 default res 1 ref": 1.5,
-  "kling3_0 std sound off 5s start+end": 7.5,
-  "kling3_0 std sound off 6s start+end": 9,
-  "kling3_0 pro sound off 5s start+end": 8.75,
-  "kling3_0 pro sound off 6s start+end": 10.5
- },
- "estimate": [
-  {
-   "job": "S_B0",
-   "model": "nano_banana_2 2k 9:16",
-   "credits": 2
+  "cap": 50,
+  "cap_source": "owner rule: short videos max 50 credits, ALL versions (config budget.max_credits_short_video); owner has not chosen 85",
+  "spent_before_this_estimate": 0,
+  "preflights_2026_11_08": {
+    "nano_banana_2 2k 9:16 1 ref (+Element in text)": 2,
+    "nano_banana_2 default res 1 ref": 1.5,
+    "kling3_0 std sound off 5s start+end": 7.5,
+    "kling3_0 std sound off 6s start+end": 9,
+    "kling3_0 pro sound off 5s start+end": 8.75,
+    "kling3_0 pro sound off 6s start+end": 10.5
   },
-  {
-   "job": "S_U1_START",
-   "model": "nano_banana_2 2k 9:16",
-   "credits": 2
-  },
-  {
-   "job": "S_U1_END",
-   "model": "nano_banana_2 2k 9:16",
-   "credits": 2
-  },
-  {
-   "job": "S_U2_START",
-   "model": "nano_banana_2 2k 9:16",
-   "credits": 2
-  },
-  {
-   "job": "S_U2_END",
-   "model": "nano_banana_2 2k 9:16",
-   "credits": 2
-  },
-  {
-   "job": "U1_APPLY",
-   "model": "kling3_0 pro sound off",
-   "credits": 8.75
-  },
-  {
-   "job": "U2_PEEL",
-   "model": "kling3_0 pro sound off",
-   "credits": 10.5
-  }
- ],
- "estimate_total": 29.25,
- "reserve_for_retries": 15,
- "estimate_plus_reserve": 44.25,
- "headroom_under_cap_after_reserve": 5.75,
- "status": "FITS: 46.75 of 50 spent; no reserve left, no clip redo possible without owner OK",
- "cost_choices": "Kling pro (+2.0 vs std) for product detail and full resolution (std returned 716x1284, production log 93). Std would make it 26.5.",
- "gemini": {
-  "generator": "Google Gemini Veo (owner Plus plan)",
-  "higgsfield_credits": 0,
-  "clips": [
-   {
-    "id": "GEM_E23",
-    "status": "generated; generation review PASS",
-    "generations_used": 1
-   },
-   {
-    "id": "GEM_X0",
-    "status": "planned",
-    "generations": 1
-   },
-   {
-    "id": "GEM_E1",
-    "status": "planned",
-    "generations": 1
-   },
-   {
-    "id": "GEM_E45",
-    "status": "planned",
-    "generations": 1
-   }
+  "estimate": [
+    {
+      "job": "S_B0",
+      "model": "nano_banana_2 2k 9:16",
+      "credits": 2
+    },
+    {
+      "job": "S_U1_START",
+      "model": "nano_banana_2 2k 9:16",
+      "credits": 2
+    },
+    {
+      "job": "S_U1_END",
+      "model": "nano_banana_2 2k 9:16",
+      "credits": 2
+    },
+    {
+      "job": "S_U2_START",
+      "model": "nano_banana_2 2k 9:16",
+      "credits": 2
+    },
+    {
+      "job": "S_U2_END",
+      "model": "nano_banana_2 2k 9:16",
+      "credits": 2
+    },
+    {
+      "job": "U1_APPLY",
+      "model": "kling3_0 pro sound off",
+      "credits": 8.75
+    },
+    {
+      "job": "U2_PEEL",
+      "model": "kling3_0 pro sound off",
+      "credits": 10.5
+    }
   ],
-  "total_generations_this_video": 4,
-  "still_to_run": 3,
-  "fallback_if_quota_out": "wait for the daily reset (free). Kling with sound (~2 credits/s, lessons \u00a79) for X0+E1+E45 ~32 credits would push total to ~61 > 50: needs owner OK."
- },
- "free_items": [
-  "CROP_3BCB code crop + upload",
-  "box 0f24791e, flat lay 564c68fa reuse",
-  "all text, captions, keying, SFX, assembly"
- ],
- "actual": [
-  {
-   "job": "CROP_3BCB",
-   "media_id": "311197a3-bc2c-4bb0-bdf7-fb9aa4e603bf",
-   "credits": 0
+  "estimate_total": 29.25,
+  "reserve_for_retries": 15,
+  "estimate_plus_reserve": 44.25,
+  "headroom_under_cap_after_reserve": 5.75,
+  "status": "FITS: 46.75 of 50 spent; no reserve left, no clip redo possible without owner OK",
+  "cost_choices": "Kling pro (+2.0 vs std) for product detail and full resolution (std returned 716x1284, production log 93). Std would make it 26.5.",
+  "gemini": {
+    "generator": "Google Gemini Veo (owner Plus plan)",
+    "higgsfield_credits": 0,
+    "clips": [
+      {
+        "id": "GEM_E23",
+        "status": "generated; generation review PASS",
+        "generations_used": 1
+      },
+      {
+        "id": "GEM_X0",
+        "status": "planned",
+        "generations": 1
+      },
+      {
+        "id": "GEM_E1",
+        "status": "planned",
+        "generations": 1
+      },
+      {
+        "id": "GEM_E45",
+        "status": "planned",
+        "generations": 1
+      }
+    ],
+    "total_generations_this_video": 4,
+    "still_to_run": 3,
+    "fallback_if_quota_out": "wait for the daily reset (free). Kling with sound (~2 credits/s, lessons \u00a79) for X0+E1+E45 ~32 credits would push total to ~61 > 50: needs owner OK."
   },
-  {
-   "job": "S_B0",
-   "job_id": "8e4b411a-4da5-43ee-9115-3c173c77fed5",
-   "model": "nano_banana_2 2k 9:16",
-   "credits": 2,
-   "gate_A": "PASS"
+  "free_items": [
+    "CROP_3BCB code crop + upload",
+    "box 0f24791e, flat lay 564c68fa reuse",
+    "all text, captions, keying, SFX, assembly"
+  ],
+  "actual": [
+    {
+      "job": "CROP_3BCB",
+      "media_id": "311197a3-bc2c-4bb0-bdf7-fb9aa4e603bf",
+      "credits": 0
+    },
+    {
+      "job": "S_B0",
+      "job_id": "8e4b411a-4da5-43ee-9115-3c173c77fed5",
+      "model": "nano_banana_2 2k 9:16",
+      "credits": 2,
+      "gate_A": "PASS"
+    },
+    {
+      "job": "S_U1_START",
+      "job_id": "bc7de156-fec4-46bd-bcdc-406fded0b847",
+      "model": "nano_banana_2 2k 9:16",
+      "credits": 2,
+      "gate_A": "PASS"
+    },
+    {
+      "job": "S_U1_END",
+      "job_id": "180c1cb9-273f-4b8a-8c2f-18a02876587f",
+      "model": "nano_banana_2 2k 9:16",
+      "credits": 2,
+      "gate_A": "PASS"
+    },
+    {
+      "job": "S_U2_START",
+      "job_id": "031f92d2-17f9-45c3-8a9b-dfa178641109",
+      "model": "nano_banana_2 2k 9:16",
+      "credits": 2,
+      "gate_A": "PASS"
+    },
+    {
+      "job": "S_U2_END",
+      "job_id": "040d5330-a63b-4c88-948d-17207afb6342",
+      "model": "nano_banana_2 2k 9:16",
+      "credits": 2,
+      "gate_A": "PASS"
+    },
+    {
+      "job": "U1_APPLY",
+      "job_id": "783f2a1f-f68d-46ef-bf8c-ef6c98536b76",
+      "model": "kling3_0 pro 5s silent",
+      "credits": 8.75,
+      "gate_B": "PASS"
+    },
+    {
+      "job": "U2_PEEL",
+      "job_id": "60966d13-a9c9-4bf7-9900-458f4ffb9342",
+      "model": "kling3_0 pro 6s silent",
+      "credits": 10.5,
+      "gate_B": "FAIL (peel physics); usable 0-2.8 s + 3.9-6.0 s"
+    },
+    {
+      "job": "KL_X0",
+      "job_id": "55b9f1b6-e922-43f7-b833-815e044b80df",
+      "model": "kling3_0 std 5s silent",
+      "credits": 7.5,
+      "gate_B": "PASS"
+    },
+    {
+      "job": "KL_E1",
+      "job_id": "a0601604-bfef-41e5-80dc-fa2d4a8c557c",
+      "model": "kling3_0 std 5s sound on",
+      "credits": 10,
+      "gate_B": "PASS (note: gesture hand)"
+    }
+  ],
+  "actual_total": 46.75,
+  "revision": "1 (prompt-review pass 1)",
+  "repreflight_2026_11_08_rev1": {
+    "S_U1_START": 2,
+    "S_U1_END": 2,
+    "S_U2_START": 2,
+    "S_U2_END": 2,
+    "note": "nano_banana_2 2k 9:16, 1 ref + Element; cost unchanged; total stays 29.25 (+15 reserve = 44.25 <= 50)"
   },
-  {
-   "job": "S_U1_START",
-   "job_id": "bc7de156-fec4-46bd-bcdc-406fded0b847",
-   "model": "nano_banana_2 2k 9:16",
-   "credits": 2,
-   "gate_A": "PASS"
+  "still_fix_spend": 0,
+  "remaining_under_cap": 3.25,
+  "v3_peel_redo": {
+    "S_PEEL_MID": 2,
+    "HF_T2_kling4_0": 9,
+    "HF_T3_kling3_0_std": 6,
+    "gemini_videos": 2,
+    "note": "Owner gave 15 cr for the peel after S_PEEL_MID (2 cr, within the original 50 cap)."
   },
-  {
-   "job": "S_U1_END",
-   "job_id": "180c1cb9-273f-4b8a-8c2f-18a02876587f",
-   "model": "nano_banana_2 2k 9:16",
-   "credits": 2,
-   "gate_A": "PASS"
-  },
-  {
-   "job": "S_U2_START",
-   "job_id": "031f92d2-17f9-45c3-8a9b-dfa178641109",
-   "model": "nano_banana_2 2k 9:16",
-   "credits": 2,
-   "gate_A": "PASS"
-  },
-  {
-   "job": "S_U2_END",
-   "job_id": "040d5330-a63b-4c88-948d-17207afb6342",
-   "model": "nano_banana_2 2k 9:16",
-   "credits": 2,
-   "gate_A": "PASS"
-  },
-  {
-   "job": "U1_APPLY",
-   "job_id": "783f2a1f-f68d-46ef-bf8c-ef6c98536b76",
-   "model": "kling3_0 pro 5s silent",
-   "credits": 8.75,
-   "gate_B": "PASS"
-  },
-  {
-   "job": "U2_PEEL",
-   "job_id": "60966d13-a9c9-4bf7-9900-458f4ffb9342",
-   "model": "kling3_0 pro 6s silent",
-   "credits": 10.5,
-   "gate_B": "FAIL (peel physics); usable 0-2.8 s + 3.9-6.0 s"
-  },
-  {
-   "job": "KL_X0",
-   "job_id": "55b9f1b6-e922-43f7-b833-815e044b80df",
-   "model": "kling3_0 std 5s silent",
-   "credits": 7.5,
-   "gate_B": "PASS"
-  },
-  {
-   "job": "KL_E1",
-   "job_id": "a0601604-bfef-41e5-80dc-fa2d4a8c557c",
-   "model": "kling3_0 std 5s sound on",
-   "credits": 10,
-   "gate_B": "PASS (note: gesture hand)"
-  }
- ],
- "actual_total": 46.75,
- "revision": "1 (prompt-review pass 1)",
- "repreflight_2026_11_08_rev1": {
-  "S_U1_START": 2,
-  "S_U1_END": 2,
-  "S_U2_START": 2,
-  "S_U2_END": 2,
-  "note": "nano_banana_2 2k 9:16, 1 ref + Element; cost unchanged; total stays 29.25 (+15 reserve = 44.25 <= 50)"
- },
- "still_fix_spend": 0,
- "remaining_under_cap": 3.25
+  "all_versions_total": 63.75
 }

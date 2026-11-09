@@ -86,3 +86,10 @@ Every beat is live video. No clip is slowed and no still stands in for a beat. T
 - **Owner should listen** to 9.8–12.0 s next to 12.0–20.0 s: is it the same man? Pitch, level and EQ were matched by measurement only (review fix 4).
 - **Flat-lay pebble:** the flat-lay asset has a small pebble at its bottom-right; it's part of the approved image.
 - **Stiff held sheet:** the held sheet in U2 looks fairly stiff, as noted in clips-check.
+
+## v3 (Nov 8, evening): real peel + hand tone
+- **5.00–9.83: one continuous peel, no cut.** Gemini T1 0–1.9 s chained to Kling 3.0 std T3 0–2.6 s (see `peel-v2/iterations.md`), played at 93% speed. It ends as the patch comes free, then cuts to E1. The old U2 lift → jump cut is gone.
+- **U1 (0–5 s, 12–15.6 s, 20–22.3 s):** the left hand is colour-matched to her lit right hand (the owner's "hands look dark" note), at 0 credits.
+- Same audio and timeline. 28.12 s, −16.1 LUFS. `final_v3.mp4` / `post_v3.mp4` (16.8 MB).
+- Renderer: `scratchpad/asm-p4/render_v3.py`. Raw: `raw/PEEL.rgb`, `raw/U1F.rgb`.
+- Credits: the peel redo cost 17 (still 2, Kling 4.0 9, Kling 3.0 std 6) plus 3 Gemini videos. Total for this video, all versions: 63.75.
